@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"bs-universalexport-desc": "Määd_et müjjelesch för Mehdijawikki, Sigge en ongerscheidlejje Fommahte ze äxpottehre.",
+	"prefs-universalexport": "Unniväsälle Äxpoot",
+	"universalexport": "Unniväsälle Äxpoot",
+	"bs-universalexport-pref-metadatadefaults": "Mettadahte (Standatt, <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"JavaScript Object Notation\">JSON</i>)",
+	"bs-universalexport-pref-metadataoverrides": "Mettadahte (Överjonn, <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"JavaScript Object Notation\">JSON</i>)\n<!-- https://translatewiki.net/wiki/Thread:Support/About_MediaWiki:Bs-universalexport-pref-metadataoverrides/ksh  -->",
+	"bs-universalexport-page-title-without-param": "Moduhle för der unniväsälle Äxpoot",
+	"bs-universalexport-page-title-on-error": "Univäsälle Äxpoot: Fähler",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Et sinn_er kein Moduhle rejestrehrt.",
+	"bs-universalexport-widget-title": "Äxpoot",
+	"bs-universalexport-widget-tooltip": "Donn de aktoälle Sigg äxpottehre",
+	"bs-universalexport-tag-pagebreak-text": "Et Ängk vun de Siggg",
+	"bs-universalexport-tag-exclude-text": "Heh dä Täx weed nit äxpottehrt",
+	"bs-universalexport-tag-hidetitle-text": "De Övverschreff vun heh dä Sigg es noh_m Äxpottehre nit ze sinn.",
+	"bs-universalexport-tag-excludearticle-text": "Heh di Sigg kam_mer nit äxpottehre.",
+	"bs-universalexport-tag-pagebreak-desc": "Wann dat Äxpoot_Moduhl dat kann, sorresch heh dä Befähl för ene Sigge_Ömbroch em äxpottehrte Dokkemänt.",
+	"bs-universalexport-tag-noexport-desc": "Der ennhald vun heh dä Befähl wehd nit äxpottehrt.",
+	"action-universalexport-export": "lähsch en Äxpoot_Datteij aan",
+	"right-universalexport-export": "Lähsch en Äxpoot_Datteij aan"
+}

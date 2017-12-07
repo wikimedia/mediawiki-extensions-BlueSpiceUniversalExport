@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dalba"
+		]
+	},
+	"bs-universalexport-widget-title": "برون‌بری",
+	"bs-universalexport-widget-tooltip": "برون‌بری صفحهٔ کنونی",
+	"bs-universalexport-tag-pagebreak-text": "شکستن صفحه",
+	"bs-universalexport-tag-exclude-text": "این متن برون‌بری نخواهد شد.",
+	"bs-universalexport-tag-excludearticle-text": "این صفحه را نمی‌توان برون‌بری کرد.",
+	"action-universalexport-export": "ساخت یک پروندهٔ برون‌بری",
+	"right-universalexport-export": "ساخت یک پروندهٔ برون‌بری"
+}

@@ -1,0 +1,17 @@
+==UniversalExport.class.php==
+
+'BSUniversalExportGetWidget':
+ $this:
+ &$aModules:
+ $oSpecialPage:
+ $oCurrentTitle:
+ $aCurrentQueryParams:
+
+
+==SpecialUniversalExport.class.php==
+
+'BSUniversalExportSpecialPageExecute':
+$this:
+ $sParameter:
+ &$aModules:
+

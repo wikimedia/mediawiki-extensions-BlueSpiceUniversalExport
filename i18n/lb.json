@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"bs-universalexport-desc": "Erméiglecht et MediaWiki fir Säiten a verschiddene Formater z'exportéieren",
+	"prefs-universalexport": "Universal Export",
+	"universalexport": "Universal Export",
+	"bs-universalexport-page-title-on-error": "Universal Export: Feeler",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Et si keng Moduler registréiert.",
+	"bs-universalexport-widget-title": "Export",
+	"bs-universalexport-widget-tooltip": "Déi aktuell Säit exportéieren",
+	"bs-universalexport-tag-pagebreak-text": "Säitenëmbroch",
+	"bs-universalexport-tag-exclude-text": "Dësen Text gëtt net exportéiert.",
+	"bs-universalexport-tag-excludearticle-text": "Dës Säit kann net exportéiert ginn.",
+	"bs-universalexport-error-permission": "Dir hutt net genuch Rechter fir dës Säit z'exportéieren.",
+	"action-universalexport-export": "en Export-Fichier maachen"
+}

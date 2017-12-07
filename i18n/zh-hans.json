@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwek",
+			"Liuxinyu970226",
+			"NigelSoft"
+		]
+	},
+	"bs-universalexport-desc": "启用MediaWiki以将页面导出成不同格式",
+	"prefs-universalexport": "通用输出",
+	"universalexport": "通用输出",
+	"bs-universalexport-pref-metadatadefaults": "元数据（标准的，基于JSON格式）：",
+	"bs-universalexport-pref-metadataoverrides": "元数据（覆盖的，基于JSON格式）：",
+	"bs-universalexport-page-title-without-param": "通用输出：模块",
+	"bs-universalexport-page-title-on-error": "通用输出：错误",
+	"bs-universalexport-page-text-without-param": "此页显示可用的导出模块的通用输出信息。",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "没有注册的模块。",
+	"bs-universalexport-widget-title": "导出",
+	"bs-universalexport-widget-tooltip": "导出当前页",
+	"bs-universalexport-tag-pagebreak-text": "分页符",
+	"bs-universalexport-tag-exclude-text": "此文本将不会导出。",
+	"bs-universalexport-tag-hidetitle-text": "此页面的标题将不会在导出中可见。",
+	"bs-universalexport-tag-excludearticle-text": "此页可能不会被导出。",
+	"bs-universalexport-tag-pagebreak-desc": "如果能支持选择导出模块，此标签将强制在导出文档加入分页符。",
+	"bs-universalexport-tag-noexport-desc": "此标签中的内容不会被导出。",
+	"bs-universalexport-tag-meta-desc": "允许加入任意元数据至导出文档。",
+	"bs-universalexport-tag-params-desc": "允许导出时设置特殊参数，是否将评估参数取决于选择的导出模块。",
+	"bs-universalexport-error-requested-export-module-not-found": "请求格式不能创作出。",
+	"bs-universalexport-error-permission": "您的权限不足以导出此页。",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "请求页面必须不能导出因为它位于分类黑名单中。",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "通用导出元数据",
+	"bs-universalexport-statebarbodyuniversalexportparams": "通用输出参数",
+	"action-universalexport-export": "创建一个导出文件",
+	"right-universalexport-export": "创建一个导出文件"
+}

@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vitorvicentevalente",
+			"Fúlvio",
+			"Hamilton Abreu"
+		]
+	},
+	"bs-universalexport-desc": "Permite que o MediaWiki exporte páginas em diferentes formatos",
+	"prefs-universalexport": "Exportação universal",
+	"universalexport": "Exportação universal",
+	"bs-universalexport-pref-metadatadefaults": "Metadados (padrão, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Metadados (substituir, JSON):",
+	"bs-universalexport-page-title-without-param": "Exportação universal: Módulos",
+	"bs-universalexport-page-title-on-error": "Exportação universal: Erro",
+	"bs-universalexport-page-text-without-param": "Esta página apresenta informações sobre módulos de exportação disponíveis da exportação universal.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Não existem módulos registados.",
+	"bs-universalexport-widget-title": "Exportar",
+	"bs-universalexport-widget-tooltip": "Exportar a página atual",
+	"bs-universalexport-tag-pagebreak-text": "Quebra de página",
+	"bs-universalexport-tag-exclude-text": "Este texto não será exportado.",
+	"bs-universalexport-tag-hidetitle-text": "O título desta página não será visível na exportação.",
+	"bs-universalexport-tag-excludearticle-text": "Esta página não pode ser exportada.",
+	"bs-universalexport-tag-pagebreak-desc": "Se suportada pelo módulo de exportação escolhido, esta etiqueta força uma quebra de página no documento exportado.",
+	"bs-universalexport-tag-noexport-desc": "O conteúdo dentro desta marca não será exportado.",
+	"bs-universalexport-tag-meta-desc": "Permite adicionar metadados arbitrários a um documento exportado.",
+	"bs-universalexport-tag-params-desc": "Permite definir parâmetros especiais para exportação, se o parâmetro será avaliado depende do módulo de exportação escolhido.",
+	"bs-universalexport-error-requested-export-module-not-found": "O formato solicitado não pode ser produzido.",
+	"bs-universalexport-error-permission": "Não tem privilégios suficientes para exportar esta página.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "A página que solicitou não deve ser exportada porque está na categoria lista negra.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Metadados de exportação universal",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Parâmetro de exportação universal",
+	"action-universalexport-export": "criar um ficheiro de exportação",
+	"right-universalexport-export": "Criar um ficheiro de exportação"
+}

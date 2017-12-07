@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bs-universalexport-desc": "Enables MediaWiki to export pages into different formats",
+	"prefs-universalexport": "Universal export",
+	"universalexport": "Universal export",
+	"bs-universalexport-pref-metadatadefaults": "Metadata (standard, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Metadata (override, JSON):",
+	"bs-universalexport-page-title-without-param": "Universal export: Modules",
+	"bs-universalexport-page-title-on-error": "Universal export: Error",
+	"bs-universalexport-page-text-without-param": "This page displays information about available export modules of the universal export.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "There are no modules registered.",
+	"bs-universalexport-widget-title": "Export",
+	"bs-universalexport-widget-tooltip": "Export the current page",
+	"bs-universalexport-tag-pagebreak-text": "Page break",
+	"bs-universalexport-tag-exclude-text": "This text will not be exported.",
+	"bs-universalexport-tag-hidetitle-text": "The title of this page will be not be visible in the export.",
+	"bs-universalexport-tag-excludearticle-text": "This page may not be exported.",
+	"bs-universalexport-tag-pagebreak-desc": "If supported by chosen export module, this tag forces a page break in the export document.",
+	"bs-universalexport-tag-noexport-desc": "Content inside this tag will not be exported.",
+	"bs-universalexport-tag-meta-desc": "Allows to add arbitrary meta data to an exported document.",
+	"bs-universalexport-tag-params-desc": "Allows to set special parameters for export, whether the parameter will be evaluated depends on the chosen export module.",
+	"bs-universalexport-error-requested-export-module-not-found": "The requested format could not be produced.",
+	"bs-universalexport-error-permission": "You have insufficient permissions to export this page.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "The requested page must not be exported because it is on category blacklist.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Universal export metadata",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Universal export parameter",
+	"action-universalexport-export": "create an export file",
+	"right-universalexport-export": "Create an export file"
+}

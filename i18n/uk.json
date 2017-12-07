@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата",
+			"Andriykopanytsia"
+		]
+	},
+	"bs-universalexport-desc": "Дозволяє MediaWiki експортувати сторінки в різні формати",
+	"prefs-universalexport": "Універсальний експорт",
+	"universalexport": "Універсальний експорт",
+	"bs-universalexport-pref-metadatadefaults": "Метадані (стандарт, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Метадані (перезапис, JSON):",
+	"bs-universalexport-page-title-without-param": "Універсальний експорт: модулі",
+	"bs-universalexport-page-title-on-error": "Універсальний експорт: помилка",
+	"bs-universalexport-page-text-without-param": "Ця сторінка відображає інформацію про доступні експортні модулі універсального експорту.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Немає зареєстрованих модулів.",
+	"bs-universalexport-widget-title": "Експорт",
+	"bs-universalexport-widget-tooltip": "Експорт поточної сторінки",
+	"bs-universalexport-tag-pagebreak-text": "Розрив сторінки",
+	"bs-universalexport-tag-exclude-text": "Цей текст не буде експортовано.",
+	"bs-universalexport-tag-hidetitle-text": "Назв цієї сторінки не буде видно в експорті.",
+	"bs-universalexport-tag-excludearticle-text": "Цю сторінку не можна експортувати.",
+	"bs-universalexport-tag-pagebreak-desc": "Якщо цей теґ підтримується обраним модулем експорту, він задає розрив сторінки в експортному документі.",
+	"bs-universalexport-tag-noexport-desc": "Вміст всередині цього теґу не буде експортовано.",
+	"bs-universalexport-tag-meta-desc": "Дозволяє додавати довільні метадані в експортований документ.",
+	"bs-universalexport-tag-params-desc": "Дозволяє встановити спеціальні параметри для експорту, чи параметр буде оцінено залежить від обраного модуля експорту.",
+	"bs-universalexport-error-requested-export-module-not-found": "Запитаний формат не може бути виконано.",
+	"bs-universalexport-error-permission": "У вас недостатньо дозволів для експорту цієї сторінки.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "Запитану сторінку не можна експортувати, оскільки вона знаходиться у категорії чорного списку.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Метадані універсального експорту",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Параметр універсального експорту",
+	"action-universalexport-export": "створення файлу експорту",
+	"right-universalexport-export": "Створення файлу експорту"
+}

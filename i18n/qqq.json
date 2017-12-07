@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Shirayuki",
+			"Liuxinyu970226"
+		]
+	},
+	"bs-universalexport-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of univeral export extension",
+	"prefs-universalexport": "Used in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], headline for universal export section in preferences \n {{Identical|Universal export}}",
+	"universalexport": "Special page name for universal export \n {{Identical|Universal export}}",
+	"bs-universalexport-pref-metadatadefaults": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], text for metadata (standard, JSON).\n\nJSON is the format of the option.",
+	"bs-universalexport-pref-metadataoverrides": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], text for metadata (override, JSON).\n\nJSON is the format of the option.",
+	"bs-universalexport-page-title-without-param": "Text for universal export: Modules",
+	"bs-universalexport-page-title-on-error": "Text for universal export: Error",
+	"bs-universalexport-page-text-without-param": "Text for this page displays information about available export modules of the universal export.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Text for there are no modules registered.",
+	"bs-universalexport-widget-title": "Widget headline for export \n{{Identical|Export}}",
+	"bs-universalexport-widget-tooltip": "text for export the current page",
+	"bs-universalexport-tag-pagebreak-text": "Text for page break\n{{Identical|Page break}}",
+	"bs-universalexport-tag-exclude-text": "Text for this text will not be exported.",
+	"bs-universalexport-tag-hidetitle-text": "Text for the title of this page will be not be visible in the export.",
+	"bs-universalexport-tag-excludearticle-text": "Text for this page may not be exported.",
+	"bs-universalexport-tag-pagebreak-desc": "Text for if supported by chosen export module, this tag forces a page break in the export document.\n{{Related|Bs-tag-desc}}",
+	"bs-universalexport-tag-noexport-desc": "Text for content inside this tag will not be exported.\n{{Related|Bs-tag-desc}}",
+	"bs-universalexport-tag-meta-desc": "Text for allows to add arbitrary meta data to an exported document.\n{{Related|Bs-tag-desc}}",
+	"bs-universalexport-tag-params-desc": "Text for allows to set special parameters for export, whether the parameter will be evaluated depends on the chosen export module.\n{{Related|Bs-tag-desc}}",
+	"bs-universalexport-error-requested-export-module-not-found": "Text for the requested format could not be produced.",
+	"bs-universalexport-error-permission": "Text for you have insufficient permissions to export this page.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "Text for the requested page must not be exported because it is on category blacklist.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Text for universal export metadata",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Text for universal export parameter",
+	"action-universalexport-export": "{{doc-action|universalexport-export}}",
+	"right-universalexport-export": "{{doc-right|universalexport-export}}"
+}

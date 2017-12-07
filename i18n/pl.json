@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"bs-universalexport-widget-title": "Eksport",
+	"bs-universalexport-tag-pagebreak-text": "Podział strony",
+	"bs-universalexport-tag-excludearticle-text": "Ta strona nie może być eksportowana.",
+	"bs-universalexport-error-permission": "Nie masz wystarczających uprawnień do eksportu tej strony."
+}

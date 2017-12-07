@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti",
+			"Siebrand"
+		]
+	},
+	"bs-universalexport-desc": "Laat MediaWiki te exporteren pagina ' s naar verschillende formaten",
+	"prefs-universalexport": "Universele export",
+	"universalexport": "Universele export",
+	"bs-universalexport-pref-metadatadefaults": "Metagegevens (standaard, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Metagegevens (overschrijven, JSON):",
+	"bs-universalexport-page-title-without-param": "Universele export: Modules",
+	"bs-universalexport-page-title-on-error": "Universele uitvoer: Error",
+	"bs-universalexport-page-text-without-param": "Deze pagina geeft informatie over de beschikbare export modules van de universele exporteren.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Er zijn geen modules zijn geregistreerd.",
+	"bs-universalexport-widget-title": "Exporteren",
+	"bs-universalexport-widget-tooltip": "Exporteren de huidige pagina",
+	"bs-universalexport-tag-pagebreak-text": "Pagina-einde",
+	"bs-universalexport-tag-exclude-text": "Deze tekst wordt niet geëxporteerd.",
+	"bs-universalexport-tag-hidetitle-text": "De titel van deze pagina wordt niet zichtbaar in de uitvoer.",
+	"bs-universalexport-tag-excludearticle-text": "Deze pagina kan niet worden geëxporteerd.",
+	"bs-universalexport-tag-pagebreak-desc": "Als ondersteund door de gekozen exportmodule, dan forceert dit label een nieuwe pagina in het exportdocument.",
+	"bs-universalexport-tag-noexport-desc": "Inhoud binnen dit label wordt niet geëxporteerd.",
+	"bs-universalexport-tag-meta-desc": "Toe te voegen willekeurige meta gegevens aan een geëxporteerde document.",
+	"bs-universalexport-tag-params-desc": "Maakt het mogelijk om special parameters voor exporteren in te stellen. Of de parameter geëvalueerd wordt, hangt af van de gekozen exportmodule.",
+	"bs-universalexport-error-requested-export-module-not-found": "De gevraagde formaat niet konden worden geproduceerd.",
+	"bs-universalexport-error-permission": "U hebt onvoldoende machtigingen voor het exporteren van deze pagina.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "De gevraagde pagina moet niet worden geëxporteerd, omdat het op de zwarte lijst categorie.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Universele metagegevens exporteren",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Universele export parameter",
+	"action-universalexport-export": "creëer een export-bestand",
+	"right-universalexport-export": "Creëer een export-bestand"
+}

@@ -1,0 +1,12 @@
+.bs-universalexport-pagebreak {
+	border-top: 2px dotted #999;
+	background-color: #F5F5F5;
+	color: #BBB;
+	font-style: italic;
+	text-align: center;
+}
+
+.bs-universalexport-exportexclude {
+	background-color:#EBECEC;
+	display: inline-block;
+}

@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix",
+			"Jopparn",
+			"Lokal Profil"
+		]
+	},
+	"bs-universalexport-desc": "Möjliggör för MediaWiki att exportera sidor till olika format",
+	"prefs-universalexport": "Universalexport",
+	"universalexport": "Universalexport",
+	"bs-universalexport-pref-metadatadefaults": "Metadata (standard, JSON):",
+	"bs-universalexport-page-title-without-param": "Universalexport: Moduler",
+	"bs-universalexport-page-title-on-error": "Universalexport: Fel",
+	"bs-universalexport-page-text-without-param": "Denna sida visar information om tillgängliga exportmoduler för universalexport.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Det finns inga registrerade moduler.",
+	"bs-universalexport-widget-title": "Exportera",
+	"bs-universalexport-widget-tooltip": "Exportera den aktuella sidan",
+	"bs-universalexport-tag-pagebreak-text": "Sidbrytning",
+	"bs-universalexport-tag-exclude-text": "Denna text exporteras inte.",
+	"bs-universalexport-tag-hidetitle-text": "Titeln på denna sida kommer inte att synas i exporten.",
+	"bs-universalexport-tag-excludearticle-text": "Denna sida får inte exporteras.",
+	"bs-universalexport-tag-pagebreak-desc": "Om det stöds av vald exportmodul, tvingar denna tagg en sidbrytning i exportdokument.",
+	"bs-universalexport-tag-noexport-desc": "Innehållet innanför denna tagg kommer inte att exporteras.",
+	"bs-universalexport-tag-meta-desc": "Gör det möjligt att lägga till godtyckliga metadata till ett exporterat dokument.",
+	"bs-universalexport-tag-params-desc": "Gör det möjligt att ange särskilda parametrar för export, om parametern kommer att utvärderas beror på den valda exportmodulen.",
+	"bs-universalexport-error-requested-export-module-not-found": "Det begärda formatet kunde inte produceras.",
+	"bs-universalexport-error-permission": "Du har otillräckliga behörigheter för att exportera denna sida.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "Den begärda sidan får inte exporteras eftersom det är i en svartlistad kategori.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Universalexportmetadata",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Universalexportparameter",
+	"action-universalexport-export": "skapa en exportfil",
+	"right-universalexport-export": "Skapa en exportfil"
+}

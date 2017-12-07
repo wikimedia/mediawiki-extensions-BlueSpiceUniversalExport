@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"bs-universalexport-desc": "Овозможува МедијаВики да извезува страници во различни формати",
+	"prefs-universalexport": "Универзален извоз",
+	"universalexport": "Универзален извоз",
+	"bs-universalexport-pref-metadatadefaults": "Метаподатоци (стандардни, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Метаподатоци (наметнување, JSON):",
+	"bs-universalexport-page-title-without-param": "Универзален извоз: Модули",
+	"bs-universalexport-page-title-on-error": "Универзален извоз: Грешка",
+	"bs-universalexport-page-text-without-param": "Страницава прикажува информации за расположивите извозни модули на универзалниот извоз.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Нема регистрирани модули.",
+	"bs-universalexport-widget-title": "Извоз",
+	"bs-universalexport-widget-tooltip": "Извези ја тековната страница",
+	"bs-universalexport-tag-pagebreak-text": "Прелом",
+	"bs-universalexport-tag-exclude-text": "Текстот нема да се извезе.",
+	"bs-universalexport-tag-hidetitle-text": "Насловот на страницава нема да биде видлив во извозот.",
+	"bs-universalexport-tag-excludearticle-text": "Страницава може да не се извезе.",
+	"bs-universalexport-tag-pagebreak-desc": "Ако се поддржува од избраниот извозен модул, ознакава наметнува прелом на страницата/ците во извезениот документ.",
+	"bs-universalexport-tag-noexport-desc": "Содржината во внатрешноста на ознакава нема да се извезе.",
+	"bs-universalexport-tag-meta-desc": "Овозможува додавање на произволни метаподатоци во извезен документ.",
+	"bs-universalexport-tag-params-desc": "Овозможува задавање на параметри за извоз. Дали параметарот ќе делува зависи од избраниот извозен модул.",
+	"bs-universalexport-error-requested-export-module-not-found": "Не можам да го создадам побараниот формат.",
+	"bs-universalexport-error-permission": "Немате доволно дозволи за да ја извезете страницава.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "Побараната страница не смее да се извезува бидејќи фигурира на категориски црн список.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Метаподатоци на универзалниот извоз",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Параметар на универзалниот извоз",
+	"action-universalexport-export": "создавање на извозна податотека",
+	"right-universalexport-export": "Создавање на извозна податотека"
+}

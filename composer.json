@@ -1,0 +1,13 @@
+{
+	"name": "mediawiki/blue-spice-universal-export",
+	"type": "mediawiki-extension",
+	"description": "Enables MediaWiki to export pages into different formats",
+	"license": "GPL-3.0",
+	"require": {
+		"composer/installers": "~1.0"
+	}
+	"autoload": {
+		"psr-4": {
+		}
+	}
+}

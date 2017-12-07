@@ -1,0 +1,46 @@
+{
+	"name": "BlueSpiceUniversalExport",
+	"license-name": "GPL-3.0",
+	"version": "3.0.0-alpha",
+	"url": "https://help.bluespice.com/index.php/UniversalExport",
+	"author": "Robert Vogel",
+	"descriptionmsg": "bs-universalexport-desc",
+	"type": "bluespice",
+	"bsgExtensions": {
+		"BlueSpiceUniversalExport": {
+			"className": "UniversalExport",
+			"extPath": "/BlueSpiceUniversalExport"
+		}
+	},
+	"SpecialPages": {
+		"UniversalExport": "SpecialUniversalExport"
+	},
+	"MessagesDirs": {
+		"UniversalExport": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"UniversalExportAlias": "languages/SpecialUniversalExport.alias.php"
+	},
+	"AutoloadClasses": {
+		"UniversalExport": "UniversalExport.class.php",
+		"SpecialUniversalExport": "includes/specials/SpecialUniversalExport.class.php",
+		"ViewExportModuleOverview": "includes/views/ViewExportModuleOverview.php",
+		"BsUniversalExportModule": "includes/UniversalExportModule.interface.php",
+		"BsUniversalExportHelper": "includes/UniversalExportHelper.class.php",
+		"BsUniversalExportTagLibrary": "includes/UniversalExportTagLibrary.class.php"
+	},
+	"ResourceModules": {
+		"ext.bluespice.universalExport.css": {
+			"styles": "bluespice.universalExport.css",
+			"position": "top"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceUniversalExport/resources"
+	},
+	"manifest_version": 1,
+	"load_composer_autoloader": true
+}

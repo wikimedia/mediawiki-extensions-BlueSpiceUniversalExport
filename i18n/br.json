@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Y-M D",
+			"Fohanno"
+		]
+	},
+	"bs-universalexport-pref-metadatadefaults": "Metaroadennoù (standart, JSON) :",
+	"bs-universalexport-widget-title": "Ezporzhiañ",
+	"bs-universalexport-widget-tooltip": "Ezporzhiañ ar bajenn a vremañ",
+	"bs-universalexport-tag-pagebreak-text": "Lamm pajenn",
+	"bs-universalexport-tag-exclude-text": "Ne vo ket ezporzhiet an destenn-mañ.",
+	"bs-universalexport-tag-excludearticle-text": "Ne c'hall ket ar bajenn-mañ bezañ ezporzhiet.",
+	"bs-universalexport-error-permission": "Re skort eo hoc'h aotreoù evit ezporzhiañ ar bajenn-mañ.",
+	"action-universalexport-export": "krouiñ ur restr ezporzh",
+	"right-universalexport-export": "Krouiñ ur restr ezporzh"
+}

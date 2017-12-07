@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-universalexport-desc": "Permitte que MediaWiki exporta paginas in differente formatos",
+	"prefs-universalexport": "Exportation universal",
+	"universalexport": "Exportation universal",
+	"bs-universalexport-pref-metadatadefaults": "Metadatos (standard, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Metadatos (supplantar, JSON):",
+	"bs-universalexport-page-title-without-param": "Exportation universal: Modulos",
+	"bs-universalexport-page-title-on-error": "Exportation universal: Error",
+	"bs-universalexport-page-text-without-param": "Iste pagina monstra information sur le modulos de exportation disponibile in le programma de exportation universal.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Il non ha modulos registrate.",
+	"bs-universalexport-widget-title": "Exportar",
+	"bs-universalexport-widget-tooltip": "Exportar le pagina actual",
+	"bs-universalexport-tag-pagebreak-text": "Salto de pagina",
+	"bs-universalexport-tag-exclude-text": "Iste texto non essera exportate.",
+	"bs-universalexport-tag-hidetitle-text": "Le titulo de iste pagina non essera visibile in le exportation.",
+	"bs-universalexport-tag-excludearticle-text": "Iste pagina non pote esser exportate.",
+	"bs-universalexport-tag-pagebreak-desc": "Si le modulo de exportation seligite lo permitte, iste etiquetta fortia un salto de pagina in le documento exportate.",
+	"bs-universalexport-tag-noexport-desc": "Le contento intra iste etiquetta non essera exportate.",
+	"bs-universalexport-tag-meta-desc": "Permitte adder qualcunque metadatos a un documento exportate.",
+	"bs-universalexport-tag-params-desc": "Permitte definir parametros special pro exportation, le tractamento del quales depende del modulo de exportation seligite.",
+	"bs-universalexport-error-requested-export-module-not-found": "Non es possibile producer files in le formato requestate.",
+	"bs-universalexport-error-permission": "Tu non ha permissiones sufficiente pro exportar iste pagina.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "Le pagina requestate non pote esser exportate perque illo es in le lista nigre de categorias.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Exportation universal: Metadatos",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Exportation universal: Parametro",
+	"action-universalexport-export": "crear un file de exportation",
+	"right-universalexport-export": "Crear un file de exportation"
+}

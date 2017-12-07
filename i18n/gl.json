@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elisardojm"
+		]
+	},
+	"bs-universalexport-desc": "Permite que o MediaWiki exporte páxinas en diferentes formatos",
+	"prefs-universalexport": "Exportación universal",
+	"universalexport": "Exportación universal",
+	"bs-universalexport-pref-metadatadefaults": "Metadatos (estándares, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Metadatos (invalidar, JSON):",
+	"bs-universalexport-page-title-without-param": "Exportación universal: Módulos",
+	"bs-universalexport-page-title-on-error": "Exportación universal: Erro",
+	"bs-universalexport-page-text-without-param": "Esta páxina mostra información sobre os módulos de exportación universal dispoñibles.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Non hai módulos rexistrados.",
+	"bs-universalexport-widget-title": "Exportar",
+	"bs-universalexport-widget-tooltip": "Exportar a páxina actual",
+	"bs-universalexport-tag-pagebreak-text": "Salto de páxina",
+	"bs-universalexport-tag-exclude-text": "Este texto non se exportará.",
+	"bs-universalexport-tag-hidetitle-text": "O título desta páxina non será visible na exportación.",
+	"bs-universalexport-tag-excludearticle-text": "Non se pode exportar esta páxina.",
+	"bs-universalexport-tag-pagebreak-desc": "Se está soportada polo módulo de exportación escollido, esta etiqueta engade un salto de páxina no documento exportado.",
+	"bs-universalexport-tag-noexport-desc": "O contido dentro desta marca non será exportado.",
+	"bs-universalexport-tag-meta-desc": "Permite engadir metadatos arbitrarios a un documento exportado.",
+	"bs-universalexport-tag-params-desc": "Permite definir parámetros especiais para a exportación, o parámetro será avaliado dependendo do módulo de exportación escolhido.",
+	"bs-universalexport-error-requested-export-module-not-found": "O formato solicitado non pode ser producido.",
+	"bs-universalexport-error-permission": "Non ten permisos abondo para exportar esta páxina.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "A páxina solicitada non debe ser exportada porque está na categoría lista negra.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Metadatos de exportación universal",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Parámetro de exportación universal",
+	"action-universalexport-export": "crear un ficheiro de exportación",
+	"right-universalexport-export": "Crear un ficheiro de exportación"
+}

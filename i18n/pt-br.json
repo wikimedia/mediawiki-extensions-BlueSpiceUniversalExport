@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Felipe L. Ewald"
+		]
+	},
+	"prefs-universalexport": "Exportação universal",
+	"universalexport": "Exportação universal",
+	"bs-universalexport-pref-metadatadefaults": "Metadados (padrão, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Metadados (sobrepor, JSON):",
+	"bs-universalexport-page-title-without-param": "Exportação universal: Módulos",
+	"bs-universalexport-page-title-on-error": "Exportação universal: Erro",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Não há módulos registrados.",
+	"bs-universalexport-widget-title": "Exportar",
+	"bs-universalexport-widget-tooltip": "Exportar a página atual",
+	"bs-universalexport-tag-pagebreak-text": "Quebra de página",
+	"bs-universalexport-tag-exclude-text": "Este texto não será exportado.",
+	"bs-universalexport-tag-excludearticle-text": "Esta página não pode ser exportada.",
+	"bs-universalexport-error-requested-export-module-not-found": "O formato requerido não pode ser produzido.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Exportação universal de metadados",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Parâmetro da exportação universal",
+	"action-universalexport-export": "criar e exportar arquivo",
+	"right-universalexport-export": "Criar e exportar arquivo"
+}

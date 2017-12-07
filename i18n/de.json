@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Metalhead64"
+		]
+	},
+	"bs-universalexport-desc": "Aktiviert MediaWiki zum Exportieren von Seiten in verschiedene Formate",
+	"prefs-universalexport": "Universal Export",
+	"universalexport": "Universal Export",
+	"bs-universalexport-pref-metadatadefaults": "Metadaten (Standard, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Metadaten (Übergeordnet, JSON):",
+	"bs-universalexport-page-title-without-param": "Universal Export: Module",
+	"bs-universalexport-page-title-on-error": "Universal Export: Fehler",
+	"bs-universalexport-page-text-without-param": "Diese Seite enthält Informationen über die derzeit installierten Export-Module des Universal Exports.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Es sind keine Module registriert.",
+	"bs-universalexport-widget-title": "Export",
+	"bs-universalexport-widget-tooltip": "Die aktuelle Seite exportieren",
+	"bs-universalexport-tag-pagebreak-text": "Seitenumbruch",
+	"bs-universalexport-tag-exclude-text": "Dieser Text wird nicht exportiert.",
+	"bs-universalexport-tag-hidetitle-text": "Der Titel dieser Seite wird im Export nicht angezeigt.",
+	"bs-universalexport-tag-excludearticle-text": "Diese Seite kann nicht exportiert werden.",
+	"bs-universalexport-tag-pagebreak-desc": "Falls vom gewählten Modul unterstützt erzwingt dieses Tag einen Zeilenumbruch im exportierten Dokument.",
+	"bs-universalexport-tag-noexport-desc": "Inhalt innerhalb dieses Tags erscheint nicht im exportierten Dokument.",
+	"bs-universalexport-tag-meta-desc": "Ermöglicht das hinzufügen beliebiger Metadaten zum exportierten Dokument.",
+	"bs-universalexport-tag-params-desc": "Erlaubt das Setzen von Export-Parametern, ob diese Wirkung zeigen hängt vom gewählten Export-Modul ab.",
+	"bs-universalexport-error-requested-export-module-not-found": "Das angeforderte Format kann nicht erzeugt werden.",
+	"bs-universalexport-error-permission": "Du hast nicht die erfoderlichen Rechte um diese Seite zu exportieren",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "Die angeforderte Seite darf nicht exportiert werden weil sie auf der Kategorei-Blacklist steht.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Universal Export - Metadaten",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Universal Export - Parameter",
+	"action-universalexport-export": "eine Exportdatei zu erstellen",
+	"right-universalexport-export": "Erstlle eine Export Datei"
+}

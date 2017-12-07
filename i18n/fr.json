@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"McDutchie",
+			"SnowedEarth",
+			"Urhixidur"
+		]
+	},
+	"bs-universalexport-desc": "Permet à MédiaWiki d’exporter les pages sous différents formats",
+	"prefs-universalexport": "Exportation universelle",
+	"universalexport": "Exportation universelle",
+	"bs-universalexport-pref-metadatadefaults": "Métadonnées (standard, JSON) :",
+	"bs-universalexport-pref-metadataoverrides": "Métadonnées (écrasement, JSON) :",
+	"bs-universalexport-page-title-without-param": "Exportation universelle : Modules",
+	"bs-universalexport-page-title-on-error": "Exportation universelle : Erreur",
+	"bs-universalexport-page-text-without-param": "Cette page affiche les informations sur les modules d’exportation disponibles de l’exportation universelle.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Il n’y a pas de module enregistré.",
+	"bs-universalexport-widget-title": "Exportation",
+	"bs-universalexport-widget-tooltip": "Exporter la page actuelle",
+	"bs-universalexport-tag-pagebreak-text": "Saut de page",
+	"bs-universalexport-tag-exclude-text": "Ce texte ne sera pas exporté.",
+	"bs-universalexport-tag-hidetitle-text": "Le titre de cette page ne sera pas visible dans l’exportation.",
+	"bs-universalexport-tag-excludearticle-text": "Cette page ne peut pas être exportée.",
+	"bs-universalexport-tag-pagebreak-desc": "Si elle est prise en charge par le module d’exportation choisi, cette balise force un saut de page dans le document exporté.",
+	"bs-universalexport-tag-noexport-desc": "Le contenu à l’intérieur de cette balise ne sera pas exporté.",
+	"bs-universalexport-tag-meta-desc": "Permet d’ajouter des métadonnées arbitraires à un document exporté.",
+	"bs-universalexport-tag-params-desc": "Permet de définir des paramètres particuliers pour l’exportation, l’évaluation de ceux-ci dépendant du module d’exportation choisi.",
+	"bs-universalexport-error-requested-export-module-not-found": "Le format demandé ne peut pas être produit.",
+	"bs-universalexport-error-permission": "Vous n’avez pas les droits suffisants pour exporter cette page.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "La page demandée ne doit pas être exportée car elle est dans la catégorie des listes noires.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Métadonnées d’exportation universelle",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Paramètre d’exportation universelle",
+	"action-universalexport-export": "créer un fichier d'exportation",
+	"right-universalexport-export": "Créer un fichier exporté"
+}

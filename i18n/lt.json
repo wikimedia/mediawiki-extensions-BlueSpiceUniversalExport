@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200"
+		]
+	},
+	"bs-universalexport-desc": "Leidžia MediaWiki eksportuoti puslapius skirtingais formatais",
+	"prefs-universalexport": "Universalus eksportas",
+	"universalexport": "Universalus eksportas",
+	"bs-universalexport-pref-metadatadefaults": "Metaduomenys (standartinis, JSON):",
+	"bs-universalexport-page-title-without-param": "Universalus eksportas: Moduliai",
+	"bs-universalexport-page-title-on-error": "Universalus eksportas: Klaida",
+	"bs-universalexport-page-text-without-param": "Šis puslapis rodo informacija apie prieinamus universalaus eksporto eksportavimo modulius.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Nėra registruotų modulių.",
+	"bs-universalexport-widget-title": "Eksportuoti",
+	"bs-universalexport-widget-tooltip": "Eksportuoti dabartinį puslapį",
+	"bs-universalexport-tag-pagebreak-text": "Puslapio lūžis",
+	"bs-universalexport-tag-exclude-text": "Šis tekstas nebus eksportuotas.",
+	"bs-universalexport-tag-hidetitle-text": "Šio puslapio pavadinimas nebus matomas eksporte.",
+	"bs-universalexport-tag-excludearticle-text": "Šis puslapis negali būti eksportuotas.",
+	"bs-universalexport-tag-pagebreak-desc": "Jei eksportavimo modulis leidžia, ši žymė įterpia puslapio lūžį eksporto dokumente.",
+	"bs-universalexport-tag-noexport-desc": "Turinys, kuris yra šios žymės viduje, nebus eksportuotas.",
+	"bs-universalexport-error-requested-export-module-not-found": "Prašomas formatas negali būti pagamintas.",
+	"bs-universalexport-error-permission": "Neturite reikalingų teisių šio puslapio eksportavimui.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "Prašomas puslapis negali būti eksportuotas, nes jis yra kategorijos juodajame sąraše.",
+	"action-universalexport-export": "sukurti eksportavimo failą",
+	"right-universalexport-export": "Sukurti eksportavimo failą"
+}

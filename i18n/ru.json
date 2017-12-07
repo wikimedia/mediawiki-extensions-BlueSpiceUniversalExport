@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meshkov.a",
+			"Okras",
+			"Striking Blue"
+		]
+	},
+	"bs-universalexport-desc": "Позволяет MediaWiki экспортировать страницы в различные форматы",
+	"prefs-universalexport": "Универсальный экспорт",
+	"universalexport": "Универсальный экспорт",
+	"bs-universalexport-pref-metadatadefaults": "Метаданные (стандартные, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Метаданные (переопределённые, JSON):",
+	"bs-universalexport-page-title-without-param": "Универсальный экспорт: Модули",
+	"bs-universalexport-page-title-on-error": "Универсальный экспорт: Ошибка",
+	"bs-universalexport-page-text-without-param": "Эта страница отображает информацию о доступных модулях универсального экспорта.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Нет зарегистрированных модулей.",
+	"bs-universalexport-widget-title": "Экспорт",
+	"bs-universalexport-widget-tooltip": "Экспорт текущей страницы",
+	"bs-universalexport-tag-pagebreak-text": "Разрыв страницы",
+	"bs-universalexport-tag-exclude-text": "Этот текст не будет экспортирован.",
+	"bs-universalexport-tag-hidetitle-text": "Название этой страницы не будут видны в экспорте.",
+	"bs-universalexport-tag-excludearticle-text": "Эта страница не может быть экспортирована.",
+	"bs-universalexport-tag-pagebreak-desc": "В случае поддержки выбранным модулем экспорта этот тег принудительно ставит разрыв страницы в экспртируемом документе.",
+	"bs-universalexport-tag-noexport-desc": "Содержимое внутри этого тега не будет экспортировано.",
+	"bs-universalexport-tag-meta-desc": "Позволяет добавлять произвольные мета-данные в экспортируемый документ.",
+	"bs-universalexport-tag-params-desc": "Позволяет задать специальные параметры для экспорта. Будет ли параметр проанализирован, зависит от выбранного модуля экспорта.",
+	"bs-universalexport-error-requested-export-module-not-found": "Запрошенный формат не может не использован.",
+	"bs-universalexport-error-permission": "У вас недостаточно прав для экспорта этой страницы.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "Запрошенная страница не будет экспортирована, поскольку находится в «чёрном списке».",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "Метаданные универсального экспорта",
+	"bs-universalexport-statebarbodyuniversalexportparams": "Параметр универсального экспорта",
+	"action-universalexport-export": "создание файла экспорта",
+	"right-universalexport-export": "Создание файла экспорта"
+}
