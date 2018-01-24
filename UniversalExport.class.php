@@ -81,9 +81,6 @@ class UniversalExport extends BsExtensionMW {
 		BsConfig::registerVar( 'MW::UniversalExport::ParamsDefaults',    $this->aParamsDefaults,     BsConfig::LEVEL_PRIVATE|BsConfig::TYPE_ARRAY_MIXED );
 		BsConfig::registerVar( 'MW::UniversalExport::ParamsOverrides',   $this->aParamsOverrides,    BsConfig::LEVEL_PRIVATE|BsConfig::TYPE_ARRAY_MIXED );
 
-		//Permissions
-		$this->mCore->registerPermission( 'universalexport-export', array(), array( 'type' => 'namespace' ) );
-
 		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 
@@ -214,7 +211,7 @@ class UniversalExport extends BsExtensionMW {
 		if( !in_array( $sAction, array( 'view', 'historysubmit' ) ) ) return null;
 
 		$oCurrentTitle = $this->getTitle();
-		if( $oCurrentTitle->quickUserCan( 'universalexport-export' ) === false ) return null;
+		if( $oCurrentTitle->quickUserCan( 'read' ) === false ) return null;
 
 		$aCurrentQueryParams = $this->getRequest()->getValues();
 		$sTitle = isset($aCurrentQueryParams['title']) ? $aCurrentQueryParams['title'] : "";

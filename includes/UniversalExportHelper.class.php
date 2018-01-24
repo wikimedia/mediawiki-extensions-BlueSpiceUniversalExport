@@ -40,33 +40,12 @@ class BsUniversalExportHelper {
 		$bErrorOccurred = false;
 		foreach( $aParams as $sValue ) {
 			if ( $oTitle->getNamespace() == NS_SPECIAL ) {
-				switch( $sValue ) {
-					case 'recursive':
-						if( !$wgUser->isAllowed( 'universalexport-export-recursive' ) ) $bErrorOccurred = true;
-						break;
-					case 'with-attachments':
-						if( !$wgUser->isAllowed( 'universalexport-export-with-attachments' ) ) $bErrorOccurred = true;
-						break;
-					case 'unfiltered':
-						if( !$wgUser->isAllowed( 'universalexport-export-unfiltered' ) ) $bErrorOccurred = true;
-						break;
-				}
+				if( !$wgUser->isAllowed( 'read' ) ) $bErrorOccurred = true;
 			}
 			else{
-				switch( $sValue ) {
-					case 'recursive':
-						if( !$oTitle->userCan( 'universalexport-export-recursive' ) ) $bErrorOccurred = true;
-						break;
-					case 'with-attachments':
-						if( !$oTitle->userCan( 'universalexport-export-with-attachments' ) ) $bErrorOccurred = true;
-						break;
-					case 'unfiltered':
-						if( !$oTitle->userCan( 'universalexport-export-unfiltered' ) ) $bErrorOccurred = true;
-						break;
-				}
+				if( !$oTitle->userCan( 'read' ) ) $bErrorOccurred = true;
 			}
 		}
-
 
 		if( $bErrorOccurred ) throw new Exception ( 'error-no-permission' );
 	}

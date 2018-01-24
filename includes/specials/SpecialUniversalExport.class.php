@@ -66,7 +66,7 @@ class SpecialUniversalExport extends BsSpecialPage {
 	 * The default contructor of the SpecialUniversalExport class
 	 */
 	function  __construct() {
-		parent::__construct( 'UniversalExport', 'universalexport-export', true );
+		parent::__construct( 'UniversalExport', 'read', true );
 
 		$this->oOutputPage = $this->getOutput();
 
@@ -132,10 +132,10 @@ class SpecialUniversalExport extends BsSpecialPage {
 
 			//Title::userCan always returns false on special pages (exept for createaccount action)
 			if( $this->oRequestedTitle->getNamespace() === NS_SPECIAL ) {
-				if( $this->getUser()->isAllowed('universalexport-export') !== true ) {
+				if( $this->getUser()->isAllowed( 'read' ) !== true ) {
 					throw new Exception( 'bs-universalexport-error-permission');
 				}
-			} elseif( $this->oRequestedTitle->userCan( 'universalexport-export' ) === false ) {
+			} elseif( $this->oRequestedTitle->userCan( 'read' ) === false ) {
 				throw new Exception( 'bs-universalexport-error-permission');
 			}
 
