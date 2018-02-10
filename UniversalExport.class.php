@@ -54,8 +54,6 @@ class UniversalExport extends BsExtensionMW {
 	 *  Initialization of UniversalExport extension
 	 */
 	protected function initExt() {
-		wfProfileIn( 'BS::'.__METHOD__ );
-
 		//Hooks
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
 		$this->setHook( 'BSWidgetListHelperInitKeyWords' );
@@ -80,8 +78,6 @@ class UniversalExport extends BsExtensionMW {
 		BsConfig::registerVar( 'MW::UniversalExport::MetadataOverrides', json_encode( $aMetadataOverrides ), BsConfig::LEVEL_PUBLIC|BsConfig::TYPE_STRING|BsConfig::USE_PLUGIN_FOR_PREFS, 'bs-universalexport-pref-metadataoverrides', 'textarea' );
 		BsConfig::registerVar( 'MW::UniversalExport::ParamsDefaults',    $this->aParamsDefaults,     BsConfig::LEVEL_PRIVATE|BsConfig::TYPE_ARRAY_MIXED );
 		BsConfig::registerVar( 'MW::UniversalExport::ParamsOverrides',   $this->aParamsOverrides,    BsConfig::LEVEL_PRIVATE|BsConfig::TYPE_ARRAY_MIXED );
-
-		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 
 	/**
