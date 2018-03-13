@@ -6,10 +6,18 @@
 	"author": "Robert Vogel",
 	"descriptionmsg": "bs-universalexport-desc",
 	"type": "bluespice",
-	"bsgExtensions": {
-		"BlueSpiceUniversalExport": {
-			"className": "UniversalExport",
-			"extPath": "/BlueSpiceUniversalExport"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceUniversalExport": {
+					"className": "UniversalExport",
+					"extPath": "/BlueSpiceUniversalExport",
+					"configDefinitions": {
+						"UniversalExportMetadataDefaults": "\\BlueSpice\\UniversalExport\\ConfigDefinition\\MetadataDefaults::getInstance",
+						"UniversalExportMetadataOverrides": "\\BlueSpice\\UniversalExport\\ConfigDefinition\\MetadataOverrides::getInstance"
+					}
+				}
+			}
 		}
 	},
 	"SpecialPages": {
@@ -22,6 +30,9 @@
 	},
 	"ExtensionMessagesFiles": {
 		"UniversalExportAlias": "languages/SpecialUniversalExport.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\UniversalExport\\" : "src/"
 	},
 	"AutoloadClasses": {
 		"UniversalExport": "UniversalExport.class.php",
@@ -41,6 +52,58 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceUniversalExport/resources"
 	},
-	"manifest_version": 1,
+	"config_prefix": "bsg",
+	"config": {
+		"UniversalExportCategoryWhitelist": {
+			"value": [
+				"Exportable",
+				"Public"
+			]
+		},
+		"UniversalExportCategoryBlacklist": {
+			"value": [
+				"Confidential",
+				"Internal"
+			]
+		},
+		"UniversalExportMetadataDefaults": {
+			"value": "{\"creator\":\"Hallo Welt! GmbH\"}",
+			"descriptionmsg": "bs-universalexport-pref-metadatadefaults",
+			"public": true
+		},
+		"UniversalExportMetadataOverrides": {
+			"value": "{\"producer\":\"UniversalExport 3.0.0 (BlueSpice MediaWiki)\"}",
+			"descriptionmsg": "bs-universalexport-pref-metadataoverrides",
+			"public": true
+		},
+		"UniversalExportParamsDefaults": {
+			"value": {
+				"format": "pdf",
+				"pdf-merging": "0",
+				"attachments": "0",
+				"recursive": false,
+				"filter": "use-all"
+			}
+		},
+		"UniversalExportParamsOverrides": {
+			"value": {
+				"use-serverside-caching": false,
+				"pdf-attachment-formats": [
+					"doc",
+					"docx",
+					"xls",
+					"xlsx",
+					"ppt",
+					"pptx",
+					"odt",
+					"ods",
+					"odp",
+					"odg",
+					"svg"
+				]
+			}
+		}
+	},
+	"manifest_version": 2,
 	"load_composer_autoloader": true
 }

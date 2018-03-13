@@ -33,23 +33,6 @@
  */
 class UniversalExport extends BsExtensionMW {
 
-	protected $aCategoryWhitelist = array( 'Exportable',   'Public' );
-	protected $aCategoryBlacklist = array( 'Confidential', 'Internal' );
-
-	//These values may be overridden by application logic. I.e. by query string parameter or tag
-	protected $aParamsDefaults = array(
-		'format'      => 'pdf',
-		'pdf-merging' => '0',
-		'attachments' => '0',
-		'recursive'   => false,
-		'filter'      => 'use-all'
-	);
-
-	//These values override values found by the application logic.
-	protected $aParamsOverrides = array(
-		'use-serverside-caching'  => false,
-		'pdf-attachment-formats'  => array( 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'odt', 'ods', 'odp', 'odg', 'svg' ) //Not yet supported
-	);
 	/**
 	 *  Initialization of UniversalExport extension
 	 */
@@ -62,35 +45,6 @@ class UniversalExport extends BsExtensionMW {
 		$this->setHook( 'BSInsertMagicAjaxGetData', 'onBSInsertMagicAjaxGetData' );
 		$this->setHook( 'BeforePageDisplay' );
 		$this->setHook( 'BSUsageTrackerRegisterCollectors' );
-
-		global $bsgBlueSpiceExtInfo;
-		//Configuration variables
-		$aMetadataDefaults = array(
-			'creator' => 'Hallo Welt! GmbH',
-		);
-		$aMetadataOverrides = array(
-			'producer' => 'UniversalExport '.$bsgBlueSpiceExtInfo['version'].' (BlueSpice MediaWiki)'
-		);
-
-		BsConfig::registerVar( 'MW::UniversalExport::CategoryWhitelist', $this->aCategoryWhitelist,  BsConfig::LEVEL_PRIVATE|BsConfig::TYPE_ARRAY_STRING );
-		BsConfig::registerVar( 'MW::UniversalExport::CategoryBlacklist', $this->aCategoryBlacklist,  BsConfig::LEVEL_PRIVATE|BsConfig::TYPE_ARRAY_STRING );
-		BsConfig::registerVar( 'MW::UniversalExport::MetadataDefaults',  json_encode( $aMetadataDefaults ),  BsConfig::LEVEL_PUBLIC|BsConfig::TYPE_STRING|BsConfig::USE_PLUGIN_FOR_PREFS, 'bs-universalexport-pref-metadatadefaults', 'textarea' );
-		BsConfig::registerVar( 'MW::UniversalExport::MetadataOverrides', json_encode( $aMetadataOverrides ), BsConfig::LEVEL_PUBLIC|BsConfig::TYPE_STRING|BsConfig::USE_PLUGIN_FOR_PREFS, 'bs-universalexport-pref-metadataoverrides', 'textarea' );
-		BsConfig::registerVar( 'MW::UniversalExport::ParamsDefaults',    $this->aParamsDefaults,     BsConfig::LEVEL_PRIVATE|BsConfig::TYPE_ARRAY_MIXED );
-		BsConfig::registerVar( 'MW::UniversalExport::ParamsOverrides',   $this->aParamsOverrides,    BsConfig::LEVEL_PRIVATE|BsConfig::TYPE_ARRAY_MIXED );
-	}
-
-	/**
-	 * Sets parameters for more complex options in preferences
-	 * @param string $sAdapterName Name of the adapter, e.g. MW
-	 * @param BsConfig $oVariable Instance of variable
-	 * @return array Preferences options
-	 */
-	public function runPreferencePlugin( $sAdapterName, $oVariable ) {
-		//MetadataDefaults and MetadataOverrides
-		$aPrefs = array( 'rows' => 5 );
-
-		return $aPrefs;
 	}
 
 	public function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {

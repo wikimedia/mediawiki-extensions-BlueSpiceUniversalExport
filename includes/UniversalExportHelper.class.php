@@ -24,7 +24,9 @@ class BsUniversalExportHelper {
 	 */
 	public static function getParamsFromQueryString( &$aParams ) {
 		global $wgRequest;
-		$aParamsOverrides = BsConfig::get( 'MW::UniversalExport::ParamsOverrides' );
+		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+			->makeConfig( 'bsg' );
+		$aParamsOverrides = $config->get( 'UniversalExportParamsOverrides' );
 		$aParams = array_merge( $aParams, $wgRequest->getArray( 'ue', array() ) );
 		$aParams = array_merge( $aParams, $aParamsOverrides );
 		$aParams['oldid']  = $wgRequest->getVal( 'oldid', 0 );
