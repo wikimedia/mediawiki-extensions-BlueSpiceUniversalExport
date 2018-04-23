@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"bs-universalexport-desc": "يمكن ميدياويكي من تصدير الصفحات إلى صيغ مختلفة",
+	"prefs-universalexport": "التصدير العالمي",
+	"universalexport": "التصدير العالمي",
+	"bs-universalexport-pref-metadatadefaults": "البيانات الوصفية (قياسية، جسون):",
+	"bs-universalexport-pref-metadataoverrides": "البيانات الوصفية (تجاوز، جسون):",
+	"bs-universalexport-page-title-without-param": "التصدير العالمي: الوحدات",
+	"bs-universalexport-page-title-on-error": "التصدير العالمي: خطأ",
+	"bs-universalexport-page-text-without-param": "تعرض هذه الصفحة معلومات عن وحدات التصدير المتاحة للتصدير العالمي.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "لا توجد وحدات مسجلة.",
+	"bs-universalexport-widget-title": "تصدير",
+	"bs-universalexport-widget-tooltip": "تصدير الصفحة الحالية",
+	"bs-universalexport-tag-pagebreak-text": "فاصل صفحة",
+	"bs-universalexport-tag-exclude-text": "لن يتم تصدير هذا النص.",
+	"bs-universalexport-tag-hidetitle-text": "عنوان هذه الصفحة لن يكون مرئيا في التصدير.",
+	"bs-universalexport-tag-excludearticle-text": "قد لا يتم تصدير هذه الصفحة.",
+	"bs-universalexport-tag-pagebreak-desc": "إذا كانت الوحدة للتصدير المختارة مدعومة، فسيفرض هذا الوسم فاصل صفحة في مستند التصدير.",
+	"bs-universalexport-tag-noexport-desc": "لن يتم تصدير المحتوى الموجود داخل هذا الوسم.",
+	"bs-universalexport-tag-meta-desc": "يسمح بإضافة بيانات تعريف تعسفية إلى مستند تم تصديره.",
+	"bs-universalexport-tag-params-desc": "يسمح بوضع وسائط خاصة للتصدير، ما إذا كان تقييم الوسيط يعتمد على وحدة التصدير المختارة.",
+	"bs-universalexport-error-requested-export-module-not-found": "لا يمكن إنشاء الصيغة المطلوبة.",
+	"bs-universalexport-error-permission": "لديك صلاحيات غير كافية لتصدير هذه الصفحة.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "يجب عدم تصدير الصفحة المطلوبة لأنها في القائمة السوداء للتصنيف.",
+	"bs-universalexport-statebarbodyuniversalexportmeta": "البيانات الوصفية للتصدير العالمي",
+	"bs-universalexport-statebarbodyuniversalexportparams": "وسيط التصدير العالمي",
+	"action-universalexport-export": "إنشاء ملف تصدير",
+	"right-universalexport-export": "إنشاء ملف تصدير"
+}
