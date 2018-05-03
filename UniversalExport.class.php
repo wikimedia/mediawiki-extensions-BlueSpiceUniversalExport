@@ -40,7 +40,6 @@ class UniversalExport extends BsExtensionMW {
 		//Hooks
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
 		$this->setHook( 'BSWidgetListHelperInitKeyWords' );
-		$this->setHook( 'BSStateBarAddSortBodyVars', 'onStatebarAddSortBodyVars' );
 		$this->setHook( 'BSStateBarBeforeBodyViewAdd' );
 		$this->setHook( 'BSInsertMagicAjaxGetData', 'onBSInsertMagicAjaxGetData' );
 		$this->setHook( 'BeforePageDisplay' );
@@ -49,17 +48,6 @@ class UniversalExport extends BsExtensionMW {
 
 	public function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
 		$out->addModuleStyles( 'ext.bluespice.universalExport.css' );
-		return true;
-	}
-
-	/**
-	 * Hook-Handler for Hook 'BSStatebarAddSortBodyVars'
-	 * @param array $aSortBodyVars
-	 * @return boolean Always true to keep hook running
-	 */
-	public function onStatebarAddSortBodyVars( &$aSortBodyVars ) {
-		$aSortBodyVars['statebarbodyuniversalexportmeta']   = wfMessage( 'bs-universalexport-statebarbodyuniversalexportmeta' )->plain();
-		$aSortBodyVars['statebarbodyuniversalexportparams'] = wfMessage( 'bs-universalexport-statebarbodyuniversalexportparams' )->plain();
 		return true;
 	}
 
