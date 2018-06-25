@@ -1,5 +1,5 @@
 {
-	"name": "mediawiki/blue-spice-universal-export",
+	"name": "bluespice/universalexport",
 	"type": "mediawiki-extension",
 	"description": "Enables MediaWiki to export pages into different formats",
 	"license": "GPL-3.0-only",
@@ -19,5 +19,8 @@
 		"fix": [
 			"minus-x fix ."
 		]
+	},
+	"extra": {
+		"installer-name": "BlueSpiceUniversalExport"
 	}
 }
