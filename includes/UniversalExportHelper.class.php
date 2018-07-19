@@ -107,7 +107,7 @@ class BsUniversalExportHelper {
 			// - recursive descent operator = getElementsByTag
 			$oTableOfContentsAnchors = $oBodyContentXPath->query( "//*[@id='toc']//a" );
 			$oTocTableElement->item( 0 )->setAttribute( 'id', 'toc-'.$sPageTitleHeadingJumpmark ); //make id unique
-			$oTocTitleElement = $oBodyContentXPath->query( "//*[@id='toctitle']" )->item(0);
+			$oTocTitleElement = $oBodyContentXPath->query( "//*[contains(@class, 'toctitle')]" )->item(0);
 			$oTocTitleElement->setAttribute( 'id', 'toctitle-'.$sPageTitleHeadingJumpmark ); //make id unique;
 			$oTocTitleElement->setAttribute( 'class', 'toctitle' );
 		}
