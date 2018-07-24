@@ -28,8 +28,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "Text for the requested format could not be produced.",
 	"bs-universalexport-error-permission": "Text for you have insufficient permissions to export this page.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Text for the requested page must not be exported because it is on category blacklist.",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "Text for universal export metadata",
-	"bs-universalexport-statebarbodyuniversalexportparams": "Text for universal export parameter",
 	"action-universalexport-export": "{{doc-action|universalexport-export}}",
 	"right-universalexport-export": "{{doc-right|universalexport-export}}"
 }

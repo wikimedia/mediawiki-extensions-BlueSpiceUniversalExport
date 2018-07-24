@@ -93,8 +93,6 @@ class BsUniversalExportTagLibrary {
 		$oHideTitleTagView->setKey( 'bs-universalexport-hidetitle-'.self::$mHideTitleTagCount );
 		$oHideTitleTagView->setHeading( wfMessage( 'bs-universalexport-tag-hidetitle-text' )->plain() );
 
-		//PW(06.09.2012): return view instead of add statebar element
-		//StateBar::addBodyElement( $oHideTitleTagView, 'statebaruniversal' );
 		self::$mHideTitleTagCount++;
 		return $oHideTitleTagView->execute();
 	}
@@ -146,29 +144,6 @@ class BsUniversalExportTagLibrary {
 		$aOut[] = '></div>';
 
 		return implode( '', $aOut );
-	}
-
-	public static function makeStateBarBodyElementKeyValueTable( $aParameters ) {
-		$oKeyValueTable = new ViewBaseElement();
-		$oKeyValueTable->setTemplate( '<table class="contenttable">###ROWS###</table>' );
-
-		$oRowView = new ViewBaseElement();
-		$oRowView->setTemplate( '<tr><td>{KEY}</td><td><em>{VALUE}</em></td></tr>' );
-		foreach( $aParameters['rows'] as $sKey => $sValue ){
-			$oRowView->addData( array(
-				'KEY'   => wfMessage( 'bs-universalexport-' . $sKey )->plain(),
-				'VALUE' => $sValue
-			));
-		}
-
-		$oKeyValueTable->addItem( $oRowView, 'ROWS' );
-
-		$oKeyValueStateBarBodyView = new ViewStateBarBodyElement();
-		$oKeyValueStateBarBodyView->setKey( $aParameters['key'] );
-		$oKeyValueStateBarBodyView->setHeading( $aParameters['heading'] );
-		$oKeyValueStateBarBodyView->setBodyText( $oKeyValueTable->execute() );
-
-		return $oKeyValueStateBarBodyView;
 	}
 
 	/**

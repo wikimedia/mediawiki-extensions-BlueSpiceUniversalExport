@@ -40,7 +40,6 @@ class UniversalExport extends BsExtensionMW {
 		//Hooks
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
 		$this->setHook( 'BSWidgetListHelperInitKeyWords' );
-		$this->setHook( 'BSStateBarBeforeBodyViewAdd' );
 		$this->setHook( 'BSInsertMagicAjaxGetData', 'onBSInsertMagicAjaxGetData' );
 		$this->setHook( 'BeforePageDisplay' );
 		$this->setHook( 'BSUsageTrackerRegisterCollectors' );
@@ -48,43 +47,6 @@ class UniversalExport extends BsExtensionMW {
 
 	public function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
 		$out->addModuleStyles( 'ext.bluespice.universalExport.css' );
-		return true;
-	}
-
-	/**
-	 * Hook handler that adds information to the StateBar body
-	 * @param StateBar $oStatebar
-	 * @param array $aBodyViews
-	 * @param User $oUser
-	 * @param Title $oTitle
-	 * @return boolean Always true to keep the hook running
-	 */
-	public function onBSStateBarBeforeBodyViewAdd( $oStatebar, &$aBodyViews, $oUser, $oTitle ) {
-		$oMeta   = BsArticleHelper::getInstance($oTitle)->getJSONPageProp( 'bs-universalexport-meta' );
-		$oParams = BsArticleHelper::getInstance($oTitle)->getJSONPageProp( 'bs-universalexport-params' );
-
-		if( $oMeta instanceof stdClass ) {
-			$aBodyViews['statebarbodyuniversalexportmeta'] =
-				BsUniversalExportTagLibrary::makeStateBarBodyElementKeyValueTable(
-					array(
-						'rows'    => (array)$oMeta,
-						'heading' => wfMessage('bs-universalexport-statebarbodyuniversalexportmeta')->plain(),
-						'key'     => 'statebarbodyuniversalexportmeta'
-					)
-				);
-		}
-
-		if( $oParams instanceof stdClass ) {
-			$aBodyViews['statebarbodyuniversalexportparams'] =
-				BsUniversalExportTagLibrary::makeStateBarBodyElementKeyValueTable(
-					array(
-						'rows'    => (array)$oParams,
-						'heading' => wfMessage('bs-universalexport-statebarbodyuniversalexportparams')->plain(),
-						'key'     => 'statebarbodyuniversalexportparams'
-					)
-				);
-		}
-
 		return true;
 	}
 
