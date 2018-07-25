@@ -28,8 +28,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "Запрошенный формат не может не использован.",
 	"bs-universalexport-error-permission": "У вас недостаточно прав для экспорта этой страницы.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Запрошенная страница не будет экспортирована, поскольку находится в «чёрном списке».",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "Метаданные универсального экспорта",
-	"bs-universalexport-statebarbodyuniversalexportparams": "Параметр универсального экспорта",
 	"action-universalexport-export": "создание файла экспорта",
 	"right-universalexport-export": "Создание файла экспорта"
 }

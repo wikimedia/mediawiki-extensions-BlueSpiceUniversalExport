@@ -28,8 +28,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "请求格式不能创作出。",
 	"bs-universalexport-error-permission": "您的权限不足以导出此页。",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "请求页面必须不能导出因为它位于分类黑名单中。",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "通用导出元数据",
-	"bs-universalexport-statebarbodyuniversalexportparams": "通用输出参数",
 	"action-universalexport-export": "创建一个导出文件",
 	"right-universalexport-export": "创建一个导出文件"
 }

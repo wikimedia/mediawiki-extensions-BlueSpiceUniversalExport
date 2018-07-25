@@ -29,8 +29,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "No se pudo producir el formato solicitado.",
 	"bs-universalexport-error-permission": "No tienes permisos suficientes para exportar esta página.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "La página solicitada no debe ser exportada porque está en la categoría lista negra.",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "Metadatos de exportación universal",
-	"bs-universalexport-statebarbodyuniversalexportparams": "Parámetro de exportación universal",
 	"action-universalexport-export": "crear un archivo de exportación",
 	"right-universalexport-export": "Crear un archivo de exportación"
 }

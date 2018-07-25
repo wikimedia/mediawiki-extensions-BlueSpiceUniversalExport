@@ -26,8 +26,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "לא ניתן לייצר את הפורמט שביקשת.",
 	"bs-universalexport-error-permission": "אין לך הרשאות הדרושות לייצוא הדף הזה.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "לא ניתן לייצא את הדף שביקשת משום שהוא נמצא בקטגוריית הרשימה השחורה.",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "מטא־נתונים של ייצוא אוניברסלי",
-	"bs-universalexport-statebarbodyuniversalexportparams": "פרמטר של ייצוא אוניברסלי",
 	"action-universalexport-export": "ליצור קובצי ייצוא",
 	"right-universalexport-export": "יצירת קובצי ייצוא"
 }

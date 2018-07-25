@@ -26,8 +26,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "لا يمكن إنشاء الصيغة المطلوبة.",
 	"bs-universalexport-error-permission": "لديك صلاحيات غير كافية لتصدير هذه الصفحة.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "يجب عدم تصدير الصفحة المطلوبة لأنها في القائمة السوداء للتصنيف.",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "البيانات الوصفية للتصدير العالمي",
-	"bs-universalexport-statebarbodyuniversalexportparams": "وسيط التصدير العالمي",
 	"action-universalexport-export": "إنشاء ملف تصدير",
 	"right-universalexport-export": "إنشاء ملف تصدير"
 }

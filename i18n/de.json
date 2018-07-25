@@ -27,8 +27,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "Das angeforderte Format kann nicht erzeugt werden.",
 	"bs-universalexport-error-permission": "Du hast nicht die erfoderlichen Rechte um diese Seite zu exportieren",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Die angeforderte Seite darf nicht exportiert werden weil sie auf der Kategorei-Blacklist steht.",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "Universal Export - Metadaten",
-	"bs-universalexport-statebarbodyuniversalexportparams": "Universal Export - Parameter",
 	"action-universalexport-export": "eine Exportdatei zu erstellen",
 	"right-universalexport-export": "Erstlle eine Export Datei"
 }

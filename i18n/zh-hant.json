@@ -28,8 +28,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "請求的格式無法產生。",
 	"bs-universalexport-error-permission": "您的權限不足以匯出此頁面。",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "請求的頁面因列在分類黑名單裡，因此無法匯出。",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "通用匯出詮釋資料",
-	"bs-universalexport-statebarbodyuniversalexportparams": "通用匯出參數",
 	"action-universalexport-export": "建立匯出檔案",
 	"right-universalexport-export": "建立匯出檔案"
 }

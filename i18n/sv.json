@@ -27,8 +27,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "Det begärda formatet kunde inte produceras.",
 	"bs-universalexport-error-permission": "Du har otillräckliga behörigheter för att exportera denna sida.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Den begärda sidan får inte exporteras eftersom det är i en svartlistad kategori.",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "Universalexportmetadata",
-	"bs-universalexport-statebarbodyuniversalexportparams": "Universalexportparameter",
 	"action-universalexport-export": "skapa en exportfil",
 	"right-universalexport-export": "Skapa en exportfil"
 }

@@ -27,8 +27,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "Запитаний формат не може бути виконано.",
 	"bs-universalexport-error-permission": "У вас недостатньо дозволів для експорту цієї сторінки.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Запитану сторінку не можна експортувати, оскільки вона знаходиться у категорії чорного списку.",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "Метадані універсального експорту",
-	"bs-universalexport-statebarbodyuniversalexportparams": "Параметр універсального експорту",
 	"action-universalexport-export": "створення файлу експорту",
 	"right-universalexport-export": "Створення файлу експорту"
 }

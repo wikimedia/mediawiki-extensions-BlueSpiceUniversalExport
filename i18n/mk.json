@@ -26,8 +26,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "Не можам да го создадам побараниот формат.",
 	"bs-universalexport-error-permission": "Немате доволно дозволи за да ја извезете страницава.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Побараната страница не смее да се извезува бидејќи фигурира на категориски црн список.",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "Метаподатоци на универзалниот извоз",
-	"bs-universalexport-statebarbodyuniversalexportparams": "Параметар на универзалниот извоз",
 	"action-universalexport-export": "создавање на извозна податотека",
 	"right-universalexport-export": "Создавање на извозна податотека"
 }

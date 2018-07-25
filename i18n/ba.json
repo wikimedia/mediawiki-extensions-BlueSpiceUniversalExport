@@ -29,8 +29,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "Һоралған формат файҙаланыласаҡ.",
 	"bs-universalexport-error-permission": "Битте экспортлау өсөн хоҡуҡтарығыҙ етерлек түгел.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Һоралған бит экспортланмаясаҡ, сөнки \"ҡара исемлек\"кә индерелгән.",
-	"bs-universalexport-statebarbodyuniversalexportmeta": "Универсаль тәржемәнең метамәғлүмәттәре",
-	"bs-universalexport-statebarbodyuniversalexportparams": "Универсаль экспорт параметрҙары",
 	"action-universalexport-export": "Экспорт файлын булдырыу",
 	"right-universalexport-export": "Экспорт файлын булдырыу"
 }
