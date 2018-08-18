@@ -4,8 +4,10 @@
 			"Chrumps"
 		]
 	},
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Nie ma zarejestrowanych modułów.",
 	"bs-universalexport-widget-title": "Eksport",
 	"bs-universalexport-tag-pagebreak-text": "Podział strony",
+	"bs-universalexport-tag-exclude-text": "Ten tekst nie zostanie wyeksportowany.",
 	"bs-universalexport-tag-excludearticle-text": "Ta strona nie może być eksportowana.",
 	"bs-universalexport-error-permission": "Nie masz wystarczających uprawnień do eksportu tej strony."
 }
