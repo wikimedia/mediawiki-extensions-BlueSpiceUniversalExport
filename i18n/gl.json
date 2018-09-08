@@ -11,7 +11,7 @@
 	"bs-universalexport-pref-metadataoverrides": "Metadatos (invalidar, JSON):",
 	"bs-universalexport-page-title-without-param": "Exportación universal: Módulos",
 	"bs-universalexport-page-title-on-error": "Exportación universal: Erro",
-	"bs-universalexport-page-text-without-param": "Esta páxina mostra información sobre os módulos de exportación universal dispoñibles.",
+	"bs-universalexport-page-text-without-param": "Esta páxina amosa información sobre os módulos de exportación universal dispoñibles.",
 	"bs-universalexport-page-text-without-param-no-modules-registered": "Non hai módulos rexistrados.",
 	"bs-universalexport-widget-title": "Exportar",
 	"bs-universalexport-widget-tooltip": "Exportar a páxina actual",
