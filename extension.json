@@ -24,6 +24,12 @@
 					}
 				}
 			}
+		},
+		"BlueSpiceUniversalExport": {
+			"ExportTargetRegistry": {
+				"download": "BlueSpice\\UniversalExport\\ExportTarget\\Download::factory",
+				"localfilerepo": "BlueSpice\\UniversalExport\\ExportTarget\\LocalFileRepo::factory"
+			}
 		}
 	},
 	"SpecialPages": {

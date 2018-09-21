@@ -12,6 +12,9 @@
  * @filesource
  */
 
+use BlueSpice\UniversalExport\LegacyArrayDescriptor;
+use BlueSpice\UniversalExport\IExportTarget;
+
 /**
  * UniversalExport special page class.
  * @package BlueSpiceUniversalExport
@@ -167,7 +170,7 @@ class SpecialUniversalExport extends BsSpecialPage {
 			$oExportModule = $this->aModules[ $sModuleKey ];
 			$aFile = $oExportModule->createExportFile( $this );
 
-			$this->returnFile( $aFile );
+			$this->invokeExportTarget( $aFile );
 		}
 		catch( Exception $oException ) {
 			//Display Exception-Message and Stacktrace
@@ -202,26 +205,49 @@ class SpecialUniversalExport extends BsSpecialPage {
 		}
 	}
 
-	// TODO RBV (03.02.11 10:54): Promote to Adapter interface?
-	private function returnFile( &$aFile ) {
-		$this->oOutputPage->disable();
-		header( 'Pragma: public' );
-		header( 'Expires: 0' );
-		header( 'Cache-Control: must-revalidate, post-check=0, pre-check=0' );
-		header( 'Cache-Control: public' );
-		header( 'Content-Description: File Transfer' );
-		header( 'Content-Type: '.$aFile['mime-type'] );
-		if ( isset( $aFile['disposition'] ) ) { //Maybe use array_merge for default values?
-			header( 'Content-Disposition: '.$aFile['disposition'].'; filename="'.$aFile['filename'].'"' );
-		} else {
-			header( 'Content-Disposition: attachment; filename="'.$aFile['filename'].'"' );
-		}
-		header( 'Content-Transfer-Encoding: binary' );
-
-		echo $aFile['content'];
-	}
-
 	protected function getGroupName() {
 		return 'bluespice';
 	}
+
+	private function invokeExportTarget( $aFile ) {
+		$descriptor = new LegacyArrayDescriptor( $aFile );
+
+		$targetKey = 'download';
+		if( isset( $this->aParams['target'] ) ) {
+			$targetKey = $this->aParams['target'];
+		}
+
+		$registryAttribute =
+			ExtensionRegistry::getInstance()->getAttribute(
+				'BlueSpiceUniversalExportExportTargetRegistry'
+			);
+
+		if( !isset( $registryAttribute[$targetKey] ) ) {
+			throw new Exception( 'bs-universalexport-error-target-invalid' );
+		}
+
+		if( !is_callable( $registryAttribute[$targetKey] ) ) {
+			throw new Exception( 'bs-universalexport-error-target-factory-not-callable' );
+		}
+
+		$target = call_user_func_array(
+			$registryAttribute[$targetKey],
+			[
+				$this->aParams,
+				$this->getContext(),
+				$this->getConfig()
+			]
+		);
+
+		if( $target instanceof IExportTarget === false ) {
+			throw new Exception( 'bs-universalexport-error-target-invalid' );
+		}
+
+		$status = $target->execute( $descriptor );
+
+		if( !$status->isOK() ) {
+			throw new Exception( 'bs-universalexport-error-target-failed' );
+		}
+	}
+
 }

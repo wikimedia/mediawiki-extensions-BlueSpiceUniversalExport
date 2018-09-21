@@ -42,7 +42,7 @@ class ViewExportModuleOverview extends ViewBaseElement {
 		$aOut[] = '   </div>';
 		$aOut[] = ' </div>';
 		$aOut[] = '</div>';
-		
+
 		return implode( "\n", $aOut );
 	}
 }
