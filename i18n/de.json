@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Metalhead64"
+			"Metalhead64",
+			"Hwboehm"
 		]
 	},
 	"bs-universalexport-desc": "Aktiviert MediaWiki zum Exportieren von Seiten in verschiedene Formate",
 	"prefs-universalexport": "Universal Export",
 	"universalexport": "Universal Export",
 	"bs-universalexport-pref-metadatadefaults": "Metadaten (Standard, JSON):",
-	"bs-universalexport-pref-metadataoverrides": "Metadaten (Übergeordnet, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Metadaten (Vorrangig, JSON):",
 	"bs-universalexport-page-title-without-param": "Universal Export: Module",
 	"bs-universalexport-page-title-on-error": "Universal Export: Fehler",
 	"bs-universalexport-page-text-without-param": "Diese Seite enthält Informationen über die derzeit installierten Export-Module des Universal Exports.",
@@ -26,7 +27,7 @@
 	"bs-universalexport-tag-params-desc": "Erlaubt das Setzen von Export-Parametern, ob diese Wirkung zeigen hängt vom gewählten Export-Modul ab.",
 	"bs-universalexport-error-requested-export-module-not-found": "Das angeforderte Format kann nicht erzeugt werden.",
 	"bs-universalexport-error-permission": "Du hast nicht die erfoderlichen Rechte um diese Seite zu exportieren",
-	"bs-universalexport-error-requested-title-in-category-blacklist": "Die angeforderte Seite darf nicht exportiert werden weil sie auf der Kategorei-Blacklist steht.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "Die angeforderte Seite darf nicht exportiert werden weil sie auf der Kategorie-Blacklist steht.",
 	"action-universalexport-export": "eine Exportdatei zu erstellen",
-	"right-universalexport-export": "Erstlle eine Export Datei"
+	"right-universalexport-export": "Export-Dateien erstellen"
 }
