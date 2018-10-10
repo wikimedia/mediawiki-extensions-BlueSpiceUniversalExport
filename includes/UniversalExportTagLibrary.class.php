@@ -80,8 +80,6 @@ class BsUniversalExportTagLibrary {
 		return implode( '', $aOut );
 	}
 
-	private static $mHideTitleTagCount = 0;
-
 	public static function onHideTitleTag( $sContent, $aAttributes, $oParser ) {
 		$oParser->getOutput()->setProperty( 'bs-tag-universalexport-hidetitle', 1 );
 		$oParser->getOutput()->setProperty(
@@ -89,27 +87,13 @@ class BsUniversalExportTagLibrary {
 			true
 		);
 
-		$oHideTitleTagView = new ViewStateBarBodyElement();
-		$oHideTitleTagView->setKey( 'bs-universalexport-hidetitle-'.self::$mHideTitleTagCount );
-		$oHideTitleTagView->setHeading( wfMessage( 'bs-universalexport-tag-hidetitle-text' )->plain() );
-
-		self::$mHideTitleTagCount++;
-		return $oHideTitleTagView->execute();
+		return '';
 	}
-
-	private static $mExcludeArticleTagCount = 0;
 
 	public static function onExcludeArticleTag( $sContent, $aAttributes, $oParser ) {
 		$oParser->getOutput()->setProperty( 'bs-tag-universalexport-excludearticle', 1 );
 
-		$oExcludeArticleTagView = new ViewStateBarBodyElement();
-		$oExcludeArticleTagView->setKey( 'bs-universalexport-excludearticle-'.self::$mExcludeArticleTagCount );
-		$oExcludeArticleTagView->setHeading( wfMessage( 'bs-universalexport-tag-excludearticle-text' )->plain() );
-
-		//PW(06.09.2012): return view instead of add statebar element
-		//StateBar::addBodyElement( $oExcludeArticleTagView, 1030 + self::$mExcludeArticleTagCount );
-		self::$mExcludeArticleTagCount++;
-		return $oExcludeArticleTagView->execute();
+		return '';
 	}
 
 	public static function onMetaTag( $sContent, $aAttributes, $oParser ) {
