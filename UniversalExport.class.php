@@ -70,6 +70,10 @@ class UniversalExport extends BsExtensionMW {
 	public function onBSInsertMagicAjaxGetData( &$oResponse, $type ) {
 		if( $type != 'tags' ) return true;
 
+		$extension = \BlueSpice\Services::getInstance()->getBSExtensionFactory()
+			->getExtension( 'BlueSpiceUniversalExport' );
+		$helplink = $extension->getUrl();
+
 		$oResponse->result[] = array(
 			'id' => 'bs:uemeta',
 			'type' => 'tag',
@@ -81,7 +85,7 @@ class UniversalExport extends BsExtensionMW {
 					'code' => '<bs:uemeta department="IT" security="high" />'
 				)
 			),
-			'helplink' => 'https://help.bluespice.com/index.php/UniversalExport'
+			'helplink' => $helplink
 		);
 
 		$oResponse->result[] = array(
@@ -95,7 +99,7 @@ class UniversalExport extends BsExtensionMW {
 					'code' => '<bs:ueparams template="BlueSpice Landscape" />'
 				)
 			),
-			'helplink' => 'https://help.bluespice.com/index.php/UniversalExport'
+			'helplink' => $helplink
 		);
 
 		$oResponse->result[] = array(
@@ -104,7 +108,7 @@ class UniversalExport extends BsExtensionMW {
 			'name' => 'uepagebreak',
 			'desc' => wfMessage( 'bs-universalexport-tag-pagebreak-desc' )->plain(),
 			'code' => '<bs:uepagebreak />',
-			'helplink' => 'https://help.bluespice.com/index.php/UniversalExport'
+			'helplink' => $helplink
 		);
 
 		$oResponse->result[] = array(
@@ -118,7 +122,7 @@ class UniversalExport extends BsExtensionMW {
 					'code' => '<bs:uenoexport>Not included in export</bs:uenoexport>'
 				)
 			),
-			'helplink' => 'https://help.bluespice.com/index.php/UniversalExport'
+			'helplink' => $helplink
 		);
 
 		return true;
