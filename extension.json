@@ -56,8 +56,7 @@
 	},
 	"ResourceModules": {
 		"ext.bluespice.universalExport.css": {
-			"styles": "bluespice.universalExport.css",
-			"position": "top"
+			"styles": "bluespice.universalExport.css"
 		}
 	},
 	"ResourceFileModulePaths": {
