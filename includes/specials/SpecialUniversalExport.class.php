@@ -19,7 +19,7 @@ use BlueSpice\UniversalExport\IExportTarget;
  * UniversalExport special page class.
  * @package BlueSpiceUniversalExport
  */
-class SpecialUniversalExport extends BsSpecialPage {
+class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 
 	//MW Globals
 	/**
@@ -203,10 +203,6 @@ class SpecialUniversalExport extends BsSpecialPage {
 				wfDebugLog( 'BS::UniversalExport', 'SpecialUniversalExport::outputInformation: Invalid view.' );
 			}
 		}
-	}
-
-	protected function getGroupName() {
-		return 'bluespice';
 	}
 
 	private function invokeExportTarget( $aFile ) {
