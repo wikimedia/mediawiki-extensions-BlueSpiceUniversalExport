@@ -40,13 +40,7 @@ class UniversalExport extends BsExtensionMW {
 		//Hooks
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
 		$this->setHook( 'BSInsertMagicAjaxGetData', 'onBSInsertMagicAjaxGetData' );
-		$this->setHook( 'BeforePageDisplay' );
 		$this->setHook( 'BSUsageTrackerRegisterCollectors' );
-	}
-
-	public function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
-		$out->addModuleStyles( 'ext.bluespice.universalExport.css' );
-		return true;
 	}
 
 	/**
