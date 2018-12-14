@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>"
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Hwboehm"
 		]
 	},
-	"bs-universalexport-error-permission": "Sie haben nicht die erfoderlichen Rechte um diese Seite zu exportieren"
+	"bs-universalexport-error-permission": "Sie haben nicht die erfoderlichen Rechte um diese Seite zu exportieren."
 }
