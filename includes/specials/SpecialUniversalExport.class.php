@@ -77,7 +77,15 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 		$this->aParams = $this->getConfig()->get(
 			'UniversalExportParamsDefaults'
 		);
-		$this->aParams['webroot-filesystempath'] = BsCore::getMediaWikiWebrootPath();
+
+		$webrootPath = str_replace( '\\', '/', $GLOBALS['IP'] );
+		if( !empty( $this->getConfig()->get( 'ScriptPath' ) ) ) {
+			$parts = explode( '/', $webrootPath );
+			if( "/" . array_pop( $parts ) === $this->getConfig()->get( 'ScriptPath' ) ) {
+				$webrootPath = implode( '/', $parts );
+			}
+		}
+		$this->aParams['webroot-filesystempath'] = $webrootPath;
 		$this->aMetadata = FormatJson::decode(
 			$this->getConfig()->get( 'UniversalExportMetadataDefaults' ),
 			true
