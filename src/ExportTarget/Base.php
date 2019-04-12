@@ -29,6 +29,7 @@ abstract class Base implements IExportTarget {
 	 * @param array $exportParams
 	 * @param \IContextSource $context
 	 * @param \Config $config
+	 * @return static
 	 */
 	public static function factory( $exportParams, $context, $config ) {
 		return new static( $exportParams, $context, $config );
@@ -47,6 +48,7 @@ abstract class Base implements IExportTarget {
 	}
 
 	/**
+	 * @param array $descriptor
 	 * @return \Status
 	 */
 	abstract public function execute( $descriptor );

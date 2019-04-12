@@ -24,6 +24,7 @@ class LocalFileRepo extends Base {
 	/**
 	 *
 	 * @param IExportFileDescriptor $descriptor
+	 * @return Status
 	 */
 	public function execute( $descriptor ) {
 		$this->descriptor = $descriptor;
@@ -31,11 +32,11 @@ class LocalFileRepo extends Base {
 		$this->status = Status::newGood();
 
 		$targetFilename = $descriptor->getFilename();
-		if( !empty( $this->exportParams[ 'target-filename' ] ) ) {
+		if ( !empty( $this->exportParams[ 'target-filename' ] ) ) {
 			$targetFilename = $this->exportParams[ 'target-filename' ];
 		}
 
-		$tmpFilepath = wfTempDir() . '/' .$targetFilename;
+		$tmpFilepath = wfTempDir() . '/' . $targetFilename;
 		file_put_contents( $tmpFilepath, $this->descriptor->getContents() );
 		$this->status =
 			\BsFileSystemHelper::uploadLocalFile( $tmpFilepath, true );

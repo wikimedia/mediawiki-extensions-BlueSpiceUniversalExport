@@ -23,7 +23,7 @@
  * @author     Robert Vogel <vogel@hallowelt.com>
  * @package    BlueSpiceUniversalExport
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
 
@@ -37,7 +37,7 @@ class UniversalExport extends BsExtensionMW {
 	 *  Initialization of UniversalExport extension
 	 */
 	protected function initExt() {
-		//Hooks
+		// Hooks
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
 		$this->setHook( 'BSInsertMagicAjaxGetData', 'onBSInsertMagicAjaxGetData' );
 		$this->setHook( 'BSUsageTrackerRegisterCollectors' );
@@ -45,7 +45,7 @@ class UniversalExport extends BsExtensionMW {
 
 	/**
 	 * Hook-Handler for the MediaWiki 'ParserFirstCallInit' hook. Dispatches registration og TagExtensions to the TagLibrary.
-	 * @param Parser $oParser The MediaWiki Parser object
+	 * @param Parser &$oParser The MediaWiki Parser object
 	 * @return bool Always true to keep the hook runnning.
 	 */
 	public function onParserFirstCallInit( &$oParser ) {
@@ -54,7 +54,7 @@ class UniversalExport extends BsExtensionMW {
 
 	/**
 	 * Register tag with UsageTracker extension
-	 * @param array $aCollectorsConfig
+	 * @param array &$aCollectorsConfig
 	 * @return Always true to keep hook running
 	 */
 	public function onBSUsageTrackerRegisterCollectors( &$aCollectorsConfig ) {
@@ -62,62 +62,64 @@ class UniversalExport extends BsExtensionMW {
 	}
 
 	public function onBSInsertMagicAjaxGetData( &$oResponse, $type ) {
-		if( $type != 'tags' ) return true;
+		if ( $type != 'tags' ) {
+			return true;
+		}
 
 		$extension = \BlueSpice\Services::getInstance()->getBSExtensionFactory()
 			->getExtension( 'BlueSpiceUniversalExport' );
 		$helplink = $extension->getUrl();
 
-		$oResponse->result[] = array(
+		$oResponse->result[] = [
 			'id' => 'bs:uemeta',
 			'type' => 'tag',
 			'name' => 'uemeta',
 			'desc' => wfMessage( 'bs-universalexport-tag-meta-desc' )->plain(),
 			'code' => '<bs:uemeta someMeta="Some Value" />',
-			'examples' => array(
-				array(
+			'examples' => [
+				[
 					'code' => '<bs:uemeta department="IT" security="high" />'
-				)
-			),
+				]
+			],
 			'helplink' => $helplink
-		);
+		];
 
-		$oResponse->result[] = array(
+		$oResponse->result[] = [
 			'id' => 'bs:ueparams',
 			'type' => 'tag',
 			'name' => 'ueparams',
 			'desc' => wfMessage( 'bs-universalexport-tag-params-desc' )->plain(),
 			'code' => '<bs:ueparams someParam="Some Value" />',
-			'examples' => array(
-				array(
+			'examples' => [
+				[
 					'code' => '<bs:ueparams template="BlueSpice Landscape" />'
-				)
-			),
+				]
+			],
 			'helplink' => $helplink
-		);
+		];
 
-		$oResponse->result[] = array(
+		$oResponse->result[] = [
 			'id' => 'bs:uepagebreak',
 			'type' => 'tag',
 			'name' => 'uepagebreak',
 			'desc' => wfMessage( 'bs-universalexport-tag-pagebreak-desc' )->plain(),
 			'code' => '<bs:uepagebreak />',
 			'helplink' => $helplink
-		);
+		];
 
-		$oResponse->result[] = array(
+		$oResponse->result[] = [
 			'id' => 'bs:uenoexport',
 			'type' => 'tag',
 			'name' => 'uenoexport',
 			'desc' => wfMessage( 'bs-universalexport-tag-noexport-desc' )->plain(),
 			'code' => '<bs:uenoexport>Not included in export</bs:uenoexport>',
-			'examples' => array(
-				array(
+			'examples' => [
+				[
 					'code' => '<bs:uenoexport>Not included in export</bs:uenoexport>'
-				)
-			),
+				]
+			],
 			'helplink' => $helplink
-		);
+		];
 
 		return true;
 	}
