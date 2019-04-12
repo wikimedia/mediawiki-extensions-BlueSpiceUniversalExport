@@ -2,8 +2,6 @@
 
 namespace BlueSpice\UniversalExport;
 
-use BlueSpice\UniversalExport\IExportFileDescriptor;
-
 class LegacyArrayDescriptor implements IExportFileDescriptor {
 
 	private $data = [];

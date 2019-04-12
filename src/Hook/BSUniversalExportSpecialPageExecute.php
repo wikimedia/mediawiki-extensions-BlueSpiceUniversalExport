@@ -26,8 +26,8 @@ abstract class BSUniversalExportSpecialPageExecute extends \BlueSpice\Hook {
 	 *
 	 * @param \SpecialPage $special
 	 * @param string $parameter
-	 * @param \BsUniversalExportModule[] $modules
-	 * @return boolean
+	 * @param \BsUniversalExportModule[] &$modules
+	 * @return bool
 	 */
 	public static function callback( $special, $parameter, &$modules ) {
 		$className = static::class;
@@ -46,9 +46,9 @@ abstract class BSUniversalExportSpecialPageExecute extends \BlueSpice\Hook {
 	 * @param \Config $config
 	 * @param \SpecialPage $special
 	 * @param string $parameter
-	 * @param \BsUniversalExportModule[] $modules
+	 * @param \BsUniversalExportModule[] &$modules
 	 */
-	public function __construct( $context, $config, $special, $parameter, &$modules) {
+	public function __construct( $context, $config, $special, $parameter, &$modules ) {
 		parent::__construct( $context, $config );
 
 		$this->special = $special;

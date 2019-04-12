@@ -1,17 +1,17 @@
 <?php
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'UniversalExport' => array( 'UniversalExport', 'Universal Export' ),
-);
+$specialPageAliases['en'] = [
+	'UniversalExport' => [ 'UniversalExport', 'Universal Export' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'UniversalExport' => array( 'Universal Export' ),
-);
+$specialPageAliases['de'] = [
+	'UniversalExport' => [ 'Universal Export' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de-formal'] = array(
-	'UniversalExport' => array( 'Universal Export' ),
-);
+$specialPageAliases['de-formal'] = [
+	'UniversalExport' => [ 'Universal Export' ],
+];

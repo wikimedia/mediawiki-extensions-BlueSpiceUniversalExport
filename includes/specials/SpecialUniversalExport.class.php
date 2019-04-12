@@ -8,7 +8,7 @@
 
  * @package    BlueSpiceUniversalExport
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
 
@@ -21,31 +21,31 @@ use BlueSpice\UniversalExport\IExportTarget;
  */
 class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 
-	//MW Globals
+	// MW Globals
 	/**
 	 *
 	 * @var OutputPage
 	 */
 	public $oOutputPage = null;
 
-	//UniversalExport
+	// UniversalExport
 	/**
 	 * array( 'ModuleKey' => $oModuleObjectImplementsBsUniversalExportModule, ... )
 	 * @var array(
 	 */
-	public $aModules = array();
+	public $aModules = [];
 
 	/**
 	 *
 	 * @var array
 	 */
-	public $aParams = array();
+	public $aParams = [];
 
 	/**
 	 *
 	 * @var array
 	 */
-	public $aMetadata = array();
+	public $aMetadata = [];
 
 	/**
 	 *
@@ -57,13 +57,13 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	 *
 	 * @var array
 	 */
-	public $aCategoryWhitelist = array();
+	public $aCategoryWhitelist = [];
 
 	/**
 	 *
 	 * @var array
 	 */
-	public $aCategoryBlacklist = array();
+	public $aCategoryBlacklist = [];
 
 	/**
 	 * The default contructor of the SpecialUniversalExport class
@@ -73,15 +73,15 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 
 		$this->oOutputPage = $this->getOutput();
 
-		//Set up default parameters and metadata
+		// Set up default parameters and metadata
 		$this->aParams = $this->getConfig()->get(
 			'UniversalExportParamsDefaults'
 		);
 
 		$webrootPath = str_replace( '\\', '/', $GLOBALS['IP'] );
-		if( !empty( $this->getConfig()->get( 'ScriptPath' ) ) ) {
+		if ( !empty( $this->getConfig()->get( 'ScriptPath' ) ) ) {
 			$parts = explode( '/', $webrootPath );
-			if( "/" . array_pop( $parts ) === $this->getConfig()->get( 'ScriptPath' ) ) {
+			if ( "/" . array_pop( $parts ) === $this->getConfig()->get( 'ScriptPath' ) ) {
 				$webrootPath = implode( '/', $parts );
 			}
 		}
@@ -91,7 +91,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 			true
 		);
 
-		//Set up Black- and Whitelists
+		// Set up Black- and Whitelists
 		$this->aCategoryWhitelist = $this->getConfig()->get(
 			'UniversalExportCategoryWhitelist'
 		);
@@ -106,16 +106,13 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	 */
 	function execute( $sParameter ) {
 		parent::execute( $sParameter );
-		Hooks::run( 'BSUniversalExportSpecialPageExecute', array( $this, $sParameter, &$this->aModules ) );
+		Hooks::run( 'BSUniversalExportSpecialPageExecute', [ $this, $sParameter, &$this->aModules ] );
 
-		if( !empty( $sParameter ) ) {
+		if ( !empty( $sParameter ) ) {
 			$this->processParameter( $sParameter );
-		}
-		else {
+		} else {
 			$this->outputInformation();
 		}
-
-		return;
 	}
 
 	/**
@@ -128,19 +125,19 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 				throw new Exception( 'error-requested-title-does-not-exist' );
 			}*/
 
-			//Get relevant page props
+			// Get relevant page props
 			$dbr = wfGetDB( DB_REPLICA );
 			$res = $dbr->selectField(
 				'page_props',
 				'pp_value',
-				array(
+				[
 					'pp_propname' => 'bs-universalexport-params',
 					'pp_page'     => $this->oRequestedTitle->getArticleID()
-				)
+				]
 			);
-			if( $res != false ) {
+			if ( $res != false ) {
 				$res = FormatJson::decode( $res, true );
-				if( is_array( $res ) ) {
+				if ( is_array( $res ) ) {
 					$this->aParams = array_merge(
 						$this->aParams,
 						$res
@@ -150,28 +147,28 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 
 			BsUniversalExportHelper::getParamsFromQueryString( $this->aParams );
 
-			//Title::userCan always returns false on special pages (exept for createaccount action)
-			if( $this->oRequestedTitle->getNamespace() === NS_SPECIAL ) {
-				if( $this->getUser()->isAllowed( 'read' ) !== true ) {
-					throw new Exception( 'bs-universalexport-error-permission');
+			// Title::userCan always returns false on special pages (exept for createaccount action)
+			if ( $this->oRequestedTitle->getNamespace() === NS_SPECIAL ) {
+				if ( $this->getUser()->isAllowed( 'read' ) !== true ) {
+					throw new Exception( 'bs-universalexport-error-permission' );
 				}
-			} elseif( $this->oRequestedTitle->userCan( 'read' ) === false ) {
-				throw new Exception( 'bs-universalexport-error-permission');
+			} elseif ( $this->oRequestedTitle->userCan( 'read' ) === false ) {
+				throw new Exception( 'bs-universalexport-error-permission' );
 			}
 
 			// TODO RBV (24.01.11 17:37): array_intersect(), may be better?
 			$aCategoryNames = BsUniversalExportHelper::getCategoriesForTitle( $this->oRequestedTitle );
-			foreach( $aCategoryNames as $sCategoryName ) {
+			foreach ( $aCategoryNames as $sCategoryName ) {
 				if ( in_array( $sCategoryName, $this->aCategoryBlacklist ) ) {
-					throw new Exception( 'bs-universalexport-error-requested-title-in-category-blacklist');
+					throw new Exception( 'bs-universalexport-error-requested-title-in-category-blacklist' );
 				}
 			}
 
-			BsUniversalExportHelper::checkPermissionForTitle( $this->oRequestedTitle, $this->aParams ); //Throws Exception
+			BsUniversalExportHelper::checkPermissionForTitle( $this->oRequestedTitle, $this->aParams ); // Throws Exception
 
 			$sModuleKey = $this->aParams['module'];
-			if( !isset( $this->aModules[ $sModuleKey ] )
-				|| !($this->aModules[ $sModuleKey ] instanceof BsUniversalExportModule) ) {
+			if ( !isset( $this->aModules[ $sModuleKey ] )
+				|| !( $this->aModules[ $sModuleKey ] instanceof BsUniversalExportModule ) ) {
 				throw new Exception( 'bs-universalexport-error-requested-export-module-not-found' );
 			}
 
@@ -180,8 +177,8 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 
 			$this->invokeExportTarget( $aFile );
 		}
-		catch( Exception $oException ) {
-			//Display Exception-Message and Stacktrace
+		catch ( Exception $oException ) {
+			// Display Exception-Message and Stacktrace
 			$this->oOutputPage->setPageTitle( wfMessage( 'bs-universalexport-page-title-on-error' )->text() );
 			$oExceptionView = new ViewException( $oException );
 			$this->oOutputPage->addHtml( $oExceptionView->execute() );
@@ -197,17 +194,16 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 		$this->oOutputPage->addHtml( wfMessage( 'bs-universalexport-page-text-without-param' )->text() );
 		$this->oOutputPage->addHtml( '<hr />' );
 
-		if( empty( $this->aModules ) ){
+		if ( empty( $this->aModules ) ) {
 			$this->oOutputPage->addHtml( wfMessage( 'bs-universalexport-page-text-without-param-no-modules-registered' )->text() );
 			return;
 		}
 
-		foreach( $this->aModules as $sKey => $oModule ) {
-			if( $oModule instanceof BsUniversalExportModule ){
+		foreach ( $this->aModules as $sKey => $oModule ) {
+			if ( $oModule instanceof BsUniversalExportModule ) {
 				$oModuleOverview = $oModule->getOverview();
 				$this->oOutputPage->addHtml( $oModuleOverview->execute() );
-			}
-			else {
+			} else {
 				wfDebugLog( 'BS::UniversalExport', 'SpecialUniversalExport::outputInformation: Invalid view.' );
 			}
 		}
@@ -217,7 +213,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 		$descriptor = new LegacyArrayDescriptor( $aFile );
 
 		$targetKey = 'download';
-		if( isset( $this->aParams['target'] ) ) {
+		if ( isset( $this->aParams['target'] ) ) {
 			$targetKey = $this->aParams['target'];
 		}
 
@@ -226,11 +222,11 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 				'BlueSpiceUniversalExportExportTargetRegistry'
 			);
 
-		if( !isset( $registryAttribute[$targetKey] ) ) {
+		if ( !isset( $registryAttribute[$targetKey] ) ) {
 			throw new Exception( 'bs-universalexport-error-target-invalid' );
 		}
 
-		if( !is_callable( $registryAttribute[$targetKey] ) ) {
+		if ( !is_callable( $registryAttribute[$targetKey] ) ) {
 			throw new Exception( 'bs-universalexport-error-target-factory-not-callable' );
 		}
 
@@ -243,13 +239,13 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 			]
 		);
 
-		if( $target instanceof IExportTarget === false ) {
+		if ( $target instanceof IExportTarget === false ) {
 			throw new Exception( 'bs-universalexport-error-target-invalid' );
 		}
 
 		$status = $target->execute( $descriptor );
 
-		if( !$status->isOK() ) {
+		if ( !$status->isOK() ) {
 			throw new Exception( 'bs-universalexport-error-target-failed' );
 		}
 	}

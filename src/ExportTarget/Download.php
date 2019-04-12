@@ -10,6 +10,7 @@ class Download extends Base {
 	/**
 	 *
 	 * @param IExportFileDescriptor $descriptor
+	 * @return Status
 	 */
 	public function execute( $descriptor ) {
 		$this->context->getOutput()->disable();
@@ -20,8 +21,8 @@ class Download extends Base {
 		$resonse->header( 'Cache-Control: must-revalidate, post-check=0, pre-check=0' );
 		$resonse->header( 'Cache-Control: public' );
 		$resonse->header( 'Content-Description: File Transfer' );
-		$resonse->header( 'Content-Type: '.$descriptor->getMimeType() );
-		$resonse->header( 'Content-Disposition: attachment; filename="'.$descriptor->getFilename().'"' );
+		$resonse->header( 'Content-Type: ' . $descriptor->getMimeType() );
+		$resonse->header( 'Content-Disposition: attachment; filename="' . $descriptor->getFilename() . '"' );
 		$resonse->header( 'Content-Transfer-Encoding: binary' );
 
 		// TODO: This is old, bad code. Find a proper way to write to the

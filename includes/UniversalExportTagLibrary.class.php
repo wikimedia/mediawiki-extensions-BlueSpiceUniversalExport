@@ -8,7 +8,7 @@
 
  * @package    BlueSpiceUniversalExport
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
 
@@ -19,7 +19,7 @@
 class BsUniversalExportTagLibrary {
 	/**
 	 * Hook-Handler for the MediaWiki 'ParserFirstCallInit' hook. Registers TagExtensions within the Parser.
-	 * @param Parser $oParser The MediaWiki Parser object
+	 * @param Parser &$oParser The MediaWiki Parser object
 	 * @return bool Always true to keep the hook runnning.
 	 */
 	public static function onParserFirstCallInit( &$oParser ) {
@@ -58,7 +58,7 @@ class BsUniversalExportTagLibrary {
 	public static function onPagebreakTag( $sContent, $aAttributes, $oParser ) {
 		$oParser->getOutput()->setProperty( 'bs-tag-universalexport-pagebreak', 1 );
 
-		$aOut = array();
+		$aOut = [];
 		// TODO RBV (08.02.11 11:34): Use CSS class for styling
 		$aOut[] = '<div class="bs-universalexport-pagebreak" style="border-top: 2px dotted #999; background-color: #F5F5F5; color: #BBB; font-style: italic; text-align: center;">';
 		$aOut[] = wfMessage( 'bs-universalexport-tag-pagebreak-text' )->plain();
@@ -70,10 +70,10 @@ class BsUniversalExportTagLibrary {
 	public static function onExcludeTag( $sContent, $aAttributes, $oParser ) {
 		$oParser->getOutput()->setProperty( 'bs-tag-universalexport-exclude', 1 );
 
-		$aOut = array();
+		$aOut = [];
 
 		// TODO RBV (08.02.11 11:34): Use CSS class for styling
-		$aOut[] = '<div class="bs-universalexport-exportexclude" title="'.wfMessage( 'bs-universalexport-tag-exclude-text' )->plain().'">';
+		$aOut[] = '<div class="bs-universalexport-exportexclude" title="' . wfMessage( 'bs-universalexport-tag-exclude-text' )->plain() . '">';
 		$aOut[] = $oParser->recursiveTagParse( $sContent );
 		$aOut[] = '</div>';
 
@@ -103,10 +103,10 @@ class BsUniversalExportTagLibrary {
 			json_encode( $aAttributes )
 		);
 
-		$aOut = array();
+		$aOut = [];
 		$aOut[] = '<div class="bs-universalexport-meta"';
-		foreach( $aAttributes as $sKey => $sValue ) {
-			$aOut[] = ' '.$sKey.'="'.$sValue.'"';
+		foreach ( $aAttributes as $sKey => $sValue ) {
+			$aOut[] = ' ' . $sKey . '="' . $sValue . '"';
 		}
 		$aOut[] = '></div>';
 
@@ -120,10 +120,10 @@ class BsUniversalExportTagLibrary {
 			json_encode( $aAttributes )
 		);
 
-		$aOut = array();
+		$aOut = [];
 		$aOut[] = '<div class="bs-universalexport-params"';
-		foreach( $aAttributes as $sKey => $sValue ) {
-			$aOut[] = ' '.$sKey.'="'.$sValue.'"';
+		foreach ( $aAttributes as $sKey => $sValue ) {
+			$aOut[] = ' ' . $sKey . '="' . $sValue . '"';
 		}
 		$aOut[] = '></div>';
 
@@ -132,46 +132,46 @@ class BsUniversalExportTagLibrary {
 
 	/**
 	 * Register tag with UsageTracker extension
-	 * @param array $aCollectorsConfig
+	 * @param array &$aCollectorsConfig
 	 * @return Always true to keep hook running
 	 */
 	public static function onBSUsageTrackerRegisterCollectors( &$aCollectorsConfig ) {
-		$aCollectorsConfig['bs:universalexport:pagebreak'] = array(
+		$aCollectorsConfig['bs:universalexport:pagebreak'] = [
 			'class' => 'Property',
-			'config' => array(
+			'config' => [
 				'identifier' => 'bs-tag-universalexport-pagebreak'
-			)
-		);
-		$aCollectorsConfig['bs:universalexport:exclude'] = array(
+			]
+		];
+		$aCollectorsConfig['bs:universalexport:exclude'] = [
 			'class' => 'Property',
-			'config' => array(
+			'config' => [
 				'identifier' => 'bs-tag-universalexport-exclude'
-			)
-		);
-		$aCollectorsConfig['bs:universalexport:hidetitle'] = array(
+			]
+		];
+		$aCollectorsConfig['bs:universalexport:hidetitle'] = [
 			'class' => 'Property',
-			'config' => array(
+			'config' => [
 				'identifier' => 'bs-tag-universalexport-hidetitle'
-			)
-		);
-		$aCollectorsConfig['bs:universalexport:excludearticle'] = array(
+			]
+		];
+		$aCollectorsConfig['bs:universalexport:excludearticle'] = [
 			'class' => 'Property',
-			'config' => array(
+			'config' => [
 				'identifier' => 'bs-tag-universalexport-excludearticle'
-			)
-		);
-		$aCollectorsConfig['bs:universalexport:meta'] = array(
+			]
+		];
+		$aCollectorsConfig['bs:universalexport:meta'] = [
 			'class' => 'Property',
-			'config' => array(
+			'config' => [
 				'identifier' => 'bs-tag-universalexport-meta'
-			)
-		);
-		$aCollectorsConfig['bs:universalexport:params'] = array(
+			]
+		];
+		$aCollectorsConfig['bs:universalexport:params'] = [
 			'class' => 'Property',
-			'config' => array(
+			'config' => [
 				'identifier' => 'bs-tag-universalexport-params'
-			)
-		);
+			]
+		];
 		return true;
 	}
 }
