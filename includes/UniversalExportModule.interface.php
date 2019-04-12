@@ -8,7 +8,7 @@
 
  * @package    BlueSpiceUniversalExport
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
 
@@ -18,9 +18,9 @@
  */
 interface BsUniversalExportModule {
 
-	/*
+	/**
 	 * Creates a file, which can be returned in the HttpResponse
-	 * @param SpecialUniversalExport $oCaller This object carries all needed information as public members
+	 * @param SpecialUniversalExport &$oCaller This object carries all needed information as public members
 	 * @return array Associative array containing the file itself as well as the MIME-Type. I.e. array( 'mime-type' => 'text/html', 'content' => '<html>...' )
 	 */
 	public function createExportFile( &$oCaller );
