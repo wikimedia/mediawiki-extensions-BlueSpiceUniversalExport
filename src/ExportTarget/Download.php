@@ -24,6 +24,7 @@ class Download extends Base {
 		$resonse->header( 'Content-Type: ' . $descriptor->getMimeType() );
 		$resonse->header( 'Content-Disposition: attachment; filename="' . $descriptor->getFilename() . '"' );
 		$resonse->header( 'Content-Transfer-Encoding: binary' );
+		$resonse->header( 'X-Robots-Tag: noindex' );
 
 		// TODO: This is old, bad code. Find a proper way to write to the
 		// response body in context of a SpecialPage
