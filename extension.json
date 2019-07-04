@@ -30,6 +30,11 @@
 				"download": "BlueSpice\\UniversalExport\\ExportTarget\\Download::factory",
 				"localfilerepo": "BlueSpice\\UniversalExport\\ExportTarget\\LocalFileRepo::factory"
 			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"TagDefinitions": [
+				"ext.bluespice.universalExport.visualEditorTagDefinition"
+			]
 		}
 	},
 	"SpecialPages": {
@@ -57,6 +62,15 @@
 	"ResourceModules": {
 		"ext.bluespice.universalExport.css": {
 			"styles": "bluespice.universalExport.css"
+		},
+		"ext.bluespice.universalExport.visualEditorTagDefinition": {
+			"scripts": [
+				"bs.unvrslxprt/util/tag/PdfPageBreakDefinition.js"
+			],
+			"messages": [
+				"bs-universalexport-tag-pagebreak-title",
+				"bs-universalexport-tag-pagebreak-desc"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -116,7 +130,10 @@
 		}
 	},
 	"Hooks": {
-		"BeforePageDisplay": "\\BlueSpice\\UniversalExport\\Hook\\BeforePageDisplay\\AddResources::callback"
+		"BeforePageDisplay": "\\BlueSpice\\UniversalExport\\Hook\\BeforePageDisplay\\AddResources::callback",
+		"BSInsertMagicAjaxGetData": [
+			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\PdfPageBreak::callback"
+		]
 	},
 	"manifest_version": 2,
 	"load_composer_autoloader": true

@@ -29,5 +29,7 @@
 	"bs-universalexport-error-permission": "Text for you have insufficient permissions to export this page.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Text for the requested page must not be exported because it is on category blacklist.",
 	"action-universalexport-export": "{{doc-action|universalexport-export}}",
-	"right-universalexport-export": "{{doc-right|universalexport-export}}"
+	"right-universalexport-export": "{{doc-right|universalexport-export}}",
+	"bs-universalexport-tag-pagebreak-title": "Title for the pdf break tag inspector",
+	"bs-universalexport-tag-pagebreak-desc": "Help text for the pdf break tag inspector"
 }

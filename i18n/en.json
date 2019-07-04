@@ -27,5 +27,7 @@
 	"bs-universalexport-error-permission": "You have insufficient permissions to export this page.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "The requested page must not be exported because it is on category blacklist.",
 	"action-universalexport-export": "create an export file",
-	"right-universalexport-export": "Create an export file"
+	"right-universalexport-export": "Create an export file",
+	"bs-universalexport-tag-pagebreak-title": "Page break",
+	"bs-universalexport-tag-pagebreak-desc": "Inserts a page break for PDF generation"
 }
