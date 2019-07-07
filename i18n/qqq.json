@@ -21,7 +21,7 @@
 	"bs-universalexport-tag-exclude-text": "Text for this text will not be exported.",
 	"bs-universalexport-tag-hidetitle-text": "Text for the title of this page will be not be visible in the export.",
 	"bs-universalexport-tag-excludearticle-text": "Text for this page may not be exported.",
-	"bs-universalexport-tag-pagebreak-desc": "Text for if supported by chosen export module, this tag forces a page break in the export document.\n{{Related|Bs-tag-desc}}",
+	"bs-universalexport-tag-pagebreak-desc": "Help text for the pdf break tag inspector",
 	"bs-universalexport-tag-noexport-desc": "Text for content inside this tag will not be exported.\n{{Related|Bs-tag-desc}}",
 	"bs-universalexport-tag-meta-desc": "Text for allows to add arbitrary meta data to an exported document.\n{{Related|Bs-tag-desc}}",
 	"bs-universalexport-tag-params-desc": "Text for allows to set special parameters for export, whether the parameter will be evaluated depends on the chosen export module.\n{{Related|Bs-tag-desc}}",
@@ -30,6 +30,5 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Text for the requested page must not be exported because it is on category blacklist.",
 	"action-universalexport-export": "{{doc-action|universalexport-export}}",
 	"right-universalexport-export": "{{doc-right|universalexport-export}}",
-	"bs-universalexport-tag-pagebreak-title": "Title for the pdf break tag inspector",
-	"bs-universalexport-tag-pagebreak-desc": "Help text for the pdf break tag inspector"
+	"bs-universalexport-tag-pagebreak-title": "Title for the pdf break tag inspector"
 }

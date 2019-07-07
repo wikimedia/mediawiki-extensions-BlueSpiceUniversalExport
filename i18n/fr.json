@@ -4,7 +4,8 @@
 			"Gomoko",
 			"McDutchie",
 			"SnowedEarth",
-			"Urhixidur"
+			"Urhixidur",
+			"Wladek92"
 		]
 	},
 	"bs-universalexport-desc": "Permet à MédiaWiki d’exporter les pages sous différents formats",
@@ -30,5 +31,6 @@
 	"bs-universalexport-error-permission": "Vous n’avez pas les droits suffisants pour exporter cette page.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "La page demandée ne doit pas être exportée car elle est dans la catégorie des listes noires.",
 	"action-universalexport-export": "créer un fichier d'exportation",
-	"right-universalexport-export": "Créer un fichier exporté"
+	"right-universalexport-export": "Créer un fichier exporté",
+	"bs-universalexport-tag-pagebreak-title": "Saut de page"
 }
