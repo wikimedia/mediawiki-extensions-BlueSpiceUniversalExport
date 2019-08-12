@@ -8,16 +8,12 @@ class MetadataOverrides extends \BlueSpice\ConfigDefinition\StringSetting {
 		return [
 			static::MAIN_PATH_FEATURE . '/' . static::FEATURE_EXPORT . '/BlueSpiceUniversalExport',
 			static::MAIN_PATH_EXTENSION . '/BlueSpiceUniversalExport/' . static::FEATURE_EXPORT,
-			static::MAIN_PATH_PACKAGE . '/' . static::FEATURE_EXPORT . '/BlueSpiceUniversalExport',
+			static::MAIN_PATH_PACKAGE . '/' . static::PACKAGE_FREE . '/BlueSpiceUniversalExport',
 		];
 	}
 
 	public function getLabelMessageKey() {
 		return 'bs-universalexport-pref-metadataoverrides';
-	}
-
-	public function getHtmlFormField() {
-		return new \HTMLTextFieldOverride( $this->makeFormFieldParams() );
 	}
 
 	public function makeFormFieldParams() {
