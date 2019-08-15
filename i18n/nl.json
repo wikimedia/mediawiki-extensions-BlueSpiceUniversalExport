@@ -3,7 +3,8 @@
 		"authors": [
 			"Esketti",
 			"Siebrand",
-			"Mainframe98"
+			"Mainframe98",
+			"Sjoerddebruin"
 		]
 	},
 	"bs-universalexport-desc": "Laat MediaWiki te exporteren pagina ' s naar verschillende formaten",
@@ -14,9 +15,9 @@
 	"bs-universalexport-page-title-without-param": "Universele export: Modules",
 	"bs-universalexport-page-title-on-error": "Universele uitvoer: Error",
 	"bs-universalexport-page-text-without-param": "Deze pagina geeft informatie over de beschikbare export modules van de universele exporteren.",
-	"bs-universalexport-page-text-without-param-no-modules-registered": "Er zijn geen modules zijn geregistreerd.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Er zijn geen modules geregistreerd.",
 	"bs-universalexport-widget-title": "Exporteren",
-	"bs-universalexport-widget-tooltip": "Exporteren de huidige pagina",
+	"bs-universalexport-widget-tooltip": "De huidige pagina exporteren",
 	"bs-universalexport-tag-pagebreak-text": "Pagina-einde",
 	"bs-universalexport-tag-exclude-text": "Deze tekst wordt niet geëxporteerd.",
 	"bs-universalexport-tag-hidetitle-text": "De titel van deze pagina wordt niet zichtbaar in de uitvoer.",
