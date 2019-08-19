@@ -127,7 +127,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 			}*/
 
 			$propHelper = Services::getInstance()->getBSUtilityFactory()
-			->getPagePropHelper( $this->oRequestedTitle->getArticleID() );
+			->getPagePropHelper( $this->oRequestedTitle );
 
 			// Get relevant page props
 			if ( $propHelper->getPageProp( 'bs-universalexport-params' ) ) {
