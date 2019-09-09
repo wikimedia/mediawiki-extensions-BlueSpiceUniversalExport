@@ -5,10 +5,11 @@
 			"McDutchie",
 			"SnowedEarth",
 			"Urhixidur",
-			"Wladek92"
+			"Wladek92",
+			"Thibaut120094"
 		]
 	},
-	"bs-universalexport-desc": "Permet à MédiaWiki d’exporter les pages sous différents formats",
+	"bs-universalexport-desc": "Permet à MediaWiki d’exporter les pages sous différents formats",
 	"prefs-universalexport": "Exportation universelle",
 	"universalexport": "Exportation universelle",
 	"bs-universalexport-pref-metadatadefaults": "Métadonnées (standard, JSON) :",
