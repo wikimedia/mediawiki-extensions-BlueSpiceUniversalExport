@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Purodha"
+			"Purodha",
+			"Hwboehm"
 		]
 	},
 	"bs-universalexport-desc": "Määd_et müjjelesch för Mehdijawikki, Sigge en ongerscheidlejje Fommahte ze äxpottehre.",
 	"prefs-universalexport": "Unniväsälle Äxpoot",
 	"universalexport": "Unniväsälle Äxpoot",
 	"bs-universalexport-pref-metadatadefaults": "Mettadahte (Standatt, <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"JavaScript Object Notation\">JSON</i>)",
-	"bs-universalexport-pref-metadataoverrides": "Mettadahte (Överjonn, <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"JavaScript Object Notation\">JSON</i>)\n<!-- https://translatewiki.net/wiki/Thread:Support/About_MediaWiki:Bs-universalexport-pref-metadataoverrides/ksh  -->",
+	"bs-universalexport-pref-metadataoverrides": "Mettadahte (Överjonn, <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"JavaScript Object Notation\">JSON</i>)",
 	"bs-universalexport-page-title-without-param": "Moduhle för der unniväsälle Äxpoot",
 	"bs-universalexport-page-title-on-error": "Univäsälle Äxpoot: Fähler",
 	"bs-universalexport-page-text-without-param-no-modules-registered": "Et sinn_er kein Moduhle rejestrehrt.",

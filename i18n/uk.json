@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ата",
-			"Andriykopanytsia"
+			"Andriykopanytsia",
+			"Vlad5250"
 		]
 	},
 	"bs-universalexport-desc": "Дозволяє MediaWiki експортувати сторінки в різні формати",
@@ -20,7 +21,7 @@
 	"bs-universalexport-tag-exclude-text": "Цей текст не буде експортовано.",
 	"bs-universalexport-tag-hidetitle-text": "Назв цієї сторінки не буде видно в експорті.",
 	"bs-universalexport-tag-excludearticle-text": "Цю сторінку не можна експортувати.",
-	"bs-universalexport-tag-pagebreak-desc": "Якщо цей теґ підтримується обраним модулем експорту, він задає розрив сторінки в експортному документі.",
+	"bs-universalexport-tag-pagebreak-desc": "Вставляє розрив сторінки для генерування PDF",
 	"bs-universalexport-tag-noexport-desc": "Вміст всередині цього теґу не буде експортовано.",
 	"bs-universalexport-tag-meta-desc": "Дозволяє додавати довільні метадані в експортований документ.",
 	"bs-universalexport-tag-params-desc": "Дозволяє встановити спеціальні параметри для експорту, чи параметр буде оцінено залежить від обраного модуля експорту.",
@@ -28,5 +29,6 @@
 	"bs-universalexport-error-permission": "У вас недостатньо дозволів для експорту цієї сторінки.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Запитану сторінку не можна експортувати, оскільки вона знаходиться у категорії чорного списку.",
 	"action-universalexport-export": "створення файлу експорту",
-	"right-universalexport-export": "Створення файлу експорту"
+	"right-universalexport-export": "Створення файлу експорту",
+	"bs-universalexport-tag-pagebreak-title": "Розрив сторінки"
 }

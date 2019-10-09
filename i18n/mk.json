@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"bs-universalexport-desc": "Овозможува МедијаВики да извезува страници во различни формати",
@@ -19,7 +20,7 @@
 	"bs-universalexport-tag-exclude-text": "Текстот нема да се извезе.",
 	"bs-universalexport-tag-hidetitle-text": "Насловот на страницава нема да биде видлив во извозот.",
 	"bs-universalexport-tag-excludearticle-text": "Страницава може да не се извезе.",
-	"bs-universalexport-tag-pagebreak-desc": "Ако се поддржува од избраниот извозен модул, ознакава наметнува прелом на страницата/ците во извезениот документ.",
+	"bs-universalexport-tag-pagebreak-desc": "Вметнува прелом на страница за создавање на PDF",
 	"bs-universalexport-tag-noexport-desc": "Содржината во внатрешноста на ознакава нема да се извезе.",
 	"bs-universalexport-tag-meta-desc": "Овозможува додавање на произволни метаподатоци во извезен документ.",
 	"bs-universalexport-tag-params-desc": "Овозможува задавање на параметри за извоз. Дали параметарот ќе делува зависи од избраниот извозен модул.",

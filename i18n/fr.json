@@ -4,10 +4,12 @@
 			"Gomoko",
 			"McDutchie",
 			"SnowedEarth",
-			"Urhixidur"
+			"Urhixidur",
+			"Wladek92",
+			"Thibaut120094"
 		]
 	},
-	"bs-universalexport-desc": "Permet à MédiaWiki d’exporter les pages sous différents formats",
+	"bs-universalexport-desc": "Permet à MediaWiki d’exporter les pages sous différents formats",
 	"prefs-universalexport": "Exportation universelle",
 	"universalexport": "Exportation universelle",
 	"bs-universalexport-pref-metadatadefaults": "Métadonnées (standard, JSON) :",
@@ -22,7 +24,7 @@
 	"bs-universalexport-tag-exclude-text": "Ce texte ne sera pas exporté.",
 	"bs-universalexport-tag-hidetitle-text": "Le titre de cette page ne sera pas visible dans l’exportation.",
 	"bs-universalexport-tag-excludearticle-text": "Cette page ne peut pas être exportée.",
-	"bs-universalexport-tag-pagebreak-desc": "Si elle est prise en charge par le module d’exportation choisi, cette balise force un saut de page dans le document exporté.",
+	"bs-universalexport-tag-pagebreak-desc": "Insère un saut de page pour la génération du PDF.",
 	"bs-universalexport-tag-noexport-desc": "Le contenu à l’intérieur de cette balise ne sera pas exporté.",
 	"bs-universalexport-tag-meta-desc": "Permet d’ajouter des métadonnées arbitraires à un document exporté.",
 	"bs-universalexport-tag-params-desc": "Permet de définir des paramètres particuliers pour l’exportation, l’évaluation de ceux-ci dépendant du module d’exportation choisi.",
@@ -30,5 +32,6 @@
 	"bs-universalexport-error-permission": "Vous n’avez pas les droits suffisants pour exporter cette page.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "La page demandée ne doit pas être exportée car elle est dans la catégorie des listes noires.",
 	"action-universalexport-export": "créer un fichier d'exportation",
-	"right-universalexport-export": "Créer un fichier exporté"
+	"right-universalexport-export": "Créer un fichier exporté",
+	"bs-universalexport-tag-pagebreak-title": "Saut de page"
 }

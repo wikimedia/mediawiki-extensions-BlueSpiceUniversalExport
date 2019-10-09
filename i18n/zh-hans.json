@@ -3,7 +3,10 @@
 		"authors": [
 			"Cwek",
 			"Liuxinyu970226",
-			"NigelSoft"
+			"NigelSoft",
+			"神樂坂秀吉",
+			"WQL",
+			"予弦"
 		]
 	},
 	"bs-universalexport-desc": "启用MediaWiki以将页面导出成不同格式",
@@ -20,8 +23,8 @@
 	"bs-universalexport-tag-pagebreak-text": "分页符",
 	"bs-universalexport-tag-exclude-text": "此文本将不会导出。",
 	"bs-universalexport-tag-hidetitle-text": "此页面的标题将不会在导出中可见。",
-	"bs-universalexport-tag-excludearticle-text": "此页可能不会被导出。",
-	"bs-universalexport-tag-pagebreak-desc": "如果能支持选择导出模块，此标签将强制在导出文档加入分页符。",
+	"bs-universalexport-tag-excludearticle-text": "此页可能不会导出。",
+	"bs-universalexport-tag-pagebreak-desc": "为生成的PDF文件插入分页符。",
 	"bs-universalexport-tag-noexport-desc": "此标签中的内容不会被导出。",
 	"bs-universalexport-tag-meta-desc": "允许加入任意元数据至导出文档。",
 	"bs-universalexport-tag-params-desc": "允许导出时设置特殊参数，是否将评估参数取决于选择的导出模块。",

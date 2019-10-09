@@ -3,7 +3,8 @@
 		"authors": [
 			"Meshkov.a",
 			"Okras",
-			"Striking Blue"
+			"Striking Blue",
+			"Movses"
 		]
 	},
 	"bs-universalexport-desc": "Позволяет MediaWiki экспортировать страницы в различные форматы",
@@ -21,7 +22,7 @@
 	"bs-universalexport-tag-exclude-text": "Этот текст не будет экспортирован.",
 	"bs-universalexport-tag-hidetitle-text": "Название этой страницы не будут видны в экспорте.",
 	"bs-universalexport-tag-excludearticle-text": "Эта страница не может быть экспортирована.",
-	"bs-universalexport-tag-pagebreak-desc": "В случае поддержки выбранным модулем экспорта этот тег принудительно ставит разрыв страницы в экспртируемом документе.",
+	"bs-universalexport-tag-pagebreak-desc": "Вставляет разрыв строки для генерации PDF",
 	"bs-universalexport-tag-noexport-desc": "Содержимое внутри этого тега не будет экспортировано.",
 	"bs-universalexport-tag-meta-desc": "Позволяет добавлять произвольные мета-данные в экспортируемый документ.",
 	"bs-universalexport-tag-params-desc": "Позволяет задать специальные параметры для экспорта. Будет ли параметр проанализирован, зависит от выбранного модуля экспорта.",

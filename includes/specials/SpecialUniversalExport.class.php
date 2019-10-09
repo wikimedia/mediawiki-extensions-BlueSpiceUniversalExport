@@ -12,6 +12,7 @@
  * @filesource
  */
 
+use BlueSpice\Services;
 use BlueSpice\UniversalExport\LegacyArrayDescriptor;
 use BlueSpice\UniversalExport\IExportTarget;
 
@@ -125,22 +126,19 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 				throw new Exception( 'error-requested-title-does-not-exist' );
 			}*/
 
+			$propHelper = Services::getInstance()->getBSUtilityFactory()
+			->getPagePropHelper( $this->oRequestedTitle );
+
 			// Get relevant page props
-			$dbr = wfGetDB( DB_REPLICA );
-			$res = $dbr->selectField(
-				'page_props',
-				'pp_value',
-				[
-					'pp_propname' => 'bs-universalexport-params',
-					'pp_page'     => $this->oRequestedTitle->getArticleID()
-				]
-			);
-			if ( $res != false ) {
-				$res = FormatJson::decode( $res, true );
+			if ( $propHelper->getPageProp( 'bs-universalexport-params' ) ) {
+				$prop = FormatJson::decode(
+					$propHelper->getPageProp( 'bs-universalexport-params' ),
+					true
+				);
 				if ( is_array( $res ) ) {
 					$this->aParams = array_merge(
 						$this->aParams,
-						$res
+						$prop
 					);
 				}
 			}

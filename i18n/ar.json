@@ -19,7 +19,7 @@
 	"bs-universalexport-tag-exclude-text": "لن يتم تصدير هذا النص.",
 	"bs-universalexport-tag-hidetitle-text": "عنوان هذه الصفحة لن يكون مرئيا في التصدير.",
 	"bs-universalexport-tag-excludearticle-text": "قد لا يتم تصدير هذه الصفحة.",
-	"bs-universalexport-tag-pagebreak-desc": "إذا كانت الوحدة للتصدير المختارة مدعومة، فسيفرض هذا الوسم فاصل صفحة في مستند التصدير.",
+	"bs-universalexport-tag-pagebreak-desc": "يدرج فاصل صفحات لجيل PDF",
 	"bs-universalexport-tag-noexport-desc": "لن يتم تصدير المحتوى الموجود داخل هذا الوسم.",
 	"bs-universalexport-tag-meta-desc": "يسمح بإضافة بيانات تعريف تعسفية إلى مستند تم تصديره.",
 	"bs-universalexport-tag-params-desc": "يسمح بوضع وسائط خاصة للتصدير، ما إذا كان تقييم الوسيط يعتمد على وحدة التصدير المختارة.",
@@ -27,5 +27,6 @@
 	"bs-universalexport-error-permission": "لديك صلاحيات غير كافية لتصدير هذه الصفحة.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "يجب عدم تصدير الصفحة المطلوبة لأنها في القائمة السوداء للتصنيف.",
 	"action-universalexport-export": "إنشاء ملف تصدير",
-	"right-universalexport-export": "إنشاء ملف تصدير"
+	"right-universalexport-export": "إنشاء ملف تصدير",
+	"bs-universalexport-tag-pagebreak-title": "فاصل صفحة"
 }
