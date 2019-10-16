@@ -19,7 +19,7 @@
 	"bs-universalexport-tag-exclude-text": "Iste texto non essera exportate.",
 	"bs-universalexport-tag-hidetitle-text": "Le titulo de iste pagina non essera visibile in le exportation.",
 	"bs-universalexport-tag-excludearticle-text": "Iste pagina non pote esser exportate.",
-	"bs-universalexport-tag-pagebreak-desc": "Si le modulo de exportation seligite lo permitte, iste etiquetta fortia un salto de pagina in le documento exportate.",
+	"bs-universalexport-tag-pagebreak-desc": "Insere un salto de pagina in le documento PDF generate",
 	"bs-universalexport-tag-noexport-desc": "Le contento intra iste etiquetta non essera exportate.",
 	"bs-universalexport-tag-meta-desc": "Permitte adder qualcunque metadatos a un documento exportate.",
 	"bs-universalexport-tag-params-desc": "Permitte definir parametros special pro exportation, le tractamento del quales depende del modulo de exportation seligite.",
