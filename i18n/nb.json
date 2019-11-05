@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"bs-universalexport-desc": "Gjør at MediaWiki kan eksportere sider til forskjellige formater",
+	"prefs-universalexport": "Universal eksport",
+	"universalexport": "Universal eksport",
+	"bs-universalexport-pref-metadatadefaults": "Metadata (standard, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Metadata (overstyr, JSON):",
+	"bs-universalexport-page-title-without-param": "Universal eksport: Moduler",
+	"bs-universalexport-page-title-on-error": "Universal eksport: Feil",
+	"bs-universalexport-page-text-without-param": "Denne siden viser informasjon om tilgjengelige eksportmoduler for universal eksport.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Ingen moduler er registrert.",
+	"bs-universalexport-widget-title": "Eksporter",
+	"bs-universalexport-widget-tooltip": "Eksporter den gjeldende siden",
+	"bs-universalexport-tag-pagebreak-text": "Sidebrytning",
+	"bs-universalexport-tag-exclude-text": "Denne teksten blir ikke eksportert.",
+	"bs-universalexport-tag-hidetitle-text": "Tittelen til siden vil ikke være synlig i eksporten.",
+	"bs-universalexport-tag-excludearticle-text": "Denne siden kan ikke eksporteres.",
+	"bs-universalexport-tag-pagebreak-desc": "Setter inn sidebrytning for PDF-generering",
+	"bs-universalexport-tag-noexport-desc": "Innhold i denne taggen blir ikke eksportert.",
+	"bs-universalexport-tag-meta-desc": "Gjør det mulig å legge til vilkårlige metadata i et eksportert dokument.",
+	"bs-universalexport-tag-params-desc": "Gjør det mulig å sette spesielle eksportparametre. Hvorvidt parameteren blir evaluert er avhengig av den valgte eksportmodulen.",
+	"bs-universalexport-error-requested-export-module-not-found": "Det etterspurte formatet kunne ikke produseres.",
+	"bs-universalexport-error-permission": "Du har ikke tilstrekkelige rettigheter til å eksportere denne siden.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "Den etterspurte siden kan ikke eksporteres fordi den er i en svartelistet kategori.",
+	"action-universalexport-export": "opprette en eksportfil",
+	"right-universalexport-export": "Opprette en eksportfil",
+	"bs-universalexport-tag-pagebreak-title": "Sidebrytning"
+}
