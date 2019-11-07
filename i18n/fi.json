@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Pyscowicz"
+			"Pyscowicz",
+			"Silvonen"
 		]
 	},
-	"bs-universalexport-widget-title": "Vie"
+	"bs-universalexport-widget-title": "Vie",
+	"bs-universalexport-tag-pagebreak-text": "Sivunvaihto"
 }
