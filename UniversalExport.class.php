@@ -44,7 +44,8 @@ class UniversalExport extends BsExtensionMW {
 	}
 
 	/**
-	 * Hook-Handler for the MediaWiki 'ParserFirstCallInit' hook. Dispatches registration og TagExtensions to the TagLibrary.
+	 * Hook-Handler for the MediaWiki 'ParserFirstCallInit' hook. Dispatches
+	 * registration og TagExtensions to the TagLibrary.
 	 * @param Parser &$oParser The MediaWiki Parser object
 	 * @return bool Always true to keep the hook runnning.
 	 */
@@ -61,6 +62,12 @@ class UniversalExport extends BsExtensionMW {
 		return BsUniversalExportTagLibrary::onBSUsageTrackerRegisterCollectors( $aCollectorsConfig );
 	}
 
+	/**
+	 *
+	 * @param \stdClass &$oResponse
+	 * @param string $type
+	 * @return bool
+	 */
 	public function onBSInsertMagicAjaxGetData( &$oResponse, $type ) {
 		if ( $type != 'tags' ) {
 			return true;

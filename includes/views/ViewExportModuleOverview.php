@@ -29,8 +29,12 @@ class ViewExportModuleOverview extends ViewBaseElement {
 		$sId = !empty( $this->_mId ) ? ' id="' . $this->_mId . '"' : '';
 
 		$aOut[] = '<div' . $sId . ' class="bs-universalexport-module">';
-		$aOut[] = ' <h2 class="bs-universalexport-module-title">' . $this->mOptions['module-title'] . '</h2>';
-		$aOut[] = ' <div class="bs-universalexport-module-description">' . $this->mOptions['module-description'] . '</div>';
+		$aOut[] = ' <h2 class="bs-universalexport-module-title">';
+		$aOut[] = $this->mOptions['module-title'];
+		$aOut[] = '</h2>';
+		$aOut[] = ' <div class="bs-universalexport-module-description">';
+		$aOut[] = $this->mOptions['module-description'];
+		$aOut[] = '</div>';
 		$aOut[] = ' <div class="bs-universalexport-module-body">';
 		$aOut[] = '   <div class="bs-universalexport-module-bodycontent">';
 		$aOut[] = $this->mOptions['module-bodycontent'];
