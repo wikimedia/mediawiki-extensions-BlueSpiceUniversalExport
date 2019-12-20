@@ -22,7 +22,9 @@ class Download extends Base {
 		$resonse->header( 'Cache-Control: public' );
 		$resonse->header( 'Content-Description: File Transfer' );
 		$resonse->header( 'Content-Type: ' . $descriptor->getMimeType() );
-		$resonse->header( 'Content-Disposition: attachment; filename="' . $descriptor->getFilename() . '"' );
+		$resonse->header(
+			"Content-Disposition: attachment; filename=\"{$descriptor->getFilename()}\""
+		);
 		$resonse->header( 'Content-Transfer-Encoding: binary' );
 		$resonse->header( 'X-Robots-Tag: noindex' );
 

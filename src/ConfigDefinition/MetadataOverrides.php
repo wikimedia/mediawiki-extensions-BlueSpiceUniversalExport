@@ -4,6 +4,10 @@ namespace BlueSpice\UniversalExport\ConfigDefinition;
 
 class MetadataOverrides extends \BlueSpice\ConfigDefinition\StringSetting {
 
+	/**
+	 *
+	 * @return string[]
+	 */
 	public function getPaths() {
 		return [
 			static::MAIN_PATH_FEATURE . '/' . static::FEATURE_EXPORT . '/BlueSpiceUniversalExport',
@@ -12,10 +16,18 @@ class MetadataOverrides extends \BlueSpice\ConfigDefinition\StringSetting {
 		];
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getLabelMessageKey() {
 		return 'bs-universalexport-pref-metadataoverrides';
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function makeFormFieldParams() {
 		return array_merge(
 			parent::makeFormFieldParams(),
