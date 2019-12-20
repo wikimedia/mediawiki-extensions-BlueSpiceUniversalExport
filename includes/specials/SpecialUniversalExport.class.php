@@ -69,7 +69,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	/**
 	 * The default contructor of the SpecialUniversalExport class
 	 */
-	function  __construct() {
+	public function  __construct() {
 		parent::__construct( 'UniversalExport', 'read', true );
 
 		$this->oOutputPage = $this->getOutput();
@@ -105,9 +105,13 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	 * This method gets called by the MediaWiki framework on page display.
 	 * @param string $sParameter
 	 */
-	function execute( $sParameter ) {
+	public function execute( $sParameter ) {
 		parent::execute( $sParameter );
-		Hooks::run( 'BSUniversalExportSpecialPageExecute', [ $this, $sParameter, &$this->aModules ] );
+		Hooks::run( 'BSUniversalExportSpecialPageExecute', [
+			$this,
+			$sParameter,
+			&$this->aModules
+		] );
 
 		if ( !empty( $sParameter ) ) {
 			$this->processParameter( $sParameter );
@@ -122,7 +126,9 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	private function processParameter( $sParameter ) {
 		try {
 			$this->oRequestedTitle = Title::newFromText( $sParameter );
-			/*if( !$this->oRequestedTitle->exists() && $this->oRequestedTitle->getNamespace() != NS_SPECIAL ) { //!$this->mRequestedTitle->isSpecialPage() does not work in MW 1.13
+			/*if( !$this->oRequestedTitle->exists()
+				&& $this->oRequestedTitle->getNamespace() != NS_SPECIAL ) {
+				// !$this->mRequestedTitle->isSpecialPage() does not work in MW 1.13
 				throw new Exception( 'error-requested-title-does-not-exist' );
 			}*/
 
@@ -145,7 +151,8 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 
 			BsUniversalExportHelper::getParamsFromQueryString( $this->aParams );
 
-			// Title::userCan always returns false on special pages (exept for createaccount action)
+			// Title::userCan always returns false on special pages
+			// (exept for createaccount action)
 			if ( $this->oRequestedTitle->getNamespace() === NS_SPECIAL ) {
 				if ( $this->getUser()->isAllowed( 'read' ) !== true ) {
 					throw new Exception( 'bs-universalexport-error-permission' );
@@ -155,19 +162,29 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 			}
 
 			// TODO RBV (24.01.11 17:37): array_intersect(), may be better?
-			$aCategoryNames = BsUniversalExportHelper::getCategoriesForTitle( $this->oRequestedTitle );
+			$aCategoryNames = BsUniversalExportHelper::getCategoriesForTitle(
+				$this->oRequestedTitle
+			);
 			foreach ( $aCategoryNames as $sCategoryName ) {
 				if ( in_array( $sCategoryName, $this->aCategoryBlacklist ) ) {
-					throw new Exception( 'bs-universalexport-error-requested-title-in-category-blacklist' );
+					throw new Exception(
+						'bs-universalexport-error-requested-title-in-category-blacklist'
+					);
 				}
 			}
 
-			BsUniversalExportHelper::checkPermissionForTitle( $this->oRequestedTitle, $this->aParams ); // Throws Exception
+			// Throws Exception
+			BsUniversalExportHelper::checkPermissionForTitle(
+				$this->oRequestedTitle,
+				$this->aParams
+			);
 
 			$sModuleKey = $this->aParams['module'];
 			if ( !isset( $this->aModules[ $sModuleKey ] )
 				|| !( $this->aModules[ $sModuleKey ] instanceof BsUniversalExportModule ) ) {
-				throw new Exception( 'bs-universalexport-error-requested-export-module-not-found' );
+				throw new Exception(
+					'bs-universalexport-error-requested-export-module-not-found'
+				);
 			}
 
 			$oExportModule = $this->aModules[ $sModuleKey ];
@@ -177,7 +194,9 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 		}
 		catch ( Exception $oException ) {
 			// Display Exception-Message and Stacktrace
-			$this->oOutputPage->setPageTitle( wfMessage( 'bs-universalexport-page-title-on-error' )->text() );
+			$this->oOutputPage->setPageTitle(
+				wfMessage( 'bs-universalexport-page-title-on-error' )->text()
+			);
 			$oExceptionView = new ViewException( $oException );
 			$this->oOutputPage->addHtml( $oExceptionView->execute() );
 		}
@@ -187,13 +206,19 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	 * Dispatched from execute();
 	 */
 	private function outputInformation() {
-		// TODO RBV (14.12.10 09:59): Display information about WebService availability, configuration settings, etc... Could also be used to monitor Webservice and manually empty cache.
-		$this->oOutputPage->setPageTitle( wfMessage( 'bs-universalexport-page-title-without-param' )->text() );
+		// TODO RBV (14.12.10 09:59): Display information about WebService availability,
+		// configuration settings, etc... Could also be used to monitor Webservice and
+		// manually empty cache.
+		$this->oOutputPage->setPageTitle(
+			wfMessage( 'bs-universalexport-page-title-without-param' )->text()
+		);
 		$this->oOutputPage->addHtml( wfMessage( 'bs-universalexport-page-text-without-param' )->text() );
 		$this->oOutputPage->addHtml( '<hr />' );
 
 		if ( empty( $this->aModules ) ) {
-			$this->oOutputPage->addHtml( wfMessage( 'bs-universalexport-page-text-without-param-no-modules-registered' )->text() );
+			$this->oOutputPage->addHtml(
+				wfMessage( 'bs-universalexport-page-text-without-param-no-modules-registered' )->text()
+			);
 			return;
 		}
 

@@ -36,6 +36,12 @@ class BsUniversalExportHelper {
 		}
 	}
 
+	/**
+	 *
+	 * @param Title $oTitle
+	 * @param array &$aParams
+	 * @throws Exception
+	 */
 	public static function checkPermissionForTitle( $oTitle, &$aParams ) {
 		global $wgUser;
 
@@ -57,6 +63,11 @@ class BsUniversalExportHelper {
 		}
 	}
 
+	/**
+	 *
+	 * @param Title $oTitle
+	 * @return array
+	 */
 	public static function getCategoriesForTitle( $oTitle ) {
 		/* Title::getParentCategories() returns an array like this:
 		 * array (
@@ -100,20 +111,28 @@ class BsUniversalExportHelper {
 
 		// By convention previousSibling is an Anchor-Tag (see BsPageContentProvider)
 		// TODO: check for null
-		$sPageTitleHeadingJumpmark = self::findPreviousDOMElementSibling( $oPageTitleHeadingElement, 'a' )->getAttribute( 'name' );
+		$sPageTitleHeadingJumpmark = self::findPreviousDOMElementSibling(
+			$oPageTitleHeadingElement,
+			'a'
+		)->getAttribute( 'name' );
 		$oPageTitleBookmarkElement->setAttribute( 'name', $sPageTitleHeadingTextContent );
 		$oPageTitleBookmarkElement->setAttribute( 'href', '#' . $sPageTitleHeadingJumpmark );
 
 		// Adapt MediaWiki TOC #1
 		$oTocTableElement = $oBodyContentXPath->query( "//*[@id='toc']" );
 		$oTableOfContentsAnchors = [];
-		if ( $oTocTableElement->length > 0 ) { // Is a TOC available?
+		// Is a TOC available?
+		if ( $oTocTableElement->length > 0 ) {
 			// HINT: http://de.selfhtml.org/xml/darstellung/xpathsyntax.htm#position_bedingungen
 			// - recursive descent operator = getElementsByTag
 			$oTableOfContentsAnchors = $oBodyContentXPath->query( "//*[@id='toc']//a" );
-			$oTocTableElement->item( 0 )->setAttribute( 'id', 'toc-' . $sPageTitleHeadingJumpmark ); // make id unique
-			$oTocTitleElement = $oBodyContentXPath->query( "//*[contains(@class, 'toctitle')]" )->item( 0 );
-			$oTocTitleElement->setAttribute( 'id', 'toctitle-' . $sPageTitleHeadingJumpmark ); // make id unique;
+			// make id unique
+			$oTocTableElement->item( 0 )->setAttribute( 'id', 'toc-' . $sPageTitleHeadingJumpmark );
+			$oTocTitleElement = $oBodyContentXPath->query(
+				"//*[contains(@class, 'toctitle')]"
+			)->item( 0 );
+			// make id unique;
+			$oTocTitleElement->setAttribute( 'id', 'toctitle-' . $sPageTitleHeadingJumpmark );
 			$oTocTitleElement->setAttribute( 'class', 'toctitle' );
 		}
 
@@ -127,7 +146,8 @@ class BsUniversalExportHelper {
 			$oHeadingElement     = $oHeadingElements->item( $i );
 			$sHeadingTextContent = trim( $oHeadingElement->textContent );
 			// In $sPageTitleHeadingJumpmark there is the PageTitle AND the RevisionId incorporated
-			$sHeadingJumpmark = 'bs-ue-jumpmark-' . md5( $sPageTitleHeadingJumpmark . $sHeadingTextContent . $i );
+			$sHeadingJumpmark = 'bs-ue-jumpmark-'
+				. md5( $sPageTitleHeadingJumpmark . $sHeadingTextContent . $i );
 
 			$oBookmarkElement = $oBookmarksDOM->createElement( 'bookmark' );
 			$oBookmarkElement->setAttribute( 'name', $sHeadingTextContent );
@@ -136,13 +156,15 @@ class BsUniversalExportHelper {
 			$sNodeName = strtolower( $oHeadingElement->parentNode->nodeName );
 			$iLevel = $aHeadingLevels[$sNodeName] + 1;
 			$iLevelDifference = $iLevel - $iParentLevel;
-			if ( $iLevelDifference > 0 ) { // e.g H2 -> H3 --> Walk down
+			if ( $iLevelDifference > 0 ) {
+				// e.g H2 -> H3 --> Walk down
 				for ( $j = 0; $j < $iLevelDifference; $j++ ) {
 					if ( $oParentBookmark->lastChild !== null ) {
 						$oParentBookmark = $oParentBookmark->lastChild;
 					}
 				}
-			} elseif ( $iLevelDifference < 0 ) { // e.g H6 -> H3 --> Walk up
+			} elseif ( $iLevelDifference < 0 ) {
+				// e.g H6 -> H3 --> Walk up
 				for ( $j = 0; $j > $iLevelDifference; $j-- ) {
 					if ( $oParentBookmark->parentNode !== null ) {
 						$oParentBookmark = $oParentBookmark->parentNode;
@@ -177,8 +199,11 @@ class BsUniversalExportHelper {
 		return $oPageTitleBookmarkElement;
 	}
 
-	// Seems not to work...
-	// HINT: http://www.php.net/manual/en/domdocument.validate.php#99818
+	/**
+	 * Seems not to work...
+	 * HINT: http://www.php.net/manual/en/domdocument.validate.php#99818
+	 * @param DOMNode &$oNode
+	 */
 	public static function ensureGetElementByIdAccessibility( DOMNode &$oNode ) {
 		if ( $oNode->hasChildNodes() ) {
 			foreach ( $oNode->childNodes as $oChildNode ) {
