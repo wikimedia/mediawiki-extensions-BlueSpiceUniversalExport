@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"bs-universalexport-desc": "MediaWiki'nin sayfaları farklı biçimlerde dışa aktarmasını sağlar",
+	"prefs-universalexport": "Evrensel ihracat",
+	"universalexport": "Evrensel ihracat",
+	"bs-universalexport-pref-metadatadefaults": "Meta veriler (standart, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Meta veriler (geçersiz kılma, JSON):",
+	"bs-universalexport-page-title-without-param": "Evrensel ihracat: Modüller",
+	"bs-universalexport-page-title-on-error": "Evrensel ihracat: Hata",
+	"bs-universalexport-page-text-without-param": "Bu sayfa, evrensel dışa aktarmanın mevcut dışa aktarma modülleri hakkında bilgi görüntüler.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Kayıtlı modül yok.",
+	"bs-universalexport-widget-title": "Dışa aktar",
+	"bs-universalexport-widget-tooltip": "Geçerli sayfayı dışa aktar",
+	"bs-universalexport-tag-pagebreak-text": "Sayfa sonu",
+	"bs-universalexport-tag-exclude-text": "Bu metin dışa aktarılmayacak.",
+	"bs-universalexport-tag-hidetitle-text": "Bu sayfanın başlığı dışa aktarmada görünmeyecek.",
+	"bs-universalexport-tag-excludearticle-text": "Bu sayfa dışa aktarılamayabilir.",
+	"bs-universalexport-tag-pagebreak-desc": "PDF oluşturmak için sayfa sonu ekler",
+	"bs-universalexport-tag-noexport-desc": "Bu etiketin içindeki içerik dışa aktarılmaz.",
+	"bs-universalexport-tag-meta-desc": "Dışa aktarılan bir belgeye rastgele meta veriler eklemeye izin verir.",
+	"bs-universalexport-tag-params-desc": "Dışa aktarma için özel parametrelerin ayarlanmasına izin verir, parametrenin değerlendirilip değerlendirilmeyeceği seçilen dışa aktarma modülüne bağlıdır.",
+	"bs-universalexport-error-requested-export-module-not-found": "İstenen biçim oluşturulamadı.",
+	"bs-universalexport-error-permission": "Bu sayfayı dışa aktarmak için yeterli izniniz yok.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "İstenen sayfa kategori kara listesinde olduğundan dışa aktarılmamalıdır.",
+	"action-universalexport-export": "dışa aktarma dosyası oluştur",
+	"right-universalexport-export": "Dışa aktarma dosyası oluştur",
+	"bs-universalexport-tag-pagebreak-title": "Sayfa sonu"
+}
