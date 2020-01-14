@@ -5,7 +5,7 @@
  * Part of BlueSpice MediaWiki
  *
  * @author     Robert Vogel <vogel@hallowelt.com>
-
+ *
  * @package    BlueSpiceUniversalExport
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
@@ -13,8 +13,8 @@
  */
 
 use BlueSpice\Services;
-use BlueSpice\UniversalExport\LegacyArrayDescriptor;
 use BlueSpice\UniversalExport\IExportTarget;
+use BlueSpice\UniversalExport\LegacyArrayDescriptor;
 
 /**
  * UniversalExport special page class.
@@ -122,6 +122,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 
 	/**
 	 * Dispatched from execute();
+	 * @param string $sParameter
 	 */
 	private function processParameter( $sParameter ) {
 		try {

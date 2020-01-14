@@ -5,7 +5,7 @@
  * Part of BlueSpice MediaWiki
  *
  * @author     Robert Vogel <vogel@hallowelt.com>
-
+ *
  * @package    BlueSpiceUniversalExport
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
