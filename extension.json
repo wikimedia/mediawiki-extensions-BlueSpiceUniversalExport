@@ -132,7 +132,10 @@
 	"Hooks": {
 		"BeforePageDisplay": "\\BlueSpice\\UniversalExport\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"BSInsertMagicAjaxGetData": [
-			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\PdfPageBreak::callback"
+			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddUEMetaTag::callback",
+			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddUEParamsTag::callback",
+			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddPdfUENoExportTag::callback",
+			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddPdfUEPageBreakTag::callback"
 		]
 	},
 	"manifest_version": 2,
