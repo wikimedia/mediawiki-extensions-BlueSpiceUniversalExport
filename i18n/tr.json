@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"SwornToTranslate29"
 		]
 	},
 	"bs-universalexport-desc": "MediaWiki'nin sayfaları farklı biçimlerde dışa aktarmasını sağlar",
@@ -19,7 +20,7 @@
 	"bs-universalexport-tag-exclude-text": "Bu metin dışa aktarılmayacak.",
 	"bs-universalexport-tag-hidetitle-text": "Bu sayfanın başlığı dışa aktarmada görünmeyecek.",
 	"bs-universalexport-tag-excludearticle-text": "Bu sayfa dışa aktarılamayabilir.",
-	"bs-universalexport-tag-pagebreak-desc": "PDF oluşturmak için sayfa sonu ekler",
+	"bs-universalexport-tag-pagebreak-desc": "Eğer bu etiket seçili dışa aktarma modülü tarafından desteklenirse, bir sayfanın dışa aktarılan belgeyi bozmasına yol açar.",
 	"bs-universalexport-tag-noexport-desc": "Bu etiketin içindeki içerik dışa aktarılmaz.",
 	"bs-universalexport-tag-meta-desc": "Dışa aktarılan bir belgeye rastgele meta veriler eklemeye izin verir.",
 	"bs-universalexport-tag-params-desc": "Dışa aktarma için özel parametrelerin ayarlanmasına izin verir, parametrenin değerlendirilip değerlendirilmeyeceği seçilen dışa aktarma modülüne bağlıdır.",

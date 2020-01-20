@@ -13,7 +13,7 @@
 	"bs-universalexport-page-title-without-param": "Универзален извоз: Модули",
 	"bs-universalexport-page-title-on-error": "Универзален извоз: Грешка",
 	"bs-universalexport-page-text-without-param": "Страницава прикажува информации за расположивите извозни модули на универзалниот извоз.",
-	"bs-universalexport-page-text-without-param-no-modules-registered": "Нема регистрирани модули.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Нема пријавени модули.",
 	"bs-universalexport-widget-title": "Извоз",
 	"bs-universalexport-widget-tooltip": "Извези ја тековната страница",
 	"bs-universalexport-tag-pagebreak-text": "Прелом",
