@@ -39,7 +39,6 @@ class UniversalExport extends BsExtensionMW {
 	protected function initExt() {
 		// Hooks
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
-		$this->setHook( 'BSInsertMagicAjaxGetData', 'onBSInsertMagicAjaxGetData' );
 		$this->setHook( 'BSUsageTrackerRegisterCollectors' );
 	}
 
@@ -62,72 +61,4 @@ class UniversalExport extends BsExtensionMW {
 		return BsUniversalExportTagLibrary::onBSUsageTrackerRegisterCollectors( $aCollectorsConfig );
 	}
 
-	/**
-	 *
-	 * @param \stdClass &$oResponse
-	 * @param string $type
-	 * @return bool
-	 */
-	public function onBSInsertMagicAjaxGetData( &$oResponse, $type ) {
-		if ( $type != 'tags' ) {
-			return true;
-		}
-
-		$extension = \BlueSpice\Services::getInstance()->getBSExtensionFactory()
-			->getExtension( 'BlueSpiceUniversalExport' );
-		$helplink = $extension->getUrl();
-
-		$oResponse->result[] = [
-			'id' => 'bs:uemeta',
-			'type' => 'tag',
-			'name' => 'uemeta',
-			'desc' => wfMessage( 'bs-universalexport-tag-meta-desc' )->plain(),
-			'code' => '<bs:uemeta someMeta="Some Value" />',
-			'examples' => [
-				[
-					'code' => '<bs:uemeta department="IT" security="high" />'
-				]
-			],
-			'helplink' => $helplink
-		];
-
-		$oResponse->result[] = [
-			'id' => 'bs:ueparams',
-			'type' => 'tag',
-			'name' => 'ueparams',
-			'desc' => wfMessage( 'bs-universalexport-tag-params-desc' )->plain(),
-			'code' => '<bs:ueparams someParam="Some Value" />',
-			'examples' => [
-				[
-					'code' => '<bs:ueparams template="BlueSpice Landscape" />'
-				]
-			],
-			'helplink' => $helplink
-		];
-
-		$oResponse->result[] = [
-			'id' => 'bs:uepagebreak',
-			'type' => 'tag',
-			'name' => 'uepagebreak',
-			'desc' => wfMessage( 'bs-universalexport-tag-pagebreak-desc' )->plain(),
-			'code' => '<bs:uepagebreak />',
-			'helplink' => $helplink
-		];
-
-		$oResponse->result[] = [
-			'id' => 'bs:uenoexport',
-			'type' => 'tag',
-			'name' => 'uenoexport',
-			'desc' => wfMessage( 'bs-universalexport-tag-noexport-desc' )->plain(),
-			'code' => '<bs:uenoexport>Not included in export</bs:uenoexport>',
-			'examples' => [
-				[
-					'code' => '<bs:uenoexport>Not included in export</bs:uenoexport>'
-				]
-			],
-			'helplink' => $helplink
-		];
-
-		return true;
-	}
 }
