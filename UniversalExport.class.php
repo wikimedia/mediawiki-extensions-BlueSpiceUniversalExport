@@ -39,7 +39,6 @@ class UniversalExport extends BsExtensionMW {
 	protected function initExt() {
 		// Hooks
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
-		$this->setHook( 'BSUsageTrackerRegisterCollectors' );
 	}
 
 	/**
@@ -50,15 +49,6 @@ class UniversalExport extends BsExtensionMW {
 	 */
 	public function onParserFirstCallInit( &$oParser ) {
 		return BsUniversalExportTagLibrary::onParserFirstCallInit( $oParser );
-	}
-
-	/**
-	 * Register tag with UsageTracker extension
-	 * @param array &$aCollectorsConfig
-	 * @return Always true to keep hook running
-	 */
-	public function onBSUsageTrackerRegisterCollectors( &$aCollectorsConfig ) {
-		return BsUniversalExportTagLibrary::onBSUsageTrackerRegisterCollectors( $aCollectorsConfig );
 	}
 
 }

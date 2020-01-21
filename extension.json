@@ -136,6 +136,14 @@
 			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddUEParamsTag::callback",
 			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddPdfUENoExportTag::callback",
 			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddPdfUEPageBreakTag::callback"
+		],
+		"BSUsageTrackerRegisterCollectors": [
+			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEExcludeArticleTag::callback",
+			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEExcludeTag::callback",
+			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEHideTitleTag::callback",
+			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEMetaTag::callback",
+			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEPageBreakTag::callback",
+			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEParamsTag::callback"
 		]
 	},
 	"manifest_version": 2,
