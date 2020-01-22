@@ -19,7 +19,7 @@
 	"bs-universalexport-tag-exclude-text": "Denne teksten blir ikke eksportert.",
 	"bs-universalexport-tag-hidetitle-text": "Tittelen til siden vil ikke være synlig i eksporten.",
 	"bs-universalexport-tag-excludearticle-text": "Denne siden kan ikke eksporteres.",
-	"bs-universalexport-tag-pagebreak-desc": "Setter inn sidebrytning for PDF-generering",
+	"bs-universalexport-tag-pagebreak-desc": "Hvis det støttes av den valgte eksporteringsmodulen vil denne taggen påtvinge et sideskifte i det eksporterte dokumentet.",
 	"bs-universalexport-tag-noexport-desc": "Innhold i denne taggen blir ikke eksportert.",
 	"bs-universalexport-tag-meta-desc": "Gjør det mulig å legge til vilkårlige metadata i et eksportert dokument.",
 	"bs-universalexport-tag-params-desc": "Gjør det mulig å sette spesielle eksportparametre. Hvorvidt parameteren blir evaluert er avhengig av den valgte eksportmodulen.",
