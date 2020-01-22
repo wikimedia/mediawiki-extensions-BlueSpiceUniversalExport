@@ -247,48 +247,4 @@ class BsUniversalExportTagLibrary {
 		return implode( '', $aOut );
 	}
 
-	/**
-	 * Register tag with UsageTracker extension
-	 * @param array &$aCollectorsConfig
-	 * @return Always true to keep hook running
-	 */
-	public static function onBSUsageTrackerRegisterCollectors( &$aCollectorsConfig ) {
-		$aCollectorsConfig['bs:universalexport:pagebreak'] = [
-			'class' => 'Property',
-			'config' => [
-				'identifier' => 'bs-tag-universalexport-pagebreak'
-			]
-		];
-		$aCollectorsConfig['bs:universalexport:exclude'] = [
-			'class' => 'Property',
-			'config' => [
-				'identifier' => 'bs-tag-universalexport-exclude'
-			]
-		];
-		$aCollectorsConfig['bs:universalexport:hidetitle'] = [
-			'class' => 'Property',
-			'config' => [
-				'identifier' => 'bs-tag-universalexport-hidetitle'
-			]
-		];
-		$aCollectorsConfig['bs:universalexport:excludearticle'] = [
-			'class' => 'Property',
-			'config' => [
-				'identifier' => 'bs-tag-universalexport-excludearticle'
-			]
-		];
-		$aCollectorsConfig['bs:universalexport:meta'] = [
-			'class' => 'Property',
-			'config' => [
-				'identifier' => 'bs-tag-universalexport-meta'
-			]
-		];
-		$aCollectorsConfig['bs:universalexport:params'] = [
-			'class' => 'Property',
-			'config' => [
-				'identifier' => 'bs-tag-universalexport-params'
-			]
-		];
-		return true;
-	}
 }
