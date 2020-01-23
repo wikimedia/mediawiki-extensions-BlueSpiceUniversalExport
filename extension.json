@@ -23,6 +23,9 @@
 						"UniversalExportMetadataOverrides": "\\BlueSpice\\UniversalExport\\ConfigDefinition\\MetadataOverrides::getInstance"
 					}
 				}
+			},
+			"TagRegistry": {
+				"uepagebreak": "\\BlueSpice\\UniversalExport\\Tag\\PageBreak"
 			}
 		},
 		"BlueSpiceUniversalExport": {

@@ -25,23 +25,6 @@ class BsUniversalExportTagLibrary {
 	 */
 	public static function onParserFirstCallInit( &$oParser ) {
 		$oParser->setHook(
-			'pdfpagebreak',
-			'BsUniversalExportTagLibrary::onPagebreakTag'
-		);
-		$oParser->setHook(
-			'universalexport:pagebreak',
-			'BsUniversalExportTagLibrary::onPagebreakTag'
-		);
-		$oParser->setHook(
-			'bs:universalexport:pagebreak',
-			'BsUniversalExportTagLibrary::onPagebreakTag'
-		);
-		$oParser->setHook(
-			'bs:uepagebreak',
-			'BsUniversalExportTagLibrary::onPagebreakTag'
-		);
-
-		$oParser->setHook(
 			'nopdf',
 			'BsUniversalExportTagLibrary::onExcludeTag'
 		);
@@ -125,27 +108,6 @@ class BsUniversalExportTagLibrary {
 			'BsUniversalExportTagLibrary::onParamsTag'
 		);
 		return true;
-	}
-
-	/**
-	 *
-	 * @param string $sContent
-	 * @param array $aAttributes
-	 * @param Parser $oParser
-	 * @return string
-	 */
-	public static function onPagebreakTag( $sContent, $aAttributes, $oParser ) {
-		$oParser->getOutput()->setProperty( 'bs-tag-universalexport-pagebreak', 1 );
-
-		$aOut = [];
-		// TODO RBV (08.02.11 11:34): Use CSS class for styling
-		$style = "border-top: 2px dotted #999; background-color: #F5F5F5;"
-				. "color: #BBB; font-style: italic; text-align: center;";
-		$aOut[] = "<div class='bs-universalexport-pagebreak' style='$style'>";
-		$aOut[] = wfMessage( 'bs-universalexport-tag-pagebreak-text' )->plain();
-		$aOut[] = '</div>';
-
-		return implode( '', $aOut );
 	}
 
 	/**
