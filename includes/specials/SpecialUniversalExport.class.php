@@ -141,7 +141,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 					$propHelper->getPageProp( 'bs-universalexport-params' ),
 					true
 				);
-				if ( is_array( $res ) ) {
+				if ( is_array( $prop ) ) {
 					$this->aParams = array_merge(
 						$this->aParams,
 						$prop
