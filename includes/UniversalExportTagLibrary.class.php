@@ -25,31 +25,6 @@ class BsUniversalExportTagLibrary {
 	 */
 	public static function onParserFirstCallInit( &$oParser ) {
 		$oParser->setHook(
-			'nopdf',
-			'BsUniversalExportTagLibrary::onExcludeTag'
-		);
-		$oParser->setHook(
-			'universalexport:exclude',
-			'BsUniversalExportTagLibrary::onExcludeTag'
-		);
-		$oParser->setHook(
-			'bs:universalexport:exclude',
-			'BsUniversalExportTagLibrary::onExcludeTag'
-		);
-		$oParser->setHook(
-			'universalexport:noexport',
-			'BsUniversalExportTagLibrary::onExcludeTag'
-		);
-		$oParser->setHook(
-			'bs:universalexport:noexport',
-			'BsUniversalExportTagLibrary::onExcludeTag'
-		);
-		$oParser->setHook(
-			'bs:uenoexport',
-			'BsUniversalExportTagLibrary::onExcludeTag'
-		);
-
-		$oParser->setHook(
 			'pdfhidetitle',
 			'BsUniversalExportTagLibrary::onHideTitleTag'
 		);
@@ -108,27 +83,6 @@ class BsUniversalExportTagLibrary {
 			'BsUniversalExportTagLibrary::onParamsTag'
 		);
 		return true;
-	}
-
-	/**
-	 *
-	 * @param string $sContent
-	 * @param array $aAttributes
-	 * @param Parser $oParser
-	 * @return string
-	 */
-	public static function onExcludeTag( $sContent, $aAttributes, $oParser ) {
-		$oParser->getOutput()->setProperty( 'bs-tag-universalexport-exclude', 1 );
-
-		$aOut = [];
-
-		// TODO RBV (08.02.11 11:34): Use CSS class for styling
-		$msg = wfMessage( 'bs-universalexport-tag-exclude-text' )->plain();
-		$aOut[] = "<div class='bs-universalexport-exportexclude' title='$msg'>";
-		$aOut[] = $oParser->recursiveTagParse( $sContent );
-		$aOut[] = '</div>';
-
-		return implode( '', $aOut );
 	}
 
 	/**
