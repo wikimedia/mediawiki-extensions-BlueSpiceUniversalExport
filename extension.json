@@ -25,7 +25,8 @@
 				}
 			},
 			"TagRegistry": {
-				"uepagebreak": "\\BlueSpice\\UniversalExport\\Tag\\PageBreak"
+				"uepagebreak": "\\BlueSpice\\UniversalExport\\Tag\\PageBreak",
+				"universalexport": "\\BlueSpice\\UniversalExport\\Tag\\NoExport"
 			}
 		},
 		"BlueSpiceUniversalExport": {
