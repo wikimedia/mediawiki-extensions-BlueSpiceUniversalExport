@@ -25,23 +25,6 @@ class BsUniversalExportTagLibrary {
 	 */
 	public static function onParserFirstCallInit( &$oParser ) {
 		$oParser->setHook(
-			'pdfhidetitle',
-			'BsUniversalExportTagLibrary::onHideTitleTag'
-		);
-		$oParser->setHook(
-			'universalexport:hidetitle',
-			'BsUniversalExportTagLibrary::onHideTitleTag'
-		);
-		$oParser->setHook(
-			'bs:universalexport:hidetitle',
-			'BsUniversalExportTagLibrary::onHideTitleTag'
-		);
-		$oParser->setHook(
-			'bs:uehidetitle',
-			'BsUniversalExportTagLibrary::onHideTitleTag'
-		);
-
-		$oParser->setHook(
 			'pdfexcludepage',
 			'BsUniversalExportTagLibrary::onExcludeArticleTag'
 		);
@@ -83,23 +66,6 @@ class BsUniversalExportTagLibrary {
 			'BsUniversalExportTagLibrary::onParamsTag'
 		);
 		return true;
-	}
-
-	/**
-	 *
-	 * @param string $sContent
-	 * @param array $aAttributes
-	 * @param Parser $oParser
-	 * @return string
-	 */
-	public static function onHideTitleTag( $sContent, $aAttributes, $oParser ) {
-		$oParser->getOutput()->setProperty( 'bs-tag-universalexport-hidetitle', 1 );
-		$oParser->getOutput()->setProperty(
-			'bs-universalexport-hidetitle',
-			true
-		);
-
-		return '';
 	}
 
 	/**
