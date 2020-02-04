@@ -40,7 +40,7 @@ class NoExport extends Tag {
 	 * @param array $processedArgs
 	 * @param Parser $parser
 	 * @param PPFrame $frame
-	 * @return PageBreakHandler
+	 * @return NoExportHandler
 	 */
 	public function getHandler( $processedInput, array $processedArgs, Parser $parser,
 		PPFrame $frame ) {
