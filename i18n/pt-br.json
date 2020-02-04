@@ -20,7 +20,7 @@
 	"bs-universalexport-tag-exclude-text": "Este texto não será exportado.",
 	"bs-universalexport-tag-hidetitle-text": "O título desta página não será visível na exportação.",
 	"bs-universalexport-tag-excludearticle-text": "Esta página não pode ser exportada.",
-	"bs-universalexport-tag-pagebreak-desc": "Insere uma quebra de página para geração de PDF",
+	"bs-universalexport-tag-pagebreak-desc": "Se suportado pelo módulo de exportação escolhido, essa tag força uma quebra de página no documento de exportação.",
 	"bs-universalexport-tag-noexport-desc": "O conteúdo dentro desta marca não será exportado.",
 	"bs-universalexport-tag-meta-desc": "Permite adicionar metadados arbitrários a um documento exportado.",
 	"bs-universalexport-tag-params-desc": "Permite definir parâmetros especiais para exportação, se o parâmetro será avaliado depende do módulo de exportação escolhido.",
