@@ -21,7 +21,7 @@
 	"bs-universalexport-tag-exclude-text": "此文字不會被匯出。",
 	"bs-universalexport-tag-hidetitle-text": "此頁面標題在匯出內容裡不可見。",
 	"bs-universalexport-tag-excludearticle-text": "此頁面可能無法匯出。",
-	"bs-universalexport-tag-pagebreak-desc": "插入用於產生 PDF 的換頁標籤",
+	"bs-universalexport-tag-pagebreak-desc": "若被所選的匯出模組支援，此標籤會在匯出文件裡強制換頁。",
 	"bs-universalexport-tag-noexport-desc": "此標記裡的內容不會被匯出。",
 	"bs-universalexport-tag-meta-desc": "允許添加任何的詮釋資料至匯出的文件裡。",
 	"bs-universalexport-tag-params-desc": "允許設定特殊參數來匯出，而是否評估參數則取決於所選的匯出模組。",

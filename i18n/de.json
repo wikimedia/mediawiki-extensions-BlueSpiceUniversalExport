@@ -22,7 +22,7 @@
 	"bs-universalexport-tag-exclude-text": "Dieser Text wird nicht exportiert.",
 	"bs-universalexport-tag-hidetitle-text": "Der Titel dieser Seite wird im Export nicht angezeigt.",
 	"bs-universalexport-tag-excludearticle-text": "Diese Seite kann nicht exportiert werden.",
-	"bs-universalexport-tag-pagebreak-desc": "Fügt einen Seitenumbruch für die PDF-Erzeugung ein",
+	"bs-universalexport-tag-pagebreak-desc": "Erzwingt einen Seitenumbruch im Exportdokument, sofern das Exportmodul dies unterstützt.",
 	"bs-universalexport-tag-noexport-desc": "Inhalt innerhalb dieses Tags erscheint nicht im exportierten Dokument.",
 	"bs-universalexport-tag-meta-desc": "Ermöglicht das hinzufügen beliebiger Metadaten zum exportierten Dokument.",
 	"bs-universalexport-tag-params-desc": "Erlaubt das Setzen von Export-Parametern, ob diese Wirkung zeigen hängt vom gewählten Export-Modul ab.",

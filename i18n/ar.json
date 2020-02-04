@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"bs-universalexport-desc": "يمكن ميدياويكي من تصدير الصفحات إلى صيغ مختلفة",
@@ -19,7 +20,7 @@
 	"bs-universalexport-tag-exclude-text": "لن يتم تصدير هذا النص.",
 	"bs-universalexport-tag-hidetitle-text": "عنوان هذه الصفحة لن يكون مرئيا في التصدير.",
 	"bs-universalexport-tag-excludearticle-text": "قد لا يتم تصدير هذه الصفحة.",
-	"bs-universalexport-tag-pagebreak-desc": "يدرج فاصل صفحات لجيل PDF",
+	"bs-universalexport-tag-pagebreak-desc": "لو كان هذا مدعوما بواسطة موديل التصدير المختار، فهذا الوسم يدخل سطرا جديدا في الوثيقة المصدرة.",
 	"bs-universalexport-tag-noexport-desc": "لن يتم تصدير المحتوى الموجود داخل هذا الوسم.",
 	"bs-universalexport-tag-meta-desc": "يسمح بإضافة بيانات تعريف تعسفية إلى مستند تم تصديره.",
 	"bs-universalexport-tag-params-desc": "يسمح بوضع وسائط خاصة للتصدير، ما إذا كان تقييم الوسيط يعتمد على وحدة التصدير المختارة.",
