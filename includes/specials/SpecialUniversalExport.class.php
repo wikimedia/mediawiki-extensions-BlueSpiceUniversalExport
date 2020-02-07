@@ -177,6 +177,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 			// Throws Exception
 			BsUniversalExportHelper::checkPermissionForTitle(
 				$this->oRequestedTitle,
+				$this->getUser(),
 				$this->aParams
 			);
 

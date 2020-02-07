@@ -39,16 +39,15 @@ class BsUniversalExportHelper {
 	/**
 	 *
 	 * @param Title $oTitle
+	 * @param User $user
 	 * @param array &$aParams
 	 * @throws Exception
 	 */
-	public static function checkPermissionForTitle( $oTitle, &$aParams ) {
-		global $wgUser;
-
+	public static function checkPermissionForTitle( $oTitle, User $user, &$aParams ) {
 		$bErrorOccurred = false;
 		foreach ( $aParams as $sValue ) {
 			if ( $oTitle->getNamespace() == NS_SPECIAL ) {
-				if ( !$wgUser->isAllowed( 'read' ) ) {
+				if ( !$user->isAllowed( 'read' ) ) {
 					$bErrorOccurred = true;
 				}
 			} else {
