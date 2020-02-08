@@ -25,23 +25,6 @@ class BsUniversalExportTagLibrary {
 	 */
 	public static function onParserFirstCallInit( &$oParser ) {
 		$oParser->setHook(
-			'pdfexcludepage',
-			'BsUniversalExportTagLibrary::onExcludeArticleTag'
-		);
-		$oParser->setHook(
-			'universalexport:excludearticle',
-			'BsUniversalExportTagLibrary::onExcludeArticleTag'
-		);
-		$oParser->setHook(
-			'bs:universalexport:excludearticle',
-			'BsUniversalExportTagLibrary::onExcludeArticleTag'
-		);
-		$oParser->setHook(
-			'bs:ueexcludearticle',
-			'BsUniversalExportTagLibrary::onExcludeArticleTag'
-		);
-
-		$oParser->setHook(
 			'universalexport:meta',
 			'BsUniversalExportTagLibrary::onMetaTag' );
 		$oParser->setHook(
@@ -66,19 +49,6 @@ class BsUniversalExportTagLibrary {
 			'BsUniversalExportTagLibrary::onParamsTag'
 		);
 		return true;
-	}
-
-	/**
-	 *
-	 * @param string $sContent
-	 * @param array $aAttributes
-	 * @param Parser $oParser
-	 * @return string
-	 */
-	public static function onExcludeArticleTag( $sContent, $aAttributes, $oParser ) {
-		$oParser->getOutput()->setProperty( 'bs-tag-universalexport-excludearticle', 1 );
-
-		return '';
 	}
 
 	/**
