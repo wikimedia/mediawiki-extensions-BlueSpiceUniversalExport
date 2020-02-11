@@ -38,8 +38,10 @@ class LocalFileRepo extends Base {
 
 		$tmpFilepath = wfTempDir() . '/' . $targetFilename;
 		file_put_contents( $tmpFilepath, $this->descriptor->getContents() );
+
+		$user = $this->context->getUser();
 		$this->status =
-			\BsFileSystemHelper::uploadLocalFile( $tmpFilepath, true );
+			\BsFileSystemHelper::uploadLocalFileWithUser( $tmpFilepath, $user, true );
 
 		$this->targetUrl = $this->status->getValue();
 
