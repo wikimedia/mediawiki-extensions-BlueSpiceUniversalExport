@@ -25,18 +25,6 @@ class BsUniversalExportTagLibrary {
 	 */
 	public static function onParserFirstCallInit( &$oParser ) {
 		$oParser->setHook(
-			'universalexport:meta',
-			'BsUniversalExportTagLibrary::onMetaTag' );
-		$oParser->setHook(
-			'bs:universalexport:meta',
-			'BsUniversalExportTagLibrary::onMetaTag'
-		);
-		$oParser->setHook(
-			'bs:uemeta',
-			'BsUniversalExportTagLibrary::onMetaTag'
-		);
-
-		$oParser->setHook(
 			'universalexport:params',
 			'BsUniversalExportTagLibrary::onParamsTag'
 		);
@@ -49,30 +37,6 @@ class BsUniversalExportTagLibrary {
 			'BsUniversalExportTagLibrary::onParamsTag'
 		);
 		return true;
-	}
-
-	/**
-	 *
-	 * @param string $sContent
-	 * @param array $aAttributes
-	 * @param Parser $oParser
-	 * @return string
-	 */
-	public static function onMetaTag( $sContent, $aAttributes, $oParser ) {
-		$oParser->getOutput()->setProperty( 'bs-tag-universalexport-meta', 1 );
-		$oParser->getOutput()->setProperty(
-			'bs-universalexport-meta',
-			json_encode( $aAttributes )
-		);
-
-		$aOut = [];
-		$aOut[] = '<div class="bs-universalexport-meta"';
-		foreach ( $aAttributes as $sKey => $sValue ) {
-			$aOut[] = ' ' . $sKey . '="' . $sValue . '"';
-		}
-		$aOut[] = '></div>';
-
-		return implode( '', $aOut );
 	}
 
 	/**
