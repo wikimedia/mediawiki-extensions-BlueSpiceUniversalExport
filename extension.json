@@ -28,7 +28,8 @@
 				"uepagebreak": "\\BlueSpice\\UniversalExport\\Tag\\PageBreak",
 				"universalexport": "\\BlueSpice\\UniversalExport\\Tag\\NoExport",
 				"uehidetitle": "\\BlueSpice\\UniversalExport\\Tag\\HideTitle",
-				"ueexcludearticle": "\\BlueSpice\\UniversalExport\\Tag\\ExcludeArticle"
+				"ueexcludearticle": "\\BlueSpice\\UniversalExport\\Tag\\ExcludeArticle",
+				"universalexport:meta": "\\BlueSpice\\UniversalExport\\Tag\\Meta"
 			}
 		},
 		"BlueSpiceUniversalExport": {
