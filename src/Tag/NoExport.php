@@ -67,4 +67,14 @@ class NoExport extends Tag {
 		];
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
+	public function getResourceLoaderModuleStyles(): array {
+		return [
+			'ext.bluespice.universalExport.css'
+		];
+	}
+
 }
