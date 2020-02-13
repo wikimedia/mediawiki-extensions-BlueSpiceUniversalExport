@@ -136,7 +136,6 @@
 		}
 	},
 	"Hooks": {
-		"BeforePageDisplay": "\\BlueSpice\\UniversalExport\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"BSInsertMagicAjaxGetData": [
 			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddUEMetaTag::callback",
 			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddUEParamsTag::callback",

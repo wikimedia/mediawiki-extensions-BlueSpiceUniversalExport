@@ -15,13 +15,9 @@ class PageBreakHandler extends Handler {
 	public function handle() {
 		$this->parser->getOutput()->setProperty( 'bs-tag-universalexport-pagebreak', 1 );
 
-		// TODO RBV (08.02.11 11:34): Use CSS class for styling
-		$style = "border-top: 2px dotted #999; background-color: #F5F5F5;"
-			. "color: #BBB; font-style: italic; text-align: center;";
-
 		return Html::rawElement(
 			'div',
-			[ 'style' => $style ],
+			[ 'class' => 'bs-universalexport-pagebreak' ],
 			Message::newFromKey( 'bs-universalexport-tag-pagebreak-text' )->plain()
 		);
 	}
