@@ -26,29 +26,13 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
+namespace BlueSpice\UniversalExport;
+
+use BlueSpice\Extension as ExtensionBase;
 
 /**
  * Base class for UniversalExport extension
  * @package BlueSpiceUniversalExport
  */
-class UniversalExport extends BsExtensionMW {
-
-	/**
-	 *  Initialization of UniversalExport extension
-	 */
-	protected function initExt() {
-		// Hooks
-		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
-	}
-
-	/**
-	 * Hook-Handler for the MediaWiki 'ParserFirstCallInit' hook. Dispatches
-	 * registration og TagExtensions to the TagLibrary.
-	 * @param Parser &$oParser The MediaWiki Parser object
-	 * @return bool Always true to keep the hook runnning.
-	 */
-	public function onParserFirstCallInit( &$oParser ) {
-		return BsUniversalExportTagLibrary::onParserFirstCallInit( $oParser );
-	}
-
+class Extension extends ExtensionBase {
 }

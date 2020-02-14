@@ -16,7 +16,7 @@
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpiceUniversalExport": {
-					"className": "UniversalExport",
+					"className": "\\BlueSpice\\UniversalExport\\Extension",
 					"extPath": "/BlueSpiceUniversalExport",
 					"configDefinitions": {
 						"UniversalExportMetadataDefaults": "\\BlueSpice\\UniversalExport\\ConfigDefinition\\MetadataDefaults::getInstance",
@@ -29,7 +29,8 @@
 				"universalexport": "\\BlueSpice\\UniversalExport\\Tag\\NoExport",
 				"uehidetitle": "\\BlueSpice\\UniversalExport\\Tag\\HideTitle",
 				"ueexcludearticle": "\\BlueSpice\\UniversalExport\\Tag\\ExcludeArticle",
-				"universalexport:meta": "\\BlueSpice\\UniversalExport\\Tag\\Meta"
+				"universalexport:meta": "\\BlueSpice\\UniversalExport\\Tag\\Meta",
+				"universalexport:params": "\\BlueSpice\\UniversalExport\\Tag\\Params"
 			}
 		},
 		"BlueSpiceUniversalExport": {
@@ -59,12 +60,10 @@
 		"BlueSpice\\UniversalExport\\" : "src/"
 	},
 	"AutoloadClasses": {
-		"UniversalExport": "UniversalExport.class.php",
 		"SpecialUniversalExport": "includes/specials/SpecialUniversalExport.class.php",
 		"ViewExportModuleOverview": "includes/views/ViewExportModuleOverview.php",
 		"BsUniversalExportModule": "includes/UniversalExportModule.interface.php",
-		"BsUniversalExportHelper": "includes/UniversalExportHelper.class.php",
-		"BsUniversalExportTagLibrary": "includes/UniversalExportTagLibrary.class.php"
+		"BsUniversalExportHelper": "includes/UniversalExportHelper.class.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.universalExport.css": {
