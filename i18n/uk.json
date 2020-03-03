@@ -3,7 +3,8 @@
 		"authors": [
 			"Ата",
 			"Andriykopanytsia",
-			"Vlad5250"
+			"Vlad5250",
+			"Piramidion"
 		]
 	},
 	"bs-universalexport-desc": "Дозволяє MediaWiki експортувати сторінки в різні формати",
@@ -21,7 +22,7 @@
 	"bs-universalexport-tag-exclude-text": "Цей текст не буде експортовано.",
 	"bs-universalexport-tag-hidetitle-text": "Назв цієї сторінки не буде видно в експорті.",
 	"bs-universalexport-tag-excludearticle-text": "Цю сторінку не можна експортувати.",
-	"bs-universalexport-tag-pagebreak-desc": "Вставляє розрив сторінки для генерування PDF",
+	"bs-universalexport-tag-pagebreak-desc": "Якщо підтримується експортним модулем, цей тег примусово вставляє розрив сторінки в експортованому документі.",
 	"bs-universalexport-tag-noexport-desc": "Вміст всередині цього теґу не буде експортовано.",
 	"bs-universalexport-tag-meta-desc": "Дозволяє додавати довільні метадані в експортований документ.",
 	"bs-universalexport-tag-params-desc": "Дозволяє встановити спеціальні параметри для експорту, чи параметр буде оцінено залежить від обраного модуля експорту.",
