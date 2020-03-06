@@ -133,7 +133,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 				throw new Exception( 'error-requested-title-does-not-exist' );
 			}*/
 
-			$propHelper = Services::getInstance()->getBSUtilityFactory()
+			$propHelper = Services::getInstance()->getService( 'BSUtilityFactory' )
 			->getPagePropHelper( $this->oRequestedTitle );
 
 			// Get relevant page props
