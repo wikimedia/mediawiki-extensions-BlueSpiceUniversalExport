@@ -45,13 +45,14 @@ class BsUniversalExportHelper {
 	 */
 	public static function checkPermissionForTitle( $oTitle, User $user, &$aParams ) {
 		$bErrorOccurred = false;
+		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
 		foreach ( $aParams as $sValue ) {
 			if ( $oTitle->getNamespace() == NS_SPECIAL ) {
 				if ( !$user->isAllowed( 'read' ) ) {
 					$bErrorOccurred = true;
 				}
 			} else {
-				if ( !$oTitle->userCan( 'read' ) ) {
+				if ( !$pm->userCan( 'read', $user, $oTitle ) ) {
 					$bErrorOccurred = true;
 				}
 			}

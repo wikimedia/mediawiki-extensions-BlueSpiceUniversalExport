@@ -158,7 +158,14 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 				if ( $this->getUser()->isAllowed( 'read' ) !== true ) {
 					throw new Exception( 'bs-universalexport-error-permission' );
 				}
-			} elseif ( $this->oRequestedTitle->userCan( 'read' ) === false ) {
+			} elseif ( \MediaWiki\MediaWikiServices::getInstance()
+				->getPermissionManager()
+				->userCan(
+					'read',
+					$this->getUser(),
+					$this->oRequestedTitle
+				) === false
+			) {
 				throw new Exception( 'bs-universalexport-error-permission' );
 			}
 
