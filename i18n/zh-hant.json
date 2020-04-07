@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226",
 			"Cwlin0416",
-			"Kly"
+			"Kly",
+			"Liuxinyu970226"
 		]
 	},
 	"bs-universalexport-desc": "啟用 MediaWiki 來匯出頁面成各種格式",

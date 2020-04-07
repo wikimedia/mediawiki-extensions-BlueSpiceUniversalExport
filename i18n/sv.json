@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix",
 			"Jopparn",
-			"Lokal Profil"
+			"Lokal Profil",
+			"WikiPhoenix"
 		]
 	},
 	"bs-universalexport-desc": "Möjliggör för MediaWiki att exportera sidor till olika format",
