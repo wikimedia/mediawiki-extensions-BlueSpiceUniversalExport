@@ -19,7 +19,7 @@
 	"bs-universalexport-tag-exclude-text": "Stu teste non g'avène esportate.",
 	"bs-universalexport-tag-hidetitle-text": "'U titole de sta pàgene non ge iesse jndr'à l'esportazione.",
 	"bs-universalexport-tag-excludearticle-text": "Sta pàgene non ge pò essere esportate.",
-	"bs-universalexport-tag-pagebreak-desc": "'Nzerisce 'na 'nderruzzione de pàgene pa generazione d'u PDF",
+	"bs-universalexport-tag-pagebreak-desc": "Ce supportate da 'nu module de esportazione scacchiate, stu tag forze 'na 'nderruzzione de pàgene jndr'à 'nu documende esportate.",
 	"bs-universalexport-tag-noexport-desc": "'U condenute jndre a stu tag non g'avène esportate.",
 	"bs-universalexport-tag-meta-desc": "Permette de aggiungere metadate arbitrarie jndr'à 'nu documende esportate.",
 	"bs-universalexport-tag-params-desc": "Permette de 'mbostà parametre pe l'esportazione, ce 'u parametre avène valutate dipendende sus a 'u module de esportazione scacchiate.",
