@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Liuxinyu970226",
 			"Shirayuki",
-			"Liuxinyu970226"
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-universalexport-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of univeral export extension",

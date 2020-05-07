@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Metalhead64",
 			"Hwboehm",
-			"Mglaser"
+			"Metalhead64",
+			"Mglaser",
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-universalexport-desc": "Aktiviert MediaWiki zum Exportieren von Seiten in verschiedene Formate",

@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата",
 			"Andriykopanytsia",
+			"Piramidion",
 			"Vlad5250",
-			"Piramidion"
+			"Ата"
 		]
 	},
 	"bs-universalexport-desc": "Дозволяє MediaWiki експортувати сторінки в різні формати",
