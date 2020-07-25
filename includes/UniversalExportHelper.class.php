@@ -48,7 +48,7 @@ class BsUniversalExportHelper {
 		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
 		foreach ( $aParams as $sValue ) {
 			if ( $oTitle->getNamespace() == NS_SPECIAL ) {
-				if ( !$user->isAllowed( 'read' ) ) {
+				if ( !$pm->userHasRight( $user, 'read' ) ) {
 					$bErrorOccurred = true;
 				}
 			} else {

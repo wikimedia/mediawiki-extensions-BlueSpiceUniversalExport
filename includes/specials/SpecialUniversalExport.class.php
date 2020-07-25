@@ -15,6 +15,7 @@
 use BlueSpice\Services;
 use BlueSpice\UniversalExport\IExportTarget;
 use BlueSpice\UniversalExport\LegacyArrayDescriptor;
+use MediaWiki\MediaWikiServices;
 
 /**
  * UniversalExport special page class.
@@ -155,7 +156,9 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 			// Title::userCan always returns false on special pages
 			// (exept for createaccount action)
 			if ( $this->oRequestedTitle->getNamespace() === NS_SPECIAL ) {
-				if ( $this->getUser()->isAllowed( 'read' ) !== true ) {
+				$isAllowed = MediaWikiServices::getInstance()
+					->getPermissionManager()->userHasRight( $this->getUser(), 'read' );
+				if ( !$isAllowed ) {
 					throw new Exception( 'bs-universalexport-error-permission' );
 				}
 			} elseif ( \MediaWiki\MediaWikiServices::getInstance()
