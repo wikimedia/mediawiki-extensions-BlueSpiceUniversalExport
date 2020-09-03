@@ -11,6 +11,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
+use MediaWiki\MediaWikiServices;
 
 /**
  * UniversalExport BsUniversalExportHelper class.
@@ -24,7 +25,7 @@ class BsUniversalExportHelper {
 	 */
 	public static function getParamsFromQueryString( &$aParams ) {
 		global $wgRequest;
-		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+		$config = MediaWikiServices::getInstance()->getConfigFactory()
 			->makeConfig( 'bsg' );
 		$aParamsOverrides = $config->get( 'UniversalExportParamsOverrides' );
 		$aParams = array_merge( $aParams, $wgRequest->getArray( 'ue', [] ) );
@@ -45,7 +46,7 @@ class BsUniversalExportHelper {
 	 */
 	public static function checkPermissionForTitle( $oTitle, User $user, &$aParams ) {
 		$bErrorOccurred = false;
-		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		$pm = MediaWikiServices::getInstance()->getPermissionManager();
 		foreach ( $aParams as $sValue ) {
 			if ( $oTitle->getNamespace() == NS_SPECIAL ) {
 				if ( !$pm->userHasRight( $user, 'read' ) ) {

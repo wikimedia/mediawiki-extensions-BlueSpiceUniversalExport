@@ -12,7 +12,6 @@
  * @filesource
  */
 
-use BlueSpice\Services;
 use BlueSpice\UniversalExport\IExportTarget;
 use BlueSpice\UniversalExport\LegacyArrayDescriptor;
 use MediaWiki\MediaWikiServices;
@@ -134,7 +133,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 				throw new Exception( 'error-requested-title-does-not-exist' );
 			}*/
 
-			$propHelper = Services::getInstance()->getService( 'BSUtilityFactory' )
+			$propHelper = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' )
 			->getPagePropHelper( $this->oRequestedTitle );
 
 			// Get relevant page props
@@ -161,7 +160,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 				if ( !$isAllowed ) {
 					throw new Exception( 'bs-universalexport-error-permission' );
 				}
-			} elseif ( \MediaWiki\MediaWikiServices::getInstance()
+			} elseif ( MediaWikiServices::getInstance()
 				->getPermissionManager()
 				->userCan(
 					'read',
