@@ -34,6 +34,9 @@
 		"BlueSpiceVisualEditorConnector": {
 			"TagDefinitions": [
 				"ext.bluespice.universalExport.visualEditorTagDefinition"
+			],
+			"PluginModules": [
+				"ext.bluespice.universalExport.visualEditor"
 			]
 		}
 	},
@@ -65,11 +68,25 @@
 		},
 		"ext.bluespice.universalExport.visualEditorTagDefinition": {
 			"scripts": [
-				"bs.unvrslxprt/util/tag/PdfPageBreakDefinition.js"
+				"bs.unvrslxprt/util/tag/PdfPageBreakDefinition.js",
+				"bs.unvrslxprt/util/tag/PdfNoExportDefinition.js"
 			],
 			"messages": [
 				"bs-universalexport-tag-pagebreak-title",
-				"bs-universalexport-tag-pagebreak-desc"
+				"bs-universalexport-tag-pagebreak-desc",
+				"bs-universalexport-tag-noexport-title",
+				"bs-universalexport-tag-noexport-desc"
+			]
+		},
+		"ext.bluespice.universalExport.visualEditor": {
+			"scripts": [
+				"bs.unvrslxprt/ve-insertnoexport/ve.ui.BSInsertPdfNoExportTool.js"
+			],
+			"messages": [
+				"bs-universalexport-insert-noexport-title"
+			],
+			"dependencies": [
+				"ext.bluespice.universalExport.css"
 			]
 		}
 	},
@@ -132,7 +149,8 @@
 	"Hooks": {
 		"BeforePageDisplay": "\\BlueSpice\\UniversalExport\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"BSInsertMagicAjaxGetData": [
-			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\PdfPageBreak::callback"
+			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\PdfPageBreak::callback",
+			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\PdfNoExport::callback"
 		]
 	},
 	"manifest_version": 2,
