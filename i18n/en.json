@@ -28,5 +28,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "The requested page must not be exported because it is on category blacklist.",
 	"action-universalexport-export": "create an export file",
 	"right-universalexport-export": "Create an export file",
-	"bs-universalexport-tag-pagebreak-title": "Page break"
+	"bs-universalexport-tag-pagebreak-title": "Page break",
+	"bs-universalexport-tag-noexport-title": "Exclude from PDF",
+	"bs-universalexport-insert-noexport-title": "No PDF"
 }
