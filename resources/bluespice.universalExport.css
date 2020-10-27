@@ -10,3 +10,7 @@
 	background-color:#EBECEC;
 	display: inline-block;
 }
+
+.oo-ui-icon-pdfnoexport {
+	background-image: url( images/pdfnoexport.png );
+}
