@@ -32,7 +32,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	// UniversalExport
 	/**
 	 * array( 'ModuleKey' => $oModuleObjectImplementsBsUniversalExportModule, ... )
-	 * @var array(
+	 * @var array
 	 */
 	public $aModules = [];
 
