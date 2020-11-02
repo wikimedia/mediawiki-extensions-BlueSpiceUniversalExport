@@ -107,11 +107,14 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	 */
 	public function execute( $sParameter ) {
 		parent::execute( $sParameter );
-		Hooks::run( 'BSUniversalExportSpecialPageExecute', [
-			$this,
-			$sParameter,
-			&$this->aModules
-		] );
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'BSUniversalExportSpecialPageExecute',
+			[
+				$this,
+				$sParameter,
+				&$this->aModules
+			]
+		);
 
 		if ( !empty( $sParameter ) ) {
 			$this->processParameter( $sParameter );
