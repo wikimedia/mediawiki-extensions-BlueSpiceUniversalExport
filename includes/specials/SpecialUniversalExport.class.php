@@ -12,8 +12,10 @@
  * @filesource
  */
 
+use BlueSpice\UniversalExport\IExportModule;
 use BlueSpice\UniversalExport\IExportTarget;
 use BlueSpice\UniversalExport\LegacyArrayDescriptor;
+use BlueSpice\UniversalExport\ModuleFactory;
 use MediaWiki\MediaWikiServices;
 
 /**
@@ -107,20 +109,21 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	 */
 	public function execute( $sParameter ) {
 		parent::execute( $sParameter );
-		MediaWikiServices::getInstance()->getHookContainer()->run(
-			'BSUniversalExportSpecialPageExecute',
-			[
-				$this,
-				$sParameter,
-				&$this->aModules
-			]
-		);
+		$this->aModules = $this->getModuleFactory()->getModules();
 
 		if ( !empty( $sParameter ) ) {
 			$this->processParameter( $sParameter );
 		} else {
 			$this->outputInformation();
 		}
+	}
+
+	/**
+	 *
+	 * @return ModuleFactory
+	 */
+	private function getModuleFactory() {
+		return MediaWikiServices::getInstance()->getService( 'BSUniversalExportModuleFactory' );
 	}
 
 	/**
@@ -195,7 +198,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 
 			$sModuleKey = $this->aParams['module'];
 			if ( !isset( $this->aModules[ $sModuleKey ] )
-				|| !( $this->aModules[ $sModuleKey ] instanceof BsUniversalExportModule ) ) {
+				|| !( $this->aModules[ $sModuleKey ] instanceof IExportModule ) ) {
 				throw new Exception(
 					'bs-universalexport-error-requested-export-module-not-found'
 				);
@@ -237,7 +240,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 		}
 
 		foreach ( $this->aModules as $sKey => $oModule ) {
-			if ( $oModule instanceof BsUniversalExportModule ) {
+			if ( $oModule instanceof IExportModule ) {
 				$oModuleOverview = $oModule->getOverview();
 				$this->oOutputPage->addHtml( $oModuleOverview->execute() );
 			} else {

@@ -12,25 +12,13 @@
  * @filesource
  */
 
+use BlueSpice\UniversalExport\IExportModule;
+
 /**
+ * DEPRECATED
  * UniversalExport Modue interface.
  * @package BlueSpiceUniversalExport
+ * @deprecated since version 3.3
  */
-interface BsUniversalExportModule {
-
-	/**
-	 * Creates a file, which can be returned in the HttpResponse
-	 * @param SpecialUniversalExport &$oCaller This object carries all needed
-	 * information as public members
-	 * @return array Associative array containing the file itself as well as the
-	 * MIME-Type. I.e. array( 'mime-type' => 'text/html', 'content' => '<html>...' )
-	 */
-	public function createExportFile( &$oCaller );
-
-	/**
-	 * Creates a ViewExportModuleOverview to display on the SpecialUniversalExport
-	 * page if no parameter is provided
-	 * @return ViewExportModuleOverview
-	 */
-	public function getOverview();
+interface BsUniversalExportModule extends IExportModule {
 }
