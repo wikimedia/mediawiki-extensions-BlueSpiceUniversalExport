@@ -37,7 +37,8 @@
 			"ExportTargetRegistry": {
 				"download": "BlueSpice\\UniversalExport\\ExportTarget\\Download::factory",
 				"localfilerepo": "BlueSpice\\UniversalExport\\ExportTarget\\LocalFileRepo::factory"
-			}
+			},
+			"ModuleRegistry": {}
 		},
 		"BlueSpiceVisualEditorConnector": {
 			"TagDefinitions": [
@@ -48,6 +49,9 @@
 			]
 		}
 	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"SpecialPages": {
 		"UniversalExport": "SpecialUniversalExport"
 	},

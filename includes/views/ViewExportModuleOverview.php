@@ -12,18 +12,25 @@
  * @filesource
  */
 
+use BlueSpice\UniversalExport\IExportModuleOverview;
+
 /**
  * This view renders the Overview of an ExportModule.
+ * @deprecated since version 3.3 - use own implementation of IExportModuleOverview
+ * ViewBaseElement should not be used anymore!
  * @package    BlueSpiceUniversalExport
  */
-class ViewExportModuleOverview extends ViewBaseElement {
+class ViewExportModuleOverview extends ViewBaseElement implements IExportModuleOverview {
 
 	/**
 	 * Generates actually the output.
+	 * @deprecated since version 3.3 - use own implementation of IExportModuleOverview
+	 * ViewBaseElement should not be used anymore!
 	 * @param mixed $params
 	 * @return string The rendered HTML
 	 */
 	public function execute( $params = false ) {
+		wfDebugLog( 'bluespice-deprecations', __METHOD__, 'private' );
 		$aOut = [];
 
 		$sId = !empty( $this->_mId ) ? ' id="' . $this->_mId . '"' : '';

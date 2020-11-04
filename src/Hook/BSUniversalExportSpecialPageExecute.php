@@ -2,16 +2,21 @@
 
 namespace BlueSpice\UniversalExport\Hook;
 
+/**
+ * DEPRECATED
+ * @deprecated since version 3.3 - use ExtensionAttributeBasedRegistry
+ * "BlueSpiceUniversalExportModuleRegistry" instead
+ */
 abstract class BSUniversalExportSpecialPageExecute extends \BlueSpice\Hook {
 
 	/**
-	 *
-	 * @var \SpecialPage
+	 * @deprecated since version 3.3 - mabe null!
+	 * @var \SpecialPage|null
 	 */
 	protected $special = null;
 
 	/**
-	 *
+	 * @deprecated since version 3.3 - always empty!
 	 * @var string
 	 */
 	protected $parameter = null;
@@ -23,13 +28,16 @@ abstract class BSUniversalExportSpecialPageExecute extends \BlueSpice\Hook {
 	protected $modules = null;
 
 	/**
-	 *
+	 * DEPRECATED
+	 * @deprecated since version 3.3 - use ExtensionAttributeBasedRegistry
+	 * "BlueSpiceUniversalExportModuleRegistry" instead
 	 * @param \SpecialPage $special
 	 * @param string $parameter
 	 * @param \BsUniversalExportModule[] &$modules
 	 * @return bool
 	 */
 	public static function callback( $special, $parameter, &$modules ) {
+		wfDebugLog( 'bluespice-deprecations', __METHOD__, 'private' );
 		$className = static::class;
 		$hookHandler = new $className(
 			null,
