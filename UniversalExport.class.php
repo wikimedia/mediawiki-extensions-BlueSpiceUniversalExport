@@ -114,20 +114,6 @@ class UniversalExport extends BsExtensionMW {
 			'helplink' => $helplink
 		];
 
-		$oResponse->result[] = [
-			'id' => 'bs:uenoexport',
-			'type' => 'tag',
-			'name' => 'uenoexport',
-			'desc' => wfMessage( 'bs-universalexport-tag-noexport-desc' )->plain(),
-			'code' => '<bs:uenoexport>Not included in export</bs:uenoexport>',
-			'examples' => [
-				[
-					'code' => '<bs:uenoexport>Not included in export</bs:uenoexport>'
-				]
-			],
-			'helplink' => $helplink
-		];
-
 		return true;
 	}
 }
