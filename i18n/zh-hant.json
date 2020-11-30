@@ -30,5 +30,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "請求的頁面因列在分類黑名單裡，因此無法匯出。",
 	"action-universalexport-export": "建立匯出檔案",
 	"right-universalexport-export": "建立匯出檔案",
-	"bs-universalexport-tag-pagebreak-title": "換頁"
+	"bs-universalexport-tag-pagebreak-title": "換頁",
+	"bs-universalexport-tag-noexport-title": "從 PDF 排除",
+	"bs-universalexport-insert-noexport-title": "沒有 PDF"
 }

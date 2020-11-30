@@ -15,5 +15,7 @@
 	"bs-universalexport-tag-exclude-text": "Dësen Text gëtt net exportéiert.",
 	"bs-universalexport-tag-excludearticle-text": "Dës Säit kann net exportéiert ginn.",
 	"bs-universalexport-error-permission": "Dir hutt net genuch Rechter fir dës Säit z'exportéieren.",
-	"action-universalexport-export": "en Export-Fichier maachen"
+	"action-universalexport-export": "en Export-Fichier maachen",
+	"bs-universalexport-tag-noexport-title": "Aus dem PDF ewechloossen",
+	"bs-universalexport-insert-noexport-title": "Kee PDF"
 }
