@@ -28,5 +28,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Sta pàgene non ge pò essere esportate purcé ste jndr'à 'na categorije jndr'à l'elenghe gnure.",
 	"action-universalexport-export": "ccèjre 'nu file de esportazione",
 	"right-universalexport-export": "Ccèjre 'nu file de esportazione",
-	"bs-universalexport-tag-pagebreak-title": "'Nderruzzione de pàgene"
+	"bs-universalexport-tag-pagebreak-title": "'Nderruzzione de pàgene",
+	"bs-universalexport-tag-noexport-title": "Esclude da 'u PDF",
+	"bs-universalexport-insert-noexport-title": "None PDF"
 }
