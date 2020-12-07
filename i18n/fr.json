@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Florian COLLIN",
 			"Gomoko",
 			"McDutchie",
 			"SnowedEarth",
@@ -33,5 +34,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "La page demandée ne doit pas être exportée car elle est dans la catégorie des listes noires.",
 	"action-universalexport-export": "créer un fichier d’exportation",
 	"right-universalexport-export": "Créer un fichier exporté",
-	"bs-universalexport-tag-pagebreak-title": "Saut de page"
+	"bs-universalexport-tag-pagebreak-title": "Saut de page",
+	"bs-universalexport-tag-noexport-title": "Exclure du PDF",
+	"bs-universalexport-insert-noexport-title": "Pas de PDF"
 }
