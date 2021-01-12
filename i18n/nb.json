@@ -28,5 +28,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Den etterspurte siden kan ikke eksporteres fordi den er i en svartelistet kategori.",
 	"action-universalexport-export": "opprette en eksportfil",
 	"right-universalexport-export": "Opprette en eksportfil",
-	"bs-universalexport-tag-pagebreak-title": "Sidebrytning"
+	"bs-universalexport-tag-pagebreak-title": "Sidebrytning",
+	"bs-universalexport-tag-noexport-title": "Ekskluder fra PDF",
+	"bs-universalexport-insert-noexport-title": "Ingen PDF"
 }
