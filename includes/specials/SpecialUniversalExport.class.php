@@ -249,6 +249,9 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 		}
 	}
 
+	/**
+	 * @param array $aFile
+	 */
 	private function invokeExportTarget( $aFile ) {
 		$descriptor = new LegacyArrayDescriptor( $aFile );
 

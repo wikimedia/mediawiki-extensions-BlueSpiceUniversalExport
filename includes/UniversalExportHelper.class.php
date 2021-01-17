@@ -224,7 +224,7 @@ class BsUniversalExportHelper {
 	 * @deprecated use BsDOMHelper instead
 	 * @param DOMNode $oDOMNode
 	 * @param type $sWantedNodeName
-	 * @return DOMElement | null
+	 * @return DOMElement|null
 	 */
 	public static function findPreviousDOMElementSibling( DOMNode &$oDOMNode, $sWantedNodeName = '' ) {
 		$oDOMNodesPrevSibling = $oDOMNode->previousSibling;

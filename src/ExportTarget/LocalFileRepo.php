@@ -7,6 +7,7 @@ use Status;
 
 class LocalFileRepo extends Base {
 
+	/** @var string */
 	private $targetUrl = '';
 
 	/**
