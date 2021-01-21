@@ -56,6 +56,9 @@
 			"i18n"
 		]
 	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"ExtensionMessagesFiles": {
 		"UniversalExportAlias": "languages/SpecialUniversalExport.alias.php"
 	},
