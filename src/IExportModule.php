@@ -2,6 +2,10 @@
 
 namespace BlueSpice\UniversalExport;
 
+use MediaWiki\MediaWikiServices;
+use SpecialUniversalExport;
+use WebRequest;
+
 interface IExportModule {
 	/**
 	 * Creates a file, which can be returned in the HttpResponse
@@ -18,4 +22,25 @@ interface IExportModule {
 	 * @return IExportModuleOverview
 	 */
 	public function getOverview();
+
+	/**
+	 * Get the link for exporting using this module
+	 *
+	 * @param WebRequest $request
+	 * @param array|null $additional
+	 * @return string
+	 */
+	public function getExportLink( WebRequest $request, array $additional = [] );
+
+	/**
+	 * Get the name of the module
+	 *
+	 * @return string
+	 */
+	public function getName();
+
+	/**
+	 * @return MediaWikiServices
+	 */
+	public function getServices();
 }

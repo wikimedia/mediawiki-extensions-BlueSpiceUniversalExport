@@ -77,6 +77,7 @@ class ModuleFactory {
 			return $this->modules[$name];
 		}
 		$this->modules[$name] = call_user_func_array( $callable, [
+			$name,
 			$this->services,
 			$this->config,
 		] );
