@@ -1,0 +1,59 @@
+<?php
+
+namespace BlueSpice\UniversalExport;
+
+use SpecialUniversalExport;
+use WebRequest;
+
+interface IExportSubaction {
+	/**
+	 * Whether this subaction is called
+	 *
+	 * @param WebRequest $request
+	 * @return bool
+	 */
+	public function applies( WebRequest $request );
+
+	/**
+	 * Get permission required to execute this subaction
+	 *
+	 * @return bool
+	 */
+	public function getPermission();
+
+	/**
+	 * @param array &$template
+	 * @param array &$contents
+	 * @param SpecialUniversalExport $caller
+	 * @return bool
+	 */
+	public function apply( &$template, &$contents, $caller );
+
+	/**
+	 * Get the export module this is a subaction of
+	 *
+	 * @return IExportModule
+	 */
+	public function getMainModule();
+
+	/**
+	 * Get the data for the action button
+	 * [
+	 * 		'title' => '',
+	 * 		'text' => '',
+	 * 		'iconClass' => ''
+	 * ]
+	 *
+	 * @return array
+	 */
+	public function getActionButtonDetails();
+
+	/**
+	 * Get the link for exporting using this subaction
+	 *
+	 * @param WebRequest $request
+	 * @param array|null $additional
+	 * @return string
+	 */
+	public function getExportLink( WebRequest $request, array $additional = [] );
+}
