@@ -60,9 +60,6 @@
 			"i18n"
 		]
 	},
-	"ServiceWiringFiles": [
-		"includes/ServiceWiring.php"
-	],
 	"ExtensionMessagesFiles": {
 		"UniversalExportAlias": "languages/SpecialUniversalExport.alias.php"
 	},
@@ -173,7 +170,8 @@
 			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEMetaTag::callback",
 			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEPageBreakTag::callback",
 			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEParamsTag::callback"
-		]
+		],
+		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\UniversalExport\\Hook\\SkinTemplateOutputPageBeforeExec\\AddActions::callback"
 	},
 	"manifest_version": 2,
 	"load_composer_autoloader": true

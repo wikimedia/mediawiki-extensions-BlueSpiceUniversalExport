@@ -111,12 +111,16 @@ class BsUniversalExportHelper {
 
 		// By convention previousSibling is an Anchor-Tag (see BsPageContentProvider)
 		// TODO: check for null
-		$sPageTitleHeadingJumpmark = self::findPreviousDOMElementSibling(
+		$oPageTitleHeadingJumpmarkElement = self::findPreviousDOMElementSibling(
 			$oPageTitleHeadingElement,
 			'a'
-		)->getAttribute( 'name' );
+		);
+		if ( $oPageTitleHeadingJumpmarkElement ) {
+			$sPageTitleHeadingJumpmark = $oPageTitleHeadingJumpmarkElement->getAttribute( 'name' );
+			$oPageTitleBookmarkElement->setAttribute( 'href', '#' . $sPageTitleHeadingJumpmark );
+		}
+
 		$oPageTitleBookmarkElement->setAttribute( 'name', $sPageTitleHeadingTextContent );
-		$oPageTitleBookmarkElement->setAttribute( 'href', '#' . $sPageTitleHeadingJumpmark );
 
 		// Adapt MediaWiki TOC #1
 		$oTocTableElement = $oBodyContentXPath->query( "//*[@id='toc']" );
