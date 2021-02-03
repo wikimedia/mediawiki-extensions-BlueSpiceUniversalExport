@@ -15,5 +15,7 @@
 	"bs-universalexport-desc": "미디어위키가 다른 포맷으로 문서를 내보낼 수 있게 합니다",
 	"bs-universalexport-tag-exclude-text": "이 텍스트는 내보내지 않습니다.",
 	"bs-universalexport-tag-hidetitle-text": "이 문서의 제목은 내보내기에서 보이지 않습니다.",
-	"bs-universalexport-tag-noexport-desc": "이 태그 안의 내용은 내보내지 않습니다."
+	"bs-universalexport-tag-noexport-desc": "이 태그 안의 내용은 내보내지 않습니다.",
+	"bs-universalexport-tag-noexport-title": "PDF에서 제외",
+	"bs-universalexport-insert-noexport-title": "PDF 없음"
 }

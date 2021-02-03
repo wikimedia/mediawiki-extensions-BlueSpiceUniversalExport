@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald",
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Felipe L. Ewald"
 		]
 	},
 	"bs-universalexport-desc": "Permite que o MediaWiki exporte páginas em diferentes formatos",
@@ -29,5 +29,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "A página que solicitou não deve ser exportada porque está na categoria lista negra.",
 	"action-universalexport-export": "criar e exportar arquivo",
 	"right-universalexport-export": "Criar e exportar arquivo",
-	"bs-universalexport-tag-pagebreak-title": "Quebra de página"
+	"bs-universalexport-tag-pagebreak-title": "Quebra de página",
+	"bs-universalexport-tag-noexport-title": "Excluir do PDF",
+	"bs-universalexport-insert-noexport-title": "Sem PDF"
 }

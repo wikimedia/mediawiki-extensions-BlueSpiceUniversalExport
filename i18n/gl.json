@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"ArenaL5",
 			"Elisardojm"
 		]
 	},
@@ -19,7 +20,7 @@
 	"bs-universalexport-tag-exclude-text": "Este texto non se exportará.",
 	"bs-universalexport-tag-hidetitle-text": "O título desta páxina non será visible na exportación.",
 	"bs-universalexport-tag-excludearticle-text": "Non se pode exportar esta páxina.",
-	"bs-universalexport-tag-pagebreak-desc": "Se está soportada polo módulo de exportación escollido, esta etiqueta engade un salto de páxina no documento exportado.",
+	"bs-universalexport-tag-pagebreak-desc": "Se o módulo de exportación escollido o admite, esta etiqueta forza un salto de páxina no documento exportado.",
 	"bs-universalexport-tag-noexport-desc": "O contido dentro desta marca non será exportado.",
 	"bs-universalexport-tag-meta-desc": "Permite engadir metadatos arbitrarios a un documento exportado.",
 	"bs-universalexport-tag-params-desc": "Permite definir parámetros especiais para a exportación, o parámetro será avaliado dependendo do módulo de exportación escolhido.",

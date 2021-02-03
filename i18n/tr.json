@@ -2,17 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"MuratTheTurkish",
 			"SwornToTranslate29"
 		]
 	},
 	"bs-universalexport-desc": "MediaWiki'nin sayfaları farklı biçimlerde dışa aktarmasını sağlar",
-	"prefs-universalexport": "Evrensel ihracat",
-	"universalexport": "Evrensel ihracat",
+	"prefs-universalexport": "Evrensel aktarım",
+	"universalexport": "Evrensel aktarım",
 	"bs-universalexport-pref-metadatadefaults": "Meta veriler (standart, JSON):",
 	"bs-universalexport-pref-metadataoverrides": "Meta veriler (geçersiz kılma, JSON):",
-	"bs-universalexport-page-title-without-param": "Evrensel ihracat: Modüller",
-	"bs-universalexport-page-title-on-error": "Evrensel ihracat: Hata",
-	"bs-universalexport-page-text-without-param": "Bu sayfa, evrensel dışa aktarmanın mevcut dışa aktarma modülleri hakkında bilgi görüntüler.",
+	"bs-universalexport-page-title-without-param": "Evrensel aktarım: Modüller",
+	"bs-universalexport-page-title-on-error": "Evrensel aktarım: Hata",
+	"bs-universalexport-page-text-without-param": "Bu sayfa, evrensel aktarımın mevcut dışa aktarma modülleri hakkında bilgi görüntüler.",
 	"bs-universalexport-page-text-without-param-no-modules-registered": "Kayıtlı modül yok.",
 	"bs-universalexport-widget-title": "Dışa aktar",
 	"bs-universalexport-widget-tooltip": "Geçerli sayfayı dışa aktar",
@@ -29,5 +30,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "İstenen sayfa kategori kara listesinde olduğundan dışa aktarılmamalıdır.",
 	"action-universalexport-export": "dışa aktarma dosyası oluştur",
 	"right-universalexport-export": "Dışa aktarma dosyası oluştur",
-	"bs-universalexport-tag-pagebreak-title": "Sayfa sonu"
+	"bs-universalexport-tag-pagebreak-title": "Sayfa sonu",
+	"bs-universalexport-tag-noexport-title": "PDF'den hariç tut",
+	"bs-universalexport-insert-noexport-title": "PDF yok"
 }
