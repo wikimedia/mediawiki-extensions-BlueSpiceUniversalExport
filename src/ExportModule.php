@@ -51,7 +51,13 @@ abstract class ExportModule implements IExportModule {
 	 */
 	public function getExportLink( WebRequest $request, $additional = [] ) {
 		$queryParams = $request->getValues();
-		$title = isset( $additional['title'] ) ? $additional['title'] : '';
+		$title = '';
+
+		if ( isset( $additional['title'] ) ) {
+			$title = $additional['title'];
+			unset( $additional['title'] );
+		}
+
 		if ( $title === '' && isset( $queryParams['title'] ) ) {
 			$title = $queryParams['title'];
 		}
