@@ -64,7 +64,7 @@
 		"UniversalExportAlias": "languages/SpecialUniversalExport.alias.php"
 	},
 	"AutoloadNamespaces": {
-		"BlueSpice\\UniversalExport\\" : "src/"
+		"BlueSpice\\UniversalExport\\": "src/"
 	},
 	"AutoloadClasses": {
 		"SpecialUniversalExport": "includes/specials/SpecialUniversalExport.class.php",
