@@ -43,4 +43,30 @@ interface IExportModule {
 	 * @return MediaWikiServices
 	 */
 	public function getServices();
+
+	/**
+	 * Get permission required for export
+	 *
+	 * @return string|null if no permission is required
+	 */
+	public function getExportPermission();
+
+	/**
+	 * Handlers for special export sub-actions (subpages, recursive...)
+	 *
+	 * @return array
+	 */
+	public function getSubactionHandlers();
+
+	/**
+	 * Get the data for the action button
+	 * [
+	 * 		'title' => '',
+	 * 		'text' => '',
+	 * 		'iconClass' => ''
+	 * ]
+	 *
+	 * @return array
+	 */
+	public function getActionButtonDetails();
 }
