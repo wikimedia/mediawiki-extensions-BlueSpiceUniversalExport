@@ -6,6 +6,7 @@ use Config;
 use MediaWiki\MediaWikiServices;
 use MWException;
 use PermissionsError;
+use SpecialPageFactory;
 use SpecialUniversalExport;
 use WebRequest;
 
@@ -52,12 +53,10 @@ abstract class ExportModule implements IExportModule {
 	 * @throws PermissionsError
 	 */
 	public function createExportFile( &$caller ) {
-		$isAllowed = $this->services->getPermissionManager()
-			->userCan(
-				$this->getExportPermission(),
-				$caller->getUser(),
-				$caller->oRequestedTitle
-			);
+		$isAllowed = $caller->oRequestedTitle->userCan(
+			$this->getExportPermission(),
+			$caller->getUser()
+		);
 		if ( !$isAllowed ) {
 			throw new PermissionsError( $this->getExportPermission() );
 		}
@@ -159,7 +158,7 @@ abstract class ExportModule implements IExportModule {
 		// TODO: To be replaced with ParamProcessor
 		$pageNameForSpecial = \BsCore::sanitize( $title, '', \BsPARAMTYPE::STRING );
 		$pageNameForSpecial = trim( $pageNameForSpecial, '_' );
-		$special = $this->getServices()->getSpecialPageFactory()->getPage(
+		$special = SpecialPageFactory::getPage(
 			'UniversalExport'
 		);
 
@@ -249,7 +248,7 @@ abstract class ExportModule implements IExportModule {
 	protected function decorateTemplate( &$template, &$contents, &$page, $caller ) {
 		$template['title-element']->nodeValue = $caller->oRequestedTitle->getPrefixedText();
 
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		Hooks::run(
 			'UniversalExportBeforeTemplateSetContent',
 			[
 				&$template,
@@ -273,8 +272,9 @@ abstract class ExportModule implements IExportModule {
 		foreach ( $this->getSubactionHandlers() as $name => $handler ) {
 			$permission = $handler->getPermission();
 			if ( $permission ) {
-				$isAllowed = $this->getServices()->getPermissionManager()
-					->userCan( $permission, $caller->getUser(), $caller->oRequestedTitle );
+				$isAllowed = $caller->oRequestedTitle->userCan(
+					$permission, $caller->getUser()
+				);
 				if ( !$isAllowed ) {
 					throw new PermissionsError( $permission );
 				}

@@ -17,7 +17,7 @@ return [
 		return new ModuleFactory(
 			$moduleRegistry,
 			$services,
-			$services->getConfigFactory()->makeConfig( 'bsg' ),
+			$services->getConfigFactory()->makeConfig( 'bsg' )
 		);
 	}
 ];

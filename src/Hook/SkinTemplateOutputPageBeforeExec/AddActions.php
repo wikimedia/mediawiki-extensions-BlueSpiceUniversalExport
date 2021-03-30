@@ -7,7 +7,6 @@ use BlueSpice\SkinData;
 use BlueSpice\UniversalExport\IExportModule;
 use BlueSpice\UniversalExport\IExportSubaction;
 use BlueSpice\UniversalExport\ModuleFactory;
-use MediaWiki\MediaWikiServices;
 
 class AddActions extends SkinTemplateOutputPageBeforeExec {
 	protected function skipProcessing() {
@@ -29,7 +28,7 @@ class AddActions extends SkinTemplateOutputPageBeforeExec {
 			if ( $description === null ) {
 				continue;
 			}
-			$actions[] = $description;
+			$actions[md5( $name )] = $description;
 			/**
 			 * @var string $name
 			 * @var IExportSubaction $handler
@@ -49,7 +48,7 @@ class AddActions extends SkinTemplateOutputPageBeforeExec {
 
 		$this->mergeSkinDataArray(
 				SkinData::EXPORT_MENU,
-				$actions
+				array_values( $actions )
 		);
 
 		return true;
@@ -61,7 +60,9 @@ class AddActions extends SkinTemplateOutputPageBeforeExec {
 	 * @param IExportSubaction|null $handler
 	 * @return array The ContentAction Array
 	 */
-	private function getActionDescription( IExportModule $module, $subaction = null, $handler = null ) {
+	private function getActionDescription(
+		IExportModule $module, $subaction = null, $handler = null
+	) {
 		$authority = $handler !== null ? $handler : $module;
 
 		$actionButtonDetails = $authority->getActionButtonDetails();
