@@ -25,7 +25,11 @@ class AddActions extends ChameleonSkinTemplateOutputPageBeforeExec {
 			if ( !$this->userCanExport( $module->getExportPermission() ) ) {
 				continue;
 			}
-			$actions[] = $this->getActionDescription( $module );
+			$description = $this->getActionDescription( $module );
+			if ( $description === null ) {
+				continue;
+			}
+			$actions[] = $description;
 			/**
 			 * @var string $name
 			 * @var IExportSubaction $handler
@@ -34,14 +38,18 @@ class AddActions extends ChameleonSkinTemplateOutputPageBeforeExec {
 				if ( !$this->userCanExport( $handler->getPermission() ) ) {
 					continue;
 				}
+				$description = $this->getActionDescription( $module, $subaction, $handler );
+				if ( $description === null ) {
+					continue;
+				}
 				$key = md5( $name . '/' . $subaction );
-				$actions[$key] = $this->getActionDescription( $module, $subaction, $handler );
+				$actions[$key] = $description;
 			}
 		}
 
 		$this->mergeSkinDataArray(
 				SkinData::EXPORT_MENU,
-				array_keys( $actions )
+				$actions
 		);
 
 		return true;
@@ -56,13 +64,18 @@ class AddActions extends ChameleonSkinTemplateOutputPageBeforeExec {
 	private function getActionDescription( IExportModule $module, $subaction = null, $handler = null ) {
 		$authority = $handler !== null ? $handler : $module;
 
+		$actionButtonDetails = $authority->getActionButtonDetails();
+		if ( $actionButtonDetails === null ) {
+			return null;
+		}
+
 		return [
 			'id' => $module->getName() . ( $subaction ? "-$subaction" : '' ),
 			'href' => $authority->getExportLink( $this->skin->getRequest() ),
-			'title' => $authority->getActionButtonDetails()['title'] ?? '',
-			'text' => $authority->getActionButtonDetails()['text'] ?? '',
+			'title' => $actionButtonDetails['title'] ?? '',
+			'text' => $actionButtonDetails['text'] ?? '',
 			'class' => 'bs-ue-export-link',
-			'iconClass' => $authority->getActionButtonDetails()['iconClass'] ?? '' . ' bs-ue-export-link'
+			'iconClass' => $actionButtonDetails['iconClass'] ?? '' . ' bs-ue-export-link'
 		];
 	}
 
