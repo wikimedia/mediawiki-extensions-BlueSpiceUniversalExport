@@ -29,7 +29,7 @@ class AddActions extends ChameleonSkinTemplateOutputPageBeforeExec {
 			if ( $description === null ) {
 				continue;
 			}
-			$actions[] = $description;
+			$actions[md5( $name )] = $description;
 			/**
 			 * @var string $name
 			 * @var IExportSubaction $handler
@@ -49,7 +49,7 @@ class AddActions extends ChameleonSkinTemplateOutputPageBeforeExec {
 
 		$this->mergeSkinDataArray(
 				SkinData::EXPORT_MENU,
-				$actions
+				array_values( $actions )
 		);
 
 		return true;
