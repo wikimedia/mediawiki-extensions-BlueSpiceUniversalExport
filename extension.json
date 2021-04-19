@@ -17,12 +17,12 @@
 			"Extensions": {
 				"BlueSpiceUniversalExport": {
 					"className": "\\BlueSpice\\UniversalExport\\Extension",
-					"extPath": "/BlueSpiceUniversalExport",
-					"configDefinitions": {
-						"UniversalExportMetadataDefaults": "\\BlueSpice\\UniversalExport\\ConfigDefinition\\MetadataDefaults::getInstance",
-						"UniversalExportMetadataOverrides": "\\BlueSpice\\UniversalExport\\ConfigDefinition\\MetadataOverrides::getInstance"
-					}
+					"extPath": "/BlueSpiceUniversalExport"
 				}
+			},
+			"ConfigDefinitionRegistry": {
+				"UniversalExportMetadataDefaults": "\\BlueSpice\\UniversalExport\\ConfigDefinition\\MetadataDefaults::getInstance",
+				"UniversalExportMetadataOverrides": "\\BlueSpice\\UniversalExport\\ConfigDefinition\\MetadataOverrides::getInstance"
 			},
 			"TagRegistry": {
 				"uepagebreak": "\\BlueSpice\\UniversalExport\\Tag\\PageBreak",
