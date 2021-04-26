@@ -3,10 +3,11 @@
 namespace BlueSpice\UniversalExport;
 
 use Config;
+use Exception;
+use ExtensionRegistry;
 use MediaWiki\MediaWikiServices;
 use MWException;
 use PermissionsError;
-use SpecialUniversalExport;
 use WebRequest;
 
 abstract class ExportModule implements IExportModule {
@@ -46,29 +47,28 @@ abstract class ExportModule implements IExportModule {
 	}
 
 	/**
-	 * @param SpecialUniversalExport &$caller
+	 * @param ExportSpecification &$specification
 	 * @return array
 	 * @throws MWException
 	 * @throws PermissionsError
 	 */
-	public function createExportFile( &$caller ) {
+	public function createExportFile( ExportSpecification &$specification ) {
 		$isAllowed = $this->services->getPermissionManager()
 			->userCan(
 				$this->getExportPermission(),
-				$caller->getUser(),
-				$caller->oRequestedTitle
+				$specification->getUser(),
+				$specification->getTitle()
 			);
 		if ( !$isAllowed ) {
 			throw new PermissionsError( $this->getExportPermission() );
 		}
-
-		$this->setParams( $caller );
+		$this->setParams( $specification );
 
 		// If we are in history mode and we are relative to an oldid
-		if ( !empty( $caller->aParams['direction'] ) ) {
+		if ( !empty( $specification->getParam( 'direction' ) ) ) {
 			$lookup = $this->services->getRevisionLookup();
-			$currentRevision = $lookup->getRevisionById( $caller->aParams['oldid'] );
-			switch ( $caller->aParams['direction'] ) {
+			$currentRevision = $lookup->getRevisionById( $specification->getParam( 'oldid' ) );
+			switch ( $specification->getParam( 'direction' ) ) {
 				case 'next':
 					$currentRevision = $lookup->getNextRevision(
 						$currentRevision
@@ -83,12 +83,12 @@ abstract class ExportModule implements IExportModule {
 					break;
 			}
 			if ( $currentRevision !== null ) {
-				$caller->aParams['oldid'] = $currentRevision->getId();
+				$specification->setParam( 'oldid', $currentRevision->getId() );
 			}
 		}
 
-		$page = $this->getPage( $caller->aParams );
-		$template = $this->getTemplate( $this->getTemplateParams( $caller, $page ) );
+		$page = $this->getPage( $specification );
+		$template = $this->getTemplate( $this->getTemplateParams( $specification, $page ) );
 
 		if ( $template === null || $page === null ) {
 			// Sanity
@@ -102,39 +102,46 @@ abstract class ExportModule implements IExportModule {
 			'content' => [ $page['dom']->documentElement ]
 		];
 
-		$this->decorateTemplate( $template, $contents, $page, $caller );
-		$this->callSubactions( $template, $contents, $caller );
+		$this->decorateTemplate( $template, $contents, $page, $specification );
+		$this->callSubactions( $template, $contents, $specification );
 		$this->replaceContent( $template, $contents );
-		$this->modifyTemplateAfterContents( $template, $page, $caller );
+		$this->modifyTemplateAfterContents( $template, $page, $specification );
 
-		$caller->aParams['resources'] = $template['resources'];
-		$this->setExportConnectionParams( $caller );
+		$specification->setParam( 'resources', $template['resources'] );
+		$this->setExportConnectionParams( $specification );
 
 		// Prepare response
 		$response = $this->getResponseParams();
 
-		if ( $caller->getRequest()->getVal( 'debugformat', '' ) === 'html' ) {
+		if ( $specification->getParam( 'debugformat' ) === 'html' ) {
 			$response['content'] = $dom->saveXML( $dom->documentElement );
 			$response['mime-type'] = 'text/html';
 			$response['filename'] = sprintf(
 				'%s.html',
-				$caller->oRequestedTitle->getPrefixedText()
+				$specification->getTitle()->getPrefixedText()
 			);
 			$response['disposition'] = 'inline';
 			return $response;
 		}
 
-		$response['content'] = $this->getExportedContent( $caller, $template );
+		$response['content'] = $this->getExportedContent( $specification, $template );
 		if ( $response['content'] === null ) {
 			throw new MWException( 'Content not set in response' );
 		}
 
 		$response['filename'] = sprintf(
 			$response['filename'],
-			$caller->oRequestedTitle->getPrefixedText()
+			$specification->getTitle()->getPrefixedText()
 		);
 
 		return $response;
+	}
+
+	/**
+	 * @param ExportSpecification &$specification
+	 */
+	protected function setParams( &$specification ) {
+		// NOOP
 	}
 
 	/**
@@ -143,7 +150,7 @@ abstract class ExportModule implements IExportModule {
 	 * @return string
 	 * @throws MWException
 	 */
-	public function getExportLink( WebRequest $request, $additional = [] ) {
+	public function getExportLink( WebRequest $request, array $additional = [] ) {
 		$queryParams = $request->getValues();
 		$title = '';
 
@@ -187,46 +194,31 @@ abstract class ExportModule implements IExportModule {
 	}
 
 	/**
-	 * Set additional parameters on the caller
-	 *
-	 * @param SpecialUniversalExport &$caller
+	 * @param ExportSpecification &$specs
 	 */
-	protected function setParams( &$caller ) {
-		$request = $caller->getRequest();
-
-		$caller->aParams['title'] = $caller->oRequestedTitle->getPrefixedText();
-		$caller->aParams['display-title'] = $caller->oRequestedTitle->getPrefixedText();
-		$caller->aParams['article-id'] = $caller->oRequestedTitle->getArticleID();
-		$caller->aParams['oldid'] = $request->getInt( 'oldid', 0 );
-		$caller->aParams['direction'] = $request->getVal( 'direction', '' );
-	}
-
-	/**
-	 * @param SpecialUniversalExport &$caller
-	 */
-	protected function setExportConnectionParams( &$caller ) {
-		$caller->aParams['document-token'] =
-			md5( $caller->oRequestedTitle->getPrefixedText() )
+	protected function setExportConnectionParams( ExportSpecification &$specs ) {
+		$token = md5( $specs->getTitle()->getPrefixedText() )
 			. '-'
-			. $caller->aParams['oldid'];
+			. $specs->getParam( 'oldid' );
+		$specs->setParam( 'document-token', $token );
 	}
 
 	/**
-	 * @param SpecialUniversalExport $caller
+	 * @param ExportSpecification $specification
 	 * @param array $page
 	 * @return array
 	 */
-	protected function getTemplateParams( $caller, $page ) {
+	protected function getTemplateParams( $specification, $page ) {
 		$templateParams = [
-			'language' => $caller->getUser()->getOption( 'language', 'en' ),
+			'language' => $specification->getUser()->getOption( 'language', 'en' ),
 			'meta'     => $page['meta']
 		];
 
 		// Override template param if needed. The override may come
 		// from GET (&ue[template]=...) or from a tag (<bs:ueparams template="..." />)
 		// TODO: Make more generic
-		if ( !empty( $caller->aParams['template'] ) ) {
-			$templateParams['template'] = $caller->aParams['template'];
+		if ( !empty( $specification->getParam( 'template' ) ) ) {
+			$templateParams['template'] = $specification->getParam( 'template' );
 		}
 
 		return $templateParams;
@@ -244,17 +236,17 @@ abstract class ExportModule implements IExportModule {
 	 * @param array &$template
 	 * @param array &$contents
 	 * @param array &$page
-	 * @param SpecialUniversalExport $caller
+	 * @param ExportSpecification $specs
 	 */
-	protected function decorateTemplate( &$template, &$contents, &$page, $caller ) {
-		$template['title-element']->nodeValue = $caller->oRequestedTitle->getPrefixedText();
+	protected function decorateTemplate( &$template, &$contents, &$page, $specs ) {
+		$template['title-element']->nodeValue = $specs->getTitle()->getPrefixedText();
 
 		MediaWikiServices::getInstance()->getHookContainer()->run(
 			'UniversalExportBeforeTemplateSetContent',
 			[
 				&$template,
 				&$contents,
-				$caller,
+				$specs,
 				&$page
 			]
 		);
@@ -263,9 +255,9 @@ abstract class ExportModule implements IExportModule {
 	/**
 	 * @param array &$template
 	 * @param array &$contents
-	 * @param SpecialUniversalExport $caller
+	 * @param ExportSpecification $specs
 	 */
-	protected function callSubactions( &$template, &$contents, $caller ) {
+	protected function callSubactions( &$template, &$contents, $specs ) {
 		/**
 		 * @var string $name
 		 * @var IExportSubaction $handler
@@ -274,23 +266,23 @@ abstract class ExportModule implements IExportModule {
 			$permission = $handler->getPermission();
 			if ( $permission ) {
 				$isAllowed = $this->getServices()->getPermissionManager()
-					->userCan( $permission, $caller->getUser(), $caller->oRequestedTitle );
+					->userCan( $permission, $specs->getUser(), $specs->getTitle() );
 				if ( !$isAllowed ) {
 					throw new PermissionsError( $permission );
 				}
 			}
 
-			if ( $handler->applies( $caller->getRequest() ) ) {
-				$handler->apply( $template, $contents, $caller );
+			if ( $handler->applies( $specs ) ) {
+				$handler->apply( $template, $contents, $specs );
 			}
 		}
 	}
 
 	/**
-	 * @param array $params
+	 * @param ExportSpecification $specification
 	 * @return null
 	 */
-	protected function getPage( $params ) {
+	protected function getPage( ExportSpecification $specification ) {
 		return null;
 	}
 
@@ -304,11 +296,11 @@ abstract class ExportModule implements IExportModule {
 	}
 
 	/**
-	 * @param SpecialUniversalExport $caller
+	 * @param ExportSpecification $specs
 	 * @param array &$template
 	 * @return mixed
 	 */
-	protected function getExportedContent( $caller, &$template ) {
+	protected function getExportedContent( $specs, &$template ) {
 		return null;
 	}
 
@@ -336,9 +328,55 @@ abstract class ExportModule implements IExportModule {
 	/**
 	 * @param array &$template
 	 * @param array $page
-	 * @param SpecialUniversalExport $caller
+	 * @param ExportSpecification $specs
 	 */
-	protected function modifyTemplateAfterContents( &$template, $page, $caller ) {
+	protected function modifyTemplateAfterContents( &$template, $page, $specs ) {
 		// NOOP
 	}
+
+	/**
+	 * @param array $file
+	 * @param ExportSpecification $specs
+	 * @throws Exception
+	 */
+	public function invokeExportTarget( $file, $specs ) {
+		$descriptor = new LegacyArrayDescriptor( $file );
+
+		$targetKey = 'download';
+		if ( $specs->getParam( 'target' ) ) {
+			$targetKey = $specs->getParam( 'target' );
+		}
+
+		$registryAttribute =
+			ExtensionRegistry::getInstance()->getAttribute(
+				'BlueSpiceUniversalExportExportTargetRegistry'
+			);
+
+		if ( !isset( $registryAttribute[$targetKey] ) ) {
+			throw new Exception( 'bs-universalexport-error-target-invalid' );
+		}
+
+		if ( !is_callable( $registryAttribute[$targetKey] ) ) {
+			throw new Exception( 'bs-universalexport-error-target-factory-not-callable' );
+		}
+
+		$target = call_user_func_array(
+			$registryAttribute[$targetKey],
+			[
+				$specs->getParams(),
+				$this->config
+			]
+		);
+
+		if ( $target instanceof IExportTarget === false ) {
+			throw new Exception( 'bs-universalexport-error-target-invalid' );
+		}
+
+		$status = $target->execute( $descriptor );
+
+		if ( !$status->isOK() ) {
+			throw new Exception( 'bs-universalexport-error-target-failed' );
+		}
+	}
+
 }

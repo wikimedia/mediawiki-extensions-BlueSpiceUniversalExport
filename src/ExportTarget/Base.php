@@ -14,12 +14,6 @@ abstract class Base implements IExportTarget {
 
 	/**
 	 *
-	 * @var \IContextSource
-	 */
-	protected $context = null;
-
-	/**
-	 *
 	 * @var \Config
 	 */
 	protected $config = null;
@@ -27,23 +21,20 @@ abstract class Base implements IExportTarget {
 	/**
 	 *
 	 * @param array $exportParams
-	 * @param \IContextSource $context
 	 * @param \Config $config
 	 * @return static
 	 */
-	public static function factory( $exportParams, $context, $config ) {
-		return new static( $exportParams, $context, $config );
+	public static function factory( $exportParams, $config ) {
+		return new static( $exportParams, $config );
 	}
 
 	/**
 	 *
 	 * @param array $exportParams
-	 * @param \IContextSource $context
 	 * @param \Config $config
 	 */
-	public function __construct( $exportParams, $context, $config ) {
+	public function __construct( $exportParams, $config ) {
 		$this->exportParams = $exportParams;
-		$this->context = $context;
 		$this->config = $config;
 	}
 

@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
+use BlueSpice\UniversalExport\ExportSpecificationFactory;
 use BlueSpice\UniversalExport\ModuleFactory;
 use MediaWiki\MediaWikiServices;
 
@@ -19,4 +20,10 @@ return [
 		);
 	},
 
+	'BSUniversalExportSpecificationFactory' => function ( MediaWikiServices $services ) {
+		return new ExportSpecificationFactory(
+			$services->getConfigFactory()->makeConfig( 'bsg' ),
+			$services->getService( 'BSUtilityFactory' )
+		);
+	}
 ];

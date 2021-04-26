@@ -35,6 +35,10 @@ class BsUniversalExportHelper {
 		if ( !empty( $sDirection ) ) {
 			$aParams['direction'] = $sDirection;
 		}
+		$debugFormat = $wgRequest->getText( 'debugformat', '' );
+		if ( $debugFormat ) {
+			$aParams['debugformat'] = $debugFormat;
+		}
 	}
 
 	/**
@@ -43,6 +47,8 @@ class BsUniversalExportHelper {
 	 * @param User $user
 	 * @param array &$aParams
 	 * @throws Exception
+	 * @deprecated since version 3.2.2 -
+	 * Use BsUniversalExportHelper::assertPermissionsForTitle instead!
 	 */
 	public static function checkPermissionForTitle( $oTitle, User $user, &$aParams ) {
 		$bErrorOccurred = false;
@@ -247,5 +253,22 @@ class BsUniversalExportHelper {
 		}
 
 		return null;
+	}
+
+	/**
+	 * @param Title $title
+	 * @param User|null $user
+	 * @throws Exception
+	 */
+	public static function assertPermissionsForTitle( Title $title, $user = null ) {
+		if ( $user === null ) {
+			$user = \RequestContext::getMain()->getUser();
+		}
+		if ( $title->getNamespace() === NS_SPECIAL && !$user->isAllowed( 'read' ) ) {
+			throw new Exception( 'error-no-permission' );
+		}
+		if ( $title->getNamespace() !== NS_SPECIAL && !$title->userCan( 'read', $user ) ) {
+			throw new Exception( 'error-no-permission' );
+		}
 	}
 }

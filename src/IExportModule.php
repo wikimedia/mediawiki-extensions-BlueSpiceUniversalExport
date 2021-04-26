@@ -3,18 +3,16 @@
 namespace BlueSpice\UniversalExport;
 
 use MediaWiki\MediaWikiServices;
-use SpecialUniversalExport;
 use WebRequest;
 
 interface IExportModule {
 	/**
 	 * Creates a file, which can be returned in the HttpResponse
-	 * @param SpecialUniversalExport &$caller This object carries all needed
-	 * information as public members
+	 * @param ExportSpecification &$specs
 	 * @return array Associative array containing the file itself as well as the
 	 * MIME-Type. I.e. array( 'mime-type' => 'text/html', 'content' => '<html>...' )
 	 */
-	public function createExportFile( &$caller );
+	public function createExportFile( ExportSpecification &$specs );
 
 	/**
 	 * Creates a IExportModuleOverview to display on the SpecialUniversalExport

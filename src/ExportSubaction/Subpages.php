@@ -2,10 +2,10 @@
 
 namespace BlueSpice\UniversalExport\ExportSubaction;
 
+use BlueSpice\UniversalExport\ExportSpecification;
 use BlueSpice\UniversalExport\IExportSubaction;
 use DOMDocument;
 use DOMElement;
-use SpecialUniversalExport;
 use Title;
 use WebRequest;
 
@@ -18,16 +18,14 @@ abstract class Subpages implements IExportSubaction {
 	/**
 	 * @inheritDoc
 	 */
-	public function applies( WebRequest $request ) {
-		$params = $request->getArray( 'ue', [] );
-
-		return isset( $params['subpages'] ) && (bool)$params['subpages'];
+	public function applies( ExportSpecification $specification ) {
+		return (bool)$specification->getParam( 'subpages', false );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function apply( &$template, &$contents, $caller ) {
+	public function apply( &$template, &$contents, $specification ) {
 		$newDOM = new DOMDocument();
 		$pageDOM = $contents['content'][0];
 		$pageDOM->setAttribute(
@@ -50,7 +48,7 @@ abstract class Subpages implements IExportSubaction {
 
 		$newDOM->appendChild( $node );
 
-		$this->includedTitles = $this->findIncludedTitles( $caller );
+		$this->includedTitles = $this->findIncludedTitles( $specification );
 		if ( count( $this->includedTitles ) < 1 ) {
 			return true;
 		}
@@ -132,13 +130,13 @@ abstract class Subpages implements IExportSubaction {
 
 	/**
 	 *
-	 * @param SpecialUniversalExport $caller
+	 * @param ExportSpecification $specs
 	 * @return array
 	 */
-	protected function findIncludedTitles( $caller ) {
+	protected function findIncludedTitles( $specs ) {
 		$linkdedTitles = [];
 
-		$subpages = $caller->oRequestedTitle->getSubpages();
+		$subpages = $specs->getTitle()->getSubpages();
 
 		foreach ( $subpages as $title ) {
 			$pageProvider = $this->getPageProvider();

@@ -2,17 +2,16 @@
 
 namespace BlueSpice\UniversalExport;
 
-use SpecialUniversalExport;
 use WebRequest;
 
 interface IExportSubaction {
 	/**
 	 * Whether this subaction is called
 	 *
-	 * @param WebRequest $request
+	 * @param ExportSpecification $specification
 	 * @return bool
 	 */
-	public function applies( WebRequest $request );
+	public function applies( ExportSpecification $specification );
 
 	/**
 	 * Get permission required to execute this subaction
@@ -24,10 +23,10 @@ interface IExportSubaction {
 	/**
 	 * @param array &$template
 	 * @param array &$contents
-	 * @param SpecialUniversalExport $caller
+	 * @param ExportSpecification $specification
 	 * @return bool
 	 */
-	public function apply( &$template, &$contents, $caller );
+	public function apply( &$template, &$contents, $specification );
 
 	/**
 	 * Get the export module this is a subaction of
