@@ -5,28 +5,27 @@ namespace BlueSpice\UniversalExport\ExportTarget;
 use BlueSpice\UniversalExport\IExportFileDescriptor;
 use Status;
 
-class Download extends Base {
-
+class Download extends RequestBasedTarget {
 	/**
 	 *
 	 * @param IExportFileDescriptor $descriptor
 	 * @return Status
 	 */
 	public function execute( $descriptor ) {
-		$this->context->getOutput()->disable();
-		$resonse = $this->context->getRequest()->response();
+		$this->getContext()->getOutput()->disable();
+		$response = $this->getContext()->getRequest()->response();
 
-		$resonse->header( 'Pragma: public' );
-		$resonse->header( 'Expires: 0' );
-		$resonse->header( 'Cache-Control: must-revalidate, post-check=0, pre-check=0' );
-		$resonse->header( 'Cache-Control: public' );
-		$resonse->header( 'Content-Description: File Transfer' );
-		$resonse->header( 'Content-Type: ' . $descriptor->getMimeType() );
-		$resonse->header(
+		$response->header( 'Pragma: public' );
+		$response->header( 'Expires: 0' );
+		$response->header( 'Cache-Control: must-revalidate, post-check=0, pre-check=0' );
+		$response->header( 'Cache-Control: public' );
+		$response->header( 'Content-Description: File Transfer' );
+		$response->header( 'Content-Type: ' . $descriptor->getMimeType() );
+		$response->header(
 			"Content-Disposition: attachment; filename=\"{$descriptor->getFilename()}\""
 		);
-		$resonse->header( 'Content-Transfer-Encoding: binary' );
-		$resonse->header( 'X-Robots-Tag: noindex' );
+		$response->header( 'Content-Transfer-Encoding: binary' );
+		$response->header( 'X-Robots-Tag: noindex' );
 
 		// TODO: This is old, bad code. Find a proper way to write to the
 		// response body in context of a SpecialPage

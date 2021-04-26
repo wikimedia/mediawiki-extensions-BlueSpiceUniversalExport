@@ -5,7 +5,7 @@ namespace BlueSpice\UniversalExport\ExportTarget;
 use BlueSpice\UniversalExport\IExportFileDescriptor;
 use Status;
 
-class LocalFileRepo extends Base {
+class LocalFileRepo extends RequestBasedTarget {
 
 	private $targetUrl = '';
 
@@ -45,7 +45,7 @@ class LocalFileRepo extends Base {
 
 		$this->targetUrl = $this->status->getValue();
 
-		$this->context->getOutput()->redirect( $this->targetUrl );
+		$this->getContext()->getOutput()->redirect( $this->targetUrl );
 
 		return $this->status;
 	}
