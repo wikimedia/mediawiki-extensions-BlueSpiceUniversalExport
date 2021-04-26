@@ -34,15 +34,21 @@ class BsUniversalExportHelper {
 		if ( !empty( $sDirection ) ) {
 			$aParams['direction'] = $sDirection;
 		}
+		$debugFormat = $wgRequest->getText( 'debugformat', '' );
+		if ( $debugFormat ) {
+			$aParams['debugformat'] = $debugFormat;
+		}
 	}
 
 	/**
 	 *
 	 * @param Title $oTitle
-	 * @param array &$aParams
+	 * @param array $aParams
 	 * @throws Exception
+	 * @deprecated since version 3.2.2 -
+	 * Use BlueSpice\UniversalExport\Util::assertPermissionsForTitle instead!
 	 */
-	public static function checkPermissionForTitle( $oTitle, &$aParams ) {
+	public static function checkPermissionForTitle( $oTitle, $aParams ) {
 		global $wgUser;
 
 		$bErrorOccurred = false;

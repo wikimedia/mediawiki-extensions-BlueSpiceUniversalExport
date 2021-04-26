@@ -36,7 +36,8 @@
 		"BlueSpiceUniversalExport": {
 			"ExportTargetRegistry": {
 				"download": "BlueSpice\\UniversalExport\\ExportTarget\\Download::factory",
-				"localfilerepo": "BlueSpice\\UniversalExport\\ExportTarget\\LocalFileRepo::factory"
+				"localfilerepo": "BlueSpice\\UniversalExport\\ExportTarget\\LocalFileRepo::factory",
+				"localfilesystem": "BlueSpice\\UniversalExport\\ExportTarget\\LocalFileSystem::factory"
 			},
 			"ModuleRegistry": {}
 		},

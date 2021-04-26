@@ -2,8 +2,11 @@
 
 namespace BlueSpice\UniversalExport;
 
+use Exception;
 use MWException;
 use SpecialPage;
+use Title;
+use User;
 use WebRequest;
 
 class Util {
@@ -33,5 +36,22 @@ class Util {
 		$queryParams['ue[module]'] = $module;
 
 		return $special->getLinkUrl( array_merge( $queryParams, $additional ) );
+	}
+
+	/**
+	 * @param Title $title
+	 * @param User|null $user
+	 * @throws Exception
+	 */
+	public function assertPermissionsForTitle( Title $title, $user = null ) {
+		if ( $user === null ) {
+			$user = \RequestContext::getMain()->getUser();
+		}
+		if ( $title->getNamespace() === NS_SPECIAL && !$user->isAllowed( 'read' ) ) {
+			throw new Exception( 'error-no-permission' );
+		}
+		if ( $title->getNamespace() !== NS_SPECIAL && !$title->userCan( 'read', $user ) ) {
+			throw new Exception( 'error-no-permission' );
+		}
 	}
 }
