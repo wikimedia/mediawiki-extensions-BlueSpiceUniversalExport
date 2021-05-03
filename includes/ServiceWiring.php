@@ -7,7 +7,7 @@ use MediaWiki\MediaWikiServices;
 
 return [
 
-	'BSUniversalExportModuleFactory' => function ( MediaWikiServices $services ) {
+	'BSUniversalExportModuleFactory' => static function ( MediaWikiServices $services ) {
 		$moduleRegistry = new ExtensionAttributeBasedRegistry(
 			'BlueSpiceUniversalExportModuleRegistry'
 		);
@@ -20,7 +20,7 @@ return [
 		);
 	},
 
-	'BSUniversalExportSpecificationFactory' => function ( MediaWikiServices $services ) {
+	'BSUniversalExportSpecificationFactory' => static function ( MediaWikiServices $services ) {
 		return new ExportSpecificationFactory(
 			$services->getConfigFactory()->makeConfig( 'bsg' ),
 			$services->getService( 'BSUtilityFactory' )
