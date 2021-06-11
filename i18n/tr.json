@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"MuratTheTurkish",
 			"SwornToTranslate29"
 		]
 	},
@@ -29,5 +30,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "İstenen sayfa kategori kara listesinde olduğundan dışa aktarılmamalıdır.",
 	"action-universalexport-export": "dışa aktarma dosyası oluştur",
 	"right-universalexport-export": "Dışa aktarma dosyası oluştur",
-	"bs-universalexport-tag-pagebreak-title": "Sayfa sonu"
+	"bs-universalexport-tag-pagebreak-title": "Sayfa sonu",
+	"bs-universalexport-tag-noexport-title": "PDF'den hariç tut",
+	"bs-universalexport-insert-noexport-title": "PDF yok"
 }

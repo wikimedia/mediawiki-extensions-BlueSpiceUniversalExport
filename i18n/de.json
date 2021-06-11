@@ -5,6 +5,7 @@
 			"Kghbln",
 			"Metalhead64",
 			"Mglaser",
+			"Pittigrilli",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
@@ -32,5 +33,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Die angeforderte Seite darf nicht exportiert werden weil sie auf der Kategorie-Negativliste steht.",
 	"action-universalexport-export": "eine Exportdatei zu erstellen",
 	"right-universalexport-export": "Export-Dateien erstellen",
-	"bs-universalexport-tag-pagebreak-title": "Seitenumbruch"
+	"bs-universalexport-tag-pagebreak-title": "Seitenumbruch",
+	"bs-universalexport-tag-noexport-title": "Schließe vom PDF aus",
+	"bs-universalexport-insert-noexport-title": "Kein PDF"
 }
