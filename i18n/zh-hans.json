@@ -3,6 +3,7 @@
 		"authors": [
 			"A Retired User",
 			"Cwek",
+			"Lakejason0",
 			"Liuxinyu970226",
 			"NigelSoft",
 			"Tiger",
@@ -34,5 +35,6 @@
 	"bs-universalexport-error-permission": "您的权限不足以导出此页。",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "请求页面必须不能导出因为它位于分类黑名单中。",
 	"action-universalexport-export": "创建一个导出文件",
-	"right-universalexport-export": "创建一个导出文件"
+	"right-universalexport-export": "创建一个导出文件",
+	"bs-universalexport-tag-pagebreak-title": "分页符"
 }
