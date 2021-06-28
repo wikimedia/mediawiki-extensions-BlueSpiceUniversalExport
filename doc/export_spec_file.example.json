@@ -1,0 +1,9 @@
+{
+	"module": "pdf",
+	"attachments": 1,
+	"recursive": 1,
+	"title": "Title to export",
+	"target": "localfilesystem",
+	"target-file-name": "FileName.pdf",
+	"target-file-path": "/path/to/dest"
+}
