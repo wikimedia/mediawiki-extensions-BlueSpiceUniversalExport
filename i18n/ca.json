@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vfc"
+		]
+	},
+	"bs-universalexport-widget-title": "Exporta",
+	"bs-universalexport-widget-tooltip": "Exporta la pàgina actual",
+	"bs-universalexport-insert-noexport-title": "Cap PDF"
+}
