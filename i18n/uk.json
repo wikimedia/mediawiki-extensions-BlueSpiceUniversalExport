@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
+			"DDPAT",
 			"Piramidion",
 			"Vlad5250",
 			"Ата"
@@ -31,5 +32,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Запитану сторінку не можна експортувати, оскільки вона знаходиться у категорії чорного списку.",
 	"action-universalexport-export": "створення файлу експорту",
 	"right-universalexport-export": "Створення файлу експорту",
-	"bs-universalexport-tag-pagebreak-title": "Розрив сторінки"
+	"bs-universalexport-tag-pagebreak-title": "Розрив сторінки",
+	"bs-universalexport-tag-noexport-title": "Виключити з PDF",
+	"bs-universalexport-insert-noexport-title": "Немає PDF"
 }
