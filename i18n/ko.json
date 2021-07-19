@@ -7,6 +7,7 @@
 	},
 	"bs-universalexport-desc": "미디어위키가 다른 포맷으로 문서를 내보낼 수 있게 합니다",
 	"bs-universalexport-pref-metadatadefaults": "메타데이터 (표준, JSON)",
+	"bs-universalexport-pref-metadataoverrides": "메타데이터 (재정의, JSON):",
 	"bs-universalexport-page-text-without-param-no-modules-registered": "등록된 모듈이 없습니다.",
 	"bs-universalexport-widget-title": "내보내기",
 	"bs-universalexport-widget-tooltip": "현재 페이지 내보내기",
