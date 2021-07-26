@@ -24,7 +24,7 @@
 	"bs-universalexport-tag-hidetitle-text": "Назв цієї сторінки не буде видно в експорті.",
 	"bs-universalexport-tag-excludearticle-text": "Цю сторінку не можна експортувати.",
 	"bs-universalexport-tag-pagebreak-desc": "Якщо підтримується експортним модулем, цей тег примусово вставляє розрив сторінки в експортованому документі.",
-	"bs-universalexport-tag-noexport-desc": "Вміст всередині цього теґу не буде експортовано.",
+	"bs-universalexport-tag-noexport-desc": "Вміст всередині цього тегу не буде експортовано.",
 	"bs-universalexport-tag-meta-desc": "Дозволяє додавати довільні метадані в експортований документ.",
 	"bs-universalexport-tag-params-desc": "Дозволяє встановити спеціальні параметри для експорту, чи параметр буде оцінено залежить від обраного модуля експорту.",
 	"bs-universalexport-error-requested-export-module-not-found": "Запитаний формат не може бути виконано.",
