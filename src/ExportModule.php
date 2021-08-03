@@ -199,7 +199,7 @@ abstract class ExportModule implements IExportModule {
 	protected function setExportConnectionParams( ExportSpecification &$specs ) {
 		$token = md5( $specs->getTitle()->getPrefixedText() )
 			. '-'
-			. $specs->getParam( 'oldid' );
+			. intval( $specs->getParam( 'oldid' ) );
 		$specs->setParam( 'document-token', $token );
 	}
 
