@@ -29,7 +29,7 @@ class BsUniversalExportHelper {
 		$aParamsOverrides = $config->get( 'UniversalExportParamsOverrides' );
 		$aParams = array_merge( $aParams, $wgRequest->getArray( 'ue', [] ) );
 		$aParams = array_merge( $aParams, $aParamsOverrides );
-		$aParams['oldid']  = $wgRequest->getVal( 'oldid', 0 );
+		$aParams['oldid']  = intval( $wgRequest->getVal( 'oldid', 0 ) );
 		$sDirection = $wgRequest->getVal( 'direction', '' );
 		if ( !empty( $sDirection ) ) {
 			$aParams['direction'] = $sDirection;
