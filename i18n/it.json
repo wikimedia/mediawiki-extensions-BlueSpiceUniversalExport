@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ankabel",
-			"Beta16"
+			"Beta16",
+			"Stefano"
 		]
 	},
 	"bs-universalexport-widget-title": "Esporta",
@@ -11,5 +12,6 @@
 	"bs-universalexport-tag-hidetitle-text": "Il titolo di questa pagina non sarà visibile nell'esportazione.",
 	"bs-universalexport-tag-excludearticle-text": "Questa pagina non può essere esportata.",
 	"action-universalexport-export": "creare un file di esportazione",
-	"right-universalexport-export": "Crea un file di esportazione"
+	"right-universalexport-export": "Crea un file di esportazione",
+	"bs-universalexport-tag-pagebreak-title": "Salto di pagina"
 }
