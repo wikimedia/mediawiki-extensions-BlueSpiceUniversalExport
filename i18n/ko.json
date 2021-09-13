@@ -20,6 +20,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "요청한 문서는 분류 블랙리스트에 있기 때문에 내보내면 안 됩니다.",
 	"action-universalexport-export": "출력할 파일 생성",
 	"right-universalexport-export": "출력할 파일 생성",
+	"bs-universalexport-tag-pagebreak-title": "쪽 나누기",
 	"bs-universalexport-tag-noexport-title": "PDF에서 제외",
 	"bs-universalexport-insert-noexport-title": "PDF 없음"
 }
