@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Guycn2"
 		]
 	},
@@ -19,7 +20,7 @@
 	"bs-universalexport-tag-exclude-text": "טקסט זה לא ייוצא.",
 	"bs-universalexport-tag-hidetitle-text": "הכותרת של דף זה לא תופיע בייצוא.",
 	"bs-universalexport-tag-excludearticle-text": "לא ניתן לייצא דף זה.",
-	"bs-universalexport-tag-pagebreak-desc": "אם אפשרות זו נתמכת במודול הייצוא שנבחר, התג הזה כופה מעבר דף בקובץ הייצוא.",
+	"bs-universalexport-tag-pagebreak-desc": "אם האפשרות הזאת נתמכת במודול הייצוא שנבחר, התג הזה כופה מעבר דף בקובץ הייצוא.",
 	"bs-universalexport-tag-noexport-desc": "תוכן בתוך התג הזה לא ייוצא.",
 	"bs-universalexport-tag-meta-desc": "הוספת מטא־נתונים שרירותיים בקובץ מיוצא.",
 	"bs-universalexport-tag-params-desc": "הגדרת פרמטרים מיוחדים לייצוא. משמעות הפרמטרים תלויה במודול הייצוא שנבחר.",
