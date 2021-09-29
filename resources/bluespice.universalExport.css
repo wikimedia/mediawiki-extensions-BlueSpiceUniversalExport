@@ -8,7 +8,7 @@
 
 .bs-universalexport-exportexclude {
 	background-color:#EBECEC;
-	display: inline-block;
+	border: 2px #EBECEC;
 }
 
 .oo-ui-icon-pdfnoexport {
