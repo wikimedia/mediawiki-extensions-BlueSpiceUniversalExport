@@ -65,6 +65,7 @@
 		"UniversalExportAlias": "languages/SpecialUniversalExport.alias.php"
 	},
 	"AutoloadNamespaces": {
+		"BlueSpice\\UniversalExport\\Tests\\": "tests/phpunit/",
 		"BlueSpice\\UniversalExport\\": "src/"
 	},
 	"AutoloadClasses": {
