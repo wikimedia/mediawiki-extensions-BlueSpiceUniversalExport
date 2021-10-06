@@ -158,6 +158,14 @@
 			}
 		}
 	},
+	"HookHandlers": {
+		"skin": {
+			"class": "\\BlueSpice\\UniversalExport\\HookHandler\\Skin"
+		},
+		"discovery-skin": {
+			"class": "\\BlueSpice\\UniversalExport\\HookHandler\\DiscoverySkin"
+		}
+	},
 	"Hooks": {
 		"BSInsertMagicAjaxGetData": [
 			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddUEMetaTag::callback",
@@ -173,7 +181,9 @@
 			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEPageBreakTag::callback",
 			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEParamsTag::callback"
 		],
-		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\UniversalExport\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddActions::callback"
+		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\UniversalExport\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddActions::callback",
+		"SkinTemplateNavigation::Universal": "skin",
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin"
 	},
 	"manifest_version": 2,
 	"load_composer_autoloader": true
