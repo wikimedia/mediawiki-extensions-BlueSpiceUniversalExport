@@ -28,6 +28,9 @@ class DiscoverySkin implements BlueSpiceDiscoveryTemplateDataProviderAfterInit {
 			$reg = md5( $name );
 			$registry->register( 'export', "ca-$reg" );
 			$registry->unregister( 'toolbox', "ca-$reg" );
+			if ( !$module->getSubactionHandlers() ) {
+				continue;
+			}
 			foreach ( $module->getSubactionHandlers() as $subaction => $handler ) {
 				$key = md5( $name . '/' . $subaction );
 				$registry->register( 'export', "ca-$key" );
