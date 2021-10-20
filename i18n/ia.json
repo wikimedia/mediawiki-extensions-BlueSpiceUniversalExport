@@ -27,5 +27,8 @@
 	"bs-universalexport-error-permission": "Tu non ha permissiones sufficiente pro exportar iste pagina.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Le pagina requestate non pote esser exportate perque illo es in le lista nigre de categorias.",
 	"action-universalexport-export": "crear un file de exportation",
-	"right-universalexport-export": "Crear un file de exportation"
+	"right-universalexport-export": "Crear un file de exportation",
+	"bs-universalexport-tag-pagebreak-title": "Salto de pagina",
+	"bs-universalexport-tag-noexport-title": "Excluder del PDF",
+	"bs-universalexport-insert-noexport-title": "Nulle PDF"
 }
