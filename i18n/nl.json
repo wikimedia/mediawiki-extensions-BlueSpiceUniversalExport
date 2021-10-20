@@ -4,6 +4,7 @@
 			"Esketti",
 			"Mainframe98",
 			"McDutchie",
+			"Romaine",
 			"Siebrand",
 			"Sjoerddebruin"
 		]
@@ -31,5 +32,6 @@
 	"bs-universalexport-error-permission": "U heeft onvoldoende rechten om deze pagina te exporteren.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "De opgevraagde pagina mag niet worden geëxporteerd omdat deze op de zwarte lijst van categorieën staat.",
 	"action-universalexport-export": "een export-bestand aan te maken",
-	"right-universalexport-export": "Een export-bestand aan te maken"
+	"right-universalexport-export": "Een export-bestand aan te maken",
+	"bs-universalexport-insert-noexport-title": "Geen PDF"
 }
