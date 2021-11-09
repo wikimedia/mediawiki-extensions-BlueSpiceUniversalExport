@@ -3,7 +3,7 @@
 namespace BlueSpice\UniversalExport\Tag;
 
 use BlueSpice\Tag\MarkerType;
-use BlueSpice\Tag\MarkerType\None;
+use BlueSpice\Tag\MarkerType\NoWiki;
 use BlueSpice\Tag\Tag;
 use Parser;
 use PPFrame;
@@ -31,7 +31,7 @@ class NoExport extends Tag {
 	 * @return MarkerType
 	 */
 	public function getMarkerType() {
-		return new None();
+		return new NoWiki();
 	}
 
 	/**

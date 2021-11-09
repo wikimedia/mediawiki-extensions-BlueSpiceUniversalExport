@@ -19,7 +19,7 @@ class NoExportHandler extends Handler {
 		return Html::rawElement(
 			$elementName,
 			[ 'class' => 'bs-universalexport-exportexclude', 'title' => $msg ],
-			$this->processedInput
+			$this->parser->recursiveTagParseFully( $this->processedInput )
 		);
 	}
 
