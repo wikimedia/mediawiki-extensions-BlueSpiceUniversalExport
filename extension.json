@@ -160,10 +160,12 @@
 	},
 	"HookHandlers": {
 		"skin": {
-			"class": "\\BlueSpice\\UniversalExport\\HookHandler\\Skin"
+			"class": "\\BlueSpice\\UniversalExport\\HookHandler\\SkinHandler",
+			"services": [ "BSUniversalExportModuleFactory", "PermissionManager" ]
 		},
 		"discovery-skin": {
-			"class": "\\BlueSpice\\UniversalExport\\HookHandler\\DiscoverySkin"
+			"class": "\\BlueSpice\\UniversalExport\\HookHandler\\DiscoverySkinHandler",
+			"services": [ "BSUniversalExportModuleFactory" ]
 		}
 	},
 	"Hooks": {
@@ -182,7 +184,7 @@
 			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEParamsTag::callback"
 		],
 		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\UniversalExport\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddActions::callback",
-		"SkinTemplateNavigation::Universal": "skin",
+		"SidebarBeforeOutput": "skin",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin"
 	},
 	"manifest_version": 2,

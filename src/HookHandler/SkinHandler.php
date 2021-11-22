@@ -4,27 +4,40 @@ namespace BlueSpice\UniversalExport\HookHandler;
 
 use BlueSpice\UniversalExport\IExportModule;
 use BlueSpice\UniversalExport\IExportSubaction;
+use BlueSpice\UniversalExport\ModuleFactory;
 use IContextSource;
-use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
-use MediaWiki\MediaWikiServices;
-use SkinTemplate;
+use MediaWiki\Hook\SidebarBeforeOutputHook;
+use MediaWiki\Permissions\PermissionManager;
+use Skin;
 
-class Skin implements SkinTemplateNavigation__UniversalHook {
+class SkinHandler implements SidebarBeforeOutputHook {
+	/**
+	 * @var ModuleFactory
+	 */
+	private $moduleFactory = null;
+
+	/**
+	 * @var PermissionManager
+	 */
+	private $permissionManager = null;
+
 	/**
 	 *
-	 * @return MediaWikiServicesa
+	 * @param ModuleFactory $moduleFactory
+	 * @param PermissionManager $permissionManager
 	 */
-	private function getServices() {
-		return MediaWikiServices::getInstance();
+	public function __construct( ModuleFactory $moduleFactory, PermissionManager $permissionManager ) {
+		$this->moduleFactory = $moduleFactory;
+		$this->permissionManager = $permissionManager;
 	}
 
 	/**
 	 *
-	 * @param SkinTemplate $sktemplate
-	 * @param array &$links
+	 * @param Skin $skin
+	 * @param array &$sidebar
 	 * @return void
 	 */
-	public function onSkinTemplateNavigation__Universal( $sktemplate, &$links ): void {
+	public function onSidebarBeforeOutput( $skin, &$sidebar ): void {
 		/**
 		 * Unfortunately the `VectorTemplateTest::testGetMenuProps` from `Skin:Vector` will break
 		 * in `REL1_35`, as it does not properly clear out all hook handlers.
@@ -35,24 +48,24 @@ class Skin implements SkinTemplateNavigation__UniversalHook {
 		if ( defined( 'MW_PHPUNIT_TEST' ) ) {
 			return;
 		}
-		if ( $sktemplate->skinname === 'bluespicecalumma' ) {
+
+		if ( $skin->getSkinName() === 'bluespicecalumma' ) {
 			// BlueSpiceCalumma has its own integration see:
 			// BlueSpice\UniversalExport\Hook\ChameleonSkinTemplateOutputPageBeforeExec\\AddActions
 			return;
 		}
-		$moduleFactory = $this->getServices()->getService(
-			'BSUniversalExportModuleFactory'
-		);
-		foreach ( $moduleFactory->getModules() as $name => $module ) {
-			$context = $sktemplate->getContext();
+
+		foreach ( $this->moduleFactory->getModules() as $name => $module ) {
+			$context = $skin->getContext();
 			if ( !$this->userCanExport( $module->getExportPermission(), $context ) ) {
 				continue;
 			}
-			$description = $this->getActionDescription( $module, $sktemplate );
+			$key = 't-' . $module->getName();
+			$description = $this->getActionDescription( $key, $module, $skin );
 			if ( $description === null ) {
 				continue;
 			}
-			$links[ 'actions' ][md5( $name )] = $description;
+			$sidebar['TOOLBOX'][$key] = $description;
 			/**
 			 * @var string $name
 			 * @var IExportSubaction $handler
@@ -61,29 +74,31 @@ class Skin implements SkinTemplateNavigation__UniversalHook {
 				if ( !$this->userCanExport( $handler->getPermission(), $context ) ) {
 					continue;
 				}
+				$key = 't-' . $module->getName() . ( $subaction ? "-$subaction" : '' );
 				$description = $this->getActionDescription(
+					$key,
 					$module,
-					$sktemplate,
+					$skin,
 					$subaction,
 					$handler
 				);
 				if ( !$description ) {
 					continue;
 				}
-				$key = md5( $name . '/' . $subaction );
-				$links[ 'actions' ][$key] = $description;
+				$sidebar['TOOLBOX'][$key] = $description;
 			}
 		}
 	}
 
 	/**
+	 * @param string $id
 	 * @param IExportModule $module
-	 * @param SkinTemplate $sktemplate
+	 * @param Skin $skin
 	 * @param string|null $subaction
 	 * @param IExportSubaction|null $handler
 	 * @return array The ContentAction Array
 	 */
-	private function getActionDescription( IExportModule $module, SkinTemplate $sktemplate,
+	private function getActionDescription( $id, IExportModule $module, Skin $skin,
 		$subaction = null, $handler = null ) {
 		$authority = $handler !== null ? $handler : $module;
 
@@ -93,8 +108,8 @@ class Skin implements SkinTemplateNavigation__UniversalHook {
 		}
 
 		return [
-			'id' => $module->getName() . ( $subaction ? "-$subaction" : '' ),
-			'href' => $authority->getExportLink( $sktemplate->getRequest() ),
+			'id' => $id,
+			'href' => $authority->getExportLink( $skin->getRequest() ),
 			'title' => $actionButtonDetails['title'] ?? '',
 			'text' => $actionButtonDetails['text'] ?? '',
 			'class' => 'bs-ue-export-link',
@@ -108,8 +123,7 @@ class Skin implements SkinTemplateNavigation__UniversalHook {
 	 * @return bool
 	 */
 	private function userCanExport( $permission, IContextSource $context ) {
-		$pm = $this->getServices()->getPermissionManager();
-		return $pm->userCan(
+		return $this->permissionManager->userCan(
 			$permission, $context->getUser(), $context->getTitle()
 		);
 	}
