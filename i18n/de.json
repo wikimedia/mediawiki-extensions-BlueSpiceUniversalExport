@@ -35,5 +35,7 @@
 	"right-universalexport-export": "Export-Dateien erstellen",
 	"bs-universalexport-tag-pagebreak-title": "Seitenumbruch",
 	"bs-universalexport-tag-noexport-title": "Schließe vom PDF aus",
-	"bs-universalexport-insert-noexport-title": "Kein PDF"
+	"bs-universalexport-insert-noexport-title": "Kein PDF",
+	"bs-universalexport-pref-metadatadefaults-help": "Zusätzliche Daten im JSON-Format, die an die Vorlage übergeben werden.",
+	"bs-universalexport-pref-metadataoverrides-help": "Ermöglicht das Überschreiben von festgelegten Werten, indem hier eingetragene Werte im JSON-Format an die Vorlage gesendet werden."
 }

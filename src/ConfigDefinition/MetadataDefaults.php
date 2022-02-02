@@ -34,4 +34,12 @@ class MetadataDefaults extends \BlueSpice\ConfigDefinition\StringSetting {
 			[ 'rows' => 5 ]
 		);
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-universalexport-pref-metadatadefaults-help';
+	}
 }
