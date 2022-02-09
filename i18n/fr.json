@@ -37,5 +37,7 @@
 	"right-universalexport-export": "Créer un fichier d’export",
 	"bs-universalexport-tag-pagebreak-title": "Saut de page",
 	"bs-universalexport-tag-noexport-title": "Exclure du PDF",
-	"bs-universalexport-insert-noexport-title": "Pas de PDF"
+	"bs-universalexport-insert-noexport-title": "Pas de PDF",
+	"bs-universalexport-pref-metadatadefaults-help": "Données supplémentaires au format JSON passées au modèle",
+	"bs-universalexport-pref-metadataoverrides-help": "Permet aux valeurs spécifiées d’être écrasées en envoyant au modèle des valeurs entrées ici au format JSON."
 }
