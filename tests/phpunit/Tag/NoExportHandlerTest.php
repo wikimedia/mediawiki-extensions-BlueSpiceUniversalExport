@@ -8,6 +8,9 @@ use ParserOutput;
 use PHPUnit\Framework\TestCase;
 use PPFrame;
 
+/**
+ * @group Broken
+ */
 class NoExportHandlerTest extends TestCase {
 
 	/**
