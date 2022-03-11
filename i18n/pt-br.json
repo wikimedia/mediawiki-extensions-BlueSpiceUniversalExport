@@ -3,7 +3,8 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Juan90264"
 		]
 	},
 	"bs-universalexport-desc": "Permite que o MediaWiki exporte páginas em diferentes formatos",
@@ -32,5 +33,7 @@
 	"right-universalexport-export": "Criar e exportar arquivo",
 	"bs-universalexport-tag-pagebreak-title": "Quebra de página",
 	"bs-universalexport-tag-noexport-title": "Excluir do PDF",
-	"bs-universalexport-insert-noexport-title": "Sem PDF"
+	"bs-universalexport-insert-noexport-title": "Sem PDF",
+	"bs-universalexport-pref-metadatadefaults-help": "Dados adicionais no formato JSON passados ​​para o modelo",
+	"bs-universalexport-pref-metadataoverrides-help": "Permite que os valores especificados sejam substituídos enviando os valores inseridos aqui para o modelo no formato JSON."
 }

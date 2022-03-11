@@ -28,5 +28,10 @@
 	"bs-universalexport-error-permission": "אין לך הרשאות הדרושות לייצוא הדף הזה.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "לא ניתן לייצא את הדף שביקשת משום שהוא נמצא בקטגוריית הרשימה השחורה.",
 	"action-universalexport-export": "ליצור קובצי ייצוא",
-	"right-universalexport-export": "יצירת קובצי ייצוא"
+	"right-universalexport-export": "יצירת קובצי ייצוא",
+	"bs-universalexport-tag-pagebreak-title": "מעבר דף",
+	"bs-universalexport-tag-noexport-title": "לא לכלול ב־PDF",
+	"bs-universalexport-insert-noexport-title": "ללא PDF",
+	"bs-universalexport-pref-metadatadefaults-help": "נתונים נוספים בתסדיר JSON הועברו לתבנית",
+	"bs-universalexport-pref-metadataoverrides-help": "מאפשר שערכים מוגדרים יידרסו באמצעות שליחת ערכים שהוזנו כאן לתבנית בתסדיר JSON."
 }
