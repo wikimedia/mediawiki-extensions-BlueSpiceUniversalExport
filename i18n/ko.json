@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Jerrykim306",
-			"Ykhwong"
+			"Ykhwong",
+			"Yunbj"
 		]
 	},
 	"bs-universalexport-pref-metadatadefaults": "메타데이터 (표준, JSON)",
@@ -22,5 +23,6 @@
 	"bs-universalexport-error-requested-export-module-not-found": "요청한 포맷을 생성하지 못했습니다.",
 	"bs-universalexport-error-permission": "이 문서를 내보낼 권한이 충분하지 않습니다.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "요청한 문서는 분류 블랙리스트에 있기 때문에 내보내면 안 됩니다.",
-	"bs-universalexport-tag-pagebreak-title": "쪽 나누기"
+	"bs-universalexport-tag-pagebreak-title": "쪽 나누기",
+	"bs-universalexport-tag-pagebreak-text": "쪽 나누기"
 }

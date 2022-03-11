@@ -30,5 +30,7 @@
 	"right-universalexport-export": "Create an export file",
 	"bs-universalexport-tag-pagebreak-title": "Page break",
 	"bs-universalexport-tag-noexport-title": "Exclude from PDF",
-	"bs-universalexport-insert-noexport-title": "No PDF"
+	"bs-universalexport-insert-noexport-title": "No PDF",
+	"bs-universalexport-pref-metadatadefaults-help": "Additional data in JSON format passed to the template",
+	"bs-universalexport-pref-metadataoverrides-help": "Allows specified values to be overriden by sending values entered here to the template in JSON format."
 }

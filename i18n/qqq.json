@@ -32,5 +32,7 @@
 	"right-universalexport-export": "{{doc-right|universalexport-export}}",
 	"bs-universalexport-tag-pagebreak-title": "Title for the pdf break tag inspector",
 	"bs-universalexport-tag-noexport-title": "Title for exclude from PDF export inspector",
-	"bs-universalexport-insert-noexport-title": "Title for exclude from PDF export toolbar"
+	"bs-universalexport-insert-noexport-title": "Title for exclude from PDF export toolbar",
+	"bs-universalexport-pref-metadatadefaults-help": "Help text for config value that passes additional data in JSON format to the template",
+	"bs-universalexport-pref-metadataoverrides-help": "Help text for config value that allows specified values to be overriden by sending values entered here to the template in JSON format."
 }
