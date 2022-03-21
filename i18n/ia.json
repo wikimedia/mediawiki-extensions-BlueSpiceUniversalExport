@@ -30,5 +30,7 @@
 	"right-universalexport-export": "Crear un file de exportation",
 	"bs-universalexport-tag-pagebreak-title": "Salto de pagina",
 	"bs-universalexport-tag-noexport-title": "Excluder del PDF",
-	"bs-universalexport-insert-noexport-title": "Nulle PDF"
+	"bs-universalexport-insert-noexport-title": "Nulle PDF",
+	"bs-universalexport-pref-metadatadefaults-help": "Datos additional in formato JSON que se passa al patrono",
+	"bs-universalexport-pref-metadataoverrides-help": "Permitte que le valores specificate se supplanta per le invio de valores entrate hic al patrono in formato JSON."
 }
