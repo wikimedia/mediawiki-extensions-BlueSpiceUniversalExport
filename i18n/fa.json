@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Beginneruser",
 			"Dalba"
 		]
 	},
@@ -9,6 +10,6 @@
 	"bs-universalexport-tag-pagebreak-text": "شکستن صفحه",
 	"bs-universalexport-tag-exclude-text": "این متن برون‌بری نخواهد شد.",
 	"bs-universalexport-tag-excludearticle-text": "این صفحه را نمی‌توان برون‌بری کرد.",
-	"action-universalexport-export": "ساخت یک پروندهٔ برون‌بری",
-	"right-universalexport-export": "ساخت یک پروندهٔ برون‌بری"
+	"action-universalexport-export": "ایجاد یک پروندهٔ برون‌بری",
+	"right-universalexport-export": "ایجاد یک پروندهٔ برون‌بری"
 }
