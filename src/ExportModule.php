@@ -182,7 +182,7 @@ abstract class ExportModule implements IExportModule {
 
 		// TODO: To be replaced with ParamProcessor
 		$pageNameForSpecial = \BsCore::sanitize( $title, '', \BsPARAMTYPE::STRING );
-		$pageNameForSpecial = trim( $pageNameForSpecial, '_' );
+		$pageNameForSpecial = trim( $pageNameForSpecial, '_ ' );
 		$special = $this->getServices()->getSpecialPageFactory()->getPage(
 			'UniversalExport'
 		);
