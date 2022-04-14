@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"Macofe",
 			"Mor",
@@ -31,5 +32,6 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "La página solicitada no debe ser exportada porque está en la categoría lista negra.",
 	"action-universalexport-export": "crear un archivo de exportación",
 	"right-universalexport-export": "Crear un archivo de exportación",
-	"bs-universalexport-tag-pagebreak-title": "Salto de página"
+	"bs-universalexport-tag-pagebreak-title": "Salto de página",
+	"bs-universalexport-insert-noexport-title": "No hay PDF"
 }
