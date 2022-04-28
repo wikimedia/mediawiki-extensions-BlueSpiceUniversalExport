@@ -16,7 +16,8 @@ return [
 			$services,
 			$services->getConfigFactory()->makeConfig( 'bsg' ),
 			$services->getHookContainer(),
-			$services->getSpecialPageFactory()
+			$services->getSpecialPageFactory(),
+			RequestContext::getMain()->getRequest()
 		);
 	},
 
