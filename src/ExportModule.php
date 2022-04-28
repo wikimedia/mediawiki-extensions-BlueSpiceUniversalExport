@@ -9,6 +9,7 @@ use Hooks;
 use MediaWiki\MediaWikiServices;
 use MWException;
 use PermissionsError;
+use RequestContext;
 use SpecialPageFactory;
 use WebRequest;
 
@@ -22,6 +23,8 @@ abstract class ExportModule implements IExportModule {
 
 	/** @var MediaWikiServices */
 	protected $services = null;
+	/** @var WebRequest */
+	protected $request = null;
 
 	/** @var string */
 	protected $name = '';
@@ -31,21 +34,31 @@ abstract class ExportModule implements IExportModule {
 	 * @param string $name
 	 * @param MediaWikiServices $services
 	 * @param Config $config
+	 * @param WebRequest $request
 	 */
-	protected function __construct( $name, MediaWikiServices $services, Config $config ) {
+	protected function __construct(
+		$name, MediaWikiServices $services, Config $config, WebRequest $request
+	) {
 		$this->name = $name;
 		$this->config = $config;
 		$this->services = $services;
+		$this->request = $request;
 	}
 
 	/**
 	 * @param string $name
 	 * @param MediaWikiServices $services
 	 * @param Config $config
+	 * @param WebRequest|null $request
 	 * @return IExportModule
 	 */
-	public static function factory( $name, MediaWikiServices $services, Config $config ) {
-		return new static( $name, $services, $config );
+	public static function factory(
+		$name, MediaWikiServices $services, Config $config, $request = null
+	) {
+		if ( !$request ) {
+			$request = RequestContext::getMain()->getRequest();
+		}
+		return new static( $name, $services, $config, $request );
 	}
 
 	/**
@@ -63,6 +76,10 @@ abstract class ExportModule implements IExportModule {
 			throw new PermissionsError( $this->getExportPermission() );
 		}
 		$this->setParams( $specification );
+		$oldId = $this->request->getInt( 'oldid', -1 );
+		if ( $oldId ) {
+			$specification->setParam( 'oldid', $oldId );
+		}
 
 		// If we are in history mode and we are relative to an oldid
 		if ( !empty( $specification->getParam( 'direction' ) ) ) {
