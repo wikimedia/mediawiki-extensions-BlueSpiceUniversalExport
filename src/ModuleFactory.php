@@ -7,6 +7,7 @@ use Config;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\SpecialPageFactory;
+use WebRequest;
 
 class ModuleFactory {
 	/**
@@ -26,6 +27,9 @@ class ModuleFactory {
 	 * @var Config
 	 */
 	protected $config = null;
+
+	/** @var WebRequest */
+	protected $request;
 
 	/**
 	 *
@@ -58,15 +62,17 @@ class ModuleFactory {
 	 * @param Config $config
 	 * @param HookContainer $hookContainer
 	 * @param SpecialPageFactory $specialPageFactory
+	 * @param WebRequest $request
 	 */
 	public function __construct( ExtensionAttributeBasedRegistry $moduleRegistry,
 		MediaWikiServices $services, Config $config, HookContainer $hookContainer,
-		SpecialPageFactory $specialPageFactory ) {
+		SpecialPageFactory $specialPageFactory, WebRequest $request ) {
 		$this->moduleRegistry = $moduleRegistry;
 		$this->services = $services;
 		$this->config = $config;
 		$this->hookContainer = $hookContainer;
 		$this->specialPageFactory = $specialPageFactory;
+		$this->request = $request;
 	}
 
 	/**
@@ -95,6 +101,7 @@ class ModuleFactory {
 			$name,
 			$this->services,
 			$this->config,
+			$this->request
 		] );
 		return $this->modules[$name];
 	}
