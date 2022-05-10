@@ -77,7 +77,7 @@ abstract class ExportModule implements IExportModule {
 		}
 		$this->setParams( $specification );
 		$oldId = $this->request->getInt( 'oldid', -1 );
-		if ( $oldId ) {
+		if ( $oldId > 0 ) {
 			$specification->setParam( 'oldid', $oldId );
 		}
 
