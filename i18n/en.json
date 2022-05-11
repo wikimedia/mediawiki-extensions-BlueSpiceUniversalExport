@@ -32,5 +32,11 @@
 	"bs-universalexport-tag-noexport-title": "Exclude from PDF",
 	"bs-universalexport-insert-noexport-title": "No PDF",
 	"bs-universalexport-pref-metadatadefaults-help": "Additional data in JSON format passed to the template",
-	"bs-universalexport-pref-metadataoverrides-help": "Allows specified values to be overriden by sending values entered here to the template in JSON format."
+	"bs-universalexport-pref-metadataoverrides-help": "Allows specified values to be overriden by sending values entered here to the template in JSON format.",
+	"bs-ue-export-dialog-title": "Export",
+	"bs-ue-export-dialog-action-cancel": "Cancel",
+	"bs-ue-export-dialog-action-submit": "Done",
+	"bs-ue-export-dialog-label-select-module": "Format",
+	"bs-ue-export-dialog-button-text": "Export",
+	"bs-ue-export-dialog-button-title": "Open export dialog"
 }

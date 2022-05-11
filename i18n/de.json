@@ -37,5 +37,8 @@
 	"bs-universalexport-tag-noexport-title": "Schließe vom PDF aus",
 	"bs-universalexport-insert-noexport-title": "Kein PDF",
 	"bs-universalexport-pref-metadatadefaults-help": "Zusätzliche Daten im JSON-Format, die an die Vorlage übergeben werden.",
-	"bs-universalexport-pref-metadataoverrides-help": "Ermöglicht das Überschreiben von festgelegten Werten, indem hier eingetragene Werte im JSON-Format an die Vorlage gesendet werden."
+	"bs-universalexport-pref-metadataoverrides-help": "Ermöglicht das Überschreiben von festgelegten Werten, indem hier eingetragene Werte im JSON-Format an die Vorlage gesendet werden.",
+	"bs-ue-export-dialog-title": "Exportieren",
+	"bs-ue-export-dialog-action-cancel": "Abbrechen",
+	"bs-ue-export-dialog-label-select-module": "Format"
 }

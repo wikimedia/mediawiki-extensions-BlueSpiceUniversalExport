@@ -2,33 +2,54 @@
 
 namespace BlueSpice\UniversalExport\HookHandler;
 
-use BlueSpice\UniversalExport\IExportModule;
-use BlueSpice\UniversalExport\IExportSubaction;
-use BlueSpice\UniversalExport\ModuleFactory;
-use IContextSource;
+use BlueSpice\UniversalExport\ExportDialogPluginFactory;
 use MediaWiki\Hook\SidebarBeforeOutputHook;
-use MediaWiki\Permissions\PermissionManager;
+use Message;
 use Skin;
 
 class SkinHandler implements SidebarBeforeOutputHook {
-	/**
-	 * @var ModuleFactory
-	 */
-	private $moduleFactory = null;
 
 	/**
-	 * @var PermissionManager
+	 * @var array
 	 */
-	private $permissionManager = null;
+	private $plugins = null;
 
 	/**
 	 *
-	 * @param ModuleFactory $moduleFactory
-	 * @param PermissionManager $permissionManager
+	 * @param ExportDialogPluginFactory $pluginFactory
 	 */
-	public function __construct( ModuleFactory $moduleFactory, PermissionManager $permissionManager ) {
-		$this->moduleFactory = $moduleFactory;
-		$this->permissionManager = $permissionManager;
+	public function __construct( ExportDialogPluginFactory $pluginFactory ) {
+		$this->plugins = $pluginFactory->getPlugins();
+	}
+
+	/**
+	 * @param OutputPage $out
+	 * @param Skin $skin
+	 * @return void
+	 */
+	public function onBeforePageDisplay( $out, $skin ) {
+		$out->addModules( 'ext.bluespice.universalExport.exportDialog.pluginRegistry' );
+		$out->addModules( 'ext.bluespice.universalExport.exportDialog' );
+
+		$rlModules = [ 'ext.bluespice.universalExport.exportDialog.pluginRegistry' ];
+		$jsConfigVars = [];
+		foreach ( $this->plugins as $plugin ) {
+			$pluginRlModules = $plugin->getRLModules();
+			if ( !empty( $pluginRlModules ) ) {
+				$rlModules = array_merge( $rlModules, $pluginRlModules );
+			}
+
+			$pluginJsConfigVars = $plugin->getJsConfigVars();
+			if ( !empty( $pluginRlModules ) ) {
+				$jsConfigVars = array_merge( $jsConfigVars, $pluginJsConfigVars );
+			}
+		}
+
+		$out->addJsConfigVars( 'bsUeExportDialgPluginRLModules', $rlModules );
+
+		foreach ( $jsConfigVars as $name => $value ) {
+			$out->addJsConfigVars( $name, $value );
+		}
 	}
 
 	/**
@@ -49,83 +70,14 @@ class SkinHandler implements SidebarBeforeOutputHook {
 			return;
 		}
 
-		if ( $skin->getSkinName() === 'bluespicecalumma' ) {
-			// BlueSpiceCalumma has its own integration see:
-			// BlueSpice\UniversalExport\Hook\ChameleonSkinTemplateOutputPageBeforeExec\\AddActions
-			return;
-		}
-
-		foreach ( $this->moduleFactory->getModules() as $name => $module ) {
-			$context = $skin->getContext();
-			if ( !$this->userCanExport( $module->getExportPermission(), $context ) ) {
-				continue;
-			}
-			$key = 't-' . $module->getName();
-			$description = $this->getActionDescription( $key, $module, $skin );
-			if ( $description === null ) {
-				continue;
-			}
-			$sidebar['TOOLBOX'][$key] = $description;
-			/**
-			 * @var string $name
-			 * @var IExportSubaction $handler
-			 */
-			foreach ( $module->getSubactionHandlers() as $subaction => $handler ) {
-				if ( !$this->userCanExport( $handler->getPermission(), $context ) ) {
-					continue;
-				}
-				$key = 't-' . $module->getName() . ( $subaction ? "-$subaction" : '' );
-				$description = $this->getActionDescription(
-					$key,
-					$module,
-					$skin,
-					$subaction,
-					$handler
-				);
-				if ( !$description ) {
-					continue;
-				}
-				$sidebar['TOOLBOX'][$key] = $description;
-			}
+		if ( !empty( $this->plugins ) ) {
+			$sidebar['TOOLBOX']['ue-export-dialog'] = [
+				'id' => 'bs-ue-export-dialog-open',
+				'href' => '',
+				'title' => Message::newFromKey( 'bs-ue-export-dialog-button-title' )->text(),
+				'text' => Message::newFromKey( 'bs-ue-export-dialog-button-text' )->text(),
+				'class' => 'bs-ue-export-link',
+			];
 		}
 	}
-
-	/**
-	 * @param string $id
-	 * @param IExportModule $module
-	 * @param Skin $skin
-	 * @param string|null $subaction
-	 * @param IExportSubaction|null $handler
-	 * @return array The ContentAction Array
-	 */
-	private function getActionDescription( $id, IExportModule $module, Skin $skin,
-		$subaction = null, $handler = null ) {
-		$authority = $handler !== null ? $handler : $module;
-
-		$actionButtonDetails = $authority->getActionButtonDetails();
-		if ( $actionButtonDetails === null ) {
-			return null;
-		}
-
-		return [
-			'id' => $id,
-			'href' => $authority->getExportLink( $skin->getRequest() ),
-			'title' => $actionButtonDetails['title'] ?? '',
-			'text' => $actionButtonDetails['text'] ?? '',
-			'class' => 'bs-ue-export-link',
-			'iconClass' => $actionButtonDetails['iconClass'] ?? '' . ' bs-ue-export-link'
-		];
-	}
-
-	/**
-	 * @param string $permission
-	 * @param IContextSource $context
-	 * @return bool
-	 */
-	private function userCanExport( $permission, IContextSource $context ) {
-		return $this->permissionManager->userCan(
-			$permission, $context->getUser(), $context->getTitle()
-		);
-	}
-
 }
