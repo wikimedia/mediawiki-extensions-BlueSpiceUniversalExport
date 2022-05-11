@@ -1,10 +1,11 @@
 <?php
 
-namespace BlueSpice\UniversalExport\HookHandler;
+namespace BlueSpice\Discovery\HookHandler\MWStakeCommonUIRegisterSkinSlotComponents;
 
 use BlueSpice\UniversalExport\ExportDialogButtonComponent;
+use MWStake\MediaWiki\Component\CommonUserInterface\Hook\MWStakeCommonUIRegisterSkinSlotComponents;
 
-class DiscoverySkinHandler {
+class SidebarSecondaryToolbar implements MWStakeCommonUIRegisterSkinSlotComponents {
 
 	/**
 	 * @inheritDoc
@@ -21,5 +22,4 @@ class DiscoverySkinHandler {
 			]
 		);
 	}
-
 }
