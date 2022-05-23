@@ -3,14 +3,17 @@
 		"authors": [
 			"Ankabel",
 			"Beta16",
-			"Stefano"
+			"Stefano",
+			"GpieroMW"
 		]
 	},
 	"bs-universalexport-widget-title": "Esporta",
 	"bs-universalexport-widget-tooltip": "Esporta la pagina attuale",
+	"bs-universalexport-tag-pagebreak-text": "Salto di pagina",
 	"bs-universalexport-tag-exclude-text": "Questo testo non sarà esportato.",
 	"bs-universalexport-tag-hidetitle-text": "Il titolo di questa pagina non sarà visibile nell'esportazione.",
 	"bs-universalexport-tag-excludearticle-text": "Questa pagina non può essere esportata.",
+	"bs-universalexport-error-permission": "Non hai autorizzazioni sufficienti per esportare questa pagina.",
 	"action-universalexport-export": "creare un file di esportazione",
 	"right-universalexport-export": "Crea un file di esportazione",
 	"bs-universalexport-tag-pagebreak-title": "Salto di pagina"
