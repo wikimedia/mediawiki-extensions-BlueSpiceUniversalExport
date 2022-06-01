@@ -32,5 +32,11 @@
 	"bs-universalexport-tag-noexport-title": "Excluder del PDF",
 	"bs-universalexport-insert-noexport-title": "Nulle PDF",
 	"bs-universalexport-pref-metadatadefaults-help": "Datos additional in formato JSON que se passa al patrono",
-	"bs-universalexport-pref-metadataoverrides-help": "Permitte que le valores specificate se supplanta per le invio de valores entrate hic al patrono in formato JSON."
+	"bs-universalexport-pref-metadataoverrides-help": "Permitte que le valores specificate se supplanta per le invio de valores entrate hic al patrono in formato JSON.",
+	"bs-ue-export-dialog-title": "Exportar",
+	"bs-ue-export-dialog-action-cancel": "Cancellar",
+	"bs-ue-export-dialog-action-submit": "Facite",
+	"bs-ue-export-dialog-label-select-module": "Formato",
+	"bs-ue-export-dialog-button-text": "Exportar",
+	"bs-ue-export-dialog-button-title": "Aperir dialogo Exportar"
 }

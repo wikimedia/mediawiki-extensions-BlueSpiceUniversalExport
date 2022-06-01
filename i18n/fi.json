@@ -1,10 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"MITO",
 			"Pyscowicz",
 			"Silvonen"
 		]
 	},
 	"bs-universalexport-widget-title": "Vie",
-	"bs-universalexport-tag-pagebreak-text": "Sivunvaihto"
+	"bs-universalexport-tag-pagebreak-text": "Sivunvaihto",
+	"bs-ue-export-dialog-title": "Vie",
+	"bs-ue-export-dialog-action-cancel": "Peruuta",
+	"bs-ue-export-dialog-action-submit": "Valmis",
+	"bs-ue-export-dialog-label-select-module": "Muoto",
+	"bs-ue-export-dialog-button-text": "Vie"
 }
