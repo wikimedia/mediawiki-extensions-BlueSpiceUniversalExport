@@ -34,5 +34,11 @@
 	"bs-universalexport-tag-noexport-title": "Title for exclude from PDF export inspector",
 	"bs-universalexport-insert-noexport-title": "Title for exclude from PDF export toolbar",
 	"bs-universalexport-pref-metadatadefaults-help": "Help text for config value that passes additional data in JSON format to the template",
-	"bs-universalexport-pref-metadataoverrides-help": "Help text for config value that allows specified values to be overriden by sending values entered here to the template in JSON format."
+	"bs-universalexport-pref-metadataoverrides-help": "Help text for config value that allows specified values to be overriden by sending values entered here to the template in JSON format.",
+	"bs-ue-export-dialog-title": "Title for export dialog",
+	"bs-ue-export-dialog-action-cancel": "Title for export dialog cancel button",
+	"bs-ue-export-dialog-action-submit": "Title for export dialog submit button",
+	"bs-ue-export-dialog-label-select-module": "Label for dropdown widet to select export module",
+	"bs-ue-export-dialog-button-text": "Text for a button which opens the export dialog",
+	"bs-ue-export-dialog-button-title": "Title for a button which opens the export dialog"
 }
