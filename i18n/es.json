@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"Macofe",
 			"Mor",
-			"Ryo567",
-			"DiegoAmbrocio"
+			"Ryo567"
 		]
 	},
 	"bs-universalexport-desc": "Permite que MediaWiki exporte páginas en distintos formatos",

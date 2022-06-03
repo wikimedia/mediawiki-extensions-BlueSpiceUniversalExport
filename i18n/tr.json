@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Hedda",
 			"MuratTheTurkish",
 			"SwornToTranslate29"
 		]
@@ -32,5 +33,11 @@
 	"right-universalexport-export": "Dışa aktarma dosyası oluştur",
 	"bs-universalexport-tag-pagebreak-title": "Sayfa sonu",
 	"bs-universalexport-tag-noexport-title": "PDF'den hariç tut",
-	"bs-universalexport-insert-noexport-title": "PDF yok"
+	"bs-universalexport-insert-noexport-title": "PDF yok",
+	"bs-ue-export-dialog-title": "Dışa aktar",
+	"bs-ue-export-dialog-action-cancel": "İptal",
+	"bs-ue-export-dialog-action-submit": "Yapıldı",
+	"bs-ue-export-dialog-label-select-module": "Biçim",
+	"bs-ue-export-dialog-button-text": "Dışa aktar",
+	"bs-ue-export-dialog-button-title": "Dışa aktarma iletişim kutusunu aç"
 }

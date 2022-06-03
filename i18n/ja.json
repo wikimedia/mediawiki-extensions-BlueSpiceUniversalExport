@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"MathXplore",
 			"Omotecho",
 			"Shirayuki"
 		]
@@ -13,5 +14,10 @@
 	"bs-universalexport-tag-meta-desc": "書き出し先の文書に任意のメタ データを追加できるようにする。",
 	"bs-universalexport-tag-params-desc": "書き出しの際に特殊なパラメーターを設定できるようにする。パラメーターの意味は、指定した書き出しモジュールによって異なる。",
 	"action-universalexport-export": "書き出しファイルの作成",
-	"right-universalexport-export": "書き出しファイルを作成"
+	"right-universalexport-export": "書き出しファイルを作成",
+	"bs-ue-export-dialog-title": "エクスポート",
+	"bs-ue-export-dialog-action-cancel": "キャンセル",
+	"bs-ue-export-dialog-action-submit": "完了",
+	"bs-ue-export-dialog-label-select-module": "形式",
+	"bs-ue-export-dialog-button-text": "エクスポート"
 }
