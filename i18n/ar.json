@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
-			"ديفيد"
+			"ديفيد",
+			"Asma"
 		]
 	},
 	"bs-universalexport-desc": "يمكن ميدياويكي من تصدير الصفحات إلى صيغ مختلفة",
@@ -29,5 +30,10 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "يجب عدم تصدير الصفحة المطلوبة لأنها في القائمة السوداء للتصنيف.",
 	"action-universalexport-export": "إنشاء ملف تصدير",
 	"right-universalexport-export": "إنشاء ملف تصدير",
-	"bs-universalexport-tag-pagebreak-title": "فاصل صفحة"
+	"bs-universalexport-tag-pagebreak-title": "فاصل صفحة",
+	"bs-ue-export-dialog-title": "تصدير",
+	"bs-ue-export-dialog-action-cancel": "إلغاء",
+	"bs-ue-export-dialog-action-submit": "تم",
+	"bs-ue-export-dialog-label-select-module": "الصيغة",
+	"bs-ue-export-dialog-button-text": "تصدير"
 }
