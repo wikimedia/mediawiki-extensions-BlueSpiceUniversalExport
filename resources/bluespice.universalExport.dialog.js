@@ -5,7 +5,7 @@
 
 		me = this;
 		this.config = {};
-		this.config.title = mw.Uri().query.title;
+		this.config.title = mw.config.get( 'wgPageName' );
 		this.config.callback = {};
 		this.config.callback.scope = this;
 		this.config.callback.submit = function ( title, params ) {
