@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Farras"
+		]
+	},
+	"bs-ue-export-dialog-title": "Ekspor",
+	"bs-ue-export-dialog-action-cancel": "Batal",
+	"bs-ue-export-dialog-action-submit": "Selesai",
+	"bs-ue-export-dialog-label-select-module": "Format",
+	"bs-ue-export-dialog-button-text": "Ekspor",
+	"bs-ue-export-dialog-button-title": "Buka kotak ekspor"
+}
