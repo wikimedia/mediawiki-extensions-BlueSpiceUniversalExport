@@ -105,5 +105,5 @@ class BSUniversalExportPageExport extends Maintenance {
 
 }
 
-$maintClass = "BSUniversalExportPageExport";
+$maintClass = BSUniversalExportPageExport::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
