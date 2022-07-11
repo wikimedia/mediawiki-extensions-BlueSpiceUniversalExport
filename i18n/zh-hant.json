@@ -32,5 +32,13 @@
 	"right-universalexport-export": "建立匯出檔案",
 	"bs-universalexport-tag-pagebreak-title": "換頁",
 	"bs-universalexport-tag-noexport-title": "從 PDF 排除",
-	"bs-universalexport-insert-noexport-title": "沒有 PDF"
+	"bs-universalexport-insert-noexport-title": "沒有 PDF",
+	"bs-universalexport-pref-metadatadefaults-help": "傳遞到模板的 JSON 格式額外資料",
+	"bs-universalexport-pref-metadataoverrides-help": "允許透過在此以 JSON 格式輸入傳送到模板的值，來覆蓋指定的值。",
+	"bs-ue-export-dialog-title": "匯出",
+	"bs-ue-export-dialog-action-cancel": "取消",
+	"bs-ue-export-dialog-action-submit": "完成",
+	"bs-ue-export-dialog-label-select-module": "格式",
+	"bs-ue-export-dialog-button-text": "匯出",
+	"bs-ue-export-dialog-button-title": "開啟匯出日誌"
 }
