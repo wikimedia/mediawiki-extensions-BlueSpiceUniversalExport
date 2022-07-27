@@ -5,6 +5,7 @@
 			"Kghbln",
 			"Metalhead64",
 			"Mglaser",
+			"Mschlindwein",
 			"Pittigrilli",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
@@ -40,5 +41,8 @@
 	"bs-universalexport-pref-metadataoverrides-help": "Ermöglicht das Überschreiben von festgelegten Werten, indem hier eingetragene Werte im JSON-Format an die Vorlage gesendet werden.",
 	"bs-ue-export-dialog-title": "Exportieren",
 	"bs-ue-export-dialog-action-cancel": "Abbrechen",
-	"bs-ue-export-dialog-label-select-module": "Format"
+	"bs-ue-export-dialog-action-submit": "Fertig",
+	"bs-ue-export-dialog-label-select-module": "Format",
+	"bs-ue-export-dialog-button-text": "Exportieren",
+	"bs-ue-export-dialog-button-title": "Exportdialog öffnen"
 }
