@@ -36,5 +36,10 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "请求页面必须不能导出因为它位于分类黑名单中。",
 	"action-universalexport-export": "创建一个导出文件",
 	"right-universalexport-export": "创建一个导出文件",
-	"bs-universalexport-tag-pagebreak-title": "分页符"
+	"bs-universalexport-tag-pagebreak-title": "分页符",
+	"bs-ue-export-dialog-title": "导出",
+	"bs-ue-export-dialog-action-cancel": "取消",
+	"bs-ue-export-dialog-action-submit": "完成",
+	"bs-ue-export-dialog-button-text": "导出",
+	"bs-ue-export-dialog-button-title": "打开导出对话框"
 }
