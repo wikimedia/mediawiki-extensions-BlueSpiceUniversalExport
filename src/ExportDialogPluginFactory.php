@@ -61,8 +61,15 @@ class ExportDialogPluginFactory {
 		$plugins = [];
 
 		foreach ( $this->moduleFactory->getModules() as $name => $module ) {
-			if ( !$this->userCanExport( $module->getExportPermission(), $this->context ) ) {
-				continue;
+			$requiredPermission = $module->getExportPermission();
+			if ( $requiredPermission !== null ) {
+				$userCanExport = $this->userCanExport(
+					$requiredPermission,
+					$this->context
+				);
+				if ( !$userCanExport ) {
+					continue;
+				}
 			}
 
 			if ( !isset( $this->pluginRegistry[$name] ) ) {

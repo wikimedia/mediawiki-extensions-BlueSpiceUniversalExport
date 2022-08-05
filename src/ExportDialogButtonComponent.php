@@ -43,8 +43,9 @@ class ExportDialogButtonComponent extends SimpleLink {
 
 		$plugins = [];
 		foreach ( $moduleFactory->getModules() as $name => $module ) {
-			if ( !$permissionManager->userCan(
-				$module->getExportPermission(), $context->getUser(), $context->getTitle() )
+			$requiredPermission = $module->getExportPermission();
+			if ( $requiredPermission !== null && !$permissionManager->userCan(
+				$requiredPermission, $context->getUser(), $context->getTitle() )
 				) {
 				continue;
 			}
