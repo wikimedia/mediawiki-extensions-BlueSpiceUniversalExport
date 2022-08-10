@@ -9,11 +9,10 @@ use Message;
 class NoExportHandler extends Handler {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function handle() {
-		$this->parser->getOutput()->setProperty( 'bs-tag-universalexport-exclude', 1 );
+		$this->parser->getOutput()->setPageProperty( 'bs-tag-universalexport-exclude', 1 );
 		$msg = Message::newFromKey( 'bs-universalexport-tag-exclude-text' )->plain();
 		$this->processedInput = $this->parser->recursiveTagParseFully( $this->processedInput );
 		$matches = [];

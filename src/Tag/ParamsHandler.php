@@ -9,12 +9,11 @@ use Html;
 class ParamsHandler extends Handler {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function handle() {
-		$this->parser->getOutput()->setProperty( 'bs-tag-universalexport-params', 1 );
-		$this->parser->getOutput()->setProperty(
+		$this->parser->getOutput()->setPageProperty( 'bs-tag-universalexport-params', 1 );
+		$this->parser->getOutput()->setPageProperty(
 			'bs-universalexport-params',
 			FormatJson::encode( $this->processedArgs )
 		);

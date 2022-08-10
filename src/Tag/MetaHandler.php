@@ -9,12 +9,11 @@ use Html;
 class MetaHandler extends Handler {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function handle() {
-		$this->parser->getOutput()->setProperty( 'bs-tag-universalexport-meta', 1 );
-		$this->parser->getOutput()->setProperty(
+		$this->parser->getOutput()->setPageProperty( 'bs-tag-universalexport-meta', 1 );
+		$this->parser->getOutput()->setPageProperty(
 			'bs-universalexport-meta',
 			FormatJson::encode( $this->processedArgs )
 		);
