@@ -8,6 +8,7 @@
 			"NigelSoft",
 			"Tiger",
 			"WQL",
+			"Wzl19371",
 			"予弦",
 			"神樂坂秀吉"
 		]
@@ -41,5 +42,6 @@
 	"bs-ue-export-dialog-action-cancel": "取消",
 	"bs-ue-export-dialog-action-submit": "完成",
 	"bs-ue-export-dialog-button-text": "导出",
-	"bs-ue-export-dialog-button-title": "打开导出对话框"
+	"bs-ue-export-dialog-button-title": "打开导出对话框",
+	"bs-ue-export-dialog-label-select-module": "格式"
 }
