@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beginneruser",
-			"Dalba"
+			"Dalba",
+			"Jeeputer"
 		]
 	},
 	"bs-universalexport-widget-title": "برون‌بری",
@@ -11,5 +12,11 @@
 	"bs-universalexport-tag-exclude-text": "این متن برون‌بری نخواهد شد.",
 	"bs-universalexport-tag-excludearticle-text": "این صفحه را نمی‌توان برون‌بری کرد.",
 	"action-universalexport-export": "ایجاد یک پروندهٔ برون‌بری",
-	"right-universalexport-export": "ایجاد یک پروندهٔ برون‌بری"
+	"right-universalexport-export": "ایجاد یک پروندهٔ برون‌بری",
+	"bs-ue-export-dialog-title": "برون‌بری",
+	"bs-ue-export-dialog-action-cancel": "لغو",
+	"bs-ue-export-dialog-action-submit": "انجام شد",
+	"bs-ue-export-dialog-label-select-module": "قالب",
+	"bs-ue-export-dialog-button-text": "برون‌بری",
+	"bs-ue-export-dialog-button-title": "گشودن پنجرهٔ برون‌بری"
 }
