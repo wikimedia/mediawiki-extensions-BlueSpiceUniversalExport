@@ -49,6 +49,16 @@
 			"PluginModules": [
 				"ext.bluespice.universalExport.visualEditor"
 			]
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"pdf-pagebreak": {
+					"class": "BlueSpice\\UniversalExport\\ContentDroplets\\PDFPageBreakDroplet"
+				},
+				"pdf-noexport": {
+					"class": "BlueSpice\\UniversalExport\\ContentDroplets\\PDFNoExportDroplet"
+				}
+			}
 		}
 	},
 	"ServiceWiringFiles": [
