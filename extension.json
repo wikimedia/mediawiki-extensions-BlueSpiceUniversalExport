@@ -101,6 +101,9 @@
 				"bs-universalexport-tag-pagebreak-desc",
 				"bs-universalexport-tag-noexport-title",
 				"bs-universalexport-tag-noexport-desc"
+			],
+			"dependencies": [
+				"ext.bluespice.visualEditorConnector.tags.classes"
 			]
 		},
 		"ext.bluespice.universalExport.visualEditor": {
