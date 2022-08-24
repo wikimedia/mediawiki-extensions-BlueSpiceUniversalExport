@@ -35,5 +35,11 @@
 	"bs-universalexport-tag-noexport-title": "Excluir do PDF",
 	"bs-universalexport-insert-noexport-title": "Excluir do PDF",
 	"bs-universalexport-pref-metadatadefaults-help": "Dados adicionais no formato JSON passados à predefinição",
-	"bs-universalexport-pref-metadataoverrides-help": "Permite que os valores especificados sejam substituídos enviando os valores inseridos aqui para a predefinição no formato JSON."
+	"bs-universalexport-pref-metadataoverrides-help": "Permite que os valores especificados sejam substituídos enviando os valores inseridos aqui para a predefinição no formato JSON.",
+	"bs-ue-export-dialog-title": "Exportar",
+	"bs-ue-export-dialog-action-cancel": "Cancelar",
+	"bs-ue-export-dialog-action-submit": "Concluído",
+	"bs-ue-export-dialog-label-select-module": "Formato",
+	"bs-ue-export-dialog-button-text": "Exportar",
+	"bs-ue-export-dialog-button-title": "Abrir diálogo de exportação"
 }
