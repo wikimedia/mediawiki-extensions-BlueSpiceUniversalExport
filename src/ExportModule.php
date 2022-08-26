@@ -227,7 +227,8 @@ abstract class ExportModule implements IExportModule {
 	 */
 	protected function getTemplateParams( $specification, $page ) {
 		$templateParams = [
-			'language' => $specification->getUser()->getOption( 'language', 'en' ),
+			'language' => $this->services->getUserOptionsLookup()
+				->getOption( $specification->getUser(), 'language', 'en' ),
 			'meta'     => $page['meta']
 		];
 
@@ -258,7 +259,7 @@ abstract class ExportModule implements IExportModule {
 	protected function decorateTemplate( &$template, &$contents, &$page, $specs ) {
 		$template['title-element']->nodeValue = $specs->getTitle()->getPrefixedText();
 
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		$this->services->getHookContainer()->run(
 			'UniversalExportBeforeTemplateSetContent',
 			[
 				&$template,
