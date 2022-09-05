@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DarkGames26",
 			"DiegoAmbrocio",
 			"Fitoschido",
 			"Macofe",
@@ -34,5 +35,11 @@
 	"right-universalexport-export": "Crear un archivo de exportación",
 	"bs-universalexport-tag-pagebreak-title": "Salto de página",
 	"bs-universalexport-tag-noexport-title": "Excluir del PDF",
-	"bs-universalexport-insert-noexport-title": "No hay PDF"
+	"bs-universalexport-insert-noexport-title": "No hay PDF",
+	"bs-ue-export-dialog-title": "Exportar",
+	"bs-ue-export-dialog-action-cancel": "Cancelar",
+	"bs-ue-export-dialog-action-submit": "Hecho",
+	"bs-ue-export-dialog-label-select-module": "Formato",
+	"bs-ue-export-dialog-button-text": "Exportar",
+	"bs-ue-export-dialog-button-title": "Abrir diálogo de exportación"
 }
