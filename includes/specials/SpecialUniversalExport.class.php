@@ -15,7 +15,6 @@
 use BlueSpice\UniversalExport\ExportSpecification;
 use BlueSpice\UniversalExport\IExportModule;
 use BlueSpice\UniversalExport\ModuleFactory;
-use MediaWiki\MediaWikiServices;
 
 /**
  * UniversalExport special page class.
@@ -65,7 +64,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	 * @return ModuleFactory
 	 */
 	private function getModuleFactory() {
-		return MediaWikiServices::getInstance()->getService( 'BSUniversalExportModuleFactory' );
+		return $this->services->getService( 'BSUniversalExportModuleFactory' );
 	}
 
 	/**
@@ -81,9 +80,8 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 			$params = [];
 			BsUniversalExportHelper::getParamsFromQueryString( $params );
 			/** @var ExportSpecification $specs */
-			$specs = MediaWikiServices::getInstance()->getService(
-				'BSUniversalExportSpecificationFactory'
-			)->newSpecification( $requestedTitle, $this->getUser(), $params );
+			$specs = $this->services->getService( 'BSUniversalExportSpecificationFactory' )
+				->newSpecification( $requestedTitle, $this->getUser(), $params );
 
 			$categories = BsUniversalExportHelper::getCategoriesForTitle( $requestedTitle );
 			if ( !empty( array_intersect( $specs->getCategoryBlacklist(), $categories ) ) ) {
