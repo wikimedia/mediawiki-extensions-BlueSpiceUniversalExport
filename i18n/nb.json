@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Jon Harald Søby"
 		]
 	},
@@ -30,5 +31,9 @@
 	"right-universalexport-export": "Opprette en eksportfil",
 	"bs-universalexport-tag-pagebreak-title": "Sidebrytning",
 	"bs-universalexport-tag-noexport-title": "Ekskluder fra PDF",
-	"bs-universalexport-insert-noexport-title": "Ingen PDF"
+	"bs-universalexport-insert-noexport-title": "Ingen PDF",
+	"bs-ue-export-dialog-action-cancel": "Avbryt",
+	"bs-ue-export-dialog-action-submit": "Ferdig",
+	"bs-ue-export-dialog-label-select-module": "Format",
+	"bs-ue-export-dialog-button-text": "Eksporter"
 }
