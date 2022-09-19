@@ -32,6 +32,7 @@
 	"bs-universalexport-tag-pagebreak-title": "Sidebrytning",
 	"bs-universalexport-tag-noexport-title": "Ekskluder fra PDF",
 	"bs-universalexport-insert-noexport-title": "Ingen PDF",
+	"bs-ue-export-dialog-title": "Eksporter",
 	"bs-ue-export-dialog-action-cancel": "Avbryt",
 	"bs-ue-export-dialog-action-submit": "Ferdig",
 	"bs-ue-export-dialog-label-select-module": "Format",
