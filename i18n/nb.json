@@ -35,5 +35,6 @@
 	"bs-ue-export-dialog-action-cancel": "Avbryt",
 	"bs-ue-export-dialog-action-submit": "Ferdig",
 	"bs-ue-export-dialog-label-select-module": "Format",
-	"bs-ue-export-dialog-button-text": "Eksporter"
+	"bs-ue-export-dialog-button-text": "Eksporter",
+	"bs-ue-export-dialog-title": "Eksporter"
 }
