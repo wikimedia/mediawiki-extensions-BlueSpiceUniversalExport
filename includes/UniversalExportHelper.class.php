@@ -269,7 +269,8 @@ class BsUniversalExportHelper {
 		if ( $title->getNamespace() === NS_SPECIAL && !$userHasRight ) {
 			throw new Exception( 'error-no-permission' );
 		}
-		if ( $title->getNamespace() !== NS_SPECIAL && !$title->userCan( 'read', $user ) ) {
+		$userCan = $permissionManager->userCan( 'read', $user, $title );
+		if ( $title->getNamespace() !== NS_SPECIAL && !$userCan ) {
 			throw new Exception( 'error-no-permission' );
 		}
 	}
