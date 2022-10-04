@@ -33,6 +33,15 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "De opgevraagde pagina mag niet worden geëxporteerd omdat deze op de zwarte lijst van categorieën staat.",
 	"action-universalexport-export": "een export-bestand aan te maken",
 	"right-universalexport-export": "Een export-bestand aan te maken",
+	"bs-universalexport-tag-pagebreak-title": "Pagina-einde",
 	"bs-universalexport-tag-noexport-title": "Uitsluiten in PDF",
-	"bs-universalexport-insert-noexport-title": "Geen PDF"
+	"bs-universalexport-insert-noexport-title": "Geen PDF",
+	"bs-universalexport-pref-metadatadefaults-help": "Aanvullende gegevens om in JSON-indeling door te geven aan het sjabloon",
+	"bs-universalexport-pref-metadataoverrides-help": "Hiermee kunnen opgegeven waarden worden vervangen door de hier ingevoerde waarden, die in JSON-indeling aan het sjabloon worden doorgegeven.",
+	"bs-ue-export-dialog-title": "Exporteren",
+	"bs-ue-export-dialog-action-cancel": "Annuleren",
+	"bs-ue-export-dialog-action-submit": "Afronden",
+	"bs-ue-export-dialog-label-select-module": "Indeling",
+	"bs-ue-export-dialog-button-text": "Exporteren",
+	"bs-ue-export-dialog-button-title": "Dialoogvenster voor exporteren openen"
 }
