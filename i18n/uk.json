@@ -7,7 +7,8 @@
 			"Piramidion",
 			"Samflint",
 			"Vlad5250",
-			"Ата"
+			"Ата",
+			"Пан Хаунд"
 		]
 	},
 	"bs-universalexport-desc": "Дозволяє MediaWiki експортувати сторінки в різні формати",
@@ -38,5 +39,8 @@
 	"bs-universalexport-tag-noexport-title": "Виключити з PDF",
 	"bs-universalexport-insert-noexport-title": "Немає PDF",
 	"bs-universalexport-pref-metadatadefaults-help": "Додаткові дані у форматі JSON передаються в шаблон",
-	"bs-universalexport-pref-metadataoverrides-help": "Дозволяє перевизначати вказані значення шляхом надсилання введених тут значень до шаблону у форматі JSON."
+	"bs-universalexport-pref-metadataoverrides-help": "Дозволяє перевизначати вказані значення шляхом надсилання введених тут значень до шаблону у форматі JSON.",
+	"bs-ue-export-dialog-label-select-module": "Формат",
+	"bs-ue-export-dialog-button-text": "Експортувати",
+	"bs-ue-export-dialog-button-title": "Відкрити діалогове вікно експорту"
 }
