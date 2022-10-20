@@ -33,5 +33,7 @@
 	"bs-universalexport-tag-noexport-title": "לא לכלול ב־PDF",
 	"bs-universalexport-insert-noexport-title": "ללא PDF",
 	"bs-universalexport-pref-metadatadefaults-help": "נתונים נוספים בתסדיר JSON הועברו לתבנית",
-	"bs-universalexport-pref-metadataoverrides-help": "מאפשר שערכים מוגדרים יידרסו באמצעות שליחת ערכים שהוזנו כאן לתבנית בתסדיר JSON."
+	"bs-universalexport-pref-metadataoverrides-help": "מאפשר שערכים מוגדרים יידרסו באמצעות שליחת ערכים שהוזנו כאן לתבנית בתסדיר JSON.",
+	"bs-ue-export-dialog-action-cancel": "ביטול",
+	"bs-ue-export-dialog-label-select-module": "תסדיר"
 }
