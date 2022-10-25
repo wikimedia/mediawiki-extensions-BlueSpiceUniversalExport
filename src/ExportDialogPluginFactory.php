@@ -98,8 +98,9 @@ class ExportDialogPluginFactory {
 	 * @return bool
 	 */
 	private function userCanExport( $permission, IContextSource $context ) {
-		return $this->permissionManager->userCan(
-			$permission, $context->getUser(), $context->getTitle()
+		$title = $context->getTitle();
+		return $title && $this->permissionManager->userCan(
+			$permission, $context->getUser(), $title
 		);
 	}
 }
