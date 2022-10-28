@@ -5,6 +5,7 @@ namespace BlueSpice\UniversalExport;
 use BlueSpice\UtilityFactory;
 use Config;
 use FormatJson;
+use PageProps;
 use Title;
 use User;
 
@@ -129,9 +130,10 @@ class ExportSpecification {
 				$webrootPath = implode( '/', $parts );
 			}
 		}
+
 		$this->setParam( 'webroot-filesystempath', $webrootPath );
 		$this->setParam( 'title', $this->title->getPrefixedText() );
-		$this->setParam( 'display-title', $this->title->getPrefixedText() );
+		$this->setParam( 'display-title', $this->getDisplayTitle() );
 		$this->setParam( 'article-id', $this->title->getArticleID() );
 		$this->setParam( 'oldid', 0 );
 		$this->setParam( 'direction', '' );
@@ -166,5 +168,25 @@ class ExportSpecification {
 				}
 			}
 		}
+	}
+
+	/**
+	 * @return string
+	 */
+	private function getDisplayTitle(): string {
+		$pageProperties = [];
+		$pageProps = PageProps::getInstance()->getAllProperties( $this->title );
+
+		$id = $this->title->getArticleID();
+
+		if ( isset( $pageProps[$id] ) ) {
+			$pageProperties = $pageProps[$id];
+		}
+
+		if ( isset( $pageProperties['displaytitle'] ) ) {
+			return $pageProperties['displaytitle'];
+		}
+
+		return $this->title->getPrefixedText();
 	}
 }
