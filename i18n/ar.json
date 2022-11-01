@@ -35,5 +35,10 @@
 	"bs-ue-export-dialog-action-cancel": "إلغاء",
 	"bs-ue-export-dialog-action-submit": "تم",
 	"bs-ue-export-dialog-label-select-module": "الصيغة",
-	"bs-ue-export-dialog-button-text": "تصدير"
+	"bs-ue-export-dialog-button-text": "تصدير",
+	"bs-universalexport-tag-noexport-title": "استبعد من PDF",
+	"bs-universalexport-insert-noexport-title": "لا يوجد PDF",
+	"bs-universalexport-pref-metadatadefaults-help": "تم تمرير بيانات إضافية بتنسيق JSON إلى النموذج",
+	"bs-universalexport-pref-metadataoverrides-help": "يسمح بتجاوز القيم المحددة عن طريق إرسال القيم التي تم إدخالها هنا إلى القالب بتنسيق JSON.",
+	"bs-ue-export-dialog-button-title": "فتح مربع حوار التصدير"
 }
