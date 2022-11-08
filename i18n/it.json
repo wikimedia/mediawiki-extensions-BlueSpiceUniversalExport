@@ -16,5 +16,9 @@
 	"bs-universalexport-error-permission": "Non hai autorizzazioni sufficienti per esportare questa pagina.",
 	"action-universalexport-export": "creare un file di esportazione",
 	"right-universalexport-export": "Crea un file di esportazione",
-	"bs-universalexport-tag-pagebreak-title": "Salto di pagina"
+	"bs-universalexport-tag-pagebreak-title": "Salto di pagina",
+	"bs-universalexport-tag-noexport-desc": "Il contenuto all'interno di questo tag non verrà esportato.",
+	"bs-universalexport-tag-meta-desc": "Consente di aggiungere metadati arbitrari a un documento esportato.",
+	"bs-universalexport-tag-params-desc": "Consente di impostare parametri speciali per l'esportazione, se il parametro verrà valutato dipende dal modulo di esportazione scelto.",
+	"bs-universalexport-error-requested-export-module-not-found": "Non è stato possibile produrre il formato richiesto."
 }
