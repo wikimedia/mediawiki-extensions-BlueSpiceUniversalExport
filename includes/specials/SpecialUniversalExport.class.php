@@ -99,8 +99,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 
 			$aFile = $module->createExportFile( $specs );
 			$module->invokeExportTarget( $aFile, $specs );
-		}
-		catch ( Exception $oException ) {
+		} catch ( Exception $oException ) {
 			// Display Exception-Message
 			$this->oOutputPage->setPageTitle(
 				wfMessage( 'bs-universalexport-page-title-on-error' )->text()
