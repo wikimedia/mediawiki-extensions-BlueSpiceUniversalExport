@@ -264,8 +264,8 @@ class BsUniversalExportHelper {
 		if ( $user === null ) {
 			$user = \RequestContext::getMain()->getUser();
 		}
-		$permisionManager = MediaWikiServices::getInstance()->getPermissionManager();
-		$userHasRight = $permisionManager->userHasRight( $user, 'read' );
+		$permissionManager = MediaWikiServices::getInstance()->getPermissionManager();
+		$userHasRight = $permissionManager->userHasRight( $user, 'read' );
 		if ( $title->getNamespace() === NS_SPECIAL && !$userHasRight ) {
 			throw new Exception( 'error-no-permission' );
 		}
