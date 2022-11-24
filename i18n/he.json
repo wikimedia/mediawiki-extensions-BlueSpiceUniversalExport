@@ -35,5 +35,9 @@
 	"bs-universalexport-pref-metadatadefaults-help": "נתונים נוספים בתסדיר JSON הועברו לתבנית",
 	"bs-universalexport-pref-metadataoverrides-help": "מאפשר שערכים מוגדרים יידרסו באמצעות שליחת ערכים שהוזנו כאן לתבנית בתסדיר JSON.",
 	"bs-ue-export-dialog-action-cancel": "ביטול",
-	"bs-ue-export-dialog-label-select-module": "תסדיר"
+	"bs-ue-export-dialog-label-select-module": "תסדיר",
+	"bs-ue-export-dialog-title": "יצוא",
+	"bs-ue-export-dialog-action-submit": "בוצע",
+	"bs-ue-export-dialog-button-text": "יצוא",
+	"bs-ue-export-dialog-button-title": "פתיחת תיבת דו־שיח ליצוא"
 }
