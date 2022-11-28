@@ -157,6 +157,17 @@ bs.ue.ui.dialog.ExportDialog.prototype.getActionProcess = function ( action ) {
 			queryParams['ue[' + name + ']'] = params[name];
 		}
 
+		let additionalParams = this.getAdditonalParams();
+		for ( let index = 0; index < additionalParams.length; index++ ) {
+			let additionalParam = additionalParams[index];
+			let key = additionalParam[0];
+			let value = additionalParam[1];
+			if ( key === 'title' ) {
+				continue;
+			}
+			queryParams[key] = value;
+		}
+
 		this.config.callback.submit.call(
 			this.config.callback.scope,
 			this.config.title,
@@ -169,4 +180,17 @@ bs.ue.ui.dialog.ExportDialog.prototype.getActionProcess = function ( action ) {
 	}
 
 	return bs.ue.ui.dialog.ExportDialog.super.prototype.getActionProcess.call( this, action );
+}
+
+bs.ue.ui.dialog.ExportDialog.prototype.getAdditonalParams = function () {
+	let search = window.location.search;
+	search = search.substr( 1 );
+	let searchParams = search.split( '&' );
+	let locationParams = [];
+	for ( let index = 0; index < searchParams.length; index++ ){
+		let part = searchParams[index];
+		let partValues = part.split( '=' );
+		locationParams.push( partValues );
+	}
+	return locationParams;
 }
