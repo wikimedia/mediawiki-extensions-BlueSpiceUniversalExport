@@ -6,6 +6,11 @@ use BlueSpice\UniversalExport\ExportSpecificationFactory;
 use BlueSpice\UniversalExport\ModuleFactory;
 use MediaWiki\MediaWikiServices;
 
+// PHP unit does not understand code coverage for this file
+// as the @covers annotation cannot cover a specific file
+// This is fully tested in ServiceWiringTest.php
+// @codeCoverageIgnoreStart
+
 return [
 
 	'BSUniversalExportModuleFactory' => static function ( MediaWikiServices $services ) {
@@ -38,3 +43,5 @@ return [
 		);
 	}
 ];
+
+// @codeCoverageIgnoreEnd
