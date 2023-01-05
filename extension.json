@@ -168,7 +168,7 @@
 			"public": true
 		},
 		"UniversalExportMetadataOverrides": {
-			"value": "{\"producer\":\"UniversalExport 3.0.0 (BlueSpice MediaWiki)\"}",
+			"value": "{\"producer\":\"UniversalExport 4.2.5 (BlueSpice MediaWiki)\"}",
 			"descriptionmsg": "bs-universalexport-pref-metadataoverrides",
 			"public": true
 		},
