@@ -8,5 +8,9 @@
 	"bs-universalexport-tag-pagebreak-desc": "Če je podprta z izbranim izvoznim modulom, ta označka v izvoženi dokument vstavi prelom strani.",
 	"bs-universalexport-tag-noexport-desc": "Vsebina v tej znački ne bo izvožena.",
 	"bs-universalexport-tag-meta-desc": "Omogoča dodajanje arbitrarnih metapodatkov izvoženemu dokumentu.",
-	"bs-universalexport-tag-params-desc": "Omogoča nastavitev posebnih parametrov za izvoz; ali bo parameter razčlenjen, je odvisno od izbranega izvoznega modula."
+	"bs-universalexport-tag-params-desc": "Omogoča nastavitev posebnih parametrov za izvoz; ali bo parameter razčlenjen, je odvisno od izbranega izvoznega modula.",
+	"bs-universalexport-tag-pagebreak-text": "Prelom strani",
+	"bs-universalexport-tag-hidetitle-text": "Naslov te strani pri izvozu ne bo viden.",
+	"bs-universalexport-tag-pagebreak-title": "Prelom strani",
+	"bs-ue-export-dialog-action-cancel": "Prekliči"
 }
