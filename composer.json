@@ -26,5 +26,10 @@
 	},
 	"extra": {
 		"installer-name": "BlueSpiceUniversalExport"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
 	}
 }
