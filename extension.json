@@ -96,6 +96,10 @@
 				"bs.unvrslxprt/util/tag/PdfPageBreakDefinition.js",
 				"bs.unvrslxprt/util/tag/PdfNoExportDefinition.js"
 			],
+			"styles": [
+				"bluespice.universalExport.droplet.nopdf.css",
+				"bluespice.universalExport.droplet.pdfbreak.css"
+			],
 			"messages": [
 				"bs-universalexport-tag-pagebreak-title",
 				"bs-universalexport-tag-pagebreak-desc",

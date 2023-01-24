@@ -4,7 +4,6 @@ namespace BlueSpice\UniversalExport\ContentDroplets;
 
 use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
-use RawMessage;
 
 class PDFPageBreakDroplet extends TagDroplet {
 
@@ -12,21 +11,21 @@ class PDFPageBreakDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getName(): Message {
-		return new RawMessage( 'PDF page break' );
+		return Message::newFromKey( 'bs-universalexport-droplet-pdfbreak-name' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getDescription(): Message {
-		return new RawMessage( "PDF page break description" );
+		return Message::newFromKey( 'bs-universalexport-droplet-pdfbreak-description' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'subtract';
+		return 'droplet-pdf-break';
 	}
 
 	/**
