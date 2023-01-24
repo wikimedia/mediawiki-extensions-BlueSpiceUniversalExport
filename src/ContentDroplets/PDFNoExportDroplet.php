@@ -4,7 +4,6 @@ namespace BlueSpice\UniversalExport\ContentDroplets;
 
 use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
-use RawMessage;
 
 class PDFNoExportDroplet extends TagDroplet {
 
@@ -12,21 +11,21 @@ class PDFNoExportDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getName(): Message {
-		return new RawMessage( 'PDF no export' );
+		return Message::newFromKey( 'bs-universalexport-droplet-nopdf-name' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getDescription(): Message {
-		return new RawMessage( "PDF no export description" );
+		return Message::newFromKey( 'bs-universalexport-droplet-nopdf-description' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'printer';
+		return 'droplet-no-pdf';
 	}
 
 	/**
