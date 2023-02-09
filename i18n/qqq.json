@@ -40,5 +40,9 @@
 	"bs-ue-export-dialog-action-submit": "Title for export dialog submit button",
 	"bs-ue-export-dialog-label-select-module": "Label for dropdown widet to select export module",
 	"bs-ue-export-dialog-button-text": "Text for a button which opens the export dialog",
-	"bs-ue-export-dialog-button-title": "Title for a button which opens the export dialog"
+	"bs-ue-export-dialog-button-title": "Title for a button which opens the export dialog",
+	"bs-universalexport-droplet-nopdf-name": "Title of droplet for tag nopdf",
+	"bs-universalexport-droplet-nopdf-description": "Description of droplet for tag nopdf",
+	"bs-universalexport-droplet-pdfbreak-name": "Title of droplet for tag pdfbreak",
+	"bs-universalexport-droplet-pdfbreak-description": "Description of droplet for tag pdfbreak"
 }
