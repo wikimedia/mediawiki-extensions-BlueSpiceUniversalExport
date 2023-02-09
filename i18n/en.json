@@ -38,5 +38,9 @@
 	"bs-ue-export-dialog-action-submit": "Done",
 	"bs-ue-export-dialog-label-select-module": "Format",
 	"bs-ue-export-dialog-button-text": "Export",
-	"bs-ue-export-dialog-button-title": "Open export dialog"
+	"bs-ue-export-dialog-button-title": "Open export dialog",
+	"bs-universalexport-droplet-nopdf-name": "PDF no export",
+	"bs-universalexport-droplet-nopdf-description": "Content within this section is excluded from the PDF export",
+	"bs-universalexport-droplet-pdfbreak-name": "PDF page break",
+	"bs-universalexport-droplet-pdfbreak-description": "Forces a page break at the set position during PDF export"
 }
