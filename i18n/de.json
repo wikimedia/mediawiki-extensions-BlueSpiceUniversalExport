@@ -44,5 +44,9 @@
 	"bs-ue-export-dialog-label-select-module": "Format",
 	"bs-ue-export-dialog-action-submit": "Fertig",
 	"bs-ue-export-dialog-button-text": "Exportieren",
-	"bs-ue-export-dialog-button-title": "Exportdialog öffnen"
+	"bs-ue-export-dialog-button-title": "Exportdialog öffnen",
+	"bs-universalexport-droplet-nopdf-name": "PDF Kein Export",
+	"bs-universalexport-droplet-nopdf-description": "Inhalt innerhalb dieses Abschnitts wird beim PDF- Export ausgeschlossen",
+	"bs-universalexport-droplet-pdfbreak-name": "PDF Seitenumbruch",
+	"bs-universalexport-droplet-pdfbreak-description": "Erzwingt einen Seitenumbruch an der gesetzten Stelle beim PDF-Export"
 }
