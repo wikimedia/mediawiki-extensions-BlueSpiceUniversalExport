@@ -38,5 +38,9 @@
 	"bs-ue-export-dialog-action-submit": "Facite",
 	"bs-ue-export-dialog-label-select-module": "Formato",
 	"bs-ue-export-dialog-button-text": "Exportar",
-	"bs-ue-export-dialog-button-title": "Aperir dialogo Exportar"
+	"bs-ue-export-dialog-button-title": "Aperir dialogo Exportar",
+	"bs-universalexport-droplet-nopdf-name": "Nulle exportation PDF",
+	"bs-universalexport-droplet-nopdf-description": "Contento in iste section es excludite del exportation in PDF",
+	"bs-universalexport-droplet-pdfbreak-name": "Salto de pagina PDF",
+	"bs-universalexport-droplet-pdfbreak-description": "Fortia un salto de pagina al position definite durante le exportation PDF"
 }

@@ -43,5 +43,9 @@
 	"bs-ue-export-dialog-action-submit": "Afronden",
 	"bs-ue-export-dialog-label-select-module": "Indeling",
 	"bs-ue-export-dialog-button-text": "Exporteren",
-	"bs-ue-export-dialog-button-title": "Dialoogvenster voor exporteren openen"
+	"bs-ue-export-dialog-button-title": "Dialoogvenster voor exporteren openen",
+	"bs-universalexport-droplet-nopdf-name": "Geen PDF-export",
+	"bs-universalexport-droplet-nopdf-description": "Inhoud binnen deze sectie is uitgesloten van de PDF-export",
+	"bs-universalexport-droplet-pdfbreak-name": "PDF-pagina-einde",
+	"bs-universalexport-droplet-pdfbreak-description": "Forceert een pagina-einde op de ingestelde positie tijdens PDF-export"
 }

@@ -45,5 +45,9 @@
 	"bs-ue-export-dialog-action-submit": "Fait",
 	"bs-ue-export-dialog-label-select-module": "Format",
 	"bs-ue-export-dialog-button-text": "Exporter",
-	"bs-ue-export-dialog-button-title": "Ouvrir le dialogue d’exportation"
+	"bs-ue-export-dialog-button-title": "Ouvrir le dialogue d’exportation",
+	"bs-universalexport-droplet-nopdf-name": "pas d’exportation PDF",
+	"bs-universalexport-droplet-nopdf-description": "Le contenu de cette section est exclu de l’exportation PDF",
+	"bs-universalexport-droplet-pdfbreak-name": "saut de page PDF",
+	"bs-universalexport-droplet-pdfbreak-description": "Force un saut de page à la position définie lors de l’exportation PDF"
 }
