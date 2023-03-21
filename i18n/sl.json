@@ -38,5 +38,9 @@
 	"bs-ue-export-dialog-action-submit": "Končano",
 	"bs-ue-export-dialog-label-select-module": "Format",
 	"bs-ue-export-dialog-button-text": "Izvozi",
-	"bs-ue-export-dialog-button-title": "Opdri izvozno okno"
+	"bs-ue-export-dialog-button-title": "Opdri izvozno okno",
+	"bs-universalexport-droplet-nopdf-name": "PDF brez izvoza",
+	"bs-universalexport-droplet-nopdf-description": "Vsebina v tem razdelku je izključena iz PDF-izvoza",
+	"bs-universalexport-droplet-pdfbreak-name": "prelom strani PDF",
+	"bs-universalexport-droplet-pdfbreak-description": "Vsili prelom strani na nastavljenem mestu med izvozom PDF"
 }
