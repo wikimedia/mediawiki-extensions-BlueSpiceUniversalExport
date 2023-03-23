@@ -39,5 +39,9 @@
 	"bs-ue-export-dialog-title": "יצוא",
 	"bs-ue-export-dialog-action-submit": "בוצע",
 	"bs-ue-export-dialog-button-text": "יצוא",
-	"bs-ue-export-dialog-button-title": "פתיחת תיבת דו־שיח ליצוא"
+	"bs-ue-export-dialog-button-title": "פתיחת תיבת דו־שיח ליצוא",
+	"bs-universalexport-droplet-nopdf-name": "ללא יצוא PDF",
+	"bs-universalexport-droplet-nopdf-description": "תוכן בפרק הזה אינו נכלל ביצוא PDF",
+	"bs-universalexport-droplet-pdfbreak-name": "מעבר עמוד PDF",
+	"bs-universalexport-droplet-pdfbreak-description": "אילוץ מעבר עמוד במיקום שנקבע במהלך יצוא PDF"
 }
