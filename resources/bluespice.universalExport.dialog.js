@@ -16,7 +16,7 @@
 			window.open( exportUrl );
 		}
 
-		var rlModules = mw.config.get( 'bsUeExportDialgPluginRLModules' );
+		var rlModules = mw.config.get( 'bsgUEExportDialogPluginRLModules' );
 
 		mw.loader.using( rlModules ).done( function() {
 			var windowManager = OO.ui.getWindowManager();
