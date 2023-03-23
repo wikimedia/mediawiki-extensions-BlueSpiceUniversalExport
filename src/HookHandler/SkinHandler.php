@@ -45,7 +45,7 @@ class SkinHandler implements SidebarBeforeOutputHook {
 			}
 		}
 
-		$out->addJsConfigVars( 'bsUeExportDialgPluginRLModules', $rlModules );
+		$out->addJsConfigVars( 'bsgUEExportDialogPluginRLModules', $rlModules );
 
 		foreach ( $jsConfigVars as $name => $value ) {
 			$out->addJsConfigVars( $name, $value );
