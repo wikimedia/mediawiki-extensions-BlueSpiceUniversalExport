@@ -2,24 +2,24 @@
 
 namespace BlueSpice\UniversalExport;
 
-use BlueSpice\UtilityFactory;
 use Config;
+use PageProps;
 use Title;
 use User;
 
 class ExportSpecificationFactory {
 	/** @var Config */
 	private $config;
-	/** @var UtilityFactory */
-	private $utilFactory;
+	/** @var PageProps */
+	private $pageProps;
 
 	/**
 	 * @param Config $config
-	 * @param UtilityFactory $utilFactory
+	 * @param PageProps $pageProps
 	 */
-	public function __construct( Config $config, UtilityFactory $utilFactory ) {
+	public function __construct( Config $config, PageProps $pageProps ) {
 		$this->config = $config;
-		$this->utilFactory = $utilFactory;
+		$this->pageProps = $pageProps;
 	}
 
 	/**
@@ -30,7 +30,7 @@ class ExportSpecificationFactory {
 	 */
 	public function newSpecification( Title $title, User $user, $params = [] ) {
 		return new ExportSpecification(
-			$this->config, $this->utilFactory, $title, $user, $params
+			$this->config, $this->pageProps, $title, $user, $params
 		);
 	}
 }
