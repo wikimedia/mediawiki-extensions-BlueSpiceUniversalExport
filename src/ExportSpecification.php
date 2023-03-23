@@ -2,7 +2,6 @@
 
 namespace BlueSpice\UniversalExport;
 
-use BlueSpice\UtilityFactory;
 use Config;
 use FormatJson;
 use PageProps;
@@ -12,8 +11,8 @@ use User;
 class ExportSpecification {
 	/** @var Config */
 	private $config;
-	/** @var UtilityFactory */
-	private $utilFactory;
+	/** @var PageProps */
+	private $pageProps;
 	/** @var Title */
 	private $title;
 	/** @var User */
@@ -29,16 +28,16 @@ class ExportSpecification {
 
 	/**
 	 * @param Config $config
-	 * @param UtilityFactory $utilFactory
+	 * @param PageProps $pageProps
 	 * @param Title $title
 	 * @param User $user
 	 * @param array $params
 	 */
 	public function __construct(
-		Config $config, UtilityFactory $utilFactory, Title $title, User $user, $params = []
+		Config $config, PageProps $pageProps, Title $title, User $user, $params = []
 	) {
 		$this->config = $config;
-		$this->utilFactory = $utilFactory;
+		$this->pageProps = $pageProps;
 		$this->title = $title;
 		$this->user = $user;
 		$this->params = $params;
@@ -154,12 +153,12 @@ class ExportSpecification {
 	}
 
 	private function addPageParams() {
-		$propHelper = $this->utilFactory->getPagePropHelper( $this->title );
+		$pageProps = $this->pageProps->getProperties( $this->title, 'bs-universalexport-params' );
 
 		// Get relevant page props
-		if ( $propHelper->getPageProp( 'bs-universalexport-params' ) ) {
+		if ( $pageProps ) {
 			$prop = FormatJson::decode(
-				$propHelper->getPageProp( 'bs-universalexport-params' ),
+				$pageProps,
 				true
 			);
 			if ( is_array( $prop ) ) {
@@ -175,7 +174,7 @@ class ExportSpecification {
 	 */
 	private function getDisplayTitle(): string {
 		$pageProperties = [];
-		$pageProps = PageProps::getInstance()->getAllProperties( $this->title );
+		$pageProps = $this->pageProps->getAllProperties( $this->title );
 
 		$id = $this->title->getArticleID();
 
