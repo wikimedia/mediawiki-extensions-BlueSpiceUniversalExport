@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"WaldiSt"
 		]
 	},
 	"bs-universalexport-page-text-without-param-no-modules-registered": "Nie ma zarejestrowanych modułów.",
@@ -9,5 +10,7 @@
 	"bs-universalexport-tag-pagebreak-text": "Podział strony",
 	"bs-universalexport-tag-exclude-text": "Ten tekst nie zostanie wyeksportowany.",
 	"bs-universalexport-tag-excludearticle-text": "Ta strona nie może być eksportowana.",
-	"bs-universalexport-error-permission": "Nie masz wystarczających uprawnień do eksportu tej strony."
+	"bs-universalexport-error-permission": "Nie masz wystarczających uprawnień do eksportu tej strony.",
+	"bs-universalexport-droplet-nopdf-description": "Zawartość tej sekcji jest wykluczona z eksportu PDF",
+	"bs-universalexport-droplet-pdfbreak-name": "Podział strony PDF"
 }
