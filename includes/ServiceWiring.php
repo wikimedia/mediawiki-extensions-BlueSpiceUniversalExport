@@ -25,7 +25,7 @@ return [
 	'BSUniversalExportSpecificationFactory' => static function ( MediaWikiServices $services ) {
 		return new ExportSpecificationFactory(
 			$services->getConfigFactory()->makeConfig( 'bsg' ),
-			$services->getService( 'BSUtilityFactory' )
+			$services->getPageProps()
 		);
 	},
 
