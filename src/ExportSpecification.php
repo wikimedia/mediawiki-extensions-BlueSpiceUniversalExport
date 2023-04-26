@@ -154,6 +154,7 @@ class ExportSpecification {
 
 	private function addPageParams() {
 		$pageProps = $this->pageProps->getProperties( $this->title, 'bs-universalexport-params' );
+		$pageProps = $pageProps[$this->title->getArticleID()] ?? [];
 
 		// Get relevant page props
 		if ( $pageProps ) {
