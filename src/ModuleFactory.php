@@ -82,7 +82,7 @@ class ModuleFactory {
 	 */
 	public function newFromName( $name ) {
 		if ( isset( $this->modules[$name] ) ) {
-			$this->modules[$name];
+			return $this->modules[$name];
 		}
 		$this->modules[$name] = null;
 		$callable = $this->moduleRegistry->getValue( $name, null );
