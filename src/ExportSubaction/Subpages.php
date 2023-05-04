@@ -14,6 +14,8 @@ abstract class Subpages implements IExportSubaction {
 	protected $titleMap = [];
 	/** @var array */
 	protected $includedTitles = [];
+	/** @var Title|null */
+	protected $rootTitle = null;
 
 	/**
 	 * @inheritDoc
@@ -35,15 +37,19 @@ abstract class Subpages implements IExportSubaction {
 		$node = $newDOM->importNode( $pageDOM, true );
 
 		$includedTitleMap = [];
-		$rootTitle = Title::newFromText( $template['title-element']->nodeValue );
+		$this->rootTitle = $specification->getTitle();
+		if ( !$this->rootTitle ) {
+			return true;
+		}
+
 		if ( $pageDOM->getElementsByTagName( 'a' )->item( 0 )->getAttribute( 'id' ) === '' ) {
 			$pageDOM->getElementsByTagName( 'a' )->item( 0 )->setAttribute(
 				'id',
-				md5( $rootTitle->getPrefixedText() )
+				md5( $this->rootTitle->getPrefixedText() )
 			);
 		}
 
-		$includedTitleMap[$template['title-element']->nodeValue]
+		$includedTitleMap[$this->rootTitle->getPrefixedText()]
 			= $pageDOM->getElementsByTagName( 'a' )->item( 0 )->getAttribute( 'id' );
 
 		$newDOM->appendChild( $node );
@@ -88,6 +94,10 @@ abstract class Subpages implements IExportSubaction {
 		$includedTitles, $includedTitleMap, &$contents
 	) {
 		foreach ( $includedTitles as $name => $content ) {
+			if ( $name == $this->rootTitle->getFullText() ) {
+				continue;
+			}
+
 			$contents[] = $content['dom']->documentElement;
 		}
 	}
