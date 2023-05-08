@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"Asma",
 			"Meno25",
 			"ديفيد"
@@ -40,5 +41,9 @@
 	"bs-universalexport-insert-noexport-title": "لا يوجد PDF",
 	"bs-universalexport-pref-metadatadefaults-help": "تم تمرير بيانات إضافية بتنسيق JSON إلى النموذج",
 	"bs-universalexport-pref-metadataoverrides-help": "يسمح بتجاوز القيم المحددة عن طريق إرسال القيم التي تم إدخالها هنا إلى القالب بتنسيق JSON.",
-	"bs-ue-export-dialog-button-title": "فتح مربع حوار التصدير"
+	"bs-ue-export-dialog-button-title": "فتح مربع حوار التصدير",
+	"bs-universalexport-droplet-nopdf-name": "PDF لا يوجد تصدير",
+	"bs-universalexport-droplet-nopdf-description": "يتم استبعاد المحتوى الموجود في هذا القسم من تصدير PDF",
+	"bs-universalexport-droplet-pdfbreak-name": "فاصل صفحة PDF",
+	"bs-universalexport-droplet-pdfbreak-description": "يفرض فاصل صفحة في الموضع المحدد أثناء تصدير PDF"
 }
