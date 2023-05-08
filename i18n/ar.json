@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"Asma",
 			"Meno25",
 			"ديفيد"
@@ -40,5 +41,9 @@
 	"bs-ue-export-dialog-action-submit": "تم",
 	"bs-ue-export-dialog-label-select-module": "الصيغة",
 	"bs-ue-export-dialog-button-text": "تصدير",
-	"bs-ue-export-dialog-button-title": "فتح مربع حوار التصدير"
+	"bs-ue-export-dialog-button-title": "فتح مربع حوار التصدير",
+	"bs-universalexport-droplet-nopdf-name": "PDF لا يوجد تصدير",
+	"bs-universalexport-droplet-nopdf-description": "يتم استبعاد المحتوى الموجود في هذا القسم من تصدير PDF",
+	"bs-universalexport-droplet-pdfbreak-name": "فاصل صفحة PDF",
+	"bs-universalexport-droplet-pdfbreak-description": "يفرض فاصل صفحة في الموضع المحدد أثناء تصدير PDF"
 }
