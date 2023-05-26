@@ -3,6 +3,7 @@ bs.ue.ui.dialog.ExportDialog = function( config ) {
 	this.config.title = config.title || {};
 	this.config.callback = config.callback || {};
 	this.config.callback.scope = config.callback.scope || {};
+	this.config.dialog = this;
 
 	this.plugins = [];
 	this.activePlugin = {};
@@ -94,7 +95,7 @@ bs.ue.ui.dialog.ExportDialog.prototype.initialize = function() {
 
 	this.moduleSelect = new OO.ui.DropdownInputWidget( {
 		options: moduleSelectItems,
-		$overlay: true,
+		$overlay: this.$overlay,
 		disabled: disabledState
 	} );
 
