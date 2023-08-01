@@ -105,7 +105,12 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 			$this->oOutputPage->setPageTitle(
 				wfMessage( 'bs-universalexport-page-title-on-error' )->text()
 			);
-			$this->oOutputPage->addHTML( wfMessage( $oException->getMessage() ) );
+			$messageOrMessageI18N = $oException->getMessage();
+			$messageObj = wfMessage( $messageOrMessageI18N );
+			if ( !$messageObj->exists() ) {
+				$messageObj = new RawMessage( $messageOrMessageI18N );
+			}
+			$this->oOutputPage->addHTML( $messageObj );
 		}
 	}
 
