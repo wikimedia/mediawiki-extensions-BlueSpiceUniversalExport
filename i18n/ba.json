@@ -22,7 +22,7 @@
 	"bs-universalexport-tag-exclude-text": "Был текст экспортланмаясаҡ.",
 	"bs-universalexport-tag-hidetitle-text": "Был биттең исеме экспортта күренмәйәсәк",
 	"bs-universalexport-tag-excludearticle-text": "Был бит экспортлана алмай.",
-	"bs-universalexport-tag-pagebreak-desc": "Ошо экспорт  модулен ҡулланғанда был тег экспортланған документта  битте һорап тормай  айыра.",
+	"bs-universalexport-tag-pagebreak-desc": "Һайланған экспорт модулен ҡабул иткәндә, был тамға экспорт документында битте өҙөүгә килтерә.",
 	"bs-universalexport-tag-noexport-desc": "Был тега эсендә булған нимә экспортланмай (тышҡа сығарылмай).",
 	"bs-universalexport-tag-meta-desc": "Экспортланыусы документҡа ирекле мета-мәғлүмәттәрҙе өҫтәү мөмкинлеге бирә.",
 	"bs-universalexport-tag-params-desc": "Экспорт өсөн махсус параметрҙар күрһәтергә мөмкинлек бирә. Параметрҙың анализланыуы һайланған экспорт модуленә бәйле.",
