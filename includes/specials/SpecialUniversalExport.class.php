@@ -104,12 +104,16 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 			$this->oOutputPage->setPageTitle(
 				wfMessage( 'bs-universalexport-page-title-on-error' )->text()
 			);
-			$messageOrMessageI18N = $oException->getMessage();
-			$messageObj = wfMessage( $messageOrMessageI18N );
-			if ( !$messageObj->exists() ) {
-				$messageObj = new RawMessage( $messageOrMessageI18N );
+			if ( $oException instanceof ErrorPageError ) {
+				// Somehow, when message object is parsed in the Error class itself, it does not respect overrides
+				$messageObj = $oException->getMessageObject();
+			} else {
+				$messageObj = Message::newFromKey( $oException->getMessage() );
+				if ( !$messageObj->exists() ) {
+					$messageObj = new RawMessage( $oException->getMessage() );
+				}
 			}
-			$this->oOutputPage->addHTML( $messageObj );
+			$this->oOutputPage->addHTML( $messageObj->parseAsBlock() );
 		}
 	}
 
