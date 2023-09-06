@@ -12,7 +12,7 @@ use SkinTemplate;
 class Skin implements SkinTemplateNavigation__UniversalHook {
 	/**
 	 *
-	 * @return MediaWikiServicesa
+	 * @return MediaWikiServices
 	 */
 	private function getServices() {
 		return MediaWikiServices::getInstance();
@@ -25,7 +25,7 @@ class Skin implements SkinTemplateNavigation__UniversalHook {
 	 * @return void
 	 */
 	public function onSkinTemplateNavigation__Universal( $sktemplate, &$links ): void {
-		if ( $sktemplate->skinname === 'bluespicecalumma' ) {
+		if ( $sktemplate->getSkinName() === 'bluespicecalumma' ) {
 			// BlueSpiceCalumma has its own integration see:
 			// BlueSpice\UniversalExport\Hook\ChameleonSkinTemplateOutputPageBeforeExec\\AddActions
 			return;
