@@ -42,15 +42,18 @@ abstract class Subpages implements IExportSubaction {
 			return true;
 		}
 
-		if ( $pageDOM->getElementsByTagName( 'a' )->item( 0 )->getAttribute( 'id' ) === '' ) {
+		$firstAnchor = $pageDOM->getElementsByTagName( 'a' )->item( 0 );
+		if ( $firstAnchor && $firstAnchor->getAttribute( 'id' ) === '' ) {
 			$pageDOM->getElementsByTagName( 'a' )->item( 0 )->setAttribute(
 				'id',
 				md5( $this->rootTitle->getPrefixedText() )
 			);
 		}
 
-		$includedTitleMap[$this->rootTitle->getPrefixedText()]
-			= $pageDOM->getElementsByTagName( 'a' )->item( 0 )->getAttribute( 'id' );
+		if ( $firstAnchor ) {
+			$includedTitleMap[$this->rootTitle->getPrefixedText()]
+				= $pageDOM->getElementsByTagName( 'a' )->item( 0 )->getAttribute( 'id' );
+		}
 
 		$newDOM->appendChild( $node );
 
