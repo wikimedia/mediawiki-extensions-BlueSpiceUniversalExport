@@ -214,12 +214,6 @@
 		}
 	},
 	"Hooks": {
-		"BSInsertMagicAjaxGetData": [
-			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddUEMetaTag::callback",
-			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddUEParamsTag::callback",
-			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddPdfUENoExportTag::callback",
-			"\\BlueSpice\\UniversalExport\\Hook\\BSInsertMagicAjaxGetData\\AddPdfUEPageBreakTag::callback"
-		],
 		"BSUsageTrackerRegisterCollectors": [
 			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEExcludeArticleTag::callback",
 			"\\BlueSpice\\UniversalExport\\Hook\\BSUsageTrackerRegisterCollectors\\AddUEExcludeTag::callback",
