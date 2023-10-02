@@ -4,6 +4,14 @@
 			"Умар"
 		]
 	},
+	"prefs-universalexport": "Универсалан экспорт",
+	"universalexport": "Универсалан экспорт",
+	"bs-universalexport-pref-metadatadefaults": "Метахаамаш (стандартан, JSON):",
 	"bs-universalexport-widget-title": "Экспорт йан",
-	"action-universalexport-export": "экспортан файл кхолла"
+	"action-universalexport-export": "экспортан файл кхолла",
+	"bs-ue-export-dialog-title": "Экспорт",
+	"bs-ue-export-dialog-action-cancel": "Йухайаккха",
+	"bs-ue-export-dialog-action-submit": "Кийчча йу",
+	"bs-ue-export-dialog-label-select-module": "Формат",
+	"bs-ue-export-dialog-button-text": "Экспорт"
 }
