@@ -21,8 +21,6 @@
 	"bs-universalexport-tag-excludearticle-text": "This page may not be exported.",
 	"bs-universalexport-tag-pagebreak-desc": "If supported by chosen export module, this tag forces a page break in the export document.",
 	"bs-universalexport-tag-noexport-desc": "Content inside this tag will not be exported.",
-	"bs-universalexport-tag-meta-desc": "Allows to add arbitrary meta data to an exported document.",
-	"bs-universalexport-tag-params-desc": "Allows to set special parameters for export, whether the parameter will be evaluated depends on the chosen export module.",
 	"bs-universalexport-error-requested-export-module-not-found": "The requested format could not be produced.",
 	"bs-universalexport-error-permission": "You have insufficient permissions to export this page.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "The requested page must not be exported because it is on category blacklist.",

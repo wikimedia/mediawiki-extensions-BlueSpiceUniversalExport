@@ -23,8 +23,6 @@
 	"bs-universalexport-tag-excludearticle-text": "Text for this page may not be exported.",
 	"bs-universalexport-tag-pagebreak-desc": "Help text for the pdf break tag inspector",
 	"bs-universalexport-tag-noexport-desc": "Text for content inside this tag will not be exported.\n{{Related|Bs-tag-desc}}",
-	"bs-universalexport-tag-meta-desc": "Text for allows to add arbitrary meta data to an exported document.\n{{Related|Bs-tag-desc}}",
-	"bs-universalexport-tag-params-desc": "Text for allows to set special parameters for export, whether the parameter will be evaluated depends on the chosen export module.\n{{Related|Bs-tag-desc}}",
 	"bs-universalexport-error-requested-export-module-not-found": "Text for the requested format could not be produced.",
 	"bs-universalexport-error-permission": "Text for you have insufficient permissions to export this page.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Text for the requested page must not be exported because it is on category blacklist.",
