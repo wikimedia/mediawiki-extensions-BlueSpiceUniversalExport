@@ -26,8 +26,6 @@
 	"bs-universalexport-tag-excludearticle-text": "Deze pagina kan niet worden geëxporteerd.",
 	"bs-universalexport-tag-pagebreak-desc": "Indien ondersteund door de gekozen exportmodule forceert dit etiket een pagina-einde in het geëxporteerde document.",
 	"bs-universalexport-tag-noexport-desc": "Inhoud binnen dit label wordt niet geëxporteerd.",
-	"bs-universalexport-tag-meta-desc": "Hiermee kunt u willekeurige metagegevens toevoegen aan een geëxporteerd document.",
-	"bs-universalexport-tag-params-desc": "Maakt het mogelijk om special parameters voor exporteren in te stellen. Of de parameter geëvalueerd wordt, hangt af van de gekozen exportmodule.",
 	"bs-universalexport-error-requested-export-module-not-found": "Het gevraagde formaat kon niet worden geproduceerd.",
 	"bs-universalexport-error-permission": "U heeft onvoldoende rechten om deze pagina te exporteren.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "De opgevraagde pagina mag niet worden geëxporteerd omdat deze op de zwarte lijst van categorieën staat.",

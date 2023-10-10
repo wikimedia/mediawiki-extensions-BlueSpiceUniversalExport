@@ -24,8 +24,6 @@
 	"bs-universalexport-tag-excludearticle-text": "قد لا يتم تصدير هذه الصفحة.",
 	"bs-universalexport-tag-pagebreak-desc": "لو كان هذا مدعوما بواسطة موديل التصدير المختار، فهذا الوسم يدخل سطرا جديدا في الوثيقة المصدرة.",
 	"bs-universalexport-tag-noexport-desc": "لن يتم تصدير المحتوى الموجود داخل هذا الوسم.",
-	"bs-universalexport-tag-meta-desc": "يسمح بإضافة بيانات تعريف تعسفية إلى مستند تم تصديره.",
-	"bs-universalexport-tag-params-desc": "يسمح بوضع وسائط خاصة للتصدير، ما إذا كان تقييم الوسيط يعتمد على وحدة التصدير المختارة.",
 	"bs-universalexport-error-requested-export-module-not-found": "لا يمكن إنشاء الصيغة المطلوبة.",
 	"bs-universalexport-error-permission": "لديك صلاحيات غير كافية لتصدير هذه الصفحة.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "يجب عدم تصدير الصفحة المطلوبة لأنها في القائمة السوداء للتصنيف.",

@@ -21,8 +21,6 @@
 	"bs-universalexport-tag-excludearticle-text": "Te strani ni mogoče izvoziti.",
 	"bs-universalexport-tag-pagebreak-desc": "Če je podprta z izbranim izvoznim modulom, ta označka v izvoženi dokument vstavi prelom strani.",
 	"bs-universalexport-tag-noexport-desc": "Vsebina v tej znački ne bo izvožena.",
-	"bs-universalexport-tag-meta-desc": "Omogoča dodajanje arbitrarnih metapodatkov izvoženemu dokumentu.",
-	"bs-universalexport-tag-params-desc": "Omogoča nastavitev posebnih parametrov za izvoz; ali bo parameter razčlenjen, je odvisno od izbranega izvoznega modula.",
 	"bs-universalexport-error-requested-export-module-not-found": "Zahtevanega formata ni bilo mogoče ustvariti.",
 	"bs-universalexport-error-permission": "Nimate zadostnih dovoljenj za izvoz te strani.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Zahtevane strani ni dovoljeno izvoziti, ker je na črnem seznamu kategorij.",

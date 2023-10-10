@@ -24,8 +24,6 @@
 	"bs-universalexport-tag-excludearticle-text": "Bu sayfa dışa aktarılamayabilir.",
 	"bs-universalexport-tag-pagebreak-desc": "Eğer bu etiket seçili dışa aktarma modülü tarafından desteklenirse, bir sayfanın dışa aktarılan belgeyi bozmasına yol açar.",
 	"bs-universalexport-tag-noexport-desc": "Bu etiketin içindeki içerik dışa aktarılmaz.",
-	"bs-universalexport-tag-meta-desc": "Dışa aktarılan bir belgeye rastgele meta veriler eklemeye izin verir.",
-	"bs-universalexport-tag-params-desc": "Dışa aktarma için özel parametrelerin ayarlanmasına izin verir, parametrenin değerlendirilip değerlendirilmeyeceği seçilen dışa aktarma modülüne bağlıdır.",
 	"bs-universalexport-error-requested-export-module-not-found": "İstenen biçim oluşturulamadı.",
 	"bs-universalexport-error-permission": "Bu sayfayı dışa aktarmak için yeterli izniniz yok.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "İstenen sayfa kategori kara listesinde olduğundan dışa aktarılmamalıdır.",

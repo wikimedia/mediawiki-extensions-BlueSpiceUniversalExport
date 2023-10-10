@@ -28,8 +28,6 @@
 	"bs-universalexport-tag-excludearticle-text": "Cette page ne peut pas être exportée.",
 	"bs-universalexport-tag-pagebreak-desc": "Si c’est pris en charge par le module d’export choisi, cette balise force un saut de page dans le document exporté.",
 	"bs-universalexport-tag-noexport-desc": "Le contenu à l’intérieur de cette balise ne sera pas exporté.",
-	"bs-universalexport-tag-meta-desc": "Permet d’ajouter des métadonnées arbitraires à un document exporté.",
-	"bs-universalexport-tag-params-desc": "Permet de définir des paramètres particuliers pour l’export, l’évaluation de ceux-ci dépendant du module d’export choisi.",
 	"bs-universalexport-error-requested-export-module-not-found": "Le format demandé ne peut pas être produit.",
 	"bs-universalexport-error-permission": "Vous n’avez pas les permissions suffisantes pour exporter cette page.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "La page demandée ne doit pas être exportée car elle est dans la liste noire de catégories.",

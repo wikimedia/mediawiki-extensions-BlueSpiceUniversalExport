@@ -22,8 +22,6 @@
 	"bs-universalexport-tag-excludearticle-text": "Šis puslapis negali būti eksportuotas.",
 	"bs-universalexport-tag-pagebreak-desc": "Jei eksportavimo modulis palaiko, ši žymė įterpia puslapio lūžį eksporto dokumente.",
 	"bs-universalexport-tag-noexport-desc": "Turinys, kuris yra šios žymės viduje, nebus eksportuotas.",
-	"bs-universalexport-tag-meta-desc": "Leidžia pridėti savavališkus metaduomenis į eksportuotą dokumentą.",
-	"bs-universalexport-tag-params-desc": "Leidžia nustatyti specialius eksporto parametrus, ar parametras bus įvertintas priklauso nuo pasirinkto eksporto modulio.",
 	"bs-universalexport-error-requested-export-module-not-found": "Prašomas formatas negali būti pagamintas.",
 	"bs-universalexport-error-permission": "Neturite reikalingų teisių šio puslapio eksportavimui.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Prašomas puslapis negali būti eksportuotas, nes jis yra kategorijos juodajame sąraše.",

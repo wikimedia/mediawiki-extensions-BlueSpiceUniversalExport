@@ -30,8 +30,6 @@
 	"bs-universalexport-tag-excludearticle-text": "此页可能不会导出。",
 	"bs-universalexport-tag-pagebreak-desc": "如果所选择的导出模块支持此操作，此标签将强制在导出文档加入分页符。",
 	"bs-universalexport-tag-noexport-desc": "此标签中的内容不会被导出。",
-	"bs-universalexport-tag-meta-desc": "允许加入任意元数据至导出文档。",
-	"bs-universalexport-tag-params-desc": "允许导出时设置特殊参数，是否将评估参数取决于选择的导出模块。",
 	"bs-universalexport-error-requested-export-module-not-found": "请求格式不能创作出。",
 	"bs-universalexport-error-permission": "您的权限不足以导出此页。",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "请求页面必须不能导出因为它位于分类黑名单中。",

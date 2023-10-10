@@ -21,8 +21,6 @@
 	"bs-universalexport-tag-excludearticle-text": "Iste pagina non pote esser exportate.",
 	"bs-universalexport-tag-pagebreak-desc": "Si es supportate per le modulo de exportation seligite, iste etiquetta fortia un salto de pagina in le documento exportate.",
 	"bs-universalexport-tag-noexport-desc": "Le contento intra iste etiquetta non essera exportate.",
-	"bs-universalexport-tag-meta-desc": "Permitte adder qualcunque metadatos a un documento exportate.",
-	"bs-universalexport-tag-params-desc": "Permitte definir parametros special pro exportation, le tractamento del quales depende del modulo de exportation seligite.",
 	"bs-universalexport-error-requested-export-module-not-found": "Non es possibile producer files in le formato requestate.",
 	"bs-universalexport-error-permission": "Tu non ha permissiones sufficiente pro exportar iste pagina.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Le pagina requestate non pote esser exportate perque illo es in le lista nigre de categorias.",
