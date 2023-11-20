@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kizule",
 			"Milicevic01"
 		]
 	},
-	"universalexport": "Универзални извоз"
+	"universalexport": "Универзални извоз",
+	"bs-ue-export-dialog-label-select-module": "Формат"
 }
