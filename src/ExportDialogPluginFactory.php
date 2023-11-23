@@ -77,6 +77,19 @@ class ExportDialogPluginFactory {
 			}
 
 			$specs = $this->pluginRegistry[$name];
+
+			if ( isset( $specs['factory'] ) && is_array( $specs['factory'] ) ) {
+				$lastFactory = array_pop( $specs['factory'] );
+				$specs['factory'] = $lastFactory;
+			}
+			if ( isset( $specs['class'] ) && is_array( $specs['class'] ) ) {
+				$lastClass = array_pop( $specs['class'] );
+				$specs['class'] = $lastClass;
+			}
+			if ( isset( $specs['class'] ) && isset( $specs['factory'] ) ) {
+				unset( $specs['factory'] );
+			}
+
 			$plugin = $this->objectFactory->createObject( $specs );
 			if ( $plugin instanceof IExportDialogPlugin === false ) {
 				continue;
