@@ -4,6 +4,7 @@ namespace BlueSpice\UniversalExport;
 
 use ExtensionRegistry;
 use IContextSource;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\PermissionManager;
 use Wikimedia\ObjectFactory\ObjectFactory;
 
@@ -89,6 +90,15 @@ class ExportDialogPluginFactory {
 			if ( isset( $specs['class'] ) && isset( $specs['factory'] ) ) {
 				unset( $specs['factory'] );
 			}
+
+			/**
+			 * TODO: Inject HookContainer
+			 */
+			$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+			$hookContainer->run(
+				'BlueSpiceUniversalExportExportDialogPluginFactoryBeforeCreatePlugin',
+				[ $name, &$specs ]
+			);
 
 			$plugin = $this->objectFactory->createObject( $specs );
 			if ( $plugin instanceof IExportDialogPlugin === false ) {
