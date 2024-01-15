@@ -31,7 +31,7 @@
 	"right-universalexport-export": "Criar um ficheiro de exportação",
 	"bs-universalexport-tag-pagebreak-title": "Quebra de página",
 	"bs-universalexport-tag-noexport-title": "Excluir do PDF",
-	"bs-universalexport-insert-noexport-title": "Excluir do PDF",
+	"bs-universalexport-insert-noexport-title": "Sem PDF",
 	"bs-universalexport-pref-metadatadefaults-help": "Dados adicionais no formato JSON passados à predefinição",
 	"bs-universalexport-pref-metadataoverrides-help": "Permite que os valores especificados sejam substituídos enviando os valores inseridos aqui para a predefinição no formato JSON.",
 	"bs-ue-export-dialog-title": "Exportar",
@@ -39,5 +39,9 @@
 	"bs-ue-export-dialog-action-submit": "Concluído",
 	"bs-ue-export-dialog-label-select-module": "Formato",
 	"bs-ue-export-dialog-button-text": "Exportar",
-	"bs-ue-export-dialog-button-title": "Abrir diálogo de exportação"
+	"bs-ue-export-dialog-button-title": "Abrir diálogo de exportação",
+	"bs-universalexport-droplet-nopdf-name": "Sem exportação PDF",
+	"bs-universalexport-droplet-nopdf-description": "O conteúdo desta secção é excluído da exportação para PDF",
+	"bs-universalexport-droplet-pdfbreak-name": "Quebra de página PDF",
+	"bs-universalexport-droplet-pdfbreak-description": "Forçar uma quebra de página na posição definida durante a exportação para PDF"
 }
