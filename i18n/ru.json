@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Meshkov.a",
+			"Mitte27",
 			"Movses",
 			"MuratTheTurkish",
 			"Okras",
@@ -30,5 +31,7 @@
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Запрошенная страница не будет экспортирована, поскольку находится в «чёрном списке».",
 	"action-universalexport-export": "создание файла экспорта",
 	"right-universalexport-export": "Создание файла экспорта",
-	"bs-universalexport-tag-pagebreak-title": "Разрыв страницы"
+	"bs-universalexport-tag-pagebreak-title": "Разрыв страницы",
+	"bs-ue-export-dialog-title": "Экспорт",
+	"bs-ue-export-dialog-action-submit": "Готово"
 }
