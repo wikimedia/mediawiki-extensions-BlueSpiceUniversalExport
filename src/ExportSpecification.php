@@ -122,15 +122,7 @@ class ExportSpecification {
 			'UniversalExportParamsDefaults'
 		), $this->params );
 
-		$webrootPath = str_replace( '\\', '/', $GLOBALS['IP'] );
-		if ( !empty( $this->config->get( 'ScriptPath' ) ) ) {
-			$parts = explode( '/', $webrootPath );
-			if ( "/" . array_pop( $parts ) === $this->config->get( 'ScriptPath' ) ) {
-				$webrootPath = implode( '/', $parts );
-			}
-		}
-
-		$this->setParam( 'webroot-filesystempath', $webrootPath );
+		$this->setParam( 'webroot-filesystempath', $this->config->get( 'UploadDirectory' ) );
 		$this->setParam( 'title', $this->title->getPrefixedText() );
 		$this->setParam( 'display-title', $this->getDisplayTitle() );
 		$this->setParam( 'article-id', $this->title->getArticleID() );
