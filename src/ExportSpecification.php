@@ -156,7 +156,7 @@ class ExportSpecification {
 			);
 			if ( is_array( $prop ) ) {
 				foreach ( $prop as $key => $value ) {
-				$this->setParam( $key, $value );
+					$this->setParam( $key, $value );
 				}
 			}
 		}
