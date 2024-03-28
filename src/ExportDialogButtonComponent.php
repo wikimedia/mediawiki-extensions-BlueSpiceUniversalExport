@@ -31,6 +31,9 @@ class ExportDialogButtonComponent extends SimpleLink {
 	 * @return bool
 	 */
 	public function shouldRender( IContextSource $context ): bool {
+		if ( !$context->getTitle() ) {
+			return false;
+		}
 		$services = MediaWikiServices::getInstance();
 		$objectFactory = $services->getObjectFactory();
 		$permissionManager = $services->getService( 'PermissionManager' );
