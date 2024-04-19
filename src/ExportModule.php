@@ -186,6 +186,9 @@ abstract class ExportModule implements IExportModule {
 		$special = $this->getServices()->getSpecialPageFactory()->getPage(
 			'UniversalExport'
 		);
+		if ( !$special ) {
+			return '';
+		}
 
 		if ( isset( $queryParams['title'] ) ) {
 			unset( $queryParams['title'] );
