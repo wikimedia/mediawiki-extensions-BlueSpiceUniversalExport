@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"EdoAug",
-			"Jon Harald Søby"
+			"Jon Harald S\u00f8by"
 		]
 	},
-	"bs-universalexport-desc": "Gjør at MediaWiki kan eksportere sider til forskjellige formater",
+	"bs-universalexport-desc": "Gj\u00f8r at MediaWiki kan eksportere sider til forskjellige formater",
 	"prefs-universalexport": "Universal eksport",
 	"universalexport": "Universal eksport",
 	"bs-universalexport-pref-metadatadefaults": "Metadata (standard, JSON):",
@@ -18,14 +18,14 @@
 	"bs-universalexport-widget-tooltip": "Eksporter den gjeldende siden",
 	"bs-universalexport-tag-pagebreak-text": "Sidebrytning",
 	"bs-universalexport-tag-exclude-text": "Denne teksten blir ikke eksportert.",
-	"bs-universalexport-tag-hidetitle-text": "Tittelen til siden vil ikke være synlig i eksporten.",
+	"bs-universalexport-tag-hidetitle-text": "Tittelen til siden vil ikke v\u00e6re synlig i eksporten.",
 	"bs-universalexport-tag-excludearticle-text": "Denne siden kan ikke eksporteres.",
-	"bs-universalexport-tag-pagebreak-desc": "Hvis det støttes av den valgte eksporteringsmodulen vil denne taggen påtvinge et sideskifte i det eksporterte dokumentet.",
+	"bs-universalexport-tag-pagebreak-desc": "Hvis det st\u00f8ttes av den valgte eksporteringsmodulen vil denne taggen p\u00e5tvinge et sideskifte i det eksporterte dokumentet.",
 	"bs-universalexport-tag-noexport-desc": "Innhold i denne taggen blir ikke eksportert.",
-	"bs-universalexport-tag-meta-desc": "Gjør det mulig å legge til vilkårlige metadata i et eksportert dokument.",
-	"bs-universalexport-tag-params-desc": "Gjør det mulig å sette spesielle eksportparametre. Hvorvidt parameteren blir evaluert er avhengig av den valgte eksportmodulen.",
+	"bs-universalexport-tag-meta-desc": "Gj\u00f8r det mulig \u00e5 legge til vilk\u00e5rlige metadata i et eksportert dokument.",
+	"bs-universalexport-tag-params-desc": "Gj\u00f8r det mulig \u00e5 sette spesielle eksportparametre. Hvorvidt parameteren blir evaluert er avhengig av den valgte eksportmodulen.",
 	"bs-universalexport-error-requested-export-module-not-found": "Det etterspurte formatet kunne ikke produseres.",
-	"bs-universalexport-error-permission": "Du har ikke tilstrekkelige rettigheter til å eksportere denne siden.",
+	"bs-universalexport-error-permission": "Du har ikke tilstrekkelige rettigheter til \u00e5 eksportere denne siden.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Den etterspurte siden kan ikke eksporteres fordi den er i en svartelistet kategori.",
 	"action-universalexport-export": "opprette en eksportfil",
 	"right-universalexport-export": "Opprette en eksportfil",
