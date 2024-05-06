@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patriot Kor"
+			"Patriot Kor",
+			"Гусейн"
 		]
 	},
-	"bs-universalexport-widget-title": "İxroc",
-	"bs-ue-export-dialog-title": "İxroc",
-	"bs-ue-export-dialog-button-text": "İxroc"
+	"bs-universalexport-widget-title": "Ixroč",
+	"bs-ue-export-dialog-title": "Ixroč",
+	"bs-ue-export-dialog-button-text": "Ixroč"
 }
