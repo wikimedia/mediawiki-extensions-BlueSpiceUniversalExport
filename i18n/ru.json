@@ -33,9 +33,12 @@
 	"action-universalexport-export": "создание файла экспорта",
 	"right-universalexport-export": "Создание файла экспорта",
 	"bs-universalexport-tag-pagebreak-title": "Разрыв страницы",
+	"bs-universalexport-tag-noexport-title": "Исключить из PDF",
+	"bs-universalexport-insert-noexport-title": "Нет PDF",
 	"bs-ue-export-dialog-title": "Экспорт",
 	"bs-ue-export-dialog-action-cancel": "Отмена",
 	"bs-ue-export-dialog-action-submit": "Готово",
 	"bs-ue-export-dialog-label-select-module": "Формат",
-	"bs-ue-export-dialog-button-text": "Экспорт"
+	"bs-ue-export-dialog-button-text": "Экспорт",
+	"bs-ue-export-dialog-button-title": "Открыть диалог экспорта"
 }
