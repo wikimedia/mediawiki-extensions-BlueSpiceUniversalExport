@@ -27,17 +27,18 @@
 	"bs-universalexport-tag-excludearticle-text": "Эта страница не может быть экспортирована.",
 	"bs-universalexport-tag-pagebreak-desc": "Если поддерживается выбранным модулем экспорта, этот тег вызывает разрыв страницы в документе экспорта.",
 	"bs-universalexport-tag-noexport-desc": "Содержимое внутри этого тега не будет экспортировано.",
-	"bs-universalexport-tag-meta-desc": "Позволяет добавлять произвольные мета-данные в экспортируемый документ.",
-	"bs-universalexport-tag-params-desc": "Позволяет задать специальные параметры для экспорта. Будет ли параметр проанализирован, зависит от выбранного модуля экспорта.",
 	"bs-universalexport-error-requested-export-module-not-found": "Запрошенный формат не может не использован.",
 	"bs-universalexport-error-permission": "У вас недостаточно прав для экспорта этой страницы.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Запрошенная страница не будет экспортирована, поскольку находится в «чёрном списке».",
 	"action-universalexport-export": "создание файла экспорта",
 	"right-universalexport-export": "Создание файла экспорта",
 	"bs-universalexport-tag-pagebreak-title": "Разрыв страницы",
+	"bs-universalexport-tag-noexport-title": "Исключить из PDF",
+	"bs-universalexport-insert-noexport-title": "Нет PDF",
 	"bs-ue-export-dialog-title": "Экспорт",
-	"bs-ue-export-dialog-action-submit": "Готово",
 	"bs-ue-export-dialog-action-cancel": "Отмена",
+	"bs-ue-export-dialog-action-submit": "Готово",
 	"bs-ue-export-dialog-label-select-module": "Формат",
-	"bs-ue-export-dialog-button-text": "Экспорт"
+	"bs-ue-export-dialog-button-text": "Экспорт",
+	"bs-ue-export-dialog-button-title": "Открыть диалог экспорта"
 }
