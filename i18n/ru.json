@@ -39,5 +39,8 @@
 	"bs-ue-export-dialog-action-submit": "Готово",
 	"bs-ue-export-dialog-action-cancel": "Отмена",
 	"bs-ue-export-dialog-label-select-module": "Формат",
-	"bs-ue-export-dialog-button-text": "Экспорт"
+	"bs-ue-export-dialog-button-text": "Экспорт",
+	"bs-universalexport-tag-noexport-title": "Исключить из PDF",
+	"bs-universalexport-insert-noexport-title": "Нет PDF",
+	"bs-ue-export-dialog-button-title": "Открыть диалог экспорта"
 }
