@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"bs-universalexport-desc": "Erméiglecht et MediaWiki fir Säiten a verschiddene Formater z'exportéieren",
@@ -17,5 +18,6 @@
 	"bs-universalexport-error-permission": "Dir hutt net genuch Rechter fir dës Säit z'exportéieren.",
 	"action-universalexport-export": "en Export-Fichier maachen",
 	"bs-universalexport-tag-noexport-title": "Aus dem PDF ewechloossen",
-	"bs-universalexport-insert-noexport-title": "Kee PDF"
+	"bs-universalexport-insert-noexport-title": "Kee PDF",
+	"bs-ue-export-dialog-action-cancel": "Ofbriechen"
 }
