@@ -24,8 +24,6 @@
 	"bs-universalexport-tag-excludearticle-text": "Был бит сығарылак алмай.",
 	"bs-universalexport-tag-pagebreak-desc": "Һайланған сығарыу модулен ҡабул иткәндә, был тамға сығарыу документында битте өҙөүгә килтерә.",
 	"bs-universalexport-tag-noexport-desc": "Был тамға эсендә булған нимә сығарылмай.",
-	"bs-universalexport-tag-meta-desc": "Экспортланыусы документҡа ирекле мета-мәғлүмәттәрҙе өҫтәү мөмкинлеге бирә.",
-	"bs-universalexport-tag-params-desc": "Сығарыу өсөн махсус параметрҙар күрһәтергә мөмкинлек бирә. Параметрҙың анализланыуы һайланған сығарыу модуленә бәйле.",
 	"bs-universalexport-error-requested-export-module-not-found": "Һоралған формат файҙаланыласаҡ.",
 	"bs-universalexport-error-permission": "Битте экспортлау өсөн хоҡуҡтарығыҙ етерлек түгел.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Һоралған бит экспортланмаясаҡ, сөнки \"ҡара исемлек\"кә индерелгән.",

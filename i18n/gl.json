@@ -22,8 +22,6 @@
 	"bs-universalexport-tag-excludearticle-text": "Non se pode exportar esta páxina.",
 	"bs-universalexport-tag-pagebreak-desc": "Se o módulo de exportación escollido o admite, esta etiqueta forza un salto de páxina no documento exportado.",
 	"bs-universalexport-tag-noexport-desc": "O contido dentro desta marca non será exportado.",
-	"bs-universalexport-tag-meta-desc": "Permite engadir metadatos arbitrarios a un documento exportado.",
-	"bs-universalexport-tag-params-desc": "Permite definir parámetros especiais para a exportación, o parámetro será avaliado dependendo do módulo de exportación escolhido.",
 	"bs-universalexport-error-requested-export-module-not-found": "O formato solicitado non pode ser producido.",
 	"bs-universalexport-error-permission": "Non ten permisos abondo para exportar esta páxina.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "A páxina solicitada non debe ser exportada porque está na categoría lista negra.",

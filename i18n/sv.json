@@ -22,8 +22,6 @@
 	"bs-universalexport-tag-excludearticle-text": "Denna sida får inte exporteras.",
 	"bs-universalexport-tag-pagebreak-desc": "Om det stöds av vald exportmodul, tvingar denna tagg en sidbrytning i exportdokument.",
 	"bs-universalexport-tag-noexport-desc": "Innehållet innanför denna tagg kommer inte att exporteras.",
-	"bs-universalexport-tag-meta-desc": "Gör det möjligt att lägga till godtyckliga metadata till ett exporterat dokument.",
-	"bs-universalexport-tag-params-desc": "Gör det möjligt att ange särskilda parametrar för export, om parametern kommer att utvärderas beror på den valda exportmodulen.",
 	"bs-universalexport-error-requested-export-module-not-found": "Det begärda formatet kunde inte produceras.",
 	"bs-universalexport-error-permission": "Du har otillräckliga behörigheter för att exportera denna sida.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Den begärda sidan får inte exporteras eftersom det är i en svartlistad kategori.",

@@ -24,8 +24,6 @@
 	"bs-universalexport-tag-excludearticle-text": "此頁面可能無法匯出。",
 	"bs-universalexport-tag-pagebreak-desc": "若被所選的匯出模組支援，此標籤會在匯出文件裡強制換頁。",
 	"bs-universalexport-tag-noexport-desc": "此標記裡的內容不會被匯出。",
-	"bs-universalexport-tag-meta-desc": "允許添加任何的詮釋資料至匯出的文件裡。",
-	"bs-universalexport-tag-params-desc": "允許設定特殊參數來匯出，而是否評估參數則取決於所選的匯出模組。",
 	"bs-universalexport-error-requested-export-module-not-found": "請求的格式無法產生。",
 	"bs-universalexport-error-permission": "您的權限不足以匯出此頁面。",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "請求的頁面因列在分類黑名單裡，因此無法匯出。",
@@ -41,9 +39,5 @@
 	"bs-ue-export-dialog-action-submit": "完成",
 	"bs-ue-export-dialog-label-select-module": "格式",
 	"bs-ue-export-dialog-button-text": "匯出",
-	"bs-ue-export-dialog-button-title": "開啟匯出日誌",
-	"bs-universalexport-droplet-nopdf-name": "PDF無法匯出",
-	"bs-universalexport-droplet-nopdf-description": "此部分中的內容不包含在 PDF 匯出中",
-	"bs-universalexport-droplet-pdfbreak-name": "PDF 分頁符",
-	"bs-universalexport-droplet-pdfbreak-description": "PDF 匯出期間在設定位置強制分頁"
+	"bs-ue-export-dialog-button-title": "開啟匯出日誌"
 }
