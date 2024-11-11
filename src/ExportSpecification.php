@@ -18,7 +18,7 @@ class ExportSpecification {
 	/** @var User */
 	private $user = null;
 	/** @var array */
-	private $params = [];
+	private $params;
 	/** @var array */
 	private $metadata = [];
 	/** @var array */
@@ -40,8 +40,9 @@ class ExportSpecification {
 		$this->pageProps = $pageProps;
 		$this->title = $title;
 		$this->user = $user;
+		$this->params = $params;
+
 		$this->setDefaults();
-		$this->params = array_merge( $this->params, $params );
 	}
 
 	/**
