@@ -15,6 +15,7 @@
 use BlueSpice\UniversalExport\ExportSpecification;
 use BlueSpice\UniversalExport\IExportModule;
 use BlueSpice\UniversalExport\ModuleFactory;
+use MediaWiki\Title\Title;
 
 /**
  * UniversalExport special page class.

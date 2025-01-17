@@ -6,7 +6,7 @@ use BlueSpice\UniversalExport\ExportSpecification;
 use BlueSpice\UniversalExport\IExportSubaction;
 use DOMDocument;
 use DOMElement;
-use Title;
+use MediaWiki\Title\Title;
 use WebRequest;
 
 abstract class Subpages implements IExportSubaction {
