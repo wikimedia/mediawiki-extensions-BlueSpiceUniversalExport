@@ -4,8 +4,8 @@ namespace BlueSpice\UniversalExport;
 
 use Config;
 use FormatJson;
+use MediaWiki\Title\Title;
 use PageProps;
-use Title;
 use User;
 
 class ExportSpecification {

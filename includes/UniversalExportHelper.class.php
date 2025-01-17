@@ -12,6 +12,7 @@
  * @filesource
  */
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 
 /**
  * UniversalExport BsUniversalExportHelper class.
