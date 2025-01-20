@@ -2,6 +2,7 @@
 
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 
 $IP = dirname( dirname( dirname( __DIR__ ) ) );
 
