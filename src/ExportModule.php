@@ -5,10 +5,10 @@ namespace BlueSpice\UniversalExport;
 use Config;
 use Exception;
 use ExtensionRegistry;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MWException;
 use PermissionsError;
-use RequestContext;
 use WebRequest;
 
 abstract class ExportModule implements IExportModule {

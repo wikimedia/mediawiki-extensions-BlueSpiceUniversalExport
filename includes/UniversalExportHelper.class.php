@@ -11,6 +11,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
+
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
@@ -264,7 +266,7 @@ class BsUniversalExportHelper {
 	 */
 	public static function assertPermissionsForTitle( Title $title, $user = null ) {
 		if ( $user === null ) {
-			$user = \RequestContext::getMain()->getUser();
+			$user = RequestContext::getMain()->getUser();
 		}
 		$permissionManager = MediaWikiServices::getInstance()->getPermissionManager();
 		$userHasRight = $permissionManager->userHasRight( $user, 'read' );

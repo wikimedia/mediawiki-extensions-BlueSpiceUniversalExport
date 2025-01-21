@@ -4,7 +4,7 @@ namespace BlueSpice\UniversalExport\ExportTarget;
 
 use Config;
 use IContextSource;
-use RequestContext;
+use MediaWiki\Context\RequestContext;
 
 abstract class RequestBasedTarget extends Base {
 	/** @var IContextSource */
