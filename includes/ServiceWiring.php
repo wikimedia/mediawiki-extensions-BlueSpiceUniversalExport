@@ -4,6 +4,7 @@ use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\UniversalExport\ExportDialogPluginFactory;
 use BlueSpice\UniversalExport\ExportSpecificationFactory;
 use BlueSpice\UniversalExport\ModuleFactory;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 
 // PHP unit does not understand code coverage for this file
