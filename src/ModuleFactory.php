@@ -6,8 +6,8 @@ use BlueSpice\ExtensionAttributeBasedRegistry;
 use Config;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Request\WebRequest;
 use MediaWiki\SpecialPage\SpecialPageFactory;
-use WebRequest;
 
 class ModuleFactory {
 	/**

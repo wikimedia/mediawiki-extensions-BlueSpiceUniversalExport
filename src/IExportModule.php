@@ -3,7 +3,7 @@
 namespace BlueSpice\UniversalExport;
 
 use MediaWiki\MediaWikiServices;
-use WebRequest;
+use MediaWiki\Request\WebRequest;
 
 interface IExportModule {
 	/**

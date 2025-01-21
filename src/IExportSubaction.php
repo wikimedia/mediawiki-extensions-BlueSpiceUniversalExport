@@ -2,7 +2,7 @@
 
 namespace BlueSpice\UniversalExport;
 
-use WebRequest;
+use MediaWiki\Request\WebRequest;
 
 interface IExportSubaction {
 	/**
