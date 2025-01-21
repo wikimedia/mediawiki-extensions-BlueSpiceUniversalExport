@@ -7,9 +7,9 @@ use Exception;
 use ExtensionRegistry;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Request\WebRequest;
 use MWException;
 use PermissionsError;
-use WebRequest;
 
 abstract class ExportModule implements IExportModule {
 
