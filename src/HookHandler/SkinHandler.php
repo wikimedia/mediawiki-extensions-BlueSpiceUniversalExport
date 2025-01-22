@@ -4,7 +4,7 @@ namespace BlueSpice\UniversalExport\HookHandler;
 
 use BlueSpice\UniversalExport\ExportDialogPluginFactory;
 use MediaWiki\Hook\SidebarBeforeOutputHook;
-use Message;
+use MediaWiki\Message\Message;
 use Skin;
 
 class SkinHandler implements SidebarBeforeOutputHook {
