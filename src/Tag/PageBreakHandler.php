@@ -4,7 +4,7 @@ namespace BlueSpice\UniversalExport\Tag;
 
 use BlueSpice\Tag\Handler;
 use Html;
-use Message;
+use MediaWiki\Message\Message;
 
 class PageBreakHandler extends Handler {
 

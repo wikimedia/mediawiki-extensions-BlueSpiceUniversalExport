@@ -5,7 +5,7 @@ namespace BlueSpice\UniversalExport;
 use ExtensionRegistry;
 use IContextSource;
 use MediaWiki\MediaWikiServices;
-use Message;
+use MediaWiki\Message\Message;
 use MWStake\MediaWiki\Component\CommonUserInterface\Component\SimpleLink;
 
 class ExportDialogButtonComponent extends SimpleLink {
