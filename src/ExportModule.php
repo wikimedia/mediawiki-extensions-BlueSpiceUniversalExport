@@ -2,9 +2,9 @@
 
 namespace BlueSpice\UniversalExport;
 
-use Config;
 use Exception;
 use ExtensionRegistry;
+use MediaWiki\Config\Config;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Request\WebRequest;

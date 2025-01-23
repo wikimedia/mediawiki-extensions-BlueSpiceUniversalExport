@@ -2,6 +2,8 @@
 
 namespace BlueSpice\UniversalExport\Hook;
 
+use MediaWiki\Config\Config;
+
 /**
  * DEPRECATED
  * @deprecated since version 3.3 - use ExtensionAttributeBasedRegistry
@@ -51,7 +53,7 @@ abstract class BSUniversalExportSpecialPageExecute extends \BlueSpice\Hook {
 
 	/**
 	 * @param \IContextSource $context
-	 * @param \Config $config
+	 * @param Config $config
 	 * @param \SpecialPage $special
 	 * @param string $parameter
 	 * @param \BsUniversalExportModule[] &$modules

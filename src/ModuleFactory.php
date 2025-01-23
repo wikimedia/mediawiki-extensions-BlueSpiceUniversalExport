@@ -3,7 +3,7 @@
 namespace BlueSpice\UniversalExport;
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Request\WebRequest;

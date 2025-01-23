@@ -3,6 +3,7 @@
 namespace BlueSpice\UniversalExport\ExportTarget;
 
 use BlueSpice\UniversalExport\IExportTarget;
+use MediaWiki\Config\Config;
 
 abstract class Base implements IExportTarget {
 
@@ -14,14 +15,14 @@ abstract class Base implements IExportTarget {
 
 	/**
 	 *
-	 * @var \Config
+	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
 	 *
 	 * @param array $exportParams
-	 * @param \Config $config
+	 * @param Config $config
 	 * @return static
 	 */
 	public static function factory( $exportParams, $config ) {
@@ -31,7 +32,7 @@ abstract class Base implements IExportTarget {
 	/**
 	 *
 	 * @param array $exportParams
-	 * @param \Config $config
+	 * @param Config $config
 	 */
 	public function __construct( $exportParams, $config ) {
 		$this->exportParams = $exportParams;
