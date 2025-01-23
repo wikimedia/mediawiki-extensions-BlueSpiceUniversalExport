@@ -3,7 +3,7 @@
 namespace BlueSpice\UniversalExport;
 
 use ExtensionRegistry;
-use IContextSource;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\PermissionManager;
 use Wikimedia\ObjectFactory\ObjectFactory;

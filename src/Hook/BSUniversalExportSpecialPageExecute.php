@@ -3,6 +3,7 @@
 namespace BlueSpice\UniversalExport\Hook;
 
 use MediaWiki\Config\Config;
+use MediaWiki\Context\IContextSource;
 
 /**
  * DEPRECATED
@@ -52,7 +53,7 @@ abstract class BSUniversalExportSpecialPageExecute extends \BlueSpice\Hook {
 	}
 
 	/**
-	 * @param \IContextSource $context
+	 * @param IContextSource $context
 	 * @param Config $config
 	 * @param \SpecialPage $special
 	 * @param string $parameter

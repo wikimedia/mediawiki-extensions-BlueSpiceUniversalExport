@@ -3,7 +3,7 @@
 namespace BlueSpice\UniversalExport;
 
 use ExtensionRegistry;
-use IContextSource;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MWStake\MediaWiki\Component\CommonUserInterface\Component\SimpleLink;
