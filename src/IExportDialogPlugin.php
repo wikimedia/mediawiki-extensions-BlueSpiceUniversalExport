@@ -2,7 +2,7 @@
 
 namespace BlueSpice\UniversalExport;
 
-use IContextSource;
+use MediaWiki\Context\IContextSource;
 
 interface IExportDialogPlugin {
 
