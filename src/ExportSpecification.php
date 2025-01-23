@@ -2,8 +2,8 @@
 
 namespace BlueSpice\UniversalExport;
 
-use Config;
 use FormatJson;
+use MediaWiki\Config\Config;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use PageProps;
