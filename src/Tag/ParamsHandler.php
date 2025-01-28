@@ -4,7 +4,7 @@ namespace BlueSpice\UniversalExport\Tag;
 
 use BlueSpice\Tag\Handler;
 use FormatJson;
-use Html;
+use MediaWiki\Html\Html;
 
 class ParamsHandler extends Handler {
 

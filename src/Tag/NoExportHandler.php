@@ -3,7 +3,7 @@
 namespace BlueSpice\UniversalExport\Tag;
 
 use BlueSpice\Tag\Handler;
-use Html;
+use MediaWiki\Html\Html;
 use MediaWiki\Message\Message;
 
 class NoExportHandler extends Handler {
