@@ -4,6 +4,7 @@ namespace BlueSpice\UniversalExport\ExportTarget;
 
 use BlueSpice\UniversalExport\IExportTarget;
 use MediaWiki\Config\Config;
+use MediaWiki\Status\Status;
 
 abstract class Base implements IExportTarget {
 
@@ -41,7 +42,7 @@ abstract class Base implements IExportTarget {
 
 	/**
 	 * @param array $descriptor
-	 * @return \Status
+	 * @return Status
 	 */
 	abstract public function execute( $descriptor );
 }
