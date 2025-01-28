@@ -3,7 +3,7 @@
 namespace BlueSpice\UniversalExport\ExportTarget;
 
 use BlueSpice\UniversalExport\IExportFileDescriptor;
-use Status;
+use MediaWiki\Status\Status;
 
 class LocalFileRepo extends RequestBasedTarget {
 
