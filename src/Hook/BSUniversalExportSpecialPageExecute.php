@@ -4,6 +4,7 @@ namespace BlueSpice\UniversalExport\Hook;
 
 use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
+use MediaWiki\SpecialPage\SpecialPage;
 
 /**
  * DEPRECATED
@@ -14,7 +15,7 @@ abstract class BSUniversalExportSpecialPageExecute extends \BlueSpice\Hook {
 
 	/**
 	 * @deprecated since version 3.3 - mabe null!
-	 * @var \SpecialPage|null
+	 * @var SpecialPage|null
 	 */
 	protected $special = null;
 
@@ -34,7 +35,7 @@ abstract class BSUniversalExportSpecialPageExecute extends \BlueSpice\Hook {
 	 * DEPRECATED
 	 * @deprecated since version 3.3 - use ExtensionAttributeBasedRegistry
 	 * "BlueSpiceUniversalExportModuleRegistry" instead
-	 * @param \SpecialPage $special
+	 * @param SpecialPage $special
 	 * @param string $parameter
 	 * @param \BsUniversalExportModule[] &$modules
 	 * @return bool
@@ -55,7 +56,7 @@ abstract class BSUniversalExportSpecialPageExecute extends \BlueSpice\Hook {
 	/**
 	 * @param IContextSource $context
 	 * @param Config $config
-	 * @param \SpecialPage $special
+	 * @param SpecialPage $special
 	 * @param string $parameter
 	 * @param \BsUniversalExportModule[] &$modules
 	 */
