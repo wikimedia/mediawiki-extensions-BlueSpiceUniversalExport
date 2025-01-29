@@ -3,8 +3,8 @@
 namespace BlueSpice\UniversalExport\Tag;
 
 use BlueSpice\Tag\Handler;
-use FormatJson;
 use MediaWiki\Html\Html;
+use MediaWiki\Json\FormatJson;
 
 class ParamsHandler extends Handler {
 
