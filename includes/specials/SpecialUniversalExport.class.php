@@ -16,6 +16,7 @@ use BlueSpice\UniversalExport\ExportSpecification;
 use BlueSpice\UniversalExport\IExportModule;
 use BlueSpice\UniversalExport\ModuleFactory;
 use MediaWiki\Message\Message;
+use MediaWiki\Output\OutputPage;
 use MediaWiki\Title\Title;
 
 /**
