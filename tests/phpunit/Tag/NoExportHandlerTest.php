@@ -3,8 +3,8 @@
 namespace BlueSpice\UniversalExport\Tests\Tag;
 
 use BlueSpice\UniversalExport\Tag\NoExportHandler;
+use MediaWiki\Parser\ParserOutput;
 use Parser;
-use ParserOutput;
 use PHPUnit\Framework\TestCase;
 use PPFrame;
 
