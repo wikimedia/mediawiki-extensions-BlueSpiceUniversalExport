@@ -3,9 +3,9 @@
 namespace BlueSpice\UniversalExport;
 
 use MediaWiki\Config\Config;
+use MediaWiki\Page\PageProps;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use PageProps;
 
 class ExportSpecificationFactory {
 	/** @var Config */
