@@ -6,7 +6,7 @@ use BlueSpice\Tag\MarkerType;
 use BlueSpice\Tag\MarkerType\NoWiki;
 use BlueSpice\Tag\Tag;
 use MediaWiki\Parser\Parser;
-use PPFrame;
+use MediaWiki\Parser\PPFrame;
 
 class PageBreak extends Tag {
 
