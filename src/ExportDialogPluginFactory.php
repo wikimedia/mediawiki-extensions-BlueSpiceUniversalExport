@@ -2,10 +2,10 @@
 
 namespace BlueSpice\UniversalExport;
 
-use ExtensionRegistry;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Registration\ExtensionRegistry;
 use Wikimedia\ObjectFactory\ObjectFactory;
 
 class ExportDialogPluginFactory {
