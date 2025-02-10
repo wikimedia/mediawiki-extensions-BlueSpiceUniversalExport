@@ -3,10 +3,10 @@
 namespace BlueSpice\UniversalExport;
 
 use Exception;
-use ExtensionRegistry;
 use MediaWiki\Config\Config;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Request\WebRequest;
 use MWException;
 use PermissionsError;
