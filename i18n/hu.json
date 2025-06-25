@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Csega"
+			"Csega",
+			"Krisztina"
 		]
 	},
+	"bs-universalexport-desc": "Lehetővé teszi a MediaWiki számára a lapok exportálását különböző formátumokba",
 	"bs-universalexport-widget-title": "Exportálás",
 	"action-universalexport-export": "export fájl létrehozása"
 }
