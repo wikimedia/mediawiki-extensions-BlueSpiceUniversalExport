@@ -13,5 +13,16 @@
 	"bs-ue-export-dialog-action-cancel": "Йухайаккха",
 	"bs-ue-export-dialog-action-submit": "Кийчча йу",
 	"bs-ue-export-dialog-label-select-module": "Формат",
-	"bs-ue-export-dialog-button-text": "Экспорт"
+	"bs-ue-export-dialog-button-text": "Экспорт",
+	"bs-universalexport-tag-pagebreak-text": "АгӀо дӀасакъастар",
+	"bs-universalexport-tag-exclude-text": "ХӀара текст экспорт йийр йац.",
+	"bs-universalexport-tag-hidetitle-text": "ХӀокху агӀонан цӀе гур йац экспортехь.",
+	"bs-universalexport-tag-excludearticle-text": "ХӀара агӀо экспорт йиш йац.",
+	"right-universalexport-export": "Экспортан файл кхолла",
+	"bs-universalexport-tag-pagebreak-title": "АгӀо дӀасакъастар",
+	"bs-universalexport-tag-noexport-title": "PDF чуьра дӀадаккха",
+	"bs-universalexport-insert-noexport-title": "PDF йац",
+	"bs-ue-export-dialog-button-title": "Экспортан диалог схьайелла",
+	"bs-universalexport-droplet-nopdf-name": "PDF экспорт йоцуш",
+	"bs-universalexport-droplet-pdfbreak-name": "PDF агӀонан дӀасакъастар"
 }
