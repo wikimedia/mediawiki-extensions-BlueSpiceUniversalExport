@@ -14,10 +14,16 @@
 	"bs-universalexport-widget-tooltip": "Déi aktuell Säit exportéieren",
 	"bs-universalexport-tag-pagebreak-text": "Säitenëmbroch",
 	"bs-universalexport-tag-exclude-text": "Dësen Text gëtt net exportéiert.",
+	"bs-universalexport-tag-hidetitle-text": "Den Titel vun dëser Säit wäert am Export net siichtbar sinn.",
 	"bs-universalexport-tag-excludearticle-text": "Dës Säit kann net exportéiert ginn.",
 	"bs-universalexport-error-permission": "Dir hutt net genuch Rechter fir dës Säit z'exportéieren.",
 	"action-universalexport-export": "en Export-Fichier maachen",
 	"bs-universalexport-tag-noexport-title": "Aus dem PDF ewechloossen",
 	"bs-universalexport-insert-noexport-title": "Kee PDF",
-	"bs-ue-export-dialog-action-cancel": "Ofbriechen"
+	"bs-ue-export-dialog-title": "Exportéieren",
+	"bs-ue-export-dialog-action-cancel": "Ofbriechen",
+	"bs-ue-export-dialog-action-submit": "Fäerdeg",
+	"bs-ue-export-dialog-label-select-module": "Format",
+	"bs-ue-export-dialog-button-text": "Exportéieren",
+	"bs-ue-export-dialog-button-title": "Exportdialog opmaachen"
 }
