@@ -19,5 +19,11 @@
 	"action-universalexport-export": "en Export-Fichier maachen",
 	"bs-universalexport-tag-noexport-title": "Aus dem PDF ewechloossen",
 	"bs-universalexport-insert-noexport-title": "Kee PDF",
-	"bs-ue-export-dialog-action-cancel": "Ofbriechen"
+	"bs-ue-export-dialog-action-cancel": "Ofbriechen",
+	"bs-universalexport-tag-hidetitle-text": "Den Titel vun dëser Säit wäert am Export net siichtbar sinn.",
+	"bs-ue-export-dialog-title": "Exportéieren",
+	"bs-ue-export-dialog-action-submit": "Fäerdeg",
+	"bs-ue-export-dialog-label-select-module": "Format",
+	"bs-ue-export-dialog-button-text": "Exportéieren",
+	"bs-ue-export-dialog-button-title": "Exportdialog opmaachen"
 }
