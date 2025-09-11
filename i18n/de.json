@@ -28,7 +28,7 @@
 	"bs-universalexport-tag-pagebreak-desc": "Erzwingt einen Seitenumbruch im Exportdokument, sofern das Exportmodul dies unterstützt.",
 	"bs-universalexport-tag-noexport-desc": "Inhalt innerhalb dieses Tags erscheint nicht im exportierten Dokument.",
 	"bs-universalexport-error-requested-export-module-not-found": "Das angeforderte Format kann nicht erzeugt werden.",
-	"bs-universalexport-error-permission": "Du hast nicht die erfoderlichen Rechte um diese Seite zu exportieren",
+	"bs-universalexport-error-permission": "{{#FORMAL:Du hast|Sie haben}} nicht die erfoderlichen Rechte um diese Seite zu exportieren",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Die angeforderte Seite darf nicht exportiert werden weil sie auf der Kategorie-Negativliste steht.",
 	"action-universalexport-export": "eine Exportdatei zu erstellen",
 	"right-universalexport-export": "Export-Dateien erstellen",
