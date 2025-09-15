@@ -42,8 +42,8 @@
 	"bs-ue-export-dialog-label-select-module": "格式",
 	"bs-ue-export-dialog-button-text": "匯出",
 	"bs-ue-export-dialog-button-title": "開啟匯出日誌",
-	"bs-universalexport-droplet-nopdf-name": "PDF無法匯出",
-	"bs-universalexport-droplet-nopdf-description": "此部分中的內容不包含在 PDF 匯出中",
-	"bs-universalexport-droplet-pdfbreak-name": "PDF 分頁符",
-	"bs-universalexport-droplet-pdfbreak-description": "PDF 匯出期間在設定位置強制分頁"
+	"bs-universalexport-droplet-nopdf-name": "PDF 不匯出",
+	"bs-universalexport-droplet-nopdf-description": "此章節中的內容不包含在 PDF 匯出裡",
+	"bs-universalexport-droplet-pdfbreak-name": "PDF 換頁",
+	"bs-universalexport-droplet-pdfbreak-description": "PDF 匯出時，強制在設定位置換頁"
 }
