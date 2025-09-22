@@ -169,6 +169,7 @@ bs.ue.ui.dialog.ExportDialog.prototype.getActionProcess = function ( action ) {
 			queryParams[key] = value;
 		}
 
+		mw.hook( 'bs.ue.ui.dialog.ExportDialog.onSubmit' ).fire( this.config.title, queryParams );
 		this.config.callback.submit.call(
 			this.config.callback.scope,
 			this.config.title,
