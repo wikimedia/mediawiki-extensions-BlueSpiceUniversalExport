@@ -4,6 +4,7 @@
 			"Alshamiri1",
 			"Asma",
 			"Meno25",
+			"Mohammed Qays",
 			"ديفيد"
 		]
 	},
@@ -38,7 +39,7 @@
 	"bs-universalexport-pref-metadataoverrides-help": "يسمح بتجاوز القيم المحددة عن طريق إرسال القيم التي تم إدخالها هنا إلى القالب بتنسيق JSON.",
 	"bs-ue-export-dialog-title": "تصدير",
 	"bs-ue-export-dialog-action-cancel": "إلغاء",
-	"bs-ue-export-dialog-action-submit": "تم",
+	"bs-ue-export-dialog-action-submit": "نفذ",
 	"bs-ue-export-dialog-label-select-module": "الصيغة",
 	"bs-ue-export-dialog-button-text": "تصدير",
 	"bs-ue-export-dialog-button-title": "فتح مربع حوار التصدير",
