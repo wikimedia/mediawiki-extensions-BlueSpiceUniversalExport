@@ -4,7 +4,8 @@
 			"Alshamiri1",
 			"Asma",
 			"Meno25",
-			"ديفيد"
+			"ديفيد",
+			"Mohammed Qays"
 		]
 	},
 	"bs-universalexport-desc": "يمكن ميدياويكي من تصدير الصفحات إلى صيغ مختلفة",
@@ -24,8 +25,6 @@
 	"bs-universalexport-tag-excludearticle-text": "قد لا يتم تصدير هذه الصفحة.",
 	"bs-universalexport-tag-pagebreak-desc": "لو كان هذا مدعوما بواسطة موديل التصدير المختار، فهذا الوسم يدخل سطرا جديدا في الوثيقة المصدرة.",
 	"bs-universalexport-tag-noexport-desc": "لن يتم تصدير المحتوى الموجود داخل هذا الوسم.",
-	"bs-universalexport-tag-meta-desc": "يسمح بإضافة بيانات تعريف تعسفية إلى مستند تم تصديره.",
-	"bs-universalexport-tag-params-desc": "يسمح بوضع وسائط خاصة للتصدير، ما إذا كان تقييم الوسيط يعتمد على وحدة التصدير المختارة.",
 	"bs-universalexport-error-requested-export-module-not-found": "لا يمكن إنشاء الصيغة المطلوبة.",
 	"bs-universalexport-error-permission": "لديك صلاحيات غير كافية لتصدير هذه الصفحة.",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "يجب عدم تصدير الصفحة المطلوبة لأنها في القائمة السوداء للتصنيف.",
@@ -38,7 +37,7 @@
 	"bs-universalexport-pref-metadataoverrides-help": "يسمح بتجاوز القيم المحددة عن طريق إرسال القيم التي تم إدخالها هنا إلى القالب بتنسيق JSON.",
 	"bs-ue-export-dialog-title": "تصدير",
 	"bs-ue-export-dialog-action-cancel": "إلغاء",
-	"bs-ue-export-dialog-action-submit": "تم",
+	"bs-ue-export-dialog-action-submit": "نفذ",
 	"bs-ue-export-dialog-label-select-module": "الصيغة",
 	"bs-ue-export-dialog-button-text": "تصدير",
 	"bs-ue-export-dialog-button-title": "فتح مربع حوار التصدير",
