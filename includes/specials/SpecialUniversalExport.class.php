@@ -44,7 +44,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	 * The default contructor of the SpecialUniversalExport class
 	 */
 	public function __construct() {
-		parent::__construct( 'UniversalExport', 'read', true );
+		parent::__construct( 'UniversalExport', 'read' );
 
 		$this->oOutputPage = $this->getOutput();
 	}
