@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"W"
+			"W",
+			"Ucukor"
 		]
 	},
 	"bs-universalexport-widget-title": "Вывесьці",
 	"bs-universalexport-widget-tooltip": "Вывесьці бягучую старонку",
 	"bs-universalexport-tag-pagebreak-text": "Разрыў старонкі",
-	"bs-universalexport-tag-pagebreak-title": "Разрыў старонкі"
+	"bs-universalexport-tag-pagebreak-title": "Разрыў старонкі",
+	"bs-ue-export-dialog-action-cancel": "Скасаваць"
 }
