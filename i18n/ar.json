@@ -4,6 +4,7 @@
 			"Alshamiri1",
 			"Asma",
 			"Meno25",
+			"Mohammed Qays",
 			"ديفيد"
 		]
 	},
@@ -34,7 +35,7 @@
 	"bs-universalexport-tag-pagebreak-title": "فاصل صفحة",
 	"bs-ue-export-dialog-title": "تصدير",
 	"bs-ue-export-dialog-action-cancel": "إلغاء",
-	"bs-ue-export-dialog-action-submit": "تم",
+	"bs-ue-export-dialog-action-submit": "نفذ",
 	"bs-ue-export-dialog-label-select-module": "الصيغة",
 	"bs-ue-export-dialog-button-text": "تصدير",
 	"bs-universalexport-tag-noexport-title": "استبعد من PDF",

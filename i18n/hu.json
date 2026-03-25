@@ -1,9 +1,44 @@
 {
 	"@metadata": {
 		"authors": [
-			"Csega"
+			"Csega",
+			"Krisztina"
 		]
 	},
 	"bs-universalexport-widget-title": "Exportálás",
-	"action-universalexport-export": "export fájl létrehozása"
+	"action-universalexport-export": "export fájl létrehozása",
+	"bs-universalexport-desc": "Lehetővé teszi a MediaWiki számára a lapok exportálását különböző formátumokba",
+	"prefs-universalexport": "Univerzális export",
+	"universalexport": "Univerzális export",
+	"bs-universalexport-pref-metadatadefaults": "Metaadatok (standard, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "Metaadatok (override, JSON):",
+	"bs-universalexport-page-title-without-param": "Univerzális export: Modulok",
+	"bs-universalexport-page-title-on-error": "Univerzális export: Hibák",
+	"bs-universalexport-page-text-without-param": "Ez az oldal információkat jelenít meg az univerzális export elérhető exportmoduljairól.",
+	"bs-universalexport-page-text-without-param-no-modules-registered": "Nincsenek regisztrált modulok.",
+	"bs-universalexport-widget-tooltip": "Jelenlegi lap exportálása",
+	"bs-universalexport-tag-pagebreak-text": "Oldaltörés",
+	"bs-universalexport-tag-exclude-text": "Ez a szöveg nem lesz exportálva.",
+	"bs-universalexport-tag-hidetitle-text": "A jelenlegi lap címe nem lesz látható az exportban.",
+	"bs-universalexport-tag-excludearticle-text": "Ez a lap nem exportálható.",
+	"bs-universalexport-tag-pagebreak-desc": "Ha a kiválasztott export modul támogatja, ez a címke oldaltörést kényszerít ki az exportált dokumentumban.",
+	"bs-universalexport-tag-noexport-desc": "A címkén belüli tartalom nem lesz exportálva.",
+	"bs-universalexport-error-requested-export-module-not-found": "A kért formátum nem állítható elő.",
+	"bs-universalexport-error-permission": "Nincs elegendő jogosultság a lap exportálásához.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "A kért lapot nem szabad exportálni, mert a feketelista kategória része.",
+	"right-universalexport-export": "Exportfájl létrehozása",
+	"bs-universalexport-tag-pagebreak-title": "Oldaltörés",
+	"bs-universalexport-tag-noexport-title": "Kihagyás a PDF-ből",
+	"bs-universalexport-insert-noexport-title": "PDF nem",
+	"bs-universalexport-pref-metadatadefaults-help": "További JSON formátumú adatok átadása a sablonnak",
+	"bs-universalexport-pref-metadataoverrides-help": "Lehetővé teszi a megadott értékek felülírását azáltal, hogy az itt megadott értékeket JSON formátumban küldi a sablonba.",
+	"bs-ue-export-dialog-title": "Exportálás",
+	"bs-ue-export-dialog-action-cancel": "Mégse",
+	"bs-ue-export-dialog-action-submit": "Kész",
+	"bs-ue-export-dialog-label-select-module": "Formátum",
+	"bs-ue-export-dialog-button-text": "Exportálás",
+	"bs-ue-export-dialog-button-title": "Exportálási menü megnyitása",
+	"bs-universalexport-droplet-nopdf-description": "Az ebben a szakaszban található tartalom nem kerül exportálásra PDF formátumban.",
+	"bs-universalexport-droplet-pdfbreak-name": "PDF oldaltörés",
+	"bs-universalexport-droplet-pdfbreak-description": "A PDF export során a beállított pozícióban oldaltörtést készít"
 }

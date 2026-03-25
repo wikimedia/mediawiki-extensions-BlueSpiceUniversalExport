@@ -24,5 +24,6 @@
 	"right-universalexport-export": "출력할 파일 생성",
 	"bs-universalexport-tag-pagebreak-title": "쪽 나누기",
 	"bs-universalexport-tag-noexport-title": "PDF에서 제외",
-	"bs-universalexport-insert-noexport-title": "PDF 없음"
+	"bs-universalexport-insert-noexport-title": "PDF 없음",
+	"bs-ue-export-dialog-action-cancel": "취소"
 }

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"bs-universalexport-desc": "Erméiglecht et MediaWiki fir Säiten a verschiddene Formater z'exportéieren",
@@ -17,5 +18,12 @@
 	"bs-universalexport-error-permission": "Dir hutt net genuch Rechter fir dës Säit z'exportéieren.",
 	"action-universalexport-export": "en Export-Fichier maachen",
 	"bs-universalexport-tag-noexport-title": "Aus dem PDF ewechloossen",
-	"bs-universalexport-insert-noexport-title": "Kee PDF"
+	"bs-universalexport-insert-noexport-title": "Kee PDF",
+	"bs-universalexport-tag-hidetitle-text": "Den Titel vun dëser Säit wäert am Export net siichtbar sinn.",
+	"bs-ue-export-dialog-title": "Exportéieren",
+	"bs-ue-export-dialog-action-cancel": "Ofbriechen",
+	"bs-ue-export-dialog-action-submit": "Fäerdeg",
+	"bs-ue-export-dialog-label-select-module": "Format",
+	"bs-ue-export-dialog-button-text": "Exportéieren",
+	"bs-ue-export-dialog-button-title": "Exportdialog opmaachen"
 }

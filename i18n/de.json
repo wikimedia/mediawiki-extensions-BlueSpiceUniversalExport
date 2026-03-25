@@ -30,7 +30,7 @@
 	"bs-universalexport-tag-meta-desc": "Ermöglicht das hinzufügen beliebiger Metadaten zum exportierten Dokument.",
 	"bs-universalexport-tag-params-desc": "Erlaubt das Setzen von Export-Parametern, ob diese Wirkung zeigen hängt vom gewählten Export-Modul ab.",
 	"bs-universalexport-error-requested-export-module-not-found": "Das angeforderte Format kann nicht erzeugt werden.",
-	"bs-universalexport-error-permission": "Du hast nicht die erfoderlichen Rechte um diese Seite zu exportieren",
+	"bs-universalexport-error-permission": "{{#FORMAL:Du hast|Sie haben}} nicht die erfoderlichen Rechte um diese Seite zu exportieren",
 	"bs-universalexport-error-requested-title-in-category-blacklist": "Die angeforderte Seite darf nicht exportiert werden weil sie auf der Kategorie-Negativliste steht.",
 	"action-universalexport-export": "eine Exportdatei zu erstellen",
 	"right-universalexport-export": "Export-Dateien erstellen",
