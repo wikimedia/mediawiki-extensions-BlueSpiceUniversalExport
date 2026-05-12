@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Jerrykim306",
+			"Tensama0415",
 			"Ykhwong",
 			"Yunbj"
 		]
@@ -25,5 +26,10 @@
 	"bs-universalexport-tag-pagebreak-title": "쪽 나누기",
 	"bs-universalexport-tag-noexport-title": "PDF에서 제외",
 	"bs-universalexport-insert-noexport-title": "PDF 없음",
-	"bs-ue-export-dialog-action-cancel": "취소"
+	"bs-ue-export-dialog-title": "내보내기",
+	"bs-ue-export-dialog-action-cancel": "취소",
+	"bs-ue-export-dialog-action-submit": "완료",
+	"bs-ue-export-dialog-label-select-module": "형식",
+	"bs-ue-export-dialog-button-text": "내보내기",
+	"bs-ue-export-dialog-button-title": "내보내기 대화 상자 열기"
 }
