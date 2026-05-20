@@ -31,5 +31,17 @@
 	"bs-ue-export-dialog-action-submit": "완료",
 	"bs-ue-export-dialog-label-select-module": "형식",
 	"bs-ue-export-dialog-button-text": "내보내기",
-	"bs-ue-export-dialog-button-title": "내보내기 대화 상자 열기"
+	"bs-ue-export-dialog-button-title": "내보내기 대화 상자 열기",
+	"prefs-universalexport": "범용 내보내기",
+	"universalexport": "범용 내보내기",
+	"bs-universalexport-page-title-without-param": "범용 내보내기: 모듈",
+	"bs-universalexport-page-title-on-error": "범용 내보내기: 오류",
+	"bs-universalexport-page-text-without-param": "이 문서는 범용 내보내기에서 사용 가능한 내보내기 모듈에 대한 정보를 표시합니다.",
+	"bs-universalexport-tag-pagebreak-desc": "선택한 내보내기 모듈에서 지원하는 경우, 이 태그는 내보내기 문서에 문서 나누기를 강제로 삽입합니다.",
+	"bs-universalexport-pref-metadatadefaults-help": "틀에 전달되는 JSON 형식의 추가 데이터",
+	"bs-universalexport-pref-metadataoverrides-help": "여기에 입력된 값을 JSON 형식으로 틀에 전송하여 지정된 값을 재정의할 수 있습니다.",
+	"bs-universalexport-droplet-nopdf-name": "PDF로 내보내지 않음",
+	"bs-universalexport-droplet-nopdf-description": "이 문단의 내용은 PDF 내보내기에서 제외됩니다",
+	"bs-universalexport-droplet-pdfbreak-name": "PDF 쪽 나누기",
+	"bs-universalexport-droplet-pdfbreak-description": "PDF 내보내기 중 지정된 위치에서 문서 나누기를 강제로 수행합니다"
 }
