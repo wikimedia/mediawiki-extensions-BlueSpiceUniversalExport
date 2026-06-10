@@ -28,7 +28,7 @@
 	"bs-universalexport-tag-noexport-desc": "Inhoud binnen dit label wordt niet geëxporteerd.",
 	"bs-universalexport-error-requested-export-module-not-found": "Het gevraagde formaat kon niet worden geproduceerd.",
 	"bs-universalexport-error-permission": "U heeft onvoldoende rechten om deze pagina te exporteren.",
-	"bs-universalexport-error-requested-title-in-category-blacklist": "De opgevraagde pagina mag niet worden geëxporteerd omdat deze op de zwarte lijst van categorieën staat.",
+	"bs-universalexport-error-requested-title-in-category-blacklist": "De opgevraagde pagina mag niet worden geëxporteerd omdat deze op de blokkeerlijst van categorieën staat.",
 	"action-universalexport-export": "een export-bestand aan te maken",
 	"right-universalexport-export": "Een export-bestand aan te maken",
 	"bs-universalexport-tag-pagebreak-title": "Pagina-einde",
