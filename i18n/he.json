@@ -9,7 +9,7 @@
 	"prefs-universalexport": "יצוא אוניברסלי",
 	"universalexport": "יצוא אוניברסלי",
 	"bs-universalexport-pref-metadatadefaults": "מטא־נתונים (רגיל, JSON):",
-	"bs-universalexport-pref-metadataoverrides": "מטא־נתונים (עקיפה, JSON):",
+	"bs-universalexport-pref-metadataoverrides": "מטא־נתונים (דריסה, JSON):",
 	"bs-universalexport-page-title-without-param": "יצוא אוניברסלי: מודולים",
 	"bs-universalexport-page-title-on-error": "יצוא אוניברסלי: שגיאה",
 	"bs-universalexport-page-text-without-param": "הדף הזה מציג מידע על מודולי היצוא הזמינים בתכונת היצוא האוניברסלי.",
