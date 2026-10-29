@@ -8,19 +8,16 @@ use MediaWiki\Status\Status;
 class LocalFileSystem extends Base {
 
 	/**
-	 *
 	 * @var IExportFileDescriptor
 	 */
 	protected $descriptor = null;
 
 	/**
-	 *
 	 * @var Status
 	 */
 	private $status = null;
 
 	/**
-	 *
 	 * @param IExportFileDescriptor $descriptor
 	 * @return Status
 	 */

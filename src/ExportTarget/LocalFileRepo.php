@@ -11,19 +11,16 @@ class LocalFileRepo extends RequestBasedTarget {
 	private $targetUrl = '';
 
 	/**
-	 *
 	 * @var IExportFileDescriptor
 	 */
 	protected $descriptor = null;
 
 	/**
-	 *
 	 * @var Status
 	 */
 	private $status = null;
 
 	/**
-	 *
 	 * @param IExportFileDescriptor $descriptor
 	 * @return Status
 	 */

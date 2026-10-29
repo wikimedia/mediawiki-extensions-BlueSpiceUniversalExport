@@ -26,7 +26,6 @@ abstract class BSUniversalExportSpecialPageExecute extends \BlueSpice\Hook {
 	protected $parameter = null;
 
 	/**
-	 *
 	 * @var \BsUniversalExportModule[]
 	 */
 	protected $modules = null;

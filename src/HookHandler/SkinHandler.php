@@ -16,7 +16,6 @@ class SkinHandler implements SidebarBeforeOutputHook {
 	private $plugins = null;
 
 	/**
-	 *
 	 * @param ExportDialogPluginFactory $pluginFactory
 	 */
 	public function __construct( ExportDialogPluginFactory $pluginFactory ) {
@@ -54,7 +53,6 @@ class SkinHandler implements SidebarBeforeOutputHook {
 	}
 
 	/**
-	 *
 	 * @param Skin $skin
 	 * @param array &$sidebar
 	 * @return void
