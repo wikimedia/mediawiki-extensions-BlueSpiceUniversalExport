@@ -1,6 +1,6 @@
 <?php
 
-namespace BlueSpice\UniversalExport\Tests\Tag;
+namespace BlueSpice\UniversalExport\Tests\Unit\Tag;
 
 use BlueSpice\UniversalExport\Tag\NoExportHandler;
 use MediaWiki\Parser\Parser;
