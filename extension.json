@@ -76,7 +76,9 @@
 		"UniversalExportAlias": "languages/SpecialUniversalExport.alias.php"
 	},
 	"TestAutoloadNamespaces": {
-		"BlueSpice\\UniversalExport\\Tests\\": "tests/phpunit/"
+		"BlueSpice\\UniversalExport\\Tests\\Integration\\": "tests/phpunit/integration/",
+		"BlueSpice\\UniversalExport\\Tests\\Structure\\": "tests/phpunit/structure/",
+		"BlueSpice\\UniversalExport\\Tests\\Unit\\": "tests/phpunit/unit/"
 	},
 	"AutoloadNamespaces": {
 		"BlueSpice\\UniversalExport\\": "src/"
