@@ -9,19 +9,16 @@ use MediaWiki\Status\Status;
 abstract class Base implements IExportTarget {
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $exportParams = [];
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @param array $exportParams
 	 * @param Config $config
 	 * @return static
@@ -31,7 +28,6 @@ abstract class Base implements IExportTarget {
 	}
 
 	/**
-	 *
 	 * @param array $exportParams
 	 * @param Config $config
 	 */

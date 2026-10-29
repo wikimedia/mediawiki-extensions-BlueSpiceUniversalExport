@@ -28,7 +28,6 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 
 	// MW Globals
 	/**
-	 *
 	 * @var OutputPage
 	 */
 	public $oOutputPage = null;
@@ -64,7 +63,6 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	}
 
 	/**
-	 *
 	 * @return ModuleFactory
 	 */
 	private function getModuleFactory() {

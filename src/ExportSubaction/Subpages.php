@@ -88,7 +88,6 @@ abstract class Subpages implements IExportSubaction {
 	}
 
 	/**
-	 *
 	 * @param array $includedTitles
 	 * @param array $includedTitleMap
 	 * @param array &$contents
@@ -106,7 +105,6 @@ abstract class Subpages implements IExportSubaction {
 	}
 
 	/**
-	 *
 	 * @param array $includedTitles
 	 * @return array
 	 */
@@ -124,7 +122,6 @@ abstract class Subpages implements IExportSubaction {
 	}
 
 	/**
-	 *
 	 * @param array &$includedTitles
 	 * @param array $includedTitleMap
 	 */
@@ -142,7 +139,6 @@ abstract class Subpages implements IExportSubaction {
 	}
 
 	/**
-	 *
 	 * @param ExportSpecification $specs
 	 * @return array
 	 */

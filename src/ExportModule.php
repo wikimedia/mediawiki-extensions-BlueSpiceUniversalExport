@@ -14,7 +14,6 @@ use PermissionsError;
 abstract class ExportModule implements IExportModule {
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
@@ -28,7 +27,6 @@ abstract class ExportModule implements IExportModule {
 	protected $name = '';
 
 	/**
-	 *
 	 * @param string $name
 	 * @param MediaWikiServices $services
 	 * @param Config $config
