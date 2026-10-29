@@ -5,13 +5,11 @@ namespace BlueSpice\UniversalExport;
 class LegacyArrayDescriptor implements IExportFileDescriptor {
 
 	/**
-	 *
 	 * @var array
 	 */
 	private $data = [];
 
 	/**
-	 *
 	 * @param array $data
 	 */
 	public function __construct( $data ) {
@@ -19,7 +17,6 @@ class LegacyArrayDescriptor implements IExportFileDescriptor {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getContents() {
@@ -27,7 +24,6 @@ class LegacyArrayDescriptor implements IExportFileDescriptor {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getFilename() {
@@ -35,7 +31,6 @@ class LegacyArrayDescriptor implements IExportFileDescriptor {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getMimeType() {

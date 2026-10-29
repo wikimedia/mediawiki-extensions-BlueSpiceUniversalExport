@@ -11,7 +11,6 @@ use MediaWiki\Parser\PPFrame;
 class Meta extends Tag {
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function needsParsedInput() {
@@ -19,7 +18,6 @@ class Meta extends Tag {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function needsParseArgs() {
@@ -27,7 +25,6 @@ class Meta extends Tag {
 	}
 
 	/**
-	 *
 	 * @return MarkerType
 	 */
 	public function getMarkerType() {
@@ -35,7 +32,6 @@ class Meta extends Tag {
 	}
 
 	/**
-	 *
 	 * @param string $processedInput
 	 * @param array $processedArgs
 	 * @param Parser $parser
@@ -53,7 +49,6 @@ class Meta extends Tag {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getTagNames() {

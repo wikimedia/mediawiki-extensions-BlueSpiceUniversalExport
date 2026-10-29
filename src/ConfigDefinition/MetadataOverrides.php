@@ -5,7 +5,6 @@ namespace BlueSpice\UniversalExport\ConfigDefinition;
 class MetadataOverrides extends \BlueSpice\ConfigDefinition\StringSetting {
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPaths() {
@@ -17,7 +16,6 @@ class MetadataOverrides extends \BlueSpice\ConfigDefinition\StringSetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -25,7 +23,6 @@ class MetadataOverrides extends \BlueSpice\ConfigDefinition\StringSetting {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function makeFormFieldParams() {
@@ -36,7 +33,6 @@ class MetadataOverrides extends \BlueSpice\ConfigDefinition\StringSetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHelpMessageKey() {

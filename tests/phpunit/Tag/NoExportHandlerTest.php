@@ -31,7 +31,6 @@ class NoExportHandlerTest extends TestCase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function provideTestHandleData() {

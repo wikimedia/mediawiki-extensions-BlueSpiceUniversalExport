@@ -10,9 +10,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Component\SimpleLink;
 
 class ExportDialogButtonComponent extends SimpleLink {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [
 			'id' => 'bs-ue-exprt-dlg-open',
@@ -26,7 +23,6 @@ class ExportDialogButtonComponent extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

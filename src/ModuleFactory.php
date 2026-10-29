@@ -11,19 +11,16 @@ use MediaWiki\SpecialPage\SpecialPageFactory;
 
 class ModuleFactory {
 	/**
-	 *
 	 * @var ExtensionAttributeBasedRegistry
 	 */
 	protected $moduleRegistry = null;
 
 	/**
-	 *
 	 * @var MediaWikiServices
 	 */
 	protected $services = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
@@ -32,31 +29,26 @@ class ModuleFactory {
 	protected $request;
 
 	/**
-	 *
 	 * @var HookContainer
 	 */
 	protected $hookContainer = null;
 
 	/**
-	 *
 	 * @var IExportModule[]
 	 */
 	protected $modules = [];
 
 	/**
-	 *
 	 * @var IExportModule[]
 	 */
 	protected $legacyModules = null;
 
 	/**
-	 *
 	 * @var SpecialPageFactory
 	 */
 	protected $specialPageFactory = null;
 
 	/**
-	 *
 	 * @param ExtensionAttributeBasedRegistry $moduleRegistry
 	 * @param MediaWikiServices $services
 	 * @param Config $config
@@ -76,7 +68,6 @@ class ModuleFactory {
 	}
 
 	/**
-	 *
 	 * @param string $name
 	 * @return IExportModule|null
 	 */
@@ -107,7 +98,6 @@ class ModuleFactory {
 	}
 
 	/**
-	 *
 	 * @return IExportModule[]
 	 */
 	public function getModules() {
@@ -128,7 +118,6 @@ class ModuleFactory {
 	}
 
 	/**
-	 *
 	 * @return IExportModule[]
 	 */
 	private function getLegacyModules() {

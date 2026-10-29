@@ -46,7 +46,6 @@ class BsUniversalExportHelper {
 	}
 
 	/**
-	 *
 	 * @param Title $oTitle
 	 * @param User $user
 	 * @param array &$aParams
@@ -75,7 +74,6 @@ class BsUniversalExportHelper {
 	}
 
 	/**
-	 *
 	 * @param Title $oTitle
 	 * @return array
 	 */

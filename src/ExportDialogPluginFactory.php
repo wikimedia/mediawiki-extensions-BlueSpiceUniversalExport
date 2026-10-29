@@ -36,7 +36,6 @@ class ExportDialogPluginFactory {
 	private $pluginRegistry = null;
 
 	/**
-	 *
 	 * @param ModuleFactory $moduleFactory
 	 * @param ObjectFactory $objectFactory
 	 * @param PermissionManager $permissionManager

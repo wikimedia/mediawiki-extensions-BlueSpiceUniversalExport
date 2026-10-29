@@ -7,7 +7,6 @@ use MediaWiki\Status\Status;
 
 class Download extends RequestBasedTarget {
 	/**
-	 *
 	 * @param IExportFileDescriptor $descriptor
 	 * @return Status
 	 */

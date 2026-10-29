@@ -11,7 +11,6 @@ use MediaWiki\Parser\PPFrame;
 class PageBreak extends Tag {
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function needsParsedInput() {
@@ -19,7 +18,6 @@ class PageBreak extends Tag {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function needsParseArgs() {
@@ -27,7 +25,6 @@ class PageBreak extends Tag {
 	}
 
 	/**
-	 *
 	 * @return MarkerType
 	 */
 	public function getMarkerType() {
@@ -35,7 +32,6 @@ class PageBreak extends Tag {
 	}
 
 	/**
-	 *
 	 * @param string $processedInput
 	 * @param array $processedArgs
 	 * @param Parser $parser
@@ -53,7 +49,6 @@ class PageBreak extends Tag {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getTagNames() {
@@ -66,7 +61,6 @@ class PageBreak extends Tag {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getResourceLoaderModuleStyles(): array {
