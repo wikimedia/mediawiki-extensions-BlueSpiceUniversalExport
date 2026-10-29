@@ -5,7 +5,7 @@
  * used to test the ServiceWiring.php file.
  */
 
-namespace BlueSpice\UniversalExport\Tests;
+namespace BlueSpice\UniversalExport\Tests\Integration;
 
 use MediaWiki\MediaWikiServices;
 use MediaWikiIntegrationTestCase;
@@ -19,6 +19,7 @@ use MediaWikiIntegrationTestCase;
  * @group BlueSpice
  */
 class ServiceWiringTest extends MediaWikiIntegrationTestCase {
+
 	/**
 	 * @dataProvider provideService
 	 */
@@ -28,7 +29,7 @@ class ServiceWiringTest extends MediaWikiIntegrationTestCase {
 	}
 
 	public function provideService() {
-		$wiring = require __DIR__ . '/../../includes/ServiceWiring.php';
+		$wiring = require __DIR__ . '/../../../includes/ServiceWiring.php';
 		foreach ( $wiring as $name => $_ ) {
 			yield $name => [ $name ];
 		}

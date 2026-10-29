@@ -1,0 +1,12 @@
+[
+	{
+		"resourceModule": "ext.bluespice.universalExport.exportDialog",
+		"maxSize": "2 kB"
+	},
+	{
+		"resourceModule": "ext.bluespice.universalExport.exportDialog.pluginRegistry",
+		"maxSize": "2 kB",
+		"@note": "Ignore oojs-ui*",
+		"ignoreDependencies": true
+	}
+]
