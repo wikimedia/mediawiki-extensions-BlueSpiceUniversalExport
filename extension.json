@@ -65,7 +65,13 @@
 		"includes/ServiceWiring.php"
 	],
 	"SpecialPages": {
-		"UniversalExport": "SpecialUniversalExport"
+		"UniversalExport": {
+			"class": "SpecialUniversalExport",
+			"services": [
+				"BSUniversalExportModuleFactory",
+				"BSUniversalExportSpecificationFactory"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"UniversalExport": [
