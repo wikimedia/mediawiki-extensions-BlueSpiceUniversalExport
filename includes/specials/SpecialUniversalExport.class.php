@@ -13,18 +13,20 @@
  */
 
 use BlueSpice\UniversalExport\ExportSpecification;
+use BlueSpice\UniversalExport\ExportSpecificationFactory;
 use BlueSpice\UniversalExport\IExportModule;
 use BlueSpice\UniversalExport\ModuleFactory;
 use MediaWiki\Language\RawMessage;
 use MediaWiki\Message\Message;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 
 /**
  * UniversalExport special page class.
  * @package BlueSpiceUniversalExport
  */
-class SpecialUniversalExport extends \BlueSpice\SpecialPage {
+class SpecialUniversalExport extends SpecialPage {
 
 	// MW Globals
 	/**
@@ -40,12 +42,21 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	public $aModules = [];
 
 	/**
-	 * The default contructor of the SpecialUniversalExport class
+	 * @param ModuleFactory $moduleFactory
+	 * @param ExportSpecificationFactory $specificationFactory
 	 */
-	public function __construct() {
-		parent::__construct( 'UniversalExport', 'read' );
+	public function __construct(
+		private readonly ModuleFactory $moduleFactory,
+		private readonly ExportSpecificationFactory $specificationFactory
+	) {
+		parent::__construct( 'UniversalExport' );
 
 		$this->oOutputPage = $this->getOutput();
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'read';
 	}
 
 	/**
@@ -63,13 +74,6 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 	}
 
 	/**
-	 * @return ModuleFactory
-	 */
-	private function getModuleFactory() {
-		return $this->services->getService( 'BSUniversalExportModuleFactory' );
-	}
-
-	/**
 	 * Dispatched from execute();
 	 * @param string $sParameter
 	 */
@@ -82,8 +86,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 			$params = [];
 			BsUniversalExportHelper::getParamsFromQueryString( $params );
 			/** @var ExportSpecification $specs */
-			$specs = $this->services->getService( 'BSUniversalExportSpecificationFactory' )
-				->newSpecification( $requestedTitle, $this->getUser(), $params );
+			$specs = $this->specificationFactory->newSpecification( $requestedTitle, $this->getUser(), $params );
 
 			$categories = BsUniversalExportHelper::getCategoriesForTitle( $requestedTitle );
 			if ( !empty( array_intersect( $specs->getCategoryBlacklist(), $categories ) ) ) {
@@ -92,7 +95,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 				);
 			}
 
-			$module = $this->getModuleFactory()->newFromName( $specs->getParam( 'module', null ) );
+			$module = $this->moduleFactory->newFromName( $specs->getParam( 'module', null ) );
 			if ( $module === null ) {
 				throw new Exception(
 					'bs-universalexport-error-requested-export-module-not-found'
@@ -104,7 +107,7 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 		} catch ( Exception $oException ) {
 			// Display Exception-Message
 			$this->oOutputPage->setPageTitle(
-				wfMessage( 'bs-universalexport-page-title-on-error' )->text()
+				$this->msg( 'bs-universalexport-page-title-on-error' )->text()
 			);
 			if ( $oException instanceof ErrorPageError ) {
 				// Somehow, when message object is parsed in the Error class itself, it does not respect overrides
@@ -127,14 +130,14 @@ class SpecialUniversalExport extends \BlueSpice\SpecialPage {
 		// configuration settings, etc... Could also be used to monitor Webservice and
 		// manually empty cache.
 		$this->oOutputPage->setPageTitle(
-			wfMessage( 'bs-universalexport-page-title-without-param' )->text()
+			$this->msg( 'bs-universalexport-page-title-without-param' )->text()
 		);
-		$this->oOutputPage->addHtml( wfMessage( 'bs-universalexport-page-text-without-param' )->text() );
+		$this->oOutputPage->addHtml( $this->msg( 'bs-universalexport-page-text-without-param' )->text() );
 		$this->oOutputPage->addHtml( '<hr />' );
 
 		if ( empty( $this->aModules ) ) {
 			$this->oOutputPage->addHtml(
-				wfMessage( 'bs-universalexport-page-text-without-param-no-modules-registered' )->text()
+				$this->msg( 'bs-universalexport-page-text-without-param-no-modules-registered' )->text()
 			);
 			return;
 		}
