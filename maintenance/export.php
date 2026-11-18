@@ -98,9 +98,7 @@ class BSUniversalExportPageExport extends Maintenance {
 	 * @throws MWException
 	 */
 	private function setUser() {
-		/** @var \BlueSpice\UtilityFactory $utilFactory */
-		$utilFactory = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' );
-		$user = $utilFactory->getMaintenanceUser()->getUser();
+		$user = User::newSystemUser( User::MAINTENANCE_SCRIPT_USER, [ 'steal' => true ] );
 		// Apparently needed for some API call
 		RequestContext::getMain()->setUser( $user );
 		$GLOBALS['wgUser'] = $user;
